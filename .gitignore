@@ -1,0 +1,41 @@
+# 临时文件
+*.tmp
+*.temp
+.DS_Store
+Thumbs.db
+
+# 备份文件
+*.bak
+*.backup
+
+# 敏感信息
+.env
+.env.local
+config.json
+
+# 日志
+*.log
+logs/
+
+# 编辑器
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# 依赖
+node_modules/
+__pycache__/
+*.pyc
+
+# 大文件
+*.mp4
+*.mov
+*.avi
+*.zip
+*.tar.gz
+
+# 本地配置
+local-config.yaml
+personal-settings.json
