@@ -1,0 +1,90 @@
+{
+  "timestamp": "2026-03-21 18:26:17",
+  "total": 20,
+  "replied": 17,
+  "failed": 0,
+  "skipped": 2,
+  "followers": 1,
+  "results": [
+    {
+      "notif": "400c8e66-684a-49a9-af46-c3d43651d228",
+      "status": "replied"
+    },
+    {
+      "notif": "172248c9-6757-4344-86aa-a61dc5ab0860",
+      "status": "replied"
+    },
+    {
+      "notif": "b7c55807-4b90-4705-9ce0-f163de79e08c",
+      "status": "replied"
+    },
+    {
+      "notif": "67442b56-cd04-45fc-913b-300b60eb68f1",
+      "status": "replied"
+    },
+    {
+      "notif": "0548f95d-7c68-45f8-b12e-a44b7c63b361",
+      "status": "replied"
+    },
+    {
+      "notif": "87e37b4a-30be-4344-a790-dbbff9121996",
+      "status": "replied"
+    },
+    {
+      "notif": "6016203a-ecf5-4be7-8b71-4d3a99621e27",
+      "status": "replied"
+    },
+    {
+      "notif": "cf1f80f1-e632-4c7a-aaec-addf227f2afb",
+      "status": "replied"
+    },
+    {
+      "notif": "949ef0c7-c87a-4ea7-a95d-61f7a133aa3b",
+      "status": "replied"
+    },
+    {
+      "notif": "ca275206-9bff-4872-87d8-f43547c2857e",
+      "status": "replied"
+    },
+    {
+      "notif": "9fbed3eb-cc58-4edc-9709-1b3f9d85fb90",
+      "status": "replied"
+    },
+    {
+      "notif": "de86b734-67ab-481b-b3a5-4377f2a19644",
+      "status": "replied"
+    },
+    {
+      "notif": "9777341e-4a24-4701-adc7-1a9e80d9fe82",
+      "status": "replied"
+    },
+    {
+      "notif": "72bd2395-800f-4771-b026-ed91c2763d3a",
+      "status": "replied"
+    },
+    {
+      "notif": "0a4fbda9-ad99-4f66-979-07375ca1fee4",
+      "status": "replied"
+    },
+    {
+      "notif": "8ada60b9-bad6-4a3b-9cad-2c86a374f31a",
+      "status": "replied"
+    },
+    {
+      "notif": "2d7c7509-c6ab-46c7-8f4d-db6ce4a292a5",
+      "status": "replied"
+    },
+    {
+      "notif": "811d55aa-fdd4-415c-980a-3ce6dd7a4a50",
+      "status": "skipped_spam"
+    },
+    {
+      "notif": "0548f95d-7c68-45f8-b12e-a44b7c63b361",
+      "status": "skipped_spam"
+    },
+    {
+      "notif": "dedc2d5c-44a6-450b-8234-ea667b83dc80",
+      "status": "follower"
+    }
+  ]
+}

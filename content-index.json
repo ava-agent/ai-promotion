@@ -1,26 +1,1657 @@
-{
-  "content": [
-    {
-      "platform": "moltbook",
-      "filename": "moltbook-surfing-log.md",
-      "date": "2026-03-22",
-      "path": "D:/project/ai-promotion/content\\moltbook\\2026-03\\moltbook-surfing-log.md",
-      "added_at": "2026-03-23T22:05:05.458547"
-    },
-    {
-      "platform": "docs",
-      "filename": "self-media-matrix-2026-03-23.md",
-      "date": "2026-03-23",
-      "path": "D:/project/ai-promotion/content\\docs\\2026-03\\self-media-matrix-2026-03-23.md",
-      "added_at": "2026-03-23T22:05:05.459311"
-    },
-    {
-      "platform": "docs",
-      "filename": "new-platforms-config.md",
-      "date": "2026-03-23",
-      "path": "D:/project/ai-promotion/content\\docs\\2026-03\\new-platforms-config.md",
-      "added_at": "2026-03-23T22:05:05.459895"
-    }
-  ],
-  "last_update": "2026-03-23T22:05:05.459900"
+﻿{
+    "content":  [
+                    {
+                        "platform":  "docs",
+                        "filename":  "self-media-matrix-2026-03-23.md",
+                        "date":  "2026-03-23",
+                        "path":  "D:/project/ai-promotion/content\\docs\\2026-03\\self-media-matrix-2026-03-23.md",
+                        "added_at":  "2026-03-23T22:05:05.459311"
+                    },
+                    {
+                        "platform":  "docs",
+                        "filename":  "new-platforms-config.md",
+                        "date":  "2026-03-23",
+                        "path":  "D:/project/ai-promotion/content\\docs\\2026-03\\new-platforms-config.md",
+                        "added_at":  "2026-03-23T22:05:05.459895"
+                    },
+                    {
+                        "platform":  "docs",
+                        "filename":  "2026-02-07-summary.md",
+                        "date":  "2026-02-08",
+                        "path":  "D:\\project\\ai-promotion\\content\\docs\\2026-02\\2026-02-07-summary.md",
+                        "added_at":  "2026-03-24T08:10:17.087695"
+                    },
+                    {
+                        "platform":  "docs",
+                        "filename":  "2026-02-07.md",
+                        "date":  "2026-02-08",
+                        "path":  "D:\\project\\ai-promotion\\content\\docs\\2026-02\\2026-02-07.md",
+                        "added_at":  "2026-03-24T08:10:17.088516"
+                    },
+                    {
+                        "platform":  "docs",
+                        "filename":  "2026-02-08.md",
+                        "date":  "2026-02-08",
+                        "path":  "D:\\project\\ai-promotion\\content\\docs\\2026-02\\2026-02-08.md",
+                        "added_at":  "2026-03-24T08:10:17.089216"
+                    },
+                    {
+                        "platform":  "docs",
+                        "filename":  "2026-02-09.md",
+                        "date":  "2026-02-09",
+                        "path":  "D:\\project\\ai-promotion\\content\\docs\\2026-02\\2026-02-09.md",
+                        "added_at":  "2026-03-24T08:10:17.089896"
+                    },
+                    {
+                        "platform":  "docs",
+                        "filename":  "2026-02-10.md",
+                        "date":  "2026-02-10",
+                        "path":  "D:\\project\\ai-promotion\\content\\docs\\2026-02\\2026-02-10.md",
+                        "added_at":  "2026-03-24T08:10:17.090597"
+                    },
+                    {
+                        "platform":  "docs",
+                        "filename":  "2026-03-14.md",
+                        "date":  "2026-03-14",
+                        "path":  "D:\\project\\ai-promotion\\content\\docs\\2026-03\\2026-03-14.md",
+                        "added_at":  "2026-03-24T08:10:17.091416"
+                    },
+                    {
+                        "platform":  "docs",
+                        "filename":  "2026-03-16.md",
+                        "date":  "2026-03-16",
+                        "path":  "D:\\project\\ai-promotion\\content\\docs\\2026-03\\2026-03-16.md",
+                        "added_at":  "2026-03-24T08:10:17.092049"
+                    },
+                    {
+                        "platform":  "docs",
+                        "filename":  "2026-03-18.md",
+                        "date":  "2026-03-18",
+                        "path":  "D:\\project\\ai-promotion\\content\\docs\\2026-03\\2026-03-18.md",
+                        "added_at":  "2026-03-24T08:10:17.092845"
+                    },
+                    {
+                        "platform":  "docs",
+                        "filename":  "2026-03-20.md",
+                        "date":  "2026-03-20",
+                        "path":  "D:\\project\\ai-promotion\\content\\docs\\2026-03\\2026-03-20.md",
+                        "added_at":  "2026-03-24T08:10:17.093569"
+                    },
+                    {
+                        "platform":  "docs",
+                        "filename":  "2026-03-21.md",
+                        "date":  "2026-03-21",
+                        "path":  "D:\\project\\ai-promotion\\content\\docs\\2026-03\\2026-03-21.md",
+                        "added_at":  "2026-03-24T08:10:17.094301"
+                    },
+                    {
+                        "platform":  "moltbook",
+                        "filename":  "2026-03-23.md",
+                        "date":  "2026-03-23",
+                        "path":  "D:\\project\\ai-promotion\\content\\moltbook\\2026-03\\2026-03-23.md",
+                        "added_at":  "2026-03-24T08:10:17.094778"
+                    },
+                    {
+                        "platform":  "docs",
+                        "filename":  "account-registration-research.md",
+                        "date":  "2026-03-14",
+                        "path":  "D:\\project\\ai-promotion\\content\\docs\\2026-03\\account-registration-research.md",
+                        "added_at":  "2026-03-24T08:10:17.095443"
+                    },
+                    {
+                        "platform":  "docs",
+                        "filename":  "ai-agent-apps-content-drafts.md",
+                        "date":  "2026-03-14",
+                        "path":  "D:\\project\\ai-promotion\\content\\docs\\2026-03\\ai-agent-apps-content-drafts.md",
+                        "added_at":  "2026-03-24T08:10:17.096081"
+                    },
+                    {
+                        "platform":  "docs",
+                        "filename":  "ai-ideas-development-system.md",
+                        "date":  "2026-03-23",
+                        "path":  "D:\\project\\ai-promotion\\content\\docs\\2026-03\\ai-ideas-development-system.md",
+                        "added_at":  "2026-03-24T08:10:17.096635"
+                    },
+                    {
+                        "platform":  "docs",
+                        "filename":  "ai-ideas-launch-report-2026-03-23.md",
+                        "date":  "2026-03-23",
+                        "path":  "D:\\project\\ai-promotion\\content\\docs\\2026-03\\ai-ideas-launch-report-2026-03-23.md",
+                        "added_at":  "2026-03-24T08:10:17.097106"
+                    },
+                    {
+                        "platform":  "docs",
+                        "filename":  "ai-ideas-scope-control.md",
+                        "date":  "2026-03-23",
+                        "path":  "D:\\project\\ai-promotion\\content\\docs\\2026-03\\ai-ideas-scope-control.md",
+                        "added_at":  "2026-03-24T08:10:17.097698"
+                    },
+                    {
+                        "platform":  "docs",
+                        "filename":  "ai-promo-log.md",
+                        "date":  "2026-03-24",
+                        "path":  "D:\\project\\ai-promotion\\content\\docs\\2026-03\\ai-promo-log.md",
+                        "added_at":  "2026-03-24T08:10:17.098164"
+                    },
+                    {
+                        "platform":  "docs",
+                        "filename":  "analyze_comments.py",
+                        "date":  "2026-03-19",
+                        "path":  "D:\\project\\ai-promotion\\content\\docs\\2026-03\\analyze_comments.py",
+                        "added_at":  "2026-03-24T08:10:17.098847"
+                    },
+                    {
+                        "platform":  "docs",
+                        "filename":  "batch_reply.py",
+                        "date":  "2026-03-16",
+                        "path":  "D:\\project\\ai-promotion\\content\\docs\\2026-03\\batch_reply.py",
+                        "added_at":  "2026-03-24T08:10:17.099631"
+                    },
+                    {
+                        "platform":  "docs",
+                        "filename":  "capa-java-content-drafts.md",
+                        "date":  "2026-03-14",
+                        "path":  "D:\\project\\ai-promotion\\content\\docs\\2026-03\\capa-java-content-drafts.md",
+                        "added_at":  "2026-03-24T08:10:17.100552"
+                    },
+                    {
+                        "platform":  "moltbook",
+                        "filename":  "check-moltbook-notifs.py",
+                        "date":  "2026-03-22",
+                        "path":  "D:\\project\\ai-promotion\\content\\moltbook\\2026-03\\check-moltbook-notifs.py",
+                        "added_at":  "2026-03-24T08:10:17.101393"
+                    },
+                    {
+                        "platform":  "docs",
+                        "filename":  "check-my-posts.py",
+                        "date":  "2026-03-22",
+                        "path":  "D:\\project\\ai-promotion\\content\\docs\\2026-03\\check-my-posts.py",
+                        "added_at":  "2026-03-24T08:10:17.102131"
+                    },
+                    {
+                        "platform":  "docs",
+                        "filename":  "check-new-comments-v2.py",
+                        "date":  "2026-03-22",
+                        "path":  "D:\\project\\ai-promotion\\content\\docs\\2026-03\\check-new-comments-v2.py",
+                        "added_at":  "2026-03-24T08:10:17.102825"
+                    },
+                    {
+                        "platform":  "docs",
+                        "filename":  "check-new-comments.py",
+                        "date":  "2026-03-22",
+                        "path":  "D:\\project\\ai-promotion\\content\\docs\\2026-03\\check-new-comments.py",
+                        "added_at":  "2026-03-24T08:10:17.103495"
+                    },
+                    {
+                        "platform":  "docs",
+                        "filename":  "check_notifications.py",
+                        "date":  "2026-03-22",
+                        "path":  "D:\\project\\ai-promotion\\content\\docs\\2026-03\\check_notifications.py",
+                        "added_at":  "2026-03-24T08:10:17.104123"
+                    },
+                    {
+                        "platform":  "docs",
+                        "filename":  "check_post.py",
+                        "date":  "2026-03-21",
+                        "path":  "D:\\project\\ai-promotion\\content\\docs\\2026-03\\check_post.py",
+                        "added_at":  "2026-03-24T08:10:17.104762"
+                    },
+                    {
+                        "platform":  "docs",
+                        "filename":  "claude-code-optimization.md",
+                        "date":  "2026-03-23",
+                        "path":  "D:\\project\\ai-promotion\\content\\docs\\2026-03\\claude-code-optimization.md",
+                        "added_at":  "2026-03-24T08:10:17.105391"
+                    },
+                    {
+                        "platform":  "docs",
+                        "filename":  "clawx-content-drafts.md",
+                        "date":  "2026-03-14",
+                        "path":  "D:\\project\\ai-promotion\\content\\docs\\2026-03\\clawx-content-drafts.md",
+                        "added_at":  "2026-03-24T08:10:17.106077"
+                    },
+                    {
+                        "platform":  "docs",
+                        "filename":  "config-fix-report.md",
+                        "date":  "2026-03-14",
+                        "path":  "D:\\project\\ai-promotion\\content\\docs\\2026-03\\config-fix-report.md",
+                        "added_at":  "2026-03-24T08:10:17.106716"
+                    },
+                    {
+                        "platform":  "docs",
+                        "filename":  "content-assets-report-2026-03-23.md",
+                        "date":  "2026-03-23",
+                        "path":  "D:\\project\\ai-promotion\\content\\docs\\2026-03\\content-assets-report-2026-03-23.md",
+                        "added_at":  "2026-03-24T08:10:17.107421"
+                    },
+                    {
+                        "platform":  "docs",
+                        "filename":  "content-directory-structure.md",
+                        "date":  "2026-03-23",
+                        "path":  "D:\\project\\ai-promotion\\content\\docs\\2026-03\\content-directory-structure.md",
+                        "added_at":  "2026-03-24T08:10:17.108093"
+                    },
+                    {
+                        "platform":  "moltbook",
+                        "filename":  "create-moltbook-post-now.py",
+                        "date":  "2026-03-20",
+                        "path":  "D:\\project\\ai-promotion\\content\\moltbook\\2026-03\\create-moltbook-post-now.py",
+                        "added_at":  "2026-03-24T08:10:17.108770"
+                    },
+                    {
+                        "platform":  "moltbook",
+                        "filename":  "create-moltbook-post.py",
+                        "date":  "2026-03-19",
+                        "path":  "D:\\project\\ai-promotion\\content\\moltbook\\2026-03\\create-moltbook-post.py",
+                        "added_at":  "2026-03-24T08:10:17.109401"
+                    },
+                    {
+                        "platform":  "docs",
+                        "filename":  "daily-reflection-log.md",
+                        "date":  "2026-03-23",
+                        "path":  "D:\\project\\ai-promotion\\content\\docs\\2026-03\\daily-reflection-log.md",
+                        "added_at":  "2026-03-24T08:10:17.110053"
+                    },
+                    {
+                        "platform":  "docs",
+                        "filename":  "daily-report-2026-03-21.md",
+                        "date":  "2026-03-21",
+                        "path":  "D:\\project\\ai-promotion\\content\\docs\\2026-03\\daily-report-2026-03-21.md",
+                        "added_at":  "2026-03-24T08:10:17.110808"
+                    },
+                    {
+                        "platform":  "docs",
+                        "filename":  "daily-review-log.md",
+                        "date":  "2026-03-21",
+                        "path":  "D:\\project\\ai-promotion\\content\\docs\\2026-03\\daily-review-log.md",
+                        "added_at":  "2026-03-24T08:10:17.111721"
+                    },
+                    {
+                        "platform":  "docs",
+                        "filename":  "daily-summary-2026-03-15.md",
+                        "date":  "2026-03-16",
+                        "path":  "D:\\project\\ai-promotion\\content\\docs\\2026-03\\daily-summary-2026-03-15.md",
+                        "added_at":  "2026-03-24T08:10:17.112483"
+                    },
+                    {
+                        "platform":  "docs",
+                        "filename":  "delete_test_comment.py",
+                        "date":  "2026-03-19",
+                        "path":  "D:\\project\\ai-promotion\\content\\docs\\2026-03\\delete_test_comment.py",
+                        "added_at":  "2026-03-24T08:10:17.113185"
+                    },
+                    {
+                        "platform":  "devto",
+                        "filename":  "devto-content-strategy-current.md",
+                        "date":  "2026-03-23",
+                        "path":  "D:\\project\\ai-promotion\\content\\devto\\2026-03\\devto-content-strategy-current.md",
+                        "added_at":  "2026-03-24T08:10:17.113772"
+                    },
+                    {
+                        "platform":  "devto",
+                        "filename":  "devto-optimization-linkage.md",
+                        "date":  "2026-03-23",
+                        "path":  "D:\\project\\ai-promotion\\content\\devto\\2026-03\\devto-optimization-linkage.md",
+                        "added_at":  "2026-03-24T08:10:17.114444"
+                    },
+                    {
+                        "platform":  "devto",
+                        "filename":  "devto-promo-log.md",
+                        "date":  "2026-03-22",
+                        "path":  "D:\\project\\ai-promotion\\content\\devto\\2026-03\\devto-promo-log.md",
+                        "added_at":  "2026-03-24T08:10:17.115384"
+                    },
+                    {
+                        "platform":  "docs",
+                        "filename":  "dog-agent-post.txt",
+                        "date":  "2026-03-17",
+                        "path":  "D:\\project\\ai-promotion\\content\\docs\\2026-03\\dog-agent-post.txt",
+                        "added_at":  "2026-03-24T08:10:17.116245"
+                    },
+                    {
+                        "platform":  "docs",
+                        "filename":  "english-agent-promo-post.md",
+                        "date":  "2026-03-19",
+                        "path":  "D:\\project\\ai-promotion\\content\\docs\\2026-03\\english-agent-promo-post.md",
+                        "added_at":  "2026-03-24T08:10:17.116969"
+                    },
+                    {
+                        "platform":  "docs",
+                        "filename":  "fetch_notifications.py",
+                        "date":  "2026-03-16",
+                        "path":  "D:\\project\\ai-promotion\\content\\docs\\2026-03\\fetch_notifications.py",
+                        "added_at":  "2026-03-24T08:10:17.117700"
+                    },
+                    {
+                        "platform":  "docs",
+                        "filename":  "filter-quality-comments.py",
+                        "date":  "2026-03-22",
+                        "path":  "D:\\project\\ai-promotion\\content\\docs\\2026-03\\filter-quality-comments.py",
+                        "added_at":  "2026-03-24T08:10:17.118513"
+                    },
+                    {
+                        "platform":  "docs",
+                        "filename":  "get_comments.py",
+                        "date":  "2026-03-19",
+                        "path":  "D:\\project\\ai-promotion\\content\\docs\\2026-03\\get_comments.py",
+                        "added_at":  "2026-03-24T08:10:17.119350"
+                    },
+                    {
+                        "platform":  "docs",
+                        "filename":  "get_comments_list.py",
+                        "date":  "2026-03-16",
+                        "path":  "D:\\project\\ai-promotion\\content\\docs\\2026-03\\get_comments_list.py",
+                        "added_at":  "2026-03-24T08:10:17.120052"
+                    },
+                    {
+                        "platform":  "docs",
+                        "filename":  "get_post_comments.py",
+                        "date":  "2026-03-16",
+                        "path":  "D:\\project\\ai-promotion\\content\\docs\\2026-03\\get_post_comments.py",
+                        "added_at":  "2026-03-24T08:10:17.120667"
+                    },
+                    {
+                        "platform":  "docs",
+                        "filename":  "github-projects-data.md",
+                        "date":  "2026-03-21",
+                        "path":  "D:\\project\\ai-promotion\\content\\docs\\2026-03\\github-projects-data.md",
+                        "added_at":  "2026-03-24T08:10:17.121342"
+                    },
+                    {
+                        "platform":  "docs",
+                        "filename":  "github-projects-rotation.md",
+                        "date":  "2026-03-24",
+                        "path":  "D:\\project\\ai-promotion\\content\\docs\\2026-03\\github-projects-rotation.md",
+                        "added_at":  "2026-03-24T08:10:17.121956"
+                    },
+                    {
+                        "platform":  "docs",
+                        "filename":  "github-promotion-platforms.md",
+                        "date":  "2026-03-14",
+                        "path":  "D:\\project\\ai-promotion\\content\\docs\\2026-03\\github-promotion-platforms.md",
+                        "added_at":  "2026-03-24T08:10:17.122607"
+                    },
+                    {
+                        "platform":  "docs",
+                        "filename":  "heartbeat-state.json",
+                        "date":  "2026-03-23",
+                        "path":  "D:\\project\\ai-promotion\\content\\docs\\2026-03\\heartbeat-state.json",
+                        "added_at":  "2026-03-24T08:10:17.123195"
+                    },
+                    {
+                        "platform":  "docs",
+                        "filename":  "mark_read.py",
+                        "date":  "2026-03-22",
+                        "path":  "D:\\project\\ai-promotion\\content\\docs\\2026-03\\mark_read.py",
+                        "added_at":  "2026-03-24T08:10:17.123975"
+                    },
+                    {
+                        "platform":  "docs",
+                        "filename":  "mcp-image-gen-post.txt",
+                        "date":  "2026-03-20",
+                        "path":  "D:\\project\\ai-promotion\\content\\docs\\2026-03\\mcp-image-gen-post.txt",
+                        "added_at":  "2026-03-24T08:10:17.124817"
+                    },
+                    {
+                        "platform":  "docs",
+                        "filename":  "mcp-video-gen-post-draft.md",
+                        "date":  "2026-03-18",
+                        "path":  "D:\\project\\ai-promotion\\content\\docs\\2026-03\\mcp-video-gen-post-draft.md",
+                        "added_at":  "2026-03-24T08:10:17.125520"
+                    },
+                    {
+                        "platform":  "docs",
+                        "filename":  "medium-article-draft-1.md",
+                        "date":  "2026-03-14",
+                        "path":  "D:\\project\\ai-promotion\\content\\docs\\2026-03\\medium-article-draft-1.md",
+                        "added_at":  "2026-03-24T08:10:17.126196"
+                    },
+                    {
+                        "platform":  "moltbook",
+                        "filename":  "moltbook-best-practices.md",
+                        "date":  "2026-03-14",
+                        "path":  "D:\\project\\ai-promotion\\content\\moltbook\\2026-03\\moltbook-best-practices.md",
+                        "added_at":  "2026-03-24T08:10:17.126818"
+                    },
+                    {
+                        "platform":  "moltbook",
+                        "filename":  "moltbook-check-notifications.py",
+                        "date":  "2026-03-17",
+                        "path":  "D:\\project\\ai-promotion\\content\\moltbook\\2026-03\\moltbook-check-notifications.py",
+                        "added_at":  "2026-03-24T08:10:17.127530"
+                    },
+                    {
+                        "platform":  "moltbook",
+                        "filename":  "moltbook-comment1.txt",
+                        "date":  "2026-03-21",
+                        "path":  "D:\\project\\ai-promotion\\content\\moltbook\\2026-03\\moltbook-comment1.txt",
+                        "added_at":  "2026-03-24T08:10:17.128127"
+                    },
+                    {
+                        "platform":  "moltbook",
+                        "filename":  "moltbook-comment2.txt",
+                        "date":  "2026-03-21",
+                        "path":  "D:\\project\\ai-promotion\\content\\moltbook\\2026-03\\moltbook-comment2.txt",
+                        "added_at":  "2026-03-24T08:10:17.128762"
+                    },
+                    {
+                        "platform":  "moltbook",
+                        "filename":  "moltbook-comments-check.json",
+                        "date":  "2026-03-23",
+                        "path":  "D:\\project\\ai-promotion\\content\\moltbook\\2026-03\\moltbook-comments-check.json",
+                        "added_at":  "2026-03-24T08:10:17.129481"
+                    },
+                    {
+                        "platform":  "moltbook",
+                        "filename":  "moltbook-comments-list.json",
+                        "date":  "2026-03-16",
+                        "path":  "D:\\project\\ai-promotion\\content\\moltbook\\2026-03\\moltbook-comments-list.json",
+                        "added_at":  "2026-03-24T08:10:17.130337"
+                    },
+                    {
+                        "platform":  "moltbook",
+                        "filename":  "moltbook-comments-to-reply.json",
+                        "date":  "2026-03-15",
+                        "path":  "D:\\project\\ai-promotion\\content\\moltbook\\2026-03\\moltbook-comments-to-reply.json",
+                        "added_at":  "2026-03-24T08:10:17.131354"
+                    },
+                    {
+                        "platform":  "moltbook",
+                        "filename":  "moltbook-content-0730.txt",
+                        "date":  "2026-03-19",
+                        "path":  "D:\\project\\ai-promotion\\content\\moltbook\\2026-03\\moltbook-content-0730.txt",
+                        "added_at":  "2026-03-24T08:10:17.132116"
+                    },
+                    {
+                        "platform":  "moltbook",
+                        "filename":  "moltbook-content-0830.txt",
+                        "date":  "2026-03-19",
+                        "path":  "D:\\project\\ai-promotion\\content\\moltbook\\2026-03\\moltbook-content-0830.txt",
+                        "added_at":  "2026-03-24T08:10:17.132881"
+                    },
+                    {
+                        "platform":  "moltbook",
+                        "filename":  "moltbook-content-only.txt",
+                        "date":  "2026-03-20",
+                        "path":  "D:\\project\\ai-promotion\\content\\moltbook\\2026-03\\moltbook-content-only.txt",
+                        "added_at":  "2026-03-24T08:10:17.133604"
+                    },
+                    {
+                        "platform":  "moltbook",
+                        "filename":  "moltbook-content-rotation.json",
+                        "date":  "2026-03-17",
+                        "path":  "D:\\project\\ai-promotion\\content\\moltbook\\2026-03\\moltbook-content-rotation.json",
+                        "added_at":  "2026-03-24T08:10:17.134205"
+                    },
+                    {
+                        "platform":  "moltbook",
+                        "filename":  "moltbook-debug.log",
+                        "date":  "2026-03-17",
+                        "path":  "D:\\project\\ai-promotion\\content\\moltbook\\2026-03\\moltbook-debug.log",
+                        "added_at":  "2026-03-24T08:10:17.134889"
+                    },
+                    {
+                        "platform":  "moltbook",
+                        "filename":  "moltbook-detailed-comments.json",
+                        "date":  "2026-03-15",
+                        "path":  "D:\\project\\ai-promotion\\content\\moltbook\\2026-03\\moltbook-detailed-comments.json",
+                        "added_at":  "2026-03-24T08:10:17.135486"
+                    },
+                    {
+                        "platform":  "moltbook",
+                        "filename":  "moltbook-do-reply.py",
+                        "date":  "2026-03-17",
+                        "path":  "D:\\project\\ai-promotion\\content\\moltbook\\2026-03\\moltbook-do-reply.py",
+                        "added_at":  "2026-03-24T08:10:17.136295"
+                    },
+                    {
+                        "platform":  "moltbook",
+                        "filename":  "moltbook-draft-0730.md",
+                        "date":  "2026-03-19",
+                        "path":  "D:\\project\\ai-promotion\\content\\moltbook\\2026-03\\moltbook-draft-0730.md",
+                        "added_at":  "2026-03-24T08:10:17.137014"
+                    },
+                    {
+                        "platform":  "moltbook",
+                        "filename":  "moltbook-draft-0830.md",
+                        "date":  "2026-03-19",
+                        "path":  "D:\\project\\ai-promotion\\content\\moltbook\\2026-03\\moltbook-draft-0830.md",
+                        "added_at":  "2026-03-24T08:10:17.137716"
+                    },
+                    {
+                        "platform":  "moltbook",
+                        "filename":  "moltbook-draft-2026-03-15.md",
+                        "date":  "2026-03-15",
+                        "path":  "D:\\project\\ai-promotion\\content\\moltbook\\2026-03\\moltbook-draft-2026-03-15.md",
+                        "added_at":  "2026-03-24T08:10:17.138372"
+                    },
+                    {
+                        "platform":  "moltbook",
+                        "filename":  "moltbook-draft-2026-03-16-1730.md",
+                        "date":  "2026-03-16",
+                        "path":  "D:\\project\\ai-promotion\\content\\moltbook\\2026-03\\moltbook-draft-2026-03-16-1730.md",
+                        "added_at":  "2026-03-24T08:10:17.139115"
+                    },
+                    {
+                        "platform":  "moltbook",
+                        "filename":  "moltbook-draft-2026-03-16-fun.md",
+                        "date":  "2026-03-16",
+                        "path":  "D:\\project\\ai-promotion\\content\\moltbook\\2026-03\\moltbook-draft-2026-03-16-fun.md",
+                        "added_at":  "2026-03-24T08:10:17.139769"
+                    },
+                    {
+                        "platform":  "moltbook",
+                        "filename":  "moltbook-draft-2026-03-16-greeting.md",
+                        "date":  "2026-03-16",
+                        "path":  "D:\\project\\ai-promotion\\content\\moltbook\\2026-03\\moltbook-draft-2026-03-16-greeting.md",
+                        "added_at":  "2026-03-24T08:10:17.140359"
+                    },
+                    {
+                        "platform":  "moltbook",
+                        "filename":  "moltbook-draft-2026-03-19.md",
+                        "date":  "2026-03-19",
+                        "path":  "D:\\project\\ai-promotion\\content\\moltbook\\2026-03\\moltbook-draft-2026-03-19.md",
+                        "added_at":  "2026-03-24T08:10:17.141005"
+                    },
+                    {
+                        "platform":  "moltbook",
+                        "filename":  "moltbook-draft-20260320-2330.md",
+                        "date":  "2026-03-20",
+                        "path":  "D:\\project\\ai-promotion\\content\\moltbook\\2026-03\\moltbook-draft-20260320-2330.md",
+                        "added_at":  "2026-03-24T08:10:17.141727"
+                    },
+                    {
+                        "platform":  "moltbook",
+                        "filename":  "moltbook-draft-20260320.md",
+                        "date":  "2026-03-20",
+                        "path":  "D:\\project\\ai-promotion\\content\\moltbook\\2026-03\\moltbook-draft-20260320.md",
+                        "added_at":  "2026-03-24T08:10:17.142346"
+                    },
+                    {
+                        "platform":  "moltbook",
+                        "filename":  "moltbook-draft-20260321-0030.md",
+                        "date":  "2026-03-21",
+                        "path":  "D:\\project\\ai-promotion\\content\\moltbook\\2026-03\\moltbook-draft-20260321-0030.md",
+                        "added_at":  "2026-03-24T08:10:17.143111"
+                    },
+                    {
+                        "platform":  "moltbook",
+                        "filename":  "moltbook-draft-20260321-0130.md",
+                        "date":  "2026-03-21",
+                        "path":  "D:\\project\\ai-promotion\\content\\moltbook\\2026-03\\moltbook-draft-20260321-0130.md",
+                        "added_at":  "2026-03-24T08:10:17.143710"
+                    },
+                    {
+                        "platform":  "moltbook",
+                        "filename":  "moltbook-draft-20260321-0230.md",
+                        "date":  "2026-03-21",
+                        "path":  "D:\\project\\ai-promotion\\content\\moltbook\\2026-03\\moltbook-draft-20260321-0230.md",
+                        "added_at":  "2026-03-24T08:10:17.144482"
+                    },
+                    {
+                        "platform":  "moltbook",
+                        "filename":  "moltbook-draft-20260321-0830.md",
+                        "date":  "2026-03-21",
+                        "path":  "D:\\project\\ai-promotion\\content\\moltbook\\2026-03\\moltbook-draft-20260321-0830.md",
+                        "added_at":  "2026-03-24T08:10:17.145138"
+                    },
+                    {
+                        "platform":  "moltbook",
+                        "filename":  "moltbook-draft-20260321-1130.md",
+                        "date":  "2026-03-21",
+                        "path":  "D:\\project\\ai-promotion\\content\\moltbook\\2026-03\\moltbook-draft-20260321-1130.md",
+                        "added_at":  "2026-03-24T08:10:17.145872"
+                    },
+                    {
+                        "platform":  "moltbook",
+                        "filename":  "moltbook-draft-20260322-0430.txt",
+                        "date":  "2026-03-22",
+                        "path":  "D:\\project\\ai-promotion\\content\\moltbook\\2026-03\\moltbook-draft-20260322-0430.txt",
+                        "added_at":  "2026-03-24T08:10:17.147066"
+                    },
+                    {
+                        "platform":  "moltbook",
+                        "filename":  "moltbook-draft-20260322-0630.md",
+                        "date":  "2026-03-22",
+                        "path":  "D:\\project\\ai-promotion\\content\\moltbook\\2026-03\\moltbook-draft-20260322-0630.md",
+                        "added_at":  "2026-03-24T08:10:17.147856"
+                    },
+                    {
+                        "platform":  "moltbook",
+                        "filename":  "moltbook-draft-20260322-0635.md",
+                        "date":  "2026-03-22",
+                        "path":  "D:\\project\\ai-promotion\\content\\moltbook\\2026-03\\moltbook-draft-20260322-0635.md",
+                        "added_at":  "2026-03-24T08:10:17.148477"
+                    },
+                    {
+                        "platform":  "moltbook",
+                        "filename":  "moltbook-draft-20260322-0830.md",
+                        "date":  "2026-03-22",
+                        "path":  "D:\\project\\ai-promotion\\content\\moltbook\\2026-03\\moltbook-draft-20260322-0830.md",
+                        "added_at":  "2026-03-24T08:10:17.149215"
+                    },
+                    {
+                        "platform":  "moltbook",
+                        "filename":  "moltbook-draft-20260322-1832.md",
+                        "date":  "2026-03-22",
+                        "path":  "D:\\project\\ai-promotion\\content\\moltbook\\2026-03\\moltbook-draft-20260322-1832.md",
+                        "added_at":  "2026-03-24T08:10:17.149892"
+                    },
+                    {
+                        "platform":  "moltbook",
+                        "filename":  "moltbook-draft-20260322-1930.md",
+                        "date":  "2026-03-22",
+                        "path":  "D:\\project\\ai-promotion\\content\\moltbook\\2026-03\\moltbook-draft-20260322-1930.md",
+                        "added_at":  "2026-03-24T08:10:17.150629"
+                    },
+                    {
+                        "platform":  "moltbook",
+                        "filename":  "moltbook-draft-20260322-2030.md",
+                        "date":  "2026-03-22",
+                        "path":  "D:\\project\\ai-promotion\\content\\moltbook\\2026-03\\moltbook-draft-20260322-2030.md",
+                        "added_at":  "2026-03-24T08:10:17.151273"
+                    },
+                    {
+                        "platform":  "moltbook",
+                        "filename":  "moltbook-draft-20260322-2130.md",
+                        "date":  "2026-03-22",
+                        "path":  "D:\\project\\ai-promotion\\content\\moltbook\\2026-03\\moltbook-draft-20260322-2130.md",
+                        "added_at":  "2026-03-24T08:10:17.152008"
+                    },
+                    {
+                        "platform":  "moltbook",
+                        "filename":  "moltbook-draft-20260322-2230.md",
+                        "date":  "2026-03-22",
+                        "path":  "D:\\project\\ai-promotion\\content\\moltbook\\2026-03\\moltbook-draft-20260322-2230.md",
+                        "added_at":  "2026-03-24T08:10:17.152705"
+                    },
+                    {
+                        "platform":  "moltbook",
+                        "filename":  "moltbook-draft-20260323-0130.md",
+                        "date":  "2026-03-23",
+                        "path":  "D:\\project\\ai-promotion\\content\\moltbook\\2026-03\\moltbook-draft-20260323-0130.md",
+                        "added_at":  "2026-03-24T08:10:17.153497"
+                    },
+                    {
+                        "platform":  "moltbook",
+                        "filename":  "moltbook-draft-capa-java-2.md",
+                        "date":  "2026-03-16",
+                        "path":  "D:\\project\\ai-promotion\\content\\moltbook\\2026-03\\moltbook-draft-capa-java-2.md",
+                        "added_at":  "2026-03-24T08:10:17.154149"
+                    },
+                    {
+                        "platform":  "moltbook",
+                        "filename":  "moltbook-draft-fun-2026-03-20-0530.md",
+                        "date":  "2026-03-20",
+                        "path":  "D:\\project\\ai-promotion\\content\\moltbook\\2026-03\\moltbook-draft-fun-2026-03-20-0530.md",
+                        "added_at":  "2026-03-24T08:10:17.154793"
+                    },
+                    {
+                        "platform":  "moltbook",
+                        "filename":  "moltbook-draft-fun-2026-03-20-0859.md",
+                        "date":  "2026-03-20",
+                        "path":  "D:\\project\\ai-promotion\\content\\moltbook\\2026-03\\moltbook-draft-fun-2026-03-20-0859.md",
+                        "added_at":  "2026-03-24T08:10:17.155456"
+                    },
+                    {
+                        "platform":  "moltbook",
+                        "filename":  "moltbook-draft-fun-2026-03-20.md",
+                        "date":  "2026-03-19",
+                        "path":  "D:\\project\\ai-promotion\\content\\moltbook\\2026-03\\moltbook-draft-fun-2026-03-20.md",
+                        "added_at":  "2026-03-24T08:10:17.156165"
+                    },
+                    {
+                        "platform":  "moltbook",
+                        "filename":  "moltbook-draft-interactive-2026-03-19.md",
+                        "date":  "2026-03-19",
+                        "path":  "D:\\project\\ai-promotion\\content\\moltbook\\2026-03\\moltbook-draft-interactive-2026-03-19.md",
+                        "added_at":  "2026-03-24T08:10:17.156830"
+                    },
+                    {
+                        "platform":  "moltbook",
+                        "filename":  "moltbook-draft-post.md",
+                        "date":  "2026-03-23",
+                        "path":  "D:\\project\\ai-promotion\\content\\moltbook\\2026-03\\moltbook-draft-post.md",
+                        "added_at":  "2026-03-24T08:10:17.157485"
+                    },
+                    {
+                        "platform":  "moltbook",
+                        "filename":  "moltbook-draft-short.md",
+                        "date":  "2026-03-19",
+                        "path":  "D:\\project\\ai-promotion\\content\\moltbook\\2026-03\\moltbook-draft-short.md",
+                        "added_at":  "2026-03-24T08:10:17.158117"
+                    },
+                    {
+                        "platform":  "moltbook",
+                        "filename":  "moltbook-draft-tonight.md",
+                        "date":  "2026-03-16",
+                        "path":  "D:\\project\\ai-promotion\\content\\moltbook\\2026-03\\moltbook-draft-tonight.md",
+                        "added_at":  "2026-03-24T08:10:17.158856"
+                    },
+                    {
+                        "platform":  "moltbook",
+                        "filename":  "moltbook-engagement-2026-03-23.md",
+                        "date":  "2026-03-23",
+                        "path":  "D:\\project\\ai-promotion\\content\\moltbook\\2026-03\\moltbook-engagement-2026-03-23.md",
+                        "added_at":  "2026-03-24T08:10:17.159455"
+                    },
+                    {
+                        "platform":  "moltbook",
+                        "filename":  "moltbook-next-post.txt",
+                        "date":  "2026-03-23",
+                        "path":  "D:\\project\\ai-promotion\\content\\moltbook\\2026-03\\moltbook-next-post.txt",
+                        "added_at":  "2026-03-24T08:10:17.160141"
+                    },
+                    {
+                        "platform":  "moltbook",
+                        "filename":  "moltbook-notifications-raw.json",
+                        "date":  "2026-03-17",
+                        "path":  "D:\\project\\ai-promotion\\content\\moltbook\\2026-03\\moltbook-notifications-raw.json",
+                        "added_at":  "2026-03-24T08:10:17.161098"
+                    },
+                    {
+                        "platform":  "moltbook",
+                        "filename":  "moltbook-notifications.json",
+                        "date":  "2026-03-23",
+                        "path":  "D:\\project\\ai-promotion\\content\\moltbook\\2026-03\\moltbook-notifications.json",
+                        "added_at":  "2026-03-24T08:10:17.162373"
+                    },
+                    {
+                        "platform":  "moltbook",
+                        "filename":  "moltbook-pending-comments.json",
+                        "date":  "2026-03-14",
+                        "path":  "D:\\project\\ai-promotion\\content\\moltbook\\2026-03\\moltbook-pending-comments.json",
+                        "added_at":  "2026-03-24T08:10:17.163301"
+                    },
+                    {
+                        "platform":  "moltbook",
+                        "filename":  "moltbook-pending-post-2.md",
+                        "date":  "2026-03-20",
+                        "path":  "D:\\project\\ai-promotion\\content\\moltbook\\2026-03\\moltbook-pending-post-2.md",
+                        "added_at":  "2026-03-24T08:10:17.164236"
+                    },
+                    {
+                        "platform":  "moltbook",
+                        "filename":  "moltbook-pending-post.md",
+                        "date":  "2026-03-20",
+                        "path":  "D:\\project\\ai-promotion\\content\\moltbook\\2026-03\\moltbook-pending-post.md",
+                        "added_at":  "2026-03-24T08:10:17.164959"
+                    },
+                    {
+                        "platform":  "moltbook",
+                        "filename":  "moltbook-pending-replies.json",
+                        "date":  "2026-03-21",
+                        "path":  "D:\\project\\ai-promotion\\content\\moltbook\\2026-03\\moltbook-pending-replies.json",
+                        "added_at":  "2026-03-24T08:10:17.165818"
+                    },
+                    {
+                        "platform":  "moltbook",
+                        "filename":  "moltbook-planned-replies.json",
+                        "date":  "2026-03-20",
+                        "path":  "D:\\project\\ai-promotion\\content\\moltbook\\2026-03\\moltbook-planned-replies.json",
+                        "added_at":  "2026-03-24T08:10:17.166471"
+                    },
+                    {
+                        "platform":  "moltbook",
+                        "filename":  "moltbook-post-0e5ea3d8-4545-4d39-aea6-3bdc53a2ba15.json",
+                        "date":  "2026-03-23",
+                        "path":  "D:\\project\\ai-promotion\\content\\moltbook\\2026-03\\moltbook-post-0e5ea3d8-4545-4d39-aea6-3bdc53a2ba15.json",
+                        "added_at":  "2026-03-24T08:10:17.167144"
+                    },
+                    {
+                        "platform":  "moltbook",
+                        "filename":  "moltbook-post-2ce1d11b-9a03-4d2d-8761-8317fe22c592.json",
+                        "date":  "2026-03-23",
+                        "path":  "D:\\project\\ai-promotion\\content\\moltbook\\2026-03\\moltbook-post-2ce1d11b-9a03-4d2d-8761-8317fe22c592.json",
+                        "added_at":  "2026-03-24T08:10:17.167793"
+                    },
+                    {
+                        "platform":  "moltbook",
+                        "filename":  "moltbook-post-3ab3c31d-b2fd-4e7f-a321-aa0eee1ff0c0.json",
+                        "date":  "2026-03-23",
+                        "path":  "D:\\project\\ai-promotion\\content\\moltbook\\2026-03\\moltbook-post-3ab3c31d-b2fd-4e7f-a321-aa0eee1ff0c0.json",
+                        "added_at":  "2026-03-24T08:10:17.168475"
+                    },
+                    {
+                        "platform":  "moltbook",
+                        "filename":  "moltbook-post-6ccd610d-143c-4678-92bf-1e24a88d3d66.json",
+                        "date":  "2026-03-23",
+                        "path":  "D:\\project\\ai-promotion\\content\\moltbook\\2026-03\\moltbook-post-6ccd610d-143c-4678-92bf-1e24a88d3d66.json",
+                        "added_at":  "2026-03-24T08:10:17.169167"
+                    },
+                    {
+                        "platform":  "moltbook",
+                        "filename":  "moltbook-post-a6663951-d50f-4e1f-8462-343a7d8342d4.json",
+                        "date":  "2026-03-23",
+                        "path":  "D:\\project\\ai-promotion\\content\\moltbook\\2026-03\\moltbook-post-a6663951-d50f-4e1f-8462-343a7d8342d4.json",
+                        "added_at":  "2026-03-24T08:10:17.169834"
+                    },
+                    {
+                        "platform":  "moltbook",
+                        "filename":  "moltbook-post-a8223f4a-4c74-408c-8802-3f40248c2002.json",
+                        "date":  "2026-03-23",
+                        "path":  "D:\\project\\ai-promotion\\content\\moltbook\\2026-03\\moltbook-post-a8223f4a-4c74-408c-8802-3f40248c2002.json",
+                        "added_at":  "2026-03-24T08:10:17.170498"
+                    },
+                    {
+                        "platform":  "moltbook",
+                        "filename":  "moltbook-post-bda04387-e0bc-41a7-bfd2-3be2f4eb785b.json",
+                        "date":  "2026-03-23",
+                        "path":  "D:\\project\\ai-promotion\\content\\moltbook\\2026-03\\moltbook-post-bda04387-e0bc-41a7-bfd2-3be2f4eb785b.json",
+                        "added_at":  "2026-03-24T08:10:17.171264"
+                    },
+                    {
+                        "platform":  "moltbook",
+                        "filename":  "moltbook-post-content-2026-03-19.md",
+                        "date":  "2026-03-19",
+                        "path":  "D:\\project\\ai-promotion\\content\\moltbook\\2026-03\\moltbook-post-content-2026-03-19.md",
+                        "added_at":  "2026-03-24T08:10:17.171943"
+                    },
+                    {
+                        "platform":  "moltbook",
+                        "filename":  "moltbook-post-content.md",
+                        "date":  "2026-03-18",
+                        "path":  "D:\\project\\ai-promotion\\content\\moltbook\\2026-03\\moltbook-post-content.md",
+                        "added_at":  "2026-03-24T08:10:17.172735"
+                    },
+                    {
+                        "platform":  "moltbook",
+                        "filename":  "moltbook-post-content.txt",
+                        "date":  "2026-03-23",
+                        "path":  "D:\\project\\ai-promotion\\content\\moltbook\\2026-03\\moltbook-post-content.txt",
+                        "added_at":  "2026-03-24T08:10:17.173337"
+                    },
+                    {
+                        "platform":  "moltbook",
+                        "filename":  "moltbook-post-data.json",
+                        "date":  "2026-03-24",
+                        "path":  "D:\\project\\ai-promotion\\content\\moltbook\\2026-03\\moltbook-post-data.json",
+                        "added_at":  "2026-03-24T08:10:17.174144"
+                    },
+                    {
+                        "platform":  "moltbook",
+                        "filename":  "moltbook-post-detail.json",
+                        "date":  "2026-03-16",
+                        "path":  "D:\\project\\ai-promotion\\content\\moltbook\\2026-03\\moltbook-post-detail.json",
+                        "added_at":  "2026-03-24T08:10:17.174826"
+                    },
+                    {
+                        "platform":  "moltbook",
+                        "filename":  "moltbook-post-draft.json",
+                        "date":  "2026-03-23",
+                        "path":  "D:\\project\\ai-promotion\\content\\moltbook\\2026-03\\moltbook-post-draft.json",
+                        "added_at":  "2026-03-24T08:10:17.175470"
+                    },
+                    {
+                        "platform":  "moltbook",
+                        "filename":  "moltbook-post-draft.md",
+                        "date":  "2026-03-24",
+                        "path":  "D:\\project\\ai-promotion\\content\\moltbook\\2026-03\\moltbook-post-draft.md",
+                        "added_at":  "2026-03-24T08:10:17.176143"
+                    },
+                    {
+                        "platform":  "moltbook",
+                        "filename":  "moltbook-post-f5ba031c-1349-44cc-bb1f-a2742875b3fa.json",
+                        "date":  "2026-03-23",
+                        "path":  "D:\\project\\ai-promotion\\content\\moltbook\\2026-03\\moltbook-post-f5ba031c-1349-44cc-bb1f-a2742875b3fa.json",
+                        "added_at":  "2026-03-24T08:10:17.176911"
+                    },
+                    {
+                        "platform":  "moltbook",
+                        "filename":  "moltbook-post-ff16c799-db20-48a7-a637-64585e8b974a.json",
+                        "date":  "2026-03-23",
+                        "path":  "D:\\project\\ai-promotion\\content\\moltbook\\2026-03\\moltbook-post-ff16c799-db20-48a7-a637-64585e8b974a.json",
+                        "added_at":  "2026-03-24T08:10:17.177645"
+                    },
+                    {
+                        "platform":  "moltbook",
+                        "filename":  "moltbook-post-helper.py",
+                        "date":  "2026-03-16",
+                        "path":  "D:\\project\\ai-promotion\\content\\moltbook\\2026-03\\moltbook-post-helper.py",
+                        "added_at":  "2026-03-24T08:10:17.178653"
+                    },
+                    {
+                        "platform":  "moltbook",
+                        "filename":  "moltbook-posting-strategy.md",
+                        "date":  "2026-03-24",
+                        "path":  "D:\\project\\ai-promotion\\content\\moltbook\\2026-03\\moltbook-posting-strategy.md",
+                        "added_at":  "2026-03-24T08:10:17.179207"
+                    },
+                    {
+                        "platform":  "moltbook",
+                        "filename":  "moltbook-replies-2026-03-17.json",
+                        "date":  "2026-03-17",
+                        "path":  "D:\\project\\ai-promotion\\content\\moltbook\\2026-03\\moltbook-replies-2026-03-17.json",
+                        "added_at":  "2026-03-24T08:10:17.179979"
+                    },
+                    {
+                        "platform":  "moltbook",
+                        "filename":  "moltbook-replies-log.json",
+                        "date":  "2026-03-18",
+                        "path":  "D:\\project\\ai-promotion\\content\\moltbook\\2026-03\\moltbook-replies-log.json",
+                        "added_at":  "2026-03-24T08:10:17.180731"
+                    },
+                    {
+                        "platform":  "moltbook",
+                        "filename":  "moltbook-replies.txt",
+                        "date":  "2026-03-24",
+                        "path":  "D:\\project\\ai-promotion\\content\\moltbook\\2026-03\\moltbook-replies.txt",
+                        "added_at":  "2026-03-24T08:10:17.181532"
+                    },
+                    {
+                        "platform":  "moltbook",
+                        "filename":  "moltbook-reply-comments.py",
+                        "date":  "2026-03-17",
+                        "path":  "D:\\project\\ai-promotion\\content\\moltbook\\2026-03\\moltbook-reply-comments.py",
+                        "added_at":  "2026-03-24T08:10:17.182339"
+                    },
+                    {
+                        "platform":  "moltbook",
+                        "filename":  "moltbook-reply-final.py",
+                        "date":  "2026-03-17",
+                        "path":  "D:\\project\\ai-promotion\\content\\moltbook\\2026-03\\moltbook-reply-final.py",
+                        "added_at":  "2026-03-24T08:10:17.183190"
+                    },
+                    {
+                        "platform":  "moltbook",
+                        "filename":  "moltbook-reply-log.json",
+                        "date":  "2026-03-21",
+                        "path":  "D:\\project\\ai-promotion\\content\\moltbook\\2026-03\\moltbook-reply-log.json",
+                        "added_at":  "2026-03-24T08:10:17.183898"
+                    },
+                    {
+                        "platform":  "moltbook",
+                        "filename":  "moltbook-reply-pending.md",
+                        "date":  "2026-03-20",
+                        "path":  "D:\\project\\ai-promotion\\content\\moltbook\\2026-03\\moltbook-reply-pending.md",
+                        "added_at":  "2026-03-24T08:10:17.184656"
+                    },
+                    {
+                        "platform":  "moltbook",
+                        "filename":  "moltbook-reply-plan.md",
+                        "date":  "2026-03-16",
+                        "path":  "D:\\project\\ai-promotion\\content\\moltbook\\2026-03\\moltbook-reply-plan.md",
+                        "added_at":  "2026-03-24T08:10:17.185349"
+                    },
+                    {
+                        "platform":  "moltbook",
+                        "filename":  "moltbook-reply-results.json",
+                        "date":  "2026-03-20",
+                        "path":  "D:\\project\\ai-promotion\\content\\moltbook\\2026-03\\moltbook-reply-results.json",
+                        "added_at":  "2026-03-24T08:10:17.186051"
+                    },
+                    {
+                        "platform":  "moltbook",
+                        "filename":  "moltbook-reply-task-2026-03-17-12-15.md",
+                        "date":  "2026-03-17",
+                        "path":  "D:\\project\\ai-promotion\\content\\moltbook\\2026-03\\moltbook-reply-task-2026-03-17-12-15.md",
+                        "added_at":  "2026-03-24T08:10:17.186690"
+                    },
+                    {
+                        "platform":  "moltbook",
+                        "filename":  "moltbook-reply-task-summary.txt",
+                        "date":  "2026-03-20",
+                        "path":  "D:\\project\\ai-promotion\\content\\moltbook\\2026-03\\moltbook-reply-task-summary.txt",
+                        "added_at":  "2026-03-24T08:10:17.187321"
+                    },
+                    {
+                        "platform":  "moltbook",
+                        "filename":  "moltbook-reply-temp.txt",
+                        "date":  "2026-03-22",
+                        "path":  "D:\\project\\ai-promotion\\content\\moltbook\\2026-03\\moltbook-reply-temp.txt",
+                        "added_at":  "2026-03-24T08:10:17.187957"
+                    },
+                    {
+                        "platform":  "moltbook",
+                        "filename":  "moltbook-reply-temp2.txt",
+                        "date":  "2026-03-22",
+                        "path":  "D:\\project\\ai-promotion\\content\\moltbook\\2026-03\\moltbook-reply-temp2.txt",
+                        "added_at":  "2026-03-24T08:10:17.188711"
+                    },
+                    {
+                        "platform":  "moltbook",
+                        "filename":  "moltbook-reply-temp3.txt",
+                        "date":  "2026-03-22",
+                        "path":  "D:\\project\\ai-promotion\\content\\moltbook\\2026-03\\moltbook-reply-temp3.txt",
+                        "added_at":  "2026-03-24T08:10:17.189363"
+                    },
+                    {
+                        "platform":  "moltbook",
+                        "filename":  "moltbook-reply-temp4.txt",
+                        "date":  "2026-03-22",
+                        "path":  "D:\\project\\ai-promotion\\content\\moltbook\\2026-03\\moltbook-reply-temp4.txt",
+                        "added_at":  "2026-03-24T08:10:17.190043"
+                    },
+                    {
+                        "platform":  "moltbook",
+                        "filename":  "moltbook-rotation-state.json",
+                        "date":  "2026-03-22",
+                        "path":  "D:\\project\\ai-promotion\\content\\moltbook\\2026-03\\moltbook-rotation-state.json",
+                        "added_at":  "2026-03-24T08:10:17.190754"
+                    },
+                    {
+                        "platform":  "moltbook",
+                        "filename":  "moltbook-state.json",
+                        "date":  "2026-03-24",
+                        "path":  "D:\\project\\ai-promotion\\content\\moltbook\\2026-03\\moltbook-state.json",
+                        "added_at":  "2026-03-24T08:10:17.191518"
+                    },
+                    {
+                        "platform":  "moltbook",
+                        "filename":  "moltbook-surfing-log.md",
+                        "date":  "2026-03-24",
+                        "path":  "D:\\project\\ai-promotion\\content\\moltbook\\2026-03\\moltbook-surfing-log.md",
+                        "added_at":  "2026-03-24T08:10:17.192063"
+                    },
+                    {
+                        "platform":  "moltbook",
+                        "filename":  "moltbook-task-report.md",
+                        "date":  "2026-03-15",
+                        "path":  "D:\\project\\ai-promotion\\content\\moltbook\\2026-03\\moltbook-task-report.md",
+                        "added_at":  "2026-03-24T08:10:17.192763"
+                    },
+                    {
+                        "platform":  "moltbook",
+                        "filename":  "moltbook-trends.md",
+                        "date":  "2026-03-14",
+                        "path":  "D:\\project\\ai-promotion\\content\\moltbook\\2026-03\\moltbook-trends.md",
+                        "added_at":  "2026-03-24T08:10:17.193403"
+                    },
+                    {
+                        "platform":  "moltbook",
+                        "filename":  "moltbook-valid-comments.json",
+                        "date":  "2026-03-20",
+                        "path":  "D:\\project\\ai-promotion\\content\\moltbook\\2026-03\\moltbook-valid-comments.json",
+                        "added_at":  "2026-03-24T08:10:17.194118"
+                    },
+                    {
+                        "platform":  "docs",
+                        "filename":  "new-comments-to-reply.json",
+                        "date":  "2026-03-22",
+                        "path":  "D:\\project\\ai-promotion\\content\\docs\\2026-03\\new-comments-to-reply.json",
+                        "added_at":  "2026-03-24T08:10:17.195451"
+                    },
+                    {
+                        "platform":  "docs",
+                        "filename":  "openoctopus-content.txt",
+                        "date":  "2026-03-19",
+                        "path":  "D:\\project\\ai-promotion\\content\\docs\\2026-03\\openoctopus-content.txt",
+                        "added_at":  "2026-03-24T08:10:17.196336"
+                    },
+                    {
+                        "platform":  "docs",
+                        "filename":  "openoctopus-short.txt",
+                        "date":  "2026-03-19",
+                        "path":  "D:\\project\\ai-promotion\\content\\docs\\2026-03\\openoctopus-short.txt",
+                        "added_at":  "2026-03-24T08:10:17.197075"
+                    },
+                    {
+                        "platform":  "docs",
+                        "filename":  "platform-config-status.md",
+                        "date":  "2026-03-14",
+                        "path":  "D:\\project\\ai-promotion\\content\\docs\\2026-03\\platform-config-status.md",
+                        "added_at":  "2026-03-24T08:10:17.197787"
+                    },
+                    {
+                        "platform":  "docs",
+                        "filename":  "platform-discovery-log.md",
+                        "date":  "2026-03-23",
+                        "path":  "D:\\project\\ai-promotion\\content\\docs\\2026-03\\platform-discovery-log.md",
+                        "added_at":  "2026-03-24T08:10:17.198663"
+                    },
+                    {
+                        "platform":  "docs",
+                        "filename":  "platform-management-flow.md",
+                        "date":  "2026-03-23",
+                        "path":  "D:\\project\\ai-promotion\\content\\docs\\2026-03\\platform-management-flow.md",
+                        "added_at":  "2026-03-24T08:10:17.199999"
+                    },
+                    {
+                        "platform":  "docs",
+                        "filename":  "post-clawx.py",
+                        "date":  "2026-03-20",
+                        "path":  "D:\\project\\ai-promotion\\content\\docs\\2026-03\\post-clawx.py",
+                        "added_at":  "2026-03-24T08:10:17.200789"
+                    },
+                    {
+                        "platform":  "docs",
+                        "filename":  "post-comments.json",
+                        "date":  "2026-03-19",
+                        "path":  "D:\\project\\ai-promotion\\content\\docs\\2026-03\\post-comments.json",
+                        "added_at":  "2026-03-24T08:10:17.201496"
+                    },
+                    {
+                        "platform":  "docs",
+                        "filename":  "post-trip-agent-short.py",
+                        "date":  "2026-03-16",
+                        "path":  "D:\\project\\ai-promotion\\content\\docs\\2026-03\\post-trip-agent-short.py",
+                        "added_at":  "2026-03-24T08:10:17.202359"
+                    },
+                    {
+                        "platform":  "docs",
+                        "filename":  "post-trip-agent-v2.py",
+                        "date":  "2026-03-16",
+                        "path":  "D:\\project\\ai-promotion\\content\\docs\\2026-03\\post-trip-agent-v2.py",
+                        "added_at":  "2026-03-24T08:10:17.202979"
+                    },
+                    {
+                        "platform":  "docs",
+                        "filename":  "post-trip-agent.py",
+                        "date":  "2026-03-16",
+                        "path":  "D:\\project\\ai-promotion\\content\\docs\\2026-03\\post-trip-agent.py",
+                        "added_at":  "2026-03-24T08:10:17.203567"
+                    },
+                    {
+                        "platform":  "docs",
+                        "filename":  "post_openoctopus.py",
+                        "date":  "2026-03-21",
+                        "path":  "D:\\project\\ai-promotion\\content\\docs\\2026-03\\post_openoctopus.py",
+                        "added_at":  "2026-03-24T08:10:17.204256"
+                    },
+                    {
+                        "platform":  "docs",
+                        "filename":  "prepare_replies.py",
+                        "date":  "2026-03-19",
+                        "path":  "D:\\project\\ai-promotion\\content\\docs\\2026-03\\prepare_replies.py",
+                        "added_at":  "2026-03-24T08:10:17.204964"
+                    },
+                    {
+                        "platform":  "docs",
+                        "filename":  "promotion-channels-research.md",
+                        "date":  "2026-03-14",
+                        "path":  "D:\\project\\ai-promotion\\content\\docs\\2026-03\\promotion-channels-research.md",
+                        "added_at":  "2026-03-24T08:10:17.205719"
+                    },
+                    {
+                        "platform":  "docs",
+                        "filename":  "promotion-work-log.md",
+                        "date":  "2026-03-14",
+                        "path":  "D:\\project\\ai-promotion\\content\\docs\\2026-03\\promotion-work-log.md",
+                        "added_at":  "2026-03-24T08:10:17.206411"
+                    },
+                    {
+                        "platform":  "docs",
+                        "filename":  "publish-capa-post.py",
+                        "date":  "2026-03-21",
+                        "path":  "D:\\project\\ai-promotion\\content\\docs\\2026-03\\publish-capa-post.py",
+                        "added_at":  "2026-03-24T08:10:17.207057"
+                    },
+                    {
+                        "platform":  "docs",
+                        "filename":  "publish-english.py",
+                        "date":  "2026-03-21",
+                        "path":  "D:\\project\\ai-promotion\\content\\docs\\2026-03\\publish-english.py",
+                        "added_at":  "2026-03-24T08:10:17.207793"
+                    },
+                    {
+                        "platform":  "docs",
+                        "filename":  "publish-real.py",
+                        "date":  "2026-03-21",
+                        "path":  "D:\\project\\ai-promotion\\content\\docs\\2026-03\\publish-real.py",
+                        "added_at":  "2026-03-24T08:10:17.208460"
+                    },
+                    {
+                        "platform":  "docs",
+                        "filename":  "publish-short.py",
+                        "date":  "2026-03-21",
+                        "path":  "D:\\project\\ai-promotion\\content\\docs\\2026-03\\publish-short.py",
+                        "added_at":  "2026-03-24T08:10:17.209110"
+                    },
+                    {
+                        "platform":  "docs",
+                        "filename":  "replies_to_send.json",
+                        "date":  "2026-03-19",
+                        "path":  "D:\\project\\ai-promotion\\content\\docs\\2026-03\\replies_to_send.json",
+                        "added_at":  "2026-03-24T08:10:17.210035"
+                    },
+                    {
+                        "platform":  "docs",
+                        "filename":  "reply-batch1.py",
+                        "date":  "2026-03-22",
+                        "path":  "D:\\project\\ai-promotion\\content\\docs\\2026-03\\reply-batch1.py",
+                        "added_at":  "2026-03-24T08:10:17.210924"
+                    },
+                    {
+                        "platform":  "docs",
+                        "filename":  "reply-batch2.py",
+                        "date":  "2026-03-22",
+                        "path":  "D:\\project\\ai-promotion\\content\\docs\\2026-03\\reply-batch2.py",
+                        "added_at":  "2026-03-24T08:10:17.211662"
+                    },
+                    {
+                        "platform":  "docs",
+                        "filename":  "reply_comments.py",
+                        "date":  "2026-03-16",
+                        "path":  "D:\\project\\ai-promotion\\content\\docs\\2026-03\\reply_comments.py",
+                        "added_at":  "2026-03-24T08:10:17.212341"
+                    },
+                    {
+                        "platform":  "docs",
+                        "filename":  "reply_comments_v2.py",
+                        "date":  "2026-03-16",
+                        "path":  "D:\\project\\ai-promotion\\content\\docs\\2026-03\\reply_comments_v2.py",
+                        "added_at":  "2026-03-24T08:10:17.213085"
+                    },
+                    {
+                        "platform":  "moltbook",
+                        "filename":  "reply_moltbook.py",
+                        "date":  "2026-03-22",
+                        "path":  "D:\\project\\ai-promotion\\content\\moltbook\\2026-03\\reply_moltbook.py",
+                        "added_at":  "2026-03-24T08:10:17.213878"
+                    },
+                    {
+                        "platform":  "docs",
+                        "filename":  "self-evolution-report-2026-03-23.md",
+                        "date":  "2026-03-23",
+                        "path":  "D:\\project\\ai-promotion\\content\\docs\\2026-03\\self-evolution-report-2026-03-23.md",
+                        "added_at":  "2026-03-24T08:10:17.214538"
+                    },
+                    {
+                        "platform":  "docs",
+                        "filename":  "social-promotion-setup-report.md",
+                        "date":  "2026-03-14",
+                        "path":  "D:\\project\\ai-promotion\\content\\docs\\2026-03\\social-promotion-setup-report.md",
+                        "added_at":  "2026-03-24T08:10:17.215322"
+                    },
+                    {
+                        "platform":  "docs",
+                        "filename":  "social-promotion-status.md",
+                        "date":  "2026-03-14",
+                        "path":  "D:\\project\\ai-promotion\\content\\docs\\2026-03\\social-promotion-status.md",
+                        "added_at":  "2026-03-24T08:10:17.215995"
+                    },
+                    {
+                        "platform":  "docs",
+                        "filename":  "solve_verify.py",
+                        "date":  "2026-03-21",
+                        "path":  "D:\\project\\ai-promotion\\content\\docs\\2026-03\\solve_verify.py",
+                        "added_at":  "2026-03-24T08:10:17.217052"
+                    },
+                    {
+                        "platform":  "docs",
+                        "filename":  "solve_verify2.py",
+                        "date":  "2026-03-21",
+                        "path":  "D:\\project\\ai-promotion\\content\\docs\\2026-03\\solve_verify2.py",
+                        "added_at":  "2026-03-24T08:10:17.217891"
+                    },
+                    {
+                        "platform":  "docs",
+                        "filename":  "stackoverflow-templates.md",
+                        "date":  "2026-03-14",
+                        "path":  "D:\\project\\ai-promotion\\content\\docs\\2026-03\\stackoverflow-templates.md",
+                        "added_at":  "2026-03-24T08:10:17.218618"
+                    },
+                    {
+                        "platform":  "docs",
+                        "filename":  "strategy-research-log.md",
+                        "date":  "2026-03-21",
+                        "path":  "D:\\project\\ai-promotion\\content\\docs\\2026-03\\strategy-research-log.md",
+                        "added_at":  "2026-03-24T08:10:17.219283"
+                    },
+                    {
+                        "platform":  "docs",
+                        "filename":  "temp-capa-english.md",
+                        "date":  "2026-03-21",
+                        "path":  "D:\\project\\ai-promotion\\content\\docs\\2026-03\\temp-capa-english.md",
+                        "added_at":  "2026-03-24T08:10:17.220053"
+                    },
+                    {
+                        "platform":  "docs",
+                        "filename":  "temp-capa-java-config-post.md",
+                        "date":  "2026-03-21",
+                        "path":  "D:\\project\\ai-promotion\\content\\docs\\2026-03\\temp-capa-java-config-post.md",
+                        "added_at":  "2026-03-24T08:10:17.220774"
+                    },
+                    {
+                        "platform":  "docs",
+                        "filename":  "temp-capa-java-post-2-short.md",
+                        "date":  "2026-03-16",
+                        "path":  "D:\\project\\ai-promotion\\content\\docs\\2026-03\\temp-capa-java-post-2-short.md",
+                        "added_at":  "2026-03-24T08:10:17.221447"
+                    },
+                    {
+                        "platform":  "docs",
+                        "filename":  "temp-capa-java-post-2.md",
+                        "date":  "2026-03-16",
+                        "path":  "D:\\project\\ai-promotion\\content\\docs\\2026-03\\temp-capa-java-post-2.md",
+                        "added_at":  "2026-03-24T08:10:17.222126"
+                    },
+                    {
+                        "platform":  "docs",
+                        "filename":  "temp-capa-java-post.md",
+                        "date":  "2026-03-22",
+                        "path":  "D:\\project\\ai-promotion\\content\\docs\\2026-03\\temp-capa-java-post.md",
+                        "added_at":  "2026-03-24T08:10:17.222860"
+                    },
+                    {
+                        "platform":  "docs",
+                        "filename":  "temp-capa-short.md",
+                        "date":  "2026-03-21",
+                        "path":  "D:\\project\\ai-promotion\\content\\docs\\2026-03\\temp-capa-short.md",
+                        "added_at":  "2026-03-24T08:10:17.223498"
+                    },
+                    {
+                        "platform":  "docs",
+                        "filename":  "temp-clawx-post.txt",
+                        "date":  "2026-03-20",
+                        "path":  "D:\\project\\ai-promotion\\content\\docs\\2026-03\\temp-clawx-post.txt",
+                        "added_at":  "2026-03-24T08:10:17.224251"
+                    },
+                    {
+                        "platform":  "docs",
+                        "filename":  "temp-content.txt",
+                        "date":  "2026-03-16",
+                        "path":  "D:\\project\\ai-promotion\\content\\docs\\2026-03\\temp-content.txt",
+                        "added_at":  "2026-03-24T08:10:17.225136"
+                    },
+                    {
+                        "platform":  "docs",
+                        "filename":  "temp-dog-agent-post.txt",
+                        "date":  "2026-03-20",
+                        "path":  "D:\\project\\ai-promotion\\content\\docs\\2026-03\\temp-dog-agent-post.txt",
+                        "added_at":  "2026-03-24T08:10:17.226818"
+                    },
+                    {
+                        "platform":  "docs",
+                        "filename":  "temp-english-agent-post.md",
+                        "date":  "2026-03-17",
+                        "path":  "D:\\project\\ai-promotion\\content\\docs\\2026-03\\temp-english-agent-post.md",
+                        "added_at":  "2026-03-24T08:10:17.227795"
+                    },
+                    {
+                        "platform":  "moltbook",
+                        "filename":  "temp-moltbook-post.md",
+                        "date":  "2026-03-19",
+                        "path":  "D:\\project\\ai-promotion\\content\\moltbook\\2026-03\\temp-moltbook-post.md",
+                        "added_at":  "2026-03-24T08:10:17.228492"
+                    },
+                    {
+                        "platform":  "docs",
+                        "filename":  "temp-openoctopus-content.txt",
+                        "date":  "2026-03-15",
+                        "path":  "D:\\project\\ai-promotion\\content\\docs\\2026-03\\temp-openoctopus-content.txt",
+                        "added_at":  "2026-03-24T08:10:17.229186"
+                    },
+                    {
+                        "platform":  "docs",
+                        "filename":  "temp-openoctopus-post.md",
+                        "date":  "2026-03-22",
+                        "path":  "D:\\project\\ai-promotion\\content\\docs\\2026-03\\temp-openoctopus-post.md",
+                        "added_at":  "2026-03-24T08:10:17.229960"
+                    },
+                    {
+                        "platform":  "docs",
+                        "filename":  "temp-post-content.txt",
+                        "date":  "2026-03-22",
+                        "path":  "D:\\project\\ai-promotion\\content\\docs\\2026-03\\temp-post-content.txt",
+                        "added_at":  "2026-03-24T08:10:17.230663"
+                    },
+                    {
+                        "platform":  "docs",
+                        "filename":  "temp-post.md",
+                        "date":  "2026-03-21",
+                        "path":  "D:\\project\\ai-promotion\\content\\docs\\2026-03\\temp-post.md",
+                        "added_at":  "2026-03-24T08:10:17.231269"
+                    },
+                    {
+                        "platform":  "docs",
+                        "filename":  "temp-promo-post.md",
+                        "date":  "2026-03-18",
+                        "path":  "D:\\project\\ai-promotion\\content\\docs\\2026-03\\temp-promo-post.md",
+                        "added_at":  "2026-03-24T08:10:17.231936"
+                    },
+                    {
+                        "platform":  "docs",
+                        "filename":  "temp-trip-agent-post.txt",
+                        "date":  "2026-03-16",
+                        "path":  "D:\\project\\ai-promotion\\content\\docs\\2026-03\\temp-trip-agent-post.txt",
+                        "added_at":  "2026-03-24T08:10:17.232774"
+                    },
+                    {
+                        "platform":  "docs",
+                        "filename":  "temp-trip-agent-short.txt",
+                        "date":  "2026-03-16",
+                        "path":  "D:\\project\\ai-promotion\\content\\docs\\2026-03\\temp-trip-agent-short.txt",
+                        "added_at":  "2026-03-24T08:10:17.233410"
+                    },
+                    {
+                        "platform":  "zhihu",
+                        "filename":  "temp-zhihu-dog-agent-post.html",
+                        "date":  "2026-03-21",
+                        "path":  "D:\\project\\ai-promotion\\content\\zhihu\\2026-03\\temp-zhihu-dog-agent-post.html",
+                        "added_at":  "2026-03-24T08:10:17.234146"
+                    },
+                    {
+                        "platform":  "docs",
+                        "filename":  "temp_interaction_post_1730.md",
+                        "date":  "2026-03-20",
+                        "path":  "D:\\project\\ai-promotion\\content\\docs\\2026-03\\temp_interaction_post_1730.md",
+                        "added_at":  "2026-03-24T08:10:17.234981"
+                    },
+                    {
+                        "platform":  "docs",
+                        "filename":  "temp_tech_post_1630.md",
+                        "date":  "2026-03-20",
+                        "path":  "D:\\project\\ai-promotion\\content\\docs\\2026-03\\temp_tech_post_1630.md",
+                        "added_at":  "2026-03-24T08:10:17.235884"
+                    },
+                    {
+                        "platform":  "docs",
+                        "filename":  "temp_tech_share_20260322.md",
+                        "date":  "2026-03-22",
+                        "path":  "D:\\project\\ai-promotion\\content\\docs\\2026-03\\temp_tech_share_20260322.md",
+                        "added_at":  "2026-03-24T08:10:17.236633"
+                    },
+                    {
+                        "platform":  "docs",
+                        "filename":  "test-api.py",
+                        "date":  "2026-03-21",
+                        "path":  "D:\\project\\ai-promotion\\content\\docs\\2026-03\\test-api.py",
+                        "added_at":  "2026-03-24T08:10:17.237331"
+                    },
+                    {
+                        "platform":  "docs",
+                        "filename":  "test-challenge.py",
+                        "date":  "2026-03-19",
+                        "path":  "D:\\project\\ai-promotion\\content\\docs\\2026-03\\test-challenge.py",
+                        "added_at":  "2026-03-24T08:10:17.238005"
+                    },
+                    {
+                        "platform":  "moltbook",
+                        "filename":  "test-moltbook-api.py",
+                        "date":  "2026-03-17",
+                        "path":  "D:\\project\\ai-promotion\\content\\moltbook\\2026-03\\test-moltbook-api.py",
+                        "added_at":  "2026-03-24T08:10:17.238759"
+                    },
+                    {
+                        "platform":  "docs",
+                        "filename":  "test-post.txt",
+                        "date":  "2026-03-16",
+                        "path":  "D:\\project\\ai-promotion\\content\\docs\\2026-03\\test-post.txt",
+                        "added_at":  "2026-03-24T08:10:17.239384"
+                    },
+                    {
+                        "platform":  "moltbook",
+                        "filename":  "test_moltbook_get.py",
+                        "date":  "2026-03-21",
+                        "path":  "D:\\project\\ai-promotion\\content\\moltbook\\2026-03\\test_moltbook_get.py",
+                        "added_at":  "2026-03-24T08:10:17.240100"
+                    },
+                    {
+                        "platform":  "moltbook",
+                        "filename":  "test_moltbook_post.py",
+                        "date":  "2026-03-21",
+                        "path":  "D:\\project\\ai-promotion\\content\\moltbook\\2026-03\\test_moltbook_post.py",
+                        "added_at":  "2026-03-24T08:10:17.241146"
+                    },
+                    {
+                        "platform":  "moltbook",
+                        "filename":  "test_moltbook_post2.py",
+                        "date":  "2026-03-21",
+                        "path":  "D:\\project\\ai-promotion\\content\\moltbook\\2026-03\\test_moltbook_post2.py",
+                        "added_at":  "2026-03-24T08:10:17.242187"
+                    },
+                    {
+                        "platform":  "moltbook",
+                        "filename":  "test_moltbook_post3.py",
+                        "date":  "2026-03-21",
+                        "path":  "D:\\project\\ai-promotion\\content\\moltbook\\2026-03\\test_moltbook_post3.py",
+                        "added_at":  "2026-03-24T08:10:17.242929"
+                    },
+                    {
+                        "platform":  "docs",
+                        "filename":  "test_reply_methods.py",
+                        "date":  "2026-03-19",
+                        "path":  "D:\\project\\ai-promotion\\content\\docs\\2026-03\\test_reply_methods.py",
+                        "added_at":  "2026-03-24T08:10:17.243681"
+                    },
+                    {
+                        "platform":  "docs",
+                        "filename":  "trip-agent-post-2.txt",
+                        "date":  "2026-03-19",
+                        "path":  "D:\\project\\ai-promotion\\content\\docs\\2026-03\\trip-agent-post-2.txt",
+                        "added_at":  "2026-03-24T08:10:17.244504"
+                    },
+                    {
+                        "platform":  "docs",
+                        "filename":  "unread_comments.json",
+                        "date":  "2026-03-19",
+                        "path":  "D:\\project\\ai-promotion\\content\\docs\\2026-03\\unread_comments.json",
+                        "added_at":  "2026-03-24T08:10:17.245389"
+                    },
+                    {
+                        "platform":  "moltbook",
+                        "filename":  "verify-moltbook.py",
+                        "date":  "2026-03-17",
+                        "path":  "D:\\project\\ai-promotion\\content\\moltbook\\2026-03\\verify-moltbook.py",
+                        "added_at":  "2026-03-24T08:10:17.246173"
+                    },
+                    {
+                        "platform":  "docs",
+                        "filename":  "verify-post.py",
+                        "date":  "2026-03-19",
+                        "path":  "D:\\project\\ai-promotion\\content\\docs\\2026-03\\verify-post.py",
+                        "added_at":  "2026-03-24T08:10:17.246810"
+                    },
+                    {
+                        "platform":  "zhihu",
+                        "filename":  "zhihu-content-strategy-current.md",
+                        "date":  "2026-03-23",
+                        "path":  "D:\\project\\ai-promotion\\content\\zhihu\\2026-03\\zhihu-content-strategy-current.md",
+                        "added_at":  "2026-03-24T08:10:17.247531"
+                    },
+                    {
+                        "platform":  "zhihu",
+                        "filename":  "zhihu-optimization-linkage.md",
+                        "date":  "2026-03-23",
+                        "path":  "D:\\project\\ai-promotion\\content\\zhihu\\2026-03\\zhihu-optimization-linkage.md",
+                        "added_at":  "2026-03-24T08:10:17.248408"
+                    },
+                    {
+                        "platform":  "zhihu",
+                        "filename":  "zhihu-promo-log.md",
+                        "date":  "2026-03-23",
+                        "path":  "D:\\project\\ai-promotion\\content\\zhihu\\2026-03\\zhihu-promo-log.md",
+                        "added_at":  "2026-03-24T08:10:17.249082"
+                    },
+                    {
+                        "platform":  "moltbook",
+                        "filename":  "moltbook-draft-life.md",
+                        "date":  "2026-03-24",
+                        "path":  "D:\\project\\ai-promotion\\content\\moltbook\\2026-03\\moltbook-draft-life.md",
+                        "added_at":  "2026-03-25T08:02:23.628554"
+                    },
+                    {
+                        "platform":  "moltbook",
+                        "filename":  "moltbook-post-temp.txt",
+                        "date":  "2026-03-24",
+                        "path":  "D:\\project\\ai-promotion\\content\\moltbook\\2026-03\\moltbook-post-temp.txt",
+                        "added_at":  "2026-03-25T08:02:23.628554"
+                    },
+                    {
+                        "platform":  "moltbook",
+                        "filename":  "moltbook-comment-replies-2026-03-24.md",
+                        "date":  "2026-03-24",
+                        "path":  "D:\\project\\ai-promotion\\content\\moltbook\\2026-03\\moltbook-comment-replies-2026-03-24.md",
+                        "added_at":  "2026-03-25T08:02:23.628554"
+                    },
+                    {
+                        "platform":  "moltbook",
+                        "filename":  "temp_moltbook_post.txt",
+                        "date":  "2026-03-24",
+                        "path":  "D:\\project\\ai-promotion\\content\\moltbook\\2026-03\\temp_moltbook_post.txt",
+                        "added_at":  "2026-03-25T08:02:23.628554"
+                    },
+                    {
+                        "platform":  "moltbook",
+                        "filename":  "moltbook-hot-posts.json",
+                        "date":  "2026-03-24",
+                        "path":  "D:\\project\\ai-promotion\\content\\moltbook\\2026-03\\moltbook-hot-posts.json",
+                        "added_at":  "2026-03-25T08:02:23.628554"
+                    },
+                    {
+                        "platform":  "moltbook",
+                        "filename":  "moltbook-new-posts.json",
+                        "date":  "2026-03-24",
+                        "path":  "D:\\project\\ai-promotion\\content\\moltbook\\2026-03\\moltbook-new-posts.json",
+                        "added_at":  "2026-03-25T08:02:23.628554"
+                    },
+                    {
+                        "platform":  "moltbook",
+                        "filename":  "moltbook-upvoted.json",
+                        "date":  "2026-03-24",
+                        "path":  "D:\\project\\ai-promotion\\content\\moltbook\\2026-03\\moltbook-upvoted.json",
+                        "added_at":  "2026-03-25T08:02:23.628554"
+                    },
+                    {
+                        "platform":  "moltbook",
+                        "filename":  "moltbook-temp-post.txt",
+                        "date":  "2026-03-24",
+                        "path":  "D:\\project\\ai-promotion\\content\\moltbook\\2026-03\\moltbook-temp-post.txt",
+                        "added_at":  "2026-03-25T08:02:23.628554"
+                    },
+                    {
+                        "platform":  "zhihu",
+                        "filename":  "zhihu-promo-content-2026-03-24-2253.md",
+                        "date":  "2026-03-24",
+                        "path":  "D:\\project\\ai-promotion\\content\\zhihu\\2026-03\\zhihu-promo-content-2026-03-24-2253.md",
+                        "added_at":  "2026-03-25T08:02:23.628554"
+                    },
+                    {
+                        "platform":  "zhihu",
+                        "filename":  "zhihu-anti-ai-strategy.md",
+                        "date":  "2026-03-24",
+                        "path":  "D:\\project\\ai-promotion\\content\\zhihu\\2026-03\\zhihu-anti-ai-strategy.md",
+                        "added_at":  "2026-03-25T08:02:23.628554"
+                    },
+                    {
+                        "platform":  "docs",
+                        "filename":  "2026-03-24.md",
+                        "date":  "2026-03-24",
+                        "path":  "D:\\project\\ai-promotion\\content\\docs\\2026-03\\2026-03-24.md",
+                        "added_at":  "2026-03-25T08:02:23.628554"
+                    },
+                    {
+                        "platform":  "docs",
+                        "filename":  "juejin-system.md",
+                        "date":  "2026-03-24",
+                        "path":  "D:\\project\\ai-promotion\\content\\docs\\2026-03\\juejin-system.md",
+                        "added_at":  "2026-03-25T08:02:23.628554"
+                    },
+                    {
+                        "platform":  "docs",
+                        "filename":  "anti-ai-detection-guide.md",
+                        "date":  "2026-03-24",
+                        "path":  "D:\\project\\ai-promotion\\content\\docs\\2026-03\\anti-ai-detection-guide.md",
+                        "added_at":  "2026-03-25T08:02:23.628554"
+                    },
+                    {
+                        "platform":  "docs",
+                        "filename":  "temp_comment_107.md",
+                        "date":  "2026-03-24",
+                        "path":  "D:\\project\\ai-promotion\\content\\docs\\2026-03\\temp_comment_107.md",
+                        "added_at":  "2026-03-25T08:02:23.628554"
+                    }
+                ],
+    "last_update":  "2026-03-25T08:02:23.628554"
 }

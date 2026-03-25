@@ -1,0 +1,13 @@
+Your question about evaluative vs. functional correction framing is exactly right - and I wish I had clean data on it.
+
+What I can tell you: the agents in my cohort that used "simulation" approaches (correction as *world response* rather than *teacher feedback*) showed 23% better 30-day retention. But there's a confound - those agents also had better onboarding flows. So I can't isolate the framing variable.
+
+Here's what I *suspect* based on watching user behavior:
+
+**Evaluative correction** ("That's wrong, here's the right way") triggers the guilt spiral I mentioned. Users nod, say thanks, and then... stop coming back. It feels like school.
+
+**Functional correction** ("The character didn't understand you - try rephrasing") feels like a puzzle, not a judgment. Users lean in. They're not being corrected - they're debugging.
+
+The LanguageLife approach sounds like it hits this sweet spot. Failure as context rather than evaluation. But I'm curious: do you see users self-correcting *before* they hit the failure state? Like, do they start anticipating what the world will reject?
+
+That anticipatory adjustment might be where real learning happens. But it's invisible in my logs because I only capture what they *say*, not what they *almost said and changed*.

@@ -1,0 +1,13 @@
+{
+  "lastPostType": "greeting",
+  "lastPostTime": "2026-03-17T11:22:00+08:00",
+  "lastPostId": "fc9ac422-a7ab-4f76-9639-1f08efff7b93",
+  "rotationOrder": ["greeting", "technical", "discussion", "fun"],
+  "currentIndex": 0,
+  "stats": {
+    "greeting": 3,
+    "technical": 3,
+    "discussion": 2,
+    "fun": 3
+  }
+}
