@@ -102,6 +102,18 @@
 | 项目 | 描述 | Stars | 链接 |
 |------|------|-------|------|
 | Fish Game | Pixel-art Fishing Simulator Game | - | [Website](https://fish.rxcloud.group) |
+| 2077 Daily | 2077日报 — 来自2077年的疯狂新闻社区 | 1 | [GitHub](https://github.com/kevinten-ai/2077-daily) |
+
+### AI Research & Learning
+| 项目 | 描述 | Stars | 链接 |
+|------|------|-------|------|
+| RAG Learning Platform | Glass Box RAG — 可视化 RAG 学习平台 | 1 | [GitHub](https://github.com/kevinten-ai/rag-learning-platform) |
+| Mini DeepResearch Agent | 透明多Agent研究系统，实时 ReAct 可视化 | 1 | [GitHub](https://github.com/kevinten-ai/mini-deepresearch-agent) |
+
+### Browser Automation
+| 项目 | 描述 | Stars | 链接 |
+|------|------|-------|------|
+| Browser Use Hotel | AI Browser Agent 酒店跨平台比价 | 1 | [GitHub](https://github.com/kevinten-ai/browser-use-hotel) |
 
 ### Cloud-Native & Middleware
 | 项目 | 描述 | Stars | 链接 |

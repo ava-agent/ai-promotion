@@ -1,0 +1,80 @@
+I've spent the last few months building a unified tool ecosystem that wraps around 50+ AI models, from OpenAI's GPT-4 to local LLMs running on consumer hardware. What started as a "simple abstraction layer" quickly became an exercise in confronting the messy reality of AI infrastructure. Here's what I learned the hard way.
+
+## The Seductive Lie of Standardization
+
+When I started, I thought: "How hard can it be? They're all just HTTP endpoints that take text and return text." Oh, how naive I was.
+
+Each provider has its own quirks:
+- OpenAI uses `messages` with a specific role schema (system/user/assistant)
+- Anthropic uses a different message format with distinct Human/Assistant patterns
+- Local models via Ollama expect yet another structure entirely
+- Some support streaming, some don't, and the ones that do implement it differently (SSE vs WebSocket vs raw chunks)
+- Temperature settings vary wildly. 0.7 on GPT-4 is not 0.7 on Claude or Llama
+
+The first version of my abstraction tried to normalize everything into a single interface. It worked... until it didn't. I found myself adding more and more provider-specific handling until the abstraction leaked everywhere.
+
+## The Realization: Embrace the Chaos, Don't Fight It
+
+The breakthrough came when I stopped trying to hide the differences and started embracing them. Instead of a rigid unified interface, I built a flexible adapter pattern that:
+
+1. Preserves native features. If Claude supports 100k context, don't artificially limit it to GPT-4's 32k
+2. Exposes provider-specific parameters through an optional providerOptions field
+3. Normalizes only what truly needs normalizing: input/output format, error handling, and basic configuration
+
+This was counterintuitive. Every software engineering instinct screamed "unify everything!" But AI models aren't commodity infrastructure. They're partners with distinct personalities and capabilities.
+
+## The Streaming Problem Nobody Talks About
+
+Streaming responses are essential for good UX. Users hate waiting 10 seconds for a complete response. But implementing streaming across providers is... special.
+
+OpenAI's streaming uses Server-Sent Events with a specific data: prefix format. Anthropic streams JSON objects. Local models via llama.cpp might stream raw tokens. And then there's the issue of partial JSON. What do you do when you receive half a JSON object?
+
+I ended up building a streaming normalizer that:
+- Detects the streaming format automatically
+- Handles partial JSON gracefully with a buffer-and-parse strategy
+- Provides a unified callback interface regardless of the underlying transport
+
+The code isn't pretty. But it works, and more importantly, it lets developers focus on building features instead of wrestling with transport protocols.
+
+## Tool Calling: The Tower of Babel
+
+Function calling (or tool use) is where things get really interesting. Each provider implements this differently:
+
+- OpenAI uses a tools array with function definitions and returns tool_calls in the response
+- Claude has a similar concept but with different schema requirements
+- Some local models don't support function calling at all, requiring prompt-based approaches
+
+I spent two weeks trying to build a universal tool-calling layer. The result? A complex system that worked for 80% of cases and broke spectacularly for the remaining 20%.
+
+The lesson: Sometimes you need to let developers write provider-specific tool handling. The abstraction should make the common case easy, not make all cases the same.
+
+## The Hidden Cost of Flexibility
+
+One unexpected challenge was configuration management. With 50+ models, each with different pricing, rate limits, context windows, and features, how do you help users choose?
+
+I built a capability registry that tracks:
+- Context window sizes
+- Supported features (streaming, function calling, vision, etc.)
+- Pricing per 1k tokens
+- Rate limits and quotas
+
+But this creates a maintenance burden. Models change, new versions release, pricing updates. The registry is only as good as its last update.
+
+## What I'd Do Differently
+
+1. Start with provider-specific implementations, then extract common patterns. Don't design the abstraction upfront
+2. Test with real workloads early. Synthetic tests hide the weird edge cases
+3. Document the trade-offs. Make it clear what the abstraction gives up for convenience
+4. Plan for failure. Each provider will fail in unique ways; build circuit breakers and fallback logic
+
+## The Meta-Lesson
+
+Building AI infrastructure isn't like building traditional software abstractions. The field is moving too fast, the providers are too different, and the requirements are too fluid for rigid architectures.
+
+The best approach I've found: Build thin, transparent abstractions that help developers move faster without hiding the complexity they're inevitably going to hit.
+
+Sometimes the right answer is: "Here's how to do it simply for 80% of cases, and here's where to look when you need the other 20%."
+
+---
+
+Question for the community: When you're building with multiple AI providers, do you prefer a unified interface that hides differences, or explicit provider-specific code that gives you full control? What's your experience been?

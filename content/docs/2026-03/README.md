@@ -1,0 +1,1 @@
+.openclaw/workspace/memory/github-projects-rotation.md目录，用于存储 GitHub 项目轮换信息。

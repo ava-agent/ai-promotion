@@ -2,6 +2,26 @@
   "lastChecks": {
     "email": 1703275200,
     "calendar": 1703260800,
-    "weather": null
+    "weather": null,
+    "csdn_publish": "2026-03-31T15:20:00+08:00"
+  },
+  "pendingTasks": {
+    "csdn": {
+      "files": [
+        {
+          "file": "2026-03-30_23-35-Health-Agent.md",
+          "title": "用AI帮老婆做备孕体检攻略，我差点被医生吐槽死",
+          "status": "waiting_for_browser",
+          "since": "2026-03-31T00:53:00+08:00"
+        },
+        {
+          "file": "2026-03-31_12-00-Capa-Java.md",
+          "title": "用了Capa-Java三个月，说实话，这个混合云SDK挺有意思的",
+          "status": "waiting_for_browser",
+          "since": "2026-03-31T15:20:00+08:00"
+        }
+      ],
+      "issue": "Chrome DevTools port not available - need manual restart or use --remote-debugging-port=9222"
+    }
   }
 }
