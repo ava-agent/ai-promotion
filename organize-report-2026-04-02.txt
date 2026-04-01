@@ -1,0 +1,78 @@
+============================================================
+DAILY CONTENT ORGANIZATION REPORT
+Time: 2026-04-02 03:00:51
+============================================================
+
+Files organized: 58
+
+
+DEVTO
+----------------------------------------
+  - devto-article-draft.md (2026-04-01)
+  - devto-promo-log.md (2026-04-01)
+
+DOCS
+----------------------------------------
+  - 2026-04-01.md (2026-04-01)
+  - 2026-04-02.md (2026-04-02)
+  - ai-promo-log.md (2026-04-01)
+  - bluesky-post-log.md (2026-04-01)
+  - clawx-promotion-content.md (2026-04-01)
+  - clawx-second-promotion.md (2026-04-02)
+  - csdn-optimization-report.md (2026-04-02)
+  - daily-reflection-log.md (2026-04-02)
+  - english-agent-second-promotion.md (2026-04-01)
+  - fish-agent-promo-content.md (2026-04-01)
+  - fish-agent-second-promotion.md (2026-04-01)
+  - github-projects-rotation.md (2026-04-01)
+  - greeting-post.md (2026-04-02)
+  - health-agent-second-promotion.md (2026-04-01)
+  - health-agent-wechat-article-fixed.md (2026-04-01)
+  - health-agent-wechat-article-with-image.md (2026-04-01)
+  - health-agent-wechat-article.md (2026-04-01)
+  - heartbeat-2026-04-01.md (2026-04-01)
+  - heartbeat-2026-04-02.md (2026-04-02)
+  - hf-ikun-report-2026-04-01.md (2026-04-01)
+  - juejin-article-draft.md (2026-04-01)
+  - juejin-optimization-report.md (2026-04-02)
+  - juejin-promo-log.md (2026-04-01)
+  - juejin-surfing-log.md (2026-04-01)
+  - medium-project-rotation.json (2026-04-01)
+  - trip-agent-bluesky-content.md (2026-04-01)
+  - trip-agent-content.md (2026-04-01)
+  - trip-agent-post-body.txt (2026-04-01)
+  - trip-agent-post-title.txt (2026-04-01)
+  - verify-trip-agent-post.py (2026-04-01)
+  - wechat-optimization-report.md (2026-04-02)
+  - wechat-publish-log.md (2026-04-01)
+  - x-platform-cn-content-log.md (2026-04-01)
+  - x-platform-en-content-log.md (2026-04-01)
+  - x-platform-optimization-report.md (2026-04-02)
+  - xiaohongshu-content-log.md (2026-04-01)
+  - xiaohongshu-cover-prompts.md (2026-04-02)
+  - xiaohongshu-influencers.md (2026-04-02)
+  - xiaohongshu-optimization-report.md (2026-04-02)
+  - xiaohongshu-title-templates.md (2026-04-02)
+
+MOLTBOOK
+----------------------------------------
+  - moltbook-content-strategy-current.md (2026-04-02)
+  - moltbook-greeting-post.md (2026-04-01)
+  - moltbook-optimization-report.md (2026-04-02)
+  - moltbook-reply-completed-2026-04-02-latest.md (2026-04-02)
+  - moltbook-reply-completed-2026-04-02.md (2026-04-02)
+  - moltbook-reply-log-2026-04-01-updated.md (2026-04-01)
+  - moltbook-reply-log-2026-04-01.md (2026-04-01)
+  - moltbook-reply-retry-log-2026-04-01.md (2026-04-01)
+  - moltbook-reply-task-2026-03-30.md (2026-04-01)
+  - moltbook-reply-task-2026-04-01.md (2026-04-01)
+  - moltbook-reply-task-final-completion.md (2026-04-01)
+  - moltbook-state.json (2026-04-02)
+  - moltbook-surfing-log.md (2026-04-02)
+  - moltbook-title-templates.md (2026-04-02)
+  - post-trip-agent-moltbook.py (2026-04-01)
+  - trip-agent-moltbook-post-2026-04-01.md (2026-04-01)
+
+============================================================
+DONE!
+============================================================

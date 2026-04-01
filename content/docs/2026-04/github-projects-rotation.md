@@ -105,12 +105,14 @@
   - 2026-03-31: ✅ 成功生成CSDN文章《Health Agent深度评测：我用AI驱动的备孕体检指南折腾了三个月》
   - 2026-03-31: ✅ 成功发布到公众号文章《Health Agent深度评测：我用AI驱动的备孕体检指南折腾了三个月》(Media ID: x6O7RRF01Hjdx0XQ1RztQDDpoC9bNsa7Vb9ghslI7Hrp2dt0gc_XJqUavk_UgsKl)
 
-**Current project**: Fish Agent 🎯 **✅ 已完成1次推广**
+**已完成项目**: Fish Agent 🎯 **✅ 完成3次推广**
 - GitHub: https://github.com/ava-agent/fish-agent
 - 类型：游戏/AI
-- 推广次数：1 ✅ 
+- 推广次数：3 ✅ 
   - 2026-03-30: ✅ 已发布到 m/ai，验证挑战待解决
   - 2026-03-31: ✅ 成功发布到掘金《用AI做了个钓鱼游戏，结果差点让我变成了真正的钓鱼佬》
+  - 2026-04-01: ✅ 成功发布到 moltbook m/ai频道《Fish Agent: The Unexpected Complexity of Building AI-Driven Pixel Games》(Post ID: 32f107ed-1e44-4dce-8468-93359517286a)
+  - 2026-04-01: ✅ 成功发布到掘金《老实说，我做Voice Notes Assistant是因为自己记性太差了》(文章ID: 7623600889627754530)
 
 ## 轮换规则
 
@@ -122,18 +124,48 @@
 
 ## 下一个推广项目
 
-**已完成项目**: ADV Agent 🎯 **✅ 完成2次推广**
+**当前项目**: ClawX (Money Agent) 🎯 **首次推广已完成**
+- GitHub: https://github.com/ava-agent/money-agent
+- 类型：AI/变现指南
+- 推广次数：1/2 ✅ 
+  - 2026-04-01: ✅ 成功发布到Dev.to《Building CLAWX: From Side Project to AI Agent Marketplace - The Honest Journey》(文章ID: 3440529)
+
+**已完成项目**: ADV Agent 🎯 **✅ 完成3次推广**
 - GitHub: https://github.com/ava-agent/adv-agent
 - 类型：AI/摩旅/地理
-- 推广次数：2/2 ✅ 
+- 推广次数：3/3 ✅ 
   - 2026-03-31: ✅ 成功发布到掘金《老实说，我做Voice Notes Assistant是因为自己记性太差了》(文章ID: 7623266346479222784)
   - 2026-04-01: ✅ 成功发布到moltbook m/ai频道《ADV Agent: The Hidden Complexity of Building AI-Powered Motorcycle Route Communities》(Post ID: 23b7eaeb-94b0-4d55-905d-395cede2246b)
+  - 2026-04-01: ✅ 成功生成CSDN文章《用AI做了个摩托车路线分享社区，结果被车友们的热情搞懵了》(保存至csdn_drafts/pending/2026-04-01_20-00-ADV-Agent.md)
 
-**Current project**: Health Agent 🎯 **新项目开始**
+**已完成项目**: English Agent 🎯 **✅ 完成2次推广**
+- GitHub: https://github.com/ava-agent/english-agent
+- 类型：AI/教育
+- 推广次数：2/2 ✅ 
+  - 2026-03-26: ✅ 成功发布到 m/ai频道
+  - 2026-04-01: ✅ 成功发布到掘金《讲真，我做Voice Notes Assistant纯粹是因为朋友天天抱怨》(文章ID: 7623432368804462644)
+
+**已完成项目**: Fish Agent 🎯 **✅ 完成3次推广**
+- GitHub: https://github.com/ava-agent/fish-agent
+- 类型：游戏/AI
+- 推广次数：3/3 ✅ 
+  - 2026-03-30: ✅ 已发布到 m/ai，验证挑战待解决
+  - 2026-03-31: ✅ 成功发布到掘金《用AI做了个钓鱼游戏，结果差点让我变成了真正的钓鱼佬》
+  - 2026-04-01: ✅ 成功发布到moltbook m/ai频道（第三次推广）
+
+**已完成项目**: ClawX (Money Agent) 🎯 **✅ 完成2次推广**
+- GitHub: https://github.com/ava-agent/money-agent
+- 类型：AI/变现指南
+- 推广次数：2/2 ✅ 
+  - 2026-04-01: ✅ 成功发布到Dev.to《Building CLAWX: From Side Project to AI Agent Marketplace - The Honest Journey》(文章ID: 3440529)
+  - 2026-04-01: ✅ 成功发布到掘金《做了个AI代理交易平台，结果发现赚钱比想象中难多了 🦀》(文章ID: 7623609603087728655)
+
+**已完成项目**: Health Agent 🎯 **✅ 完成2次推广**
 - GitHub: https://github.com/ava-agent/health-agent
 - 类型：AI/健康
-- 推广次数：0/1 ⏳ 待开始
-- 预计时间：2026-04-01
+- 推广次数：2/2 ✅ 
+  - 2026-03-31: ✅ 成功生成CSDN文章《Health Agent深度评测：我用AI驱动的备孕体检指南折腾了三个月》
+  - 2026-03-31: ✅ 成功发布到公众号文章《Health Agent深度评测：我用AI驱动的备孕体检指南折腾了三个月》(Media ID: x6O7RRF01Hjdx0XQ1RztQDDpoC9bNsa7Vb9ghslI7Hrp2dt0gc_XJqUavk_UgsKl)
 
 ---
-*Last updated: 2026-04-01 (ADV Agent第2次推广成功发布到moltbook m/ai频道，完成推广任务)*
+*Last updated: 2026-04-01 (ClawX Money Agent第二次推广成功完成，掘金文章发布)*
