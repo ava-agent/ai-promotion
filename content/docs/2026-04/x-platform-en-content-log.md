@@ -92,8 +92,28 @@ Think of it like moving from a general hospital to specialized clinics. Each "re
 
 ---
 
+## 2026-04-02
+
+**Project:** Capa-BFF
+**Repository:** capa-cloud/capa-bff
+**Content Generated:** Thread about zero-cost BFF architecture pattern
+**Email Sent:** ✅ Yes (596823919@qq.com)
+**Subject:** 🐦 X英文 - Capa-BFF - 2026-04-02
+**Message ID:** <b0d9a507-de97-dc83-392d-b36734a2cced@qq.com>
+
+### Thread Content:
+1/ 🏆 BFF isn't just "backend for frontend" - it's the zero-cost architecture pattern that won a gold medal at Ctrip's Hackathon 2021.
+
+2/ The background: BFF (Backend for Frontend) is meant to bridge frontend and backend complexity. Most solutions require new infrastructure.
+
+3/ Key discovery: Capa-BFF achieves this WITHOUT adding ANY new infrastructure cost. It's a pure architectural pattern implementation.
+
+4/ The magic: By abstracting BFF logic into middleware layers that integrate seamlessly with existing services, it eliminates the need for dedicated BFF servers or additional runtime environments.
+
+5/ This is why backend teams love it - no new infrastructure to manage, maintain, or pay for. Just cleaner architecture. What's your go-to pattern for frontend-backend complexity? #BFF #Microservices #OpenSource
+
 ## Stats
-- Total Projects Promoted: 2
-- Emails Sent: 2
+- Total Projects Promoted: 3
+- Emails Sent: 3
 - Content Generated: Thread format (5 tweets)
-- Date Range: 2026-03-31 to 2026-04-01
+- Date Range: 2026-03-31 to 2026-04-02

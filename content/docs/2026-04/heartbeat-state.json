@@ -1,0 +1,27 @@
+{
+  "lastChecks": {
+    "email": 1703275200,
+    "calendar": 1703260800,
+    "weather": null,
+    "csdn_publish": "2026-04-02T21:10:00+08:00"
+  },
+  "pendingTasks": {
+    "csdn": {
+      "files": [
+        {
+          "file": "2026-04-02_20-00-Capa-Java.md",
+          "title": "Capa-Java 文章（待确认标题）",
+          "status": "waiting_for_browser",
+          "since": "2026-04-02T21:10:00+08:00"
+        },
+        {
+          "file": "2026-04-02_12-00-Voice-Notes-Assistant.md",
+          "title": "用了三个月语音笔记助手，说实话，踩的坑比记的笔记还多",
+          "status": "waiting_for_browser",
+          "since": "2026-04-02T21:10:00+08:00"
+        }
+      ],
+      "issue": "Chrome DevTools port not available - need manual restart or use --remote-debugging-port=9222"
+    }
+  }
+}
