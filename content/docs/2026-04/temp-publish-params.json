@@ -1,0 +1,4 @@
+{
+  "content": "$(Get-Content 'memory/wechat-article-openoctopus.md' -Raw)",
+  "theme_id": "default"
+}

@@ -1,0 +1,7 @@
+{
+  "success": false,
+  "exitCode": 1,
+  "stdout": "",
+  "stderr": "[mcporter] Unable to parse --args: Expected property name or '}' in JSON at position 1 (line 1 column 2)\nError: Unable to parse --args: Expected property name or '}' in JSON at position 1 (line 1 column 2)\n    at parseCallArguments (file:///C:/Users/PC/AppData/Roaming/npm/node_modules/mcporter/dist/cli/call-arguments.js:69:23)\n    at handleCall (file:///C:/Users/PC/AppData/Roaming/npm/node_modules/mcporter/dist/cli/call-command.js:15:20)\n    at runCli (file:///C:/Users/PC/AppData/Roaming/npm/node_modules/mcporter/dist/cli.js:143:19)\n    at async main (file:///C:/Users/PC/AppData/Roaming/npm/node_modules/mcporter/dist/cli.js:201:5)\n",
+  "timestamp": "2026-04-06T17:44:40.564Z"
+}

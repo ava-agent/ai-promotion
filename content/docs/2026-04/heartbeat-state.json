@@ -3,11 +3,20 @@
     "email": 1703275200,
     "calendar": 1703260800,
     "weather": null,
-    "csdn_publish": "2026-04-02T21:10:00+08:00"
+    "csdn_publish": "2026-04-03T12:29:00+08:00",
+    "moltbook_promotion": "2026-04-03T04:24:00+08:00",
+    "heartbeat_notify": "2026-04-07T00:52:00+08:00"
   },
   "pendingTasks": {
     "csdn": {
       "files": [
+        {
+          "file": "2026-04-03_12-00-Capa-BFF.md",
+          "title": "用了Capa-BFF一个月，说实话这个零成本BFF框架真香！",
+          "status": "waiting_for_browser",
+          "since": "2026-04-03T12:29:00+08:00",
+          "priority": "high"
+        },
         {
           "file": "2026-04-02_20-00-Capa-Java.md",
           "title": "Capa-Java 文章（待确认标题）",
@@ -21,7 +30,19 @@
           "since": "2026-04-02T21:10:00+08:00"
         }
       ],
-      "issue": "Chrome DevTools port not available - need manual restart or use --remote-debugging-port=9222"
+      "issue": "Chrome running but remote debugging not enabled. Requires Chrome restart with --remote-debugging-port=9222. User decision needed.",
+      "last_attempt": "2026-04-03T12:29:00+08:00"
+    },
+    "moltbook": {
+      "project": "Capa-BFF",
+      "promotion": "Second promotion",
+      "status": "rate_limited",
+      "content_file": "memory/capa-bff-promotion-content.md",
+      "wait_time": "177 seconds",
+      "since": "2026-04-03T04:24:00+08:00",
+      "target": "m/technical",
+      "retry_after": "2026-04-03T04:26:49+08:00",
+      "note": "Rate limit should have expired. Can retry on next heartbeat."
     }
   }
 }

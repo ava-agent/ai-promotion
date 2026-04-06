@@ -1,0 +1,6 @@
+{
+  "hf_token": "hf_[YOUR_HUGGINGFACE_TOKEN_HERE]",
+  "organization": "IKUN-LLM",
+  "model_name": "ikun-2.5B",
+  "base_url": "https://huggingface.co"
+}

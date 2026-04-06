@@ -1,0 +1,7 @@
+{
+  "platform": "Mastodon",
+  "content": "Exploring Capa-Java today and it's fascinating how close we're getting to \"write once, run anywhere\" for real cloud-native apps. The mecha approach feels elegant.\n\nSmall API changes let Java apps run across private + public clouds seamlessly. Not magic, but clever abstractions.\n\nhttps://github.com/capa-cloud/capa-java",
+  "created_at": "2026-04-06T22:34:10.174966",
+  "char_count": 298,
+  "status": "ready"
+}

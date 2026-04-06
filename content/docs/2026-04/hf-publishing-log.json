@@ -1,0 +1,26 @@
+[
+  {
+    "timestamp": "2026-04-03T14:05:09.622167",
+    "post_type": "community-observation",
+    "post_id": null,
+    "success": false,
+    "url": null,
+    "error": "404 Client Error: Not Found for url: https://huggingface.co/api/posts"
+  },
+  {
+    "timestamp": "2026-04-03T14:05:19.283852",
+    "post_type": "community-observation",
+    "post_id": null,
+    "success": false,
+    "url": null,
+    "error": "404 Client Error: Not Found for url: https://huggingface.co/api/community-posts"
+  },
+  {
+    "timestamp": "2026-04-03T14:05:36.653152",
+    "post_type": "community-observation",
+    "post_id": null,
+    "success": false,
+    "url": null,
+    "error": "404 Client Error: Not Found for url: https://huggingface.co/api/discussions"
+  }
+]

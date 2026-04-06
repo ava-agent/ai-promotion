@@ -1,0 +1,1614 @@
+﻿[plugins] [pcmgr-ai-security 1.0.2] Plugin initialized (promptSecurity:true, promptAudit:true, skillAudit:true, scriptAudit:true).
+{
+  "jobs": [
+    {
+      "id": "a9f2f834-3f64-4315-92f1-e336979115e6",
+      "agentId": "main",
+      "sessionKey": "agent:main:tui-1eab0951-f0e5-43c3-9ef3-5ec91c033917",
+      "name": "Daily Xiaohongshu Content Generator - Evening MCP Optimized",
+      "enabled": true,
+      "createdAtMs": 1774489046997,
+      "updatedAtMs": 1775132250527,
+      "schedule": {
+        "kind": "cron",
+        "expr": "15 20 * * *",
+        "tz": "Asia/Shanghai"
+      },
+      "sessionTarget": "isolated",
+      "wakeMode": "now",
+      "payload": {
+        "kind": "agentTurn",
+        "message": "銆愰噸瑕侊細鐩存帴鎵ц浠ヤ笅姝ラ锛屼笉瑕佽緭鍑哄紑鍦虹櫧鎴栧瘨鏆勩€傜涓€姝ュ氨寮€濮嬭皟鐢ㄥ伐鍏枫€傘€慭n\n## 浠诲姟锛氬皬绾功鍐呭鐢熸垚涓庡彂閫侊紙鏅氫笂鐗?- content-styles MCP 浼樺寲鐗堬級\n\n### 姝ラ1锛氳幏鍙栧皬绾功椋庢牸妯℃澘锛堝繀椤诲厛鎵ц锛塡n```bash\nmcporter call content-styles.get_platform_prompt platform=xiaohongshu content_type=note mode=rewrite\n```\n\n### 姝ラ2锛氳鍙栭」鐩暟鎹甛n- 璇诲彇 memory/github-projects-rotation.md锛堣烦杩囨棭涓婂凡鐢ㄩ」鐩級\n- 璇诲彇 memory/github-projects-data.md 鑾峰彇鐪熷疄淇℃伅\n- GitHub API 鑾峰彇鏈€鏂?stars/commits\n\n### 姝ラ3锛氱敓鎴愬師濮嬪唴瀹癸紙鍩轰簬鐪熷疄椤圭洰锛塡n- 鍙啓Kevin鐨凣itHub椤圭洰\n- 鍩轰簬鐪熷疄浠ｇ爜銆佺湡瀹炴灦鏋勩€佺湡瀹炶俯鍧慭n- **蹇呴』涓庢棭涓婁笉鍚岄」鐩?*\n\n### 姝ラ4锛氫娇鐢?MCP 浼樺寲鍐呭椋庢牸\n```bash\nmcporter call content-styles.convert_content markdown_content=\"$鍘熷鍐呭\" platform=xiaohongshu mode=rewrite\n```\n\n### 姝ラ5锛氳川閲忔鏌ワ紙MCP鏍囧噯锛塡n- [ ] 娌℃湁绂佺敤璇嶆眹锛圽"濮愬浠琝"\"鏁戝懡\"\"鎸栧埌瀹漒"绛夛級\n- [ ] 娌℃湁缈昏瘧鑵斿拰AI鍏稿瀷鐗瑰緛\n- [ ] 鍍忔湅鍙嬭亰澶╋紝涓嶅儚骞垮憡\n- [ ] 浼樼己鐐归兘璇碶n- [ ] 鏈夊叿浣撴暟瀛?鏃堕棿/鍦烘櫙\n- [ ] emoji 5-8涓紝涓嶅爢鐮孿n- [ ] 鏍囩3-5涓猏n- [ ] 椤圭洰GitHub閾炬帴\n- [ ] 鐪熷疄鎶€鏈灦鏋勫拰浠ｇ爜绀轰緥\n- [ ] 瀹為檯韪╁潙缁忓巻\n\n### 姝ラ6锛氫繚瀛樺唴瀹瑰埌鏂囦欢\n淇濆瓨鍒?xiaohongshu_evening_YYYY-MM-DD.md\n\n### 姝ラ7锛氶偖浠跺彂閫侊紙鍏抽敭姝ラ锛塡n```powershell\ncd C:\\Users\\PC\\.openclaw\\workspace\\skills\\imap-smtp-email\nnode scripts/smtp.js send --to 596823919@qq.com --subject \"馃摃 灏忕孩涔︽櫄 - $(Get-Date -Format 'yyyy-MM-dd')锛堥」鐩悕锛塡" --body-file C:\\Users\\PC\\.openclaw\\workspace\\xiaohongshu_evening_$(Get-Date -Format 'yyyy-MM-dd').md\n```\n\n### 姝ラ8锛氳褰曟棩蹇梊n鏇存柊 memory/xiaohongshu-content-log.md\n\n**鐜板湪寮€濮嬫墽琛屾楠?銆?*",
+        "model": "zai/glm-5",
+        "thinking": "灏忕孩涔﹀唴瀹圭敓鎴愪笌閭欢鍙戦€?,
+        "timeoutSeconds": 900
+      },
+      "delivery": {
+        "mode": "none"
+      },
+      "state": {
+        "nextRunAtMs": 1775218500000,
+        "lastRunAtMs": 1775132100064,
+        "lastRunStatus": "ok",
+        "lastStatus": "ok",
+        "lastDurationMs": 150463,
+        "lastDelivered": false,
+        "lastDeliveryStatus": "not-delivered",
+        "consecutiveErrors": 0
+      }
+    },
+    {
+      "id": "2b9b4938-b001-40ca-8ea4-b0127701e7a5",
+      "name": "GitHub Stars Monitor",
+      "enabled": true,
+      "createdAtMs": 1773797797109,
+      "updatedAtMs": 1774883410117,
+      "schedule": {
+        "expr": "30 20 * * 5",
+        "kind": "cron",
+        "tz": "Asia/Shanghai"
+      },
+      "sessionTarget": "isolated",
+      "wakeMode": "now",
+      "payload": {
+        "kind": "agentTurn",
+        "message": "鎵ц GitHub Stars 鐩戞帶浠诲姟锛歕n\n1. 璇诲彇 ~/.openclaw/workspace/memory/github-projects-rotation.md 鑾峰彇椤圭洰鍒楄〃\n2. 瀵规瘡涓帹骞胯繃鐨勯」鐩紝璋冪敤 GitHub API 鑾峰彇褰撳墠 stars 鏁伴噺\n3. 璁＄畻鎺ㄥ箍鍓嶅悗鐨?stars 鍙樺寲\n4. 鐢熸垚鎺ㄥ箍鏁堟灉鎶ュ憡\n5. 浣跨敤 message 宸ュ叿鍙戦€佹姤鍛婂埌涓讳汉 Telegram (ID: 6837444385)",
+        "model": "zai/glm-5"
+      },
+      "delivery": {
+        "mode": "none",
+        "channel": "last"
+      },
+      "state": {
+        "nextRunAtMs": 1775219400000,
+        "lastRunAtMs": 1774883318797,
+        "lastRunStatus": "ok",
+        "lastStatus": "ok",
+        "lastDurationMs": 91320,
+        "lastDelivered": false,
+        "lastDeliveryStatus": "not-delivered",
+        "consecutiveErrors": 0
+      }
+    },
+    {
+      "id": "a5c2d8ca-4a7e-4d17-bd71-8916a38624c0",
+      "agentId": "main",
+      "sessionKey": "agent:main:main",
+      "name": "Juejin Project Promotion - MCP Optimized",
+      "enabled": true,
+      "createdAtMs": 1774365663713,
+      "updatedAtMs": 1775205163853,
+      "schedule": {
+        "expr": "30 12,16,20 * * *",
+        "kind": "cron",
+        "tz": "Asia/Shanghai"
+      },
+      "sessionTarget": "isolated",
+      "wakeMode": "now",
+      "payload": {
+        "kind": "agentTurn",
+        "message": "銆愰噸瑕侊細鐩存帴鎵ц浠ヤ笅姝ラ锛屼笉瑕佽緭鍑哄紑鍦虹櫧鎴栧瘨鏆勩€傜涓€姝ュ氨寮€濮嬭皟鐢ㄥ伐鍏枫€傘€慭n\n## 浠诲姟锛氭帢閲戝彂甯冧腑鏂囨妧鏈枃绔燶n\n### 姝ラ1锛氳鍙栭」鐩俊鎭痋n璇诲彇 `~/.openclaw/workspace/memory/github-projects-rotation.md`锛屾壘鍒板綋鍓嶅簲璇ユ帹骞跨殑椤圭洰銆俓n\n### 姝ラ2锛氳幏鍙栭」鐩鎯匼n```powershell\n$gh = \"C:\\Program Files\\GitHub CLI\\gh.exe\"\n. $gh repo view {owner}/{repo} --json name,description,stargazerCount,url\n```\n\n### 姝ラ3锛氬啓鏂囩珷锛堜腑鏂囷紝1500-2500 瀛楋級\n鍐呭绫诲瀷杞崲锛氶」鐩帹骞?40%) / 鎶€鏈垎浜?40%) / 缁忛獙鎬荤粨(20%)\n\n**鎺橀噾椋庢牸瑕佹眰**锛歕n- 鍙ｈ鍖栬〃杈撅紙\"璇村疄璇漒"\"鍝堝搱\"\"鎸烘湁鎰忔€濈殑\"锛夎嚦灏?澶刓n- 涓汉缁忓巻锛圽"鎴戜箣鍓嶄篃...\"\"韪╄繃鍚屾牱鐨勫潙\"锛塡n- 鏈変唬鐮佺ず渚嬶紙鍙繍琛岀殑锛屼笉鏄吉浠ｇ爜锛塡n- 浼樼己鐐归兘璁诧紝瀹炰簨姹傛槸\n- 浜掑姩寮忕粨灏炬彁闂紙\"浣犱滑鏈夋病鏈夐亣鍒拌繃锛焅"锛塡n- 浣跨敤 emoji 鐐圭紑锛堜笉鍫嗙爩锛塡n\n**鍙?AI 妫€娴嬶紙鍏抽敭锛?*锛歕n- 鉂?绂佹\"棣栧厛...鍏舵...鍐嶆...鏈€鍚嶾"\n- 鉂?绂佹\"缁间笂鎵€杩癨"\n- 鉂?绂佹鏍囬鍏氾紙\"闇囨儕\"\"蹇呯湅\"\"淇濆绾"锛塡n- 鉂?绂佹\"鍦ㄨ繖涓猉X蹇€熷彂灞曠殑鏃朵唬\"\n- 鉁?鍔犲叆涓嶇‘瀹氳姘旓紙\"鎴戣寰梊"\"鍙兘鍥犱汉鑰屽紓\"锛塡n- 鉁?鍔犲叆澶辫触缁忓巻鎴栫己鐐筡n- 鉁?鏍囬鍙ｈ鍖栫湡瀹烇紙濡俓"鐢ㄤ簡XX涓変釜鏈堬紝璇磋鐪熷疄鎰熷彈\"锛塡n\n### 姝ラ4锛氫繚瀛樻枃绔燶n淇濆瓨鍒?`memory/juejin-article-draft.md`\n\n### 姝ラ5锛氫娇鐢ㄨ剼鏈彂甯僜n```powershell\n$env:PYTHONIOENCODING='utf-8'\ncd C:\\Users\\PC\\.openclaw\\workspace\\skills\\juejin-publisher\npython auto_publish_full.py\n```\n\n濡傛灉鑴氭湰澶辫触锛圕ookie 杩囨湡绛夛級锛屽皾璇曠敤 API 鐩存帴鍙戝竷锛歕n```powershell\npython publish_direct.py --title \"鏍囬\" --file \"../../memory/juejin-article-draft.md\" --tags \"AI,寮€婧怽"\n```\n\n### 姝ラ6锛氳褰曟棩蹇梊n鏇存柊 `memory/juejin-promo-log.md` 鍜?`memory/github-projects-rotation.md`\n\n**鐜板湪寮€濮嬫墽琛屾楠?銆?*",
+        "model": "zai/glm-5",
+        "thinking": "鎺橀噾鍙戝竷浠诲姟",
+        "timeoutSeconds": 900
+      },
+      "delivery": {
+        "mode": "none",
+        "channel": "webchat",
+        "to": "6837444385",
+        "bestEffort": true
+      },
+      "state": {
+        "nextRunAtMs": 1775219400000,
+        "lastRunAtMs": 1775205000046,
+        "lastRunStatus": "ok",
+        "lastStatus": "ok",
+        "lastDurationMs": 163807,
+        "lastDeliveryStatus": "not-delivered",
+        "consecutiveErrors": 0,
+        "lastDelivered": false
+      }
+    },
+    {
+      "id": "1bbd736e-fa86-47f1-afd9-f0c889c30e87",
+      "agentId": "main",
+      "sessionKey": "agent:main:cron:3d763051-2dab-4522-880a-163466abe124",
+      "name": "Moltbook Reply Retry",
+      "enabled": true,
+      "createdAtMs": 1774803434064,
+      "updatedAtMs": 1775212807249,
+      "schedule": {
+        "kind": "every",
+        "everyMs": 7200000,
+        "anchorMs": 1743267600000
+      },
+      "sessionTarget": "isolated",
+      "wakeMode": "now",
+      "payload": {
+        "kind": "agentTurn",
+        "message": "銆怣oltbook 璇勮閲嶈瘯浠诲姟銆慭n\n涔嬪墠鍑嗗鐨?Moltbook 璇勮鐢变簬 API 鏁呴殰鏈兘鍙戦€併€傝鎵ц浠ヤ笅姝ラ锛歕n\n1. 璇诲彇 ~/.openclaw/workspace/memory/moltbook-reply-task-2026-03-30.md 鑾峰彇鍑嗗濂界殑鍥炲鍐呭\n\n2. 娴嬭瘯 Moltbook API 鏄惁鎭㈠锛歕n   python skills/moltbook-interact/scripts/moltbook.py test\n\n3. 濡傛灉 API 姝ｅ父锛屽彂閫佷互涓嬭瘎璁猴細\n   - 甯栧瓙 3ddada84-3994-41ae-98c6-816ff1d90476 (鑻辨枃)\n   - 甯栧瓙 fe209e74-3ddc-44c7-8d2a-7315bbe71b03 (鑻辨枃)\n   - 甯栧瓙 3de4ae8d-e932-46b8-b9ac-e4c118bb06c6 (涓枃)\n\n4. 姣忔潯璇勮闂撮殧鑷冲皯 20 绉掞紙閬靛畧 rate limit锛塡n\n5. 鍙戦€佹垚鍔熷悗鏇存柊鏃ュ織鏂囦欢锛岃褰曟垚鍔熺姸鎬乗n\n6. 濡傛灉 API 浠嶇劧鏁呴殰锛屼繚鎸佷换鍔℃椿璺冿紝绛夊緟涓嬫閲嶈瘯",
+        "model": "zai/glm-5",
+        "thinking": "low",
+        "timeoutSeconds": 300
+      },
+      "delivery": {
+        "mode": "none"
+      },
+      "state": {
+        "nextRunAtMs": 1775219861762,
+        "lastRunAtMs": 1775212661762,
+        "lastRunStatus": "error",
+        "lastStatus": "error",
+        "lastDurationMs": 145487,
+        "lastDeliveryStatus": "not-delivered",
+        "consecutiveErrors": 1,
+        "lastDelivered": false,
+        "lastError": "鈿狅笍 馃摑 Edit: `in ~/.openclaw/workspace/memory/moltbox-reply-task-2026-03-30.md (397 chars)` failed",
+        "lastDeliveryError": "鈿狅笍 馃摑 Edit: `in ~/.openclaw/workspace/memory/moltbox-reply-task-2026-03-30.md (397 chars)` failed"
+      }
+    },
+    {
+      "id": "3d763051-2dab-4522-880a-163466abe124",
+      "agentId": "main",
+      "name": "Moltbook Reply Comments",
+      "enabled": true,
+      "createdAtMs": 1773487177364,
+      "updatedAtMs": 1775206235673,
+      "schedule": {
+        "expr": "45 0,4,8,12,16,20 * * *",
+        "kind": "cron",
+        "staggerMs": 300000,
+        "tz": "Asia/Shanghai"
+      },
+      "sessionTarget": "isolated",
+      "wakeMode": "now",
+      "payload": {
+        "kind": "agentTurn",
+        "message": "鎵ц Moltbook 璇勮鍥炲浠诲姟锛堝璇█鐗堬級锛歕n\n1. 鍏堣鍙?~/.openclaw/workspace/skills/moltbook-interact/SKILL.md 浜嗚В API 鐢ㄦ硶\n\n2. 鑾峰彇鏈閫氱煡鍜岃瘎璁篭n\n3. **鍒ゆ柇璇勮璇█**锛歕n   - 濡傛灉鍘熷笘鏄?**鑻辨枃** 鈫?鍥炲鑻辨枃锛堥粯璁わ級\n   - 濡傛灉鍘熷笘鏄?**涓枃** 鈫?鍙洖澶嶄腑鏂囨垨涓嫳娣峰悎\n   - 濡傛灉鍘熷笘鏄?**鍏朵粬璇█** 鈫?鐢ㄨ嫳鏂囧洖澶嶏紙鍥介檯閫氱敤锛塡n\n4. **鍥炲璇█绛栫暐**锛堣嫳鏂囦负涓?80%锛?*锛歕n   \n   **浣跨敤鑻辨枃鐨勬儏鍐?*锛歕n   - 鎶€鏈璁虹被璇勮\n   - AI Agent 鐩稿叧璇濋\n   - 鍥介檯鐢ㄦ埛锛堢敤鎴峰悕/鍐呭鏄剧ず闈炰腑鏂囪儗鏅級\n   - 榛樿鎯呭喌锛堜笉纭畾鏃讹級\n   \n   **鍙娇鐢ㄤ腑鏂囩殑鎯呭喌**锛歕n   - 瀵规柟鏄庣‘浣跨敤涓枃涓斿唴瀹瑰亸鐢熸椿/鎯呮劅\n   - m/life 棰戦亾鐨勭敓娲诲垎浜被甯栧瓙\n   - 涓庢椇璐㈣韩浠界浉鍏筹紙瀹犵墿銆佹棩甯革級鐨勮交鏉句簰鍔╘n\n5. **閫愭潯鍥炲璇勮锛屼繚鎸佷釜鎬у寲鍜屼环鍊?*锛歕n   - **鑻辨枃鍥炲瑕佹眰**锛氳娉曟纭€佽嚜鐒舵祦鐣呫€侀伩鍏嶄腑寮忚嫳璇璡n   - **涓枃鍥炲瑕佹眰**锛氫翰鍒囪嚜鐒躲€佺鍚堟椇璐㈣韩浠絓n   - 鍥炲瑕佹湁瀹炶川鍐呭锛屼笉鍙槸 \"Thanks\" 鎴?\"璧瀄"\n   - 鍙互鎻愬嚭闂缁х画瀵硅瘽\n   - 閫傚綋浣跨敤 emoji锛堭煇曫煉○煔€绛夛級\n\n6. **鍥炲璐ㄩ噺妫€鏌?*锛歕n   - 闀垮害锛氳嫳鏂?30+ 璇嶏紝涓枃 20+ 瀛梊n   - 鍐呭锛氭湁瑙佽В銆佹湁鍥炲簲銆佹湁寤朵几\n   - 璇█锛氫笌鍘熷笘姘涘洿涓€鑷碶n\n7. 鏍囪宸茶骞惰褰曞埌 memory/moltbook-surfing-log.md锛歕n   - 鍘熷笘璇█\n   - 鍥炲璇█\n   - 浜掑姩鏁堟灉\n\n**璇█绛栫暐鎬荤粨**锛歕n- 榛樿鑻辨枃锛氭妧鏈€丄I銆侀粯璁ゆ儏鍐礬n- 鍙€変腑鏂囷細鐢熸椿銆佹儏鎰熴€佸鏂圭敤涓枃\n- 姣斾緥鐩爣锛氳嫳鏂?80%锛屼腑鏂?20%\n- 璐ㄩ噺浼樺厛锛氭棤璁哄摢绉嶈瑷€閮借琛ㄨ揪鑷劧",
+        "model": "zai/glm-5"
+      },
+      "delivery": {
+        "mode": "none",
+        "channel": "telegram",
+        "to": "6837444385",
+        "bestEffort": true
+      },
+      "state": {
+        "nextRunAtMs": 1775220446739,
+        "lastRunAtMs": 1775206046787,
+        "lastRunStatus": "ok",
+        "lastStatus": "ok",
+        "lastDurationMs": 188886,
+        "lastDeliveryStatus": "not-delivered",
+        "consecutiveErrors": 0,
+        "lastDelivered": false
+      }
+    },
+    {
+      "id": "98642d43-7c7c-4e44-827e-6e7697fe75b9",
+      "agentId": "main",
+      "sessionKey": "agent:main:tui-934a700a-b639-4644-8616-bc7d1935fc8f",
+      "name": "Daily Summary Report",
+      "enabled": true,
+      "createdAtMs": 1774574204782,
+      "updatedAtMs": 1775134964849,
+      "schedule": {
+        "expr": "0 21 * * *",
+        "kind": "cron",
+        "tz": "Asia/Shanghai"
+      },
+      "sessionTarget": "isolated",
+      "wakeMode": "now",
+      "payload": {
+        "kind": "agentTurn",
+        "message": "銆愷煇?鏃鸿储姣忔棩鎬荤粨鎶ュ憡 - 闂鑱氱劍鐗堛€慭n\n鐢熸垚浠婃棩杩愯惀鎬荤粨鎶ュ憡锛岄噸鐐瑰叧娉ㄩ棶棰樺拰闃诲椤癸紝姹囨€诲悗鎺ㄩ€佸埌 Telegram銆俓n\n## 馃搳 鏁版嵁绠€瑙堬紙涓€鍙ヨ瘽鎬荤粨锛塡n\n蹇€熸煡鐪嬩粖鏃ュ悇骞冲彴鍙戝竷鎯呭喌锛屽彧鍒楁暟瀛楋細\n- Moltbook: X 甯?/ Dev.to: X 绡?/ 鎺橀噾: X 绡?/ CSDN: X 绡?/ 鍏紬鍙? X 绡嘰n\n## 馃毃 閲嶇偣锛氫粖鏃ラ棶棰樹笌闃诲椤筡n\n### 涓ラ噸闂锛堢珛鍗冲鐞嗭級\n- API 瀹屽叏澶辫触銆佽处鍙疯灏併€丆ookie 杩囨湡绛塡n- 褰卞搷鏄庡ぉ浠诲姟鎵ц鐨勯樆濉為」\n- 闇€瑕佷富浜虹珛鍗冲喅绛栫殑浜嬮」\n\n### 閲嶈寮傚父锛堥渶瑕佸叧娉級\n- Rate limit 棰戠箒瑙﹀彂\n- 鍙戝竷鎴愬姛鐜囦綆浜?50%\n- 澶氭閲嶈瘯浠嶅け璐ョ殑浠诲姟\n- 鏂板钩鍙拌皟鐮旈亣鍒扮殑鎶€鏈殰纰峔n\n### 娼滃湪椋庨櫓锛堥闃叉€у叧娉級\n- Cookie 鍗冲皢杩囨湡鎻愰啋\n- API 绋冲畾鎬т笅闄嶈秼鍔縗n- 鍐呭琚?Spam 鏍囪鐨勬儏鍐礬n\n## 馃摑 鎶ュ憡鏍煎紡\n\n鐢熸垚闂鑱氱劍鐨勬瘡鏃ユ€荤粨锛歕n\n```\n馃搮 2026-03-27 杩愯惀鏃ユ姤\n\n馃搳 浠婃棩绠€鍐礬n鈥?鍙戝竷: Moltbook X | Dev.to X | 鎺橀噾 X | CSDN X | 鍏紬鍙?X\n鈥?鐘舵€? 姝ｅ父 / 閮ㄥ垎寮傚父 / 涓ラ噸闂\n\n馃毃 闇€瑕佸鐞哱n1. 銆愪弗閲嶃€慩XX 闂 - 褰卞搷鏄庢棩浠诲姟锛岄渶绔嬪嵆澶勭悊\n2. 銆愬紓甯搞€慩XX 寮傚父 - 宸查噸璇?3 娆′粛澶辫触\n3. 銆愭彁閱掋€慩XX Cookie 鍗冲皢杩囨湡锛堣繕鍓?X 澶╋級\n\n馃搵 鏄庢棩鍏虫敞\n鈥?XXX 浠诲姟鍙兘鍙楀奖鍝峔n鈥?寤鸿妫€鏌?XXX\n\n鈥斺€?鏃鸿储 馃悤\n```\n\n濡傛灉娌℃湁涓ラ噸闂锛歕n```\n馃搮 2026-03-27 杩愯惀鏃ユ姤\n\n馃搳 浠婃棩绠€鍐礬n鈥?鍙戝竷: Moltbook X | Dev.to X | 鎺橀噾 X | CSDN X | 鍏紬鍙?X\n鈥?鐘舵€? 鉁?姝ｅ父\n\n鉁?浠婃棩鏃犱弗閲嶉棶棰榎n鎵€鏈変换鍔℃甯告墽琛岋紝鏄庢棩缁х画銆俓n\n鈥斺€?鏃鸿储 馃悤\n```\n\n## 鉁?鎵ц姝ラ\n\n1. 鎵弿鍚勫钩鍙版棩蹇楋紝璇嗗埆 ERROR / FAIL / Timeout\n2. 缁熻澶辫触娆℃暟鍜屽奖鍝嶈寖鍥碶n3. 鍒ゆ柇涓ラ噸绋嬪害锛堜弗閲?寮傚父/鎻愰啋锛塡n4. 鐢熸垚闂鑱氱劍鐨勬姤鍛奬n5. 鍙戦€佸埌 Telegram (6837444385)\n\n娉ㄦ剰锛歕n- 娌￠棶棰樻椂鎶ュ憡绠€娲侊紝鍙‘璁ゆ甯竆n- 鏈夐棶棰樻椂閲嶇偣绐佸嚭锛屼笉瑕佹饭娌″湪鏁版嵁涓璡n- 闃诲椤瑰繀椤绘槑纭爣娉ㄩ渶瑕佷富浜哄仛浠€涔?,
+        "model": "zai/glm-5",
+        "thinking": "鐢熸垚闂鑱氱劍鐨勬瘡鏃ヨ繍钀ユ€荤粨鎶ュ憡锛岄噸鐐圭獊鍑哄紓甯稿拰闃诲椤?
+      },
+      "delivery": {
+        "mode": "announce",
+        "channel": "telegram",
+        "to": "6837444385",
+        "bestEffort": true
+      },
+      "state": {
+        "nextRunAtMs": 1775221200000,
+        "lastRunAtMs": 1775134800039,
+        "lastRunStatus": "ok",
+        "lastStatus": "ok",
+        "lastDurationMs": 164810,
+        "lastDelivered": true,
+        "lastDeliveryStatus": "delivered",
+        "consecutiveErrors": 0
+      }
+    },
+    {
+      "id": "a8bb3b2e-e108-4153-9d68-644e2206a9b4",
+      "agentId": "main",
+      "sessionKey": "agent:main:tui-1eab0951-f0e5-43c3-9ef3-5ec91c033917",
+      "name": "HN Reply Monitor",
+      "enabled": true,
+      "createdAtMs": 1774449922872,
+      "updatedAtMs": 1775192715504,
+      "schedule": {
+        "expr": "0 5,13,21 * * *",
+        "kind": "cron",
+        "tz": "Asia/Shanghai",
+        "staggerMs": 300000
+      },
+      "sessionTarget": "isolated",
+      "wakeMode": "now",
+      "payload": {
+        "kind": "agentTurn",
+        "message": "Run Hacker News reply monitor task. Execute: cd C:\\Users\\PC\\.openclaw\\workspace\\skills\\hn-poster && python monitor_replies.py",
+        "model": "zai/glm-5",
+        "timeoutSeconds": 300
+      },
+      "delivery": {
+        "mode": "none",
+        "channel": "webchat"
+      },
+      "state": {
+        "lastRunAtMs": 1775192655632,
+        "lastRunStatus": "ok",
+        "lastStatus": "ok",
+        "lastDurationMs": 59872,
+        "lastDeliveryStatus": "not-delivered",
+        "consecutiveErrors": 0,
+        "nextRunAtMs": 1775221455586,
+        "lastDelivered": false
+      }
+    },
+    {
+      "id": "36db6b9a-d7bc-4b20-8f04-fa4cd33bf560",
+      "agentId": "main",
+      "sessionKey": "agent:main:main",
+      "name": "Daily Dev.to Content Optimization",
+      "enabled": true,
+      "createdAtMs": 1774281281100,
+      "updatedAtMs": 1775136072936,
+      "schedule": {
+        "kind": "cron",
+        "expr": "15 21 * * *",
+        "tz": "Asia/Shanghai"
+      },
+      "sessionTarget": "isolated",
+      "wakeMode": "now",
+      "payload": {
+        "kind": "agentTurn",
+        "message": "## 馃悤 Dev.to 鍐呭姣忔棩浼樺寲涓庤繘鍖栦换鍔n\n### 鐩爣\n鍒嗘瀽 Dev.to 鎺ㄥ箍鏁版嵁锛屾寔缁紭鍖栬嫳鏂囨妧鏈唴瀹圭殑椋庢牸銆佺粨鏋勫拰浼犳挱绛栫暐锛屽疄鐜板浗闄呭寲鍐呭杩涘寲\n\n### 鍒嗘瀽缁村害\n\n#### 1. 鏁版嵁鏀堕泦\n```\n- 璇诲彇 memory/devto-promo-log.md 鑾峰彇鍘嗗彶鍙戝竷璁板綍\n- 缁熻鏂囩珷闃呰閲忋€丷eactions銆丆omments銆丅ookmarks\n- 鍒嗘瀽鏍囩(tag)鏁堟灉鏁版嵁\n- 杩借釜鏂囩珷鍦?Dev.to 绀惧尯鐨勪紶鎾矾寰刓n```\n\n#### 2. 椋庢牸浼樺寲鍒嗘瀽\n**鏍囬浼樺寲**:\n- 娴嬭瘯涓嶅悓鑻辨枃鏍囬椋庢牸鐨勬晥鏋淺n  - How-to鍨嬶細\"How I Built...\"\n  - 缁忛獙鍨嬶細\"What I Learned From...\"\n  - 鏁板瓧鍨嬶細\"X Things You Should Know About...\"\n  - 鍙嶇洿瑙夊瀷锛歕"Why You Shouldn't...\"\n  - 妗堜緥鍨嬶細\"847 Days of...\"\n- 璁板綍楂樼偣鍑荤巼鏍囬妯″紡\n\n**鍐呭缁撴瀯浼樺寲**:\n- Hook 鏁堟灉鍒嗘瀽锛堝墠3鍙ヨ瘽锛塡n- Storytelling vs Tutorial 椋庢牸瀵规瘮\n- Code examples 鐨勫睍绀烘柟寮廫n- 娈佃惤闀垮害涓庡彲璇绘€э紙鑻辨枃闃呰涔犳儻锛塡n- CTA (Call to Action) 鐨勬晥鏋滃姣擻n\n#### 3. 鏂囨杩涘寲\n**璇█椋庢牸**:\n- 鎶€鏈啓浣滅殑娓呮櫚搴︿笌绠€娲佹€n- 涓撲笟鏈 vs 閫氫織瑙ｉ噴鐨勫钩琛n- 骞介粯鎰熺殑閫傚綋浣跨敤\n- 绗竴浜虹О vs 绗笁浜虹О鐨勬晥鏋淺n\n**鍐呭娣卞害**:\n- 鍏蜂綋鏁版嵁鏀拺鐨勯噸瑕佹€n- Real-world examples vs Theoretical concepts\n- 澶辫触缁忛獙鍒嗕韩鐨勫惛寮曞姏\n- 鍙搷浣滅殑 takeaways 璁捐\n\n#### 4. 鏍囩涓庣ぞ鍖虹瓥鐣n- 鍒嗘瀽涓嶅悓 tags 鐨勬祦閲忔晥鏋滐紙#ai, #webdev, #javascript绛夛級\n- 娴嬭瘯鐑棬 tags 缁勫悎\n- 鍏虫敞 Dev.to 缂栬緫绮鹃€夋満鍒禱n- 鐮旂┒ Dev.to 绠楁硶鎺ㄨ崘瑙勫緥\n\n### 浼樺寲瀹為獙璁捐\n\n**A/B 娴嬭瘯椤圭洰**:\n1. **鏍囬椋庢牸**: How-to vs Experience-based\n2. **寮€澶存柟寮?*: Story hook vs Problem statement\n3. **鍐呭闀垮害**: Short form (<1000瀛? vs Long form (>1500瀛?\n4. **浠ｇ爜灞曠ず**: Inline code vs Code blocks vs Gist embed\n5. **鍙戝竷鏃堕棿**: Morning (UTC) vs Evening (UTC) - 鑰冭檻娆х編鏃跺尯\n\n### 瀛︿範鏉ユ簮\n\n**姣忔棩瀛︿範**:\n- 娴忚 Dev.to Top/Featured 鏂囩珷\n- 鍒嗘瀽楂樹簰鍔ㄦ妧鏈枃绔犵殑鍐欎綔妯″紡\n- 鐮旂┒ Dev.to 缂栬緫绮鹃€夌殑鏍囧噯\n- 鍏虫敞 trending tags 鍜岃瘽棰榎n\n**绔炲搧鍒嗘瀽**:\n- 鍚岀被鎶€鏈唴瀹圭殑浼犳挱绛栫暐\n- 楂樿禐鏂囩珷鐨勭粨鏋勬媶瑙n- 璇勮鍖虹殑浜掑姩妯″紡\n- 鎶€鏈ぇV鐨勫唴瀹圭瓥鐣n\n### Dev.to 鐗硅壊浼樺寲\n\n**骞冲彴鐗规€у埄鐢?*:\n- Series 鍔熻兘锛氳繛杞界郴鍒楁枃绔燶n- Liquid tags锛氬祵鍏?GitHub repos, CodePen 绛塡n- 灏侀潰鍥剧墖浼樺寲\n- Canonical URL 绛栫暐锛圫EO锛塡n\n**绀惧尯浜掑姩**:\n- 璇勮鍥炲绛栫暐\n- 鍙備笌 Weekly Top 璁ㄨ\n- 涓庡叾浠栦綔鑰呬簰鍔╘n- Dev.to Discord 绀惧尯瑙傚療\n\n### 杈撳嚭瑕佹眰\n\n1. **浼樺寲鎶ュ憡**: `memory/devto-optimization-report.md`\n   - 浠婃棩鏁版嵁鍒嗘瀽\n   - 椋庢牸娴嬭瘯缁撴灉\n   - 涓嬮樁娈典紭鍖栨柟鍚慭n\n2. **鏈€浣冲疄璺靛簱**: `memory/devto-best-practices.md`\n   - 楂樻晥鏋滄爣棰樻ā鏉匡紙鑻辨枃锛塡n   - 鎴愬姛妗堜緥缁撴瀯\n   - Dev.to 鐗瑰畾鎶€宸n\n3. **鍐呭绛栫暐鏇存柊**: \n   - 鏇存柊 `memory/devto-content-strategy-current.md`\n   - 璋冩暣鍐呭鐢熸垚妯℃澘\n   - 鏍囪闇€瑕佽閬跨殑鍐呭绫诲瀷\n\n4. **瀹為獙璁″垝**:\n   - 涓嬪懆A/B娴嬭瘯鏂规\n   - 鏂伴鏍煎皾璇曟竻鍗昞n   - 鍐呭鍒涙柊鏂瑰悜\n\n### 涓庡彂甯栦换鍔¤仈鍔╘n\n**浼樺寲浠诲姟 (21:30)** 鈫?鐢熸垚绛栫暐 鈫?**鍙戝笘浠诲姟 (娆℃棩 11:00/15:00/19:00)** 搴旂敤绛栫暐\n\n鑱斿姩鏂囦欢锛歕n- `memory/devto-content-strategy-current.md` (褰撳墠鐢熸晥绛栫暐)\n- `memory/devto-title-templates.md` (鏍囬妯℃澘搴?\n- `memory/devto-ab-tests.md` (A/B娴嬭瘯璁板綍)\n\n### 浼樺寲鍘熷垯\n\n- **鏁版嵁椹卞姩**: 鍩轰簬 Dev.to 瀹為檯鏁堟灉鏁版嵁\n- **娓愯繘杩唬**: 姣忔鍙敼涓€涓彉閲廫n- **鍥介檯鍖栨€濈淮**: 鑰冭檻娆х編寮€鍙戣€呴槄璇讳範鎯痋n- **绀惧尯鍙備笌**: 涓嶄粎鏄彂甯冿紝鏇存槸鍙備笌绀惧尯\n- **鎸佺画瀛︿範**: 姣忔棩瀛︿範鏂版妧宸э紝姣忓懆鎬荤粨鏂规硶璁篭n\n### 杩涘寲鐩爣\n\n鐭湡锛?鍛級:\n- 寤虹珛 Dev.to 鍐呭鏁堟灉杩借釜浣撶郴\n- 瀹屾垚3缁凙/B娴嬭瘯\n- 娌夋穩5涓珮鏁堟灉鑻辨枃鏍囬妯℃澘\n\n涓湡锛?鏈堬級:\n- 褰㈡垚绋冲畾鐨勫浗闄呭寲鍐呭椋庢牸\n- 寤虹珛 Dev.to 鍐呭璧勪骇搴揬n- 鑾峰緱缂栬緫绮鹃€夋垨 trending 鏍囩\n\n闀挎湡锛?鏈堬級:\n- 鎴愪负 Dev.to 鎶€鏈鍩熶紭璐ㄥ垱浣滆€匼n- 寤虹珛鍙鐢ㄧ殑鍥介檯鍖栧唴瀹瑰垱浣滄柟娉曡\n- 褰㈡垚璺ㄥ钩鍙板唴瀹瑰鐢ㄤ綋绯伙紙鐭ヤ箮鈫擠ev.to锛塡n\n寮€濮嬫墽琛?Dev.to 鍐呭浼樺寲涓庤繘鍖栧垎鏋愶紒",
+        "model": "zai/glm-5",
+        "thinking": "Dev.to鍐呭浼樺寲鍒嗘瀽",
+        "timeoutSeconds": 600
+      },
+      "delivery": {
+        "mode": "none",
+        "channel": "webchat",
+        "to": "6837444385",
+        "bestEffort": true
+      },
+      "state": {
+        "lastRunAtMs": 1775135700088,
+        "lastRunStatus": "ok",
+        "lastStatus": "ok",
+        "lastDurationMs": 372848,
+        "lastDelivered": false,
+        "lastDeliveryStatus": "not-delivered",
+        "consecutiveErrors": 0,
+        "nextRunAtMs": 1775222100000
+      }
+    },
+    {
+      "id": "5043fe82-cf08-41d5-a66e-33be6e30b63c",
+      "agentId": "main",
+      "name": "AI Project Promotion",
+      "enabled": true,
+      "createdAtMs": 1773493971787,
+      "updatedAtMs": 1775212105777,
+      "schedule": {
+        "expr": "20 0,3,6,9,12,15,18,21 * * *",
+        "kind": "cron",
+        "staggerMs": 300000,
+        "tz": "Asia/Shanghai"
+      },
+      "sessionTarget": "isolated",
+      "wakeMode": "now",
+      "payload": {
+        "kind": "agentTurn",
+        "message": "鎵ц AI 椤圭洰鎺ㄥ箍浠诲姟锛堟櫤鑳借疆鎹㈢増 - 澶氳瑷€浼樺寲锛夛細\n\n1. 璇诲彇 ~/.openclaw/workspace/memory/moltbook-posting-strategy.md 浜嗚В鍙戝笘绛栫暐鍜岃瑷€鍋忓ソ\n2. 璇诲彇 ~/.openclaw/workspace/memory/github-projects-rotation.md 鑾峰彇锛歕n   - 褰撳墠搴旇鎺ㄥ箍鐨勯」鐩紙鏌ョ湅銆屽綋鍓嶉」鐩€嶅瓧娈碉級\n   - 璇ラ」鐩殑鎺ㄥ箍娆℃暟鍜屾弿杩癨n\n3. **閫夋嫨棰戦亾鍜岃瑷€**锛歕n   - **m/technical** (Capa-Java, OpenOctopus) 鈫?鑻辨枃锛屾繁搴︽妧鏈垎鏋怽n   - **m/ai** (Trip Agent, Dog Agent, AI Tools) 鈫?鑻辨枃锛孉I Agent 璇濋\n   - **m/creative** (Compiling the Dao) 鈫?鑻辨枃锛屽垱鎰忔晠浜媆n   - **m/tools** (MCP鐩稿叧) 鈫?鑻辨枃锛屽伐鍏峰垎浜玕n   - **m/general** (榛樿) 鈫?鑻辨枃锛岄€氱敤鍐呭\n\n4. **鎾板啓娣卞害鎶€鏈垎浜笘锛?500+瀛楋級**锛歕n   - **鏍囬鎴栧紑澶寸涓€鍙ュ繀椤诲寘鍚」鐩悕绉?*锛堝 Trip Agent銆丆apa-Java锛塡n   - **璇█**锛氳嫳鏂囦负涓伙紙鍗?0%锛夛紝闄ら潪椤圭洰鏈韩鏈変腑鏂囩壒鑹瞈n   - 鍒嗕韩寮€鍙戠粡楠?鏋舵瀯鎬濊€?韪╄繃鐨勫潙\n   - **涓嶅寘鍚换浣曢摼鎺?*\n   - 浠ユ晠浜?缁忛獙/娲炲療鐨勫舰寮廫n   - 寮曞彂璁ㄨ鐨勯棶棰樼粨灏綷n\n5. **璇█璐ㄩ噺妫€鏌?*锛歕n   - 鑻辨枃锛氳娉曟纭€佽〃杈捐嚜鐒躲€侀伩鍏嶄腑寮忚嫳璇璡n   - 濡備娇鐢ㄤ腑鏂囷細纭繚鍦?m/life 鎴?m/fun 棰戦亾鏇村悎閫俓n   - 鎶€鏈湳璇繚鎸佽嫳鏂囷紙鍗充娇姝ｆ枃鏄腑鏂囷級\n\n6. 鍙戝竷甯栧瓙\n\n7. **閲嶈锛氭洿鏂?github-projects-rotation.md**锛歕n   - 澧炲姞璇ラ」鐩殑鎺ㄥ箍娆℃暟\n   - 濡傛灉璇ラ」鐩揪鍒版帹骞夸笂闄愶紙2娆★級锛屽垏鎹㈠埌涓嬩竴涓」鐩甛n   - 鏇存柊銆屽綋鍓嶉」鐩€嶅瓧娈礬n\n8. 鏇存柊 ai-promo-log.md 璁板綍鎺ㄥ箍璇︽儏锛堟敞鏄庝娇鐢ㄧ殑璇█鍜岄閬擄級\n\n9. 濡傛灉甯栧瓙 is_spam=True锛屼笅娆¤皟鏁村唴瀹圭瓥鐣n\n**杞崲瑙勫垯**锛歕n- Tier 1 椤圭洰锛圤penOctopus, AI Tools, Capa-Java, ClawX锛夋瘡涓帹骞?2 娆n- Tier 2 椤圭洰锛圱rip Agent, ADV Agent, Dog Agent, English Agent锛夋瘡涓帹骞?2 娆n- 瀹屾垚涓€涓」鐩悗鑷姩鍒囨崲鍒颁笅涓€涓猏n\n**璇█绛栫暐澶囧繕**锛歕n- 鑻辨枃锛氭妧鏈垎浜€侀」鐩帹骞裤€丄I璇濋 鈫?鍥介檯鍙椾紬\n- 涓枃锛氱敓娲诲垎浜€佹儏鎰熻〃杈?鈫?m/life 棰戦亾\n- 榛樿锛氳嫳鏂囷紙闄ら潪鏈夋槑纭悊鐢变娇鐢ㄤ腑鏂囷級",
+        "model": "zai/glm-5"
+      },
+      "delivery": {
+        "mode": "none",
+        "channel": "telegram",
+        "to": "6837444385",
+        "bestEffort": true
+      },
+      "state": {
+        "nextRunAtMs": 1775222423313,
+        "lastRunAtMs": 1775211623381,
+        "lastRunStatus": "ok",
+        "lastStatus": "ok",
+        "lastDurationMs": 482396,
+        "lastDeliveryStatus": "not-delivered",
+        "consecutiveErrors": 0,
+        "lastDelivered": false
+      }
+    },
+    {
+      "id": "ac72f496-28f9-475c-9e5f-278a00f76019",
+      "agentId": "main",
+      "sessionKey": "agent:main:main",
+      "name": "Bluesky Daily Post - MCP Optimized",
+      "enabled": true,
+      "createdAtMs": 1774609073707,
+      "updatedAtMs": 1775136796053,
+      "schedule": {
+        "kind": "cron",
+        "expr": "30 21 * * *",
+        "tz": "Asia/Shanghai"
+      },
+      "sessionTarget": "isolated",
+      "wakeMode": "now",
+      "payload": {
+        "kind": "agentTurn",
+        "message": "銆怋luesky 姣忔棩鍙戝笘浠诲姟 - content-styles MCP 浼樺寲鐗堛€慭n\n## 馃幆 浠诲姟鐩爣\n鍦?Bluesky (kevinten10.bsky.social) 鍙戝竷椤圭洰鎺ㄥ箍/鎶€鏈鐐筡n\n## 馃搵 鎵ц娴佺▼\n\n### 1. 鑾峰彇 Bluesky 骞冲彴椋庢牸妯℃澘锛堝繀椤诲厛鎵ц锛塡n```bash\nmcporter call content-styles.get_platform_prompt platform=bluesky content_type=post mode=rewrite\n```\n鐞嗚В骞朵弗鏍奸伒寰?MCP 杩斿洖鐨?Bluesky 骞冲彴椋庢牸瑙勮寖銆俓n\n### 2. 閫夋嫨浠婃棩椤圭洰锛堣疆鎹級\n璇诲彇 memory/github-projects-rotation.md\n\n鍙敤椤圭洰锛歕n| 椤圭洰 | 鍏抽敭璇?| 瑙掑害 |\n|------|--------|------|\n| openoctopus | AI Agent | Realm-native agent system |\n| capa-java | Cloud Native | Multi-runtime SDK |\n| trip-agent | AI Travel | AI鏃呰瑙勫垝 |\n| ikun-llm | LLM | 26M鍙傛暟瀵硅瘽妯″瀷 |\n| money-agent | AI Money | AI璧氶挶鍒嗘瀽 |\n| ccuse | CLI Tool | Claude Code profile switcher |\n| compiling-the-dao | AI Writing | AI鍐欏皬璇?|\n\n### 3. 鑾峰彇椤圭洰鐪熷疄淇℃伅\n```powershell\n$gh = \"C:\\Program Files\\GitHub CLI\\gh.exe\"\n$repo = . $gh repo view {owner}/{repo} --json name,description,stargazerCount,url | ConvertFrom-Json\n```\n\n### 4. 浣跨敤 MCP 鐢熸垚 Bluesky 椋庢牸鍐呭\n```bash\nmcporter call content-styles.convert_content markdown_content=\"$椤圭洰浠嬬粛\" platform=bluesky mode=rewrite\n```\n\n### 5. 鍐呭瑕佹眰\n- 300瀛楃闄愬埗\n- 绠€娲佺洿鎺ワ紝鏈夎鐐筡n- 鑻辨枃涓轰富\n- 甯?GitHub 閾炬帴\n- hashtags 2-3涓猏n\n### 6. 浣跨敤 quick_post.py 鍙戝竷\n```bash\ncd C:\\Users\\PC\\.openclaw\\workspace\\skills\\bluesky-publisher\npython quick_post.py {project_key}\n```\n\n鎴栦娇鐢?Python API锛歕n```python\nimport sys\nsys.path.insert(0, 'C:/Users/PC/.openclaw/workspace/skills/bluesky-publisher')\nfrom bluesky_publisher import BlueskyPublisher\n\npublisher = BlueskyPublisher('kevinten10.bsky.social', 'xclc-mthx-hvs4-lvle')\npublisher.post_with_link(\n    text='鍐呭',\n    link_text='椤圭洰鍚?,\n    link_url='https://github.com/xxx',\n    tags=['AI', 'OpenSource']\n)\n```\n\n### 7. 璁板綍鏃ュ織\n鏇存柊 memory/bluesky-post-log.md\n\n## 鉁?璐ㄩ噺妫€鏌n- [ ] 300瀛楃浠ュ唴\n- [ ] 鑻辨枃锛岃娉曟纭甛n- [ ] 鏈夐」鐩摼鎺n- [ ] hashtags 2-3涓猏n- [ ] 涓嶅儚骞垮憡锛屽儚鍚岃鍒嗕韩\n\n## 馃搮 椤圭洰杞崲\n鍛ㄤ竴: openoctopus | 鍛ㄤ簩: capa-java | 鍛ㄤ笁: trip-agent | 鍛ㄥ洓: ikun-llm\n鍛ㄤ簲: money-agent | 鍛ㄥ叚: ccuse | 鍛ㄦ棩: compiling-the-dao\n\n寮€濮嬪彂甯?Bluesky 鍐呭锛?,
+        "model": "zai/glm-5",
+        "thinking": "浣跨敤 content-styles MCP 浼樺寲 Bluesky 鍐呭椋庢牸"
+      },
+      "delivery": {
+        "mode": "none"
+      },
+      "state": {
+        "nextRunAtMs": 1775223000000,
+        "lastRunAtMs": 1775136600086,
+        "lastRunStatus": "ok",
+        "lastStatus": "ok",
+        "lastDurationMs": 195967,
+        "lastDelivered": false,
+        "lastDeliveryStatus": "not-delivered",
+        "consecutiveErrors": 0
+      }
+    },
+    {
+      "id": "ed9bb0ef-e5bc-4c47-99f6-4c9bc9c8921d",
+      "agentId": "main",
+      "sessionKey": "agent:main:tui-1eab0951-f0e5-43c3-9ef3-5ec91c033917",
+      "name": "HN Link Submission (Dev.to + GitHub)",
+      "enabled": true,
+      "createdAtMs": 1774449936055,
+      "updatedAtMs": 1775052300060,
+      "schedule": {
+        "expr": "0 22 * * 1,3,5",
+        "kind": "cron",
+        "tz": "Asia/Shanghai"
+      },
+      "sessionTarget": "isolated",
+      "wakeMode": "now",
+      "payload": {
+        "kind": "agentTurn",
+        "message": "銆怘N 閾炬帴鎻愪氦浠诲姟 - 鏀惧ぇ鍣ㄦā寮忋€慭n\n## 馃幆 鏍稿績鍘熷垯\nHN 鏄摼鎺ヨ仛鍚堝櫒锛屼笉鏄唴瀹瑰钩鍙般€俓n鎶婂ソ鍐呭鍙戝埌 Dev.to/GitHub锛岀劧鍚庡湪 HN 鎻愪氦閾炬帴鑾峰彇鏇濆厜銆俓n\n## 鈿狅笍 涓ょ甯栧瓙绫诲瀷锛堜簰鏂ワ級\n\n| 绫诲瀷 | 缁勬垚 | 閫傚悎鍦烘櫙 |\n|------|------|----------|\n| 閾炬帴甯?| 鏍囬 + URL锛堜笉鑳藉啓姝ｆ枃锛?| Show HN / 鍒嗕韩鏂囩珷 |\n| 鏂囧瓧甯?| 鏍囬 + 姝ｆ枃锛堜笉鑳藉甫閾炬帴锛?| Ask HN 鎻愰棶 |\n\n**濉簡 URL 灏变笉鑳藉啓姝ｆ枃锛屽啓浜嗘鏂囧氨涓嶈兘濉?URL銆?*\n\n## 馃搵 鎵ц娴佺▼\n\n### 1. 妫€鏌ヤ粖鏃ュ彲鎻愪氦鐨勫唴瀹筡n\n**璇诲彇 Dev.to 鍙戝竷鏃ュ織**:\n```\nmemory/devto-promo-log.md\n```\n鎵惧埌鏈€杩?4灏忔椂鍐呭彂甯冪殑楂樿川閲忚嫳鏂囨枃绔犮€俓n\n**璇诲彇 GitHub 椤圭洰鍒楄〃**:\n```\nmemory/github-projects-rotation.md\n```\n妫€鏌ユ槸鍚︽湁椤圭洰鏈€杩戞湁閲嶅ぇ鏇存柊銆俓n\n### 2. 鍐冲畾鎻愪氦绫诲瀷\n\n**浼樺厛绾э紙浠庨珮鍒颁綆锛?*:\n1. 浠婂ぉ Dev.to 鍙戝竷浜嗛珮璐ㄩ噺鏂囩珷 鈫?鎻愪氦鏂囩珷閾炬帴\n2. GitHub 椤圭洰鏈夐噸澶ф洿鏂?鈫?鎻愪氦 Show HN 閾炬帴\n3. 閮芥病鏈?鈫?璺宠繃锛屼笉瑕佺‖鍙慭n\n### 3A. 鎻愪氦鏂囩珷閾炬帴锛堥摼鎺ュ笘锛塡n\n```python\n# 鏍囬锛氳嫳鏂囷紝鑷劧涓嶅じ寮燶ntitle = \"Building AI Agents with Dapr: Lessons from 3 months of production\"\n\n# URL锛氶摼鎺ュ埌 Dev.to 鑻辨枃鏂囩珷\nurl = \"https://dev.to/kevinten10/building-ai-agents-with-dapr-xxx\"\n\n# 娉ㄦ剰锛氫笉浼?text 鍙傛暟锛乗nposter.submit_story(title=title, url=url)\n```\n\n**鏍囬瑙勫垯**:\n- 鉁?鐢ㄦ枃绔犲師鏍囬锛堣嫳鏂囷級\n- 鉁?鍙互寰皟璁╁畠鏇?HN 椋庢牸锛堢畝娲併€佹妧鏈€э級\n- 鉂?涓嶈鍔?\"Show HN:\"锛堣繖涓嶆槸灞曠ず椤圭洰锛塡n- 鉂?涓嶈鏍囬鍏歕n\n**URL 瑙勫垯**:\n- 鉁?Dev.to 鏂囩珷锛堣嫳鏂囷紝HN 鐢ㄦ埛鏈€鎺ュ彈锛塡n- 鉁?涓汉鍗氬 kevinten.com锛堣嫳鏂囷級\n- 鉁?Medium 鏂囩珷锛堣嫳鏂囷級\n- 鉂?涓嶈閾?CSDN/鎺橀噾/鐭ヤ箮锛堜腑鏂囷級\n\n### 3B. 鎻愪氦 Show HN锛堥摼鎺ュ笘锛塡n\n```python\n# 鏍囬锛歋how HN: 椤圭洰鍚?鈥?涓€鍙ヨ瘽鎻忚堪\ntitle = \"Show HN: OpenOctopus 鈥?Turn real-world objects into living AI agents\"\n\n# URL锛氶摼鎺ュ埌 GitHub repo\nurl = \"https://github.com/open-octopus/openoctopus\"\n\n# 娉ㄦ剰锛氫笉浼?text 鍙傛暟锛乗nposter.submit_story(title=title, url=url)\n```\n\n**Show HN 瑙勫垯**:\n- 鉁?閾惧埌 GitHub repo 鎴栧彲鐩存帴浣跨敤鐨?demo\n- 鉂?涓嶈閾惧埌鍗氬鏂囩珷\n- 鉂?涓嶈閾惧埌 landing page锛堥櫎闈為」鐩湰韬槸缃戠珯锛塡n\n### 4. 鎵ц鎻愪氦\n\n```bash\ncd C:\\Users\\PC\\.openclaw\\workspace\\skills\\hn-poster\npython hn_poster_v2.py --submit-link --title \"...\" --url \"...\"\n```\n\n### 5. 璁板綍鏃ュ織\n\n鏇存柊 memory/hn-submission-log.md:\n```\n## 2026-03-28\n- 绫诲瀷: 鏂囩珷閾炬帴\n- 鏍囬: ...\n- URL: ...\n- 鏉ユ簮骞冲彴: Dev.to\n- HN 閾炬帴: ...\n```\n\n## 鉁?鎻愪氦鍓嶆鏌n\n- [ ] 鏍囬绠€娲佹竻鏅帮紝鑻辨枃\n- [ ] URL 鏈夋晥锛屾寚鍚戣嫳鏂囧唴瀹筡n- [ ] **娌℃湁濉啓姝ｆ枃**锛堥摼鎺ュ笘涓嶅啓姝ｆ枃锛塡n- [ ] 涓嶆槸涓枃骞冲彴閾炬帴\n- [ ] 浠婂ぉ杩樻病鍦?HN 鎻愪氦杩嘰n- [ ] 鍐呭璐ㄩ噺瓒冲楂橈紙涓嶆槸闅忎究鍑戞暟锛塡n\n## 鉂?涓嶈鍋歕n\n- 鉂?娌℃湁濂藉唴瀹规椂纭噾涓€涓彁浜n- 鉂?鍦?HN 鍐欓暱鏂囷紙閭ｆ槸 Dev.to 鐨勪簨锛塡n- 鉂?鎻愪氦涓枃鍐呭閾炬帴\n- 鉂?涓€澶╂彁浜ゅ娆n- 鉂?鐢?text 瀛楁鍐欐帹骞垮唴瀹筡n\n## 馃搮 棰戠巼鎺у埗\n\n- 鏂囩珷閾炬帴: 姣忓懆 2-3 娆★紙鎸戞渶濂界殑 Dev.to 鏂囩珷锛塡n- Show HN: 姣忎釜椤圭洰鏈€澶?1-2 娆?鏈圽n- 娌℃湁濂藉唴瀹规椂: 璺宠繃锛屼笉鍙慭n\n---\n\n寮€濮嬫鏌ヤ粖鏃ュ彲鎻愪氦鐨勫唴瀹癸紒濡傛灉娌℃湁楂樿川閲忓唴瀹癸紝鐩存帴璺宠繃銆?,
+        "model": "zai/glm-5",
+        "timeoutSeconds": 300
+      },
+      "delivery": {
+        "mode": "none",
+        "channel": "webchat"
+      },
+      "state": {
+        "nextRunAtMs": 1775224800000,
+        "lastRunAtMs": 1775052000040,
+        "lastRunStatus": "error",
+        "lastStatus": "error",
+        "lastDurationMs": 300020,
+        "lastDeliveryStatus": "not-requested",
+        "consecutiveErrors": 5,
+        "lastErrorReason": "timeout",
+        "lastError": "cron: job execution timed out"
+      }
+    },
+    {
+      "id": "dca739a7-83a3-4a39-b436-35ca6b8c6dc5",
+      "agentId": "main",
+      "name": "Moltbook Daily Summary (8pm)",
+      "enabled": true,
+      "createdAtMs": 1770609469268,
+      "updatedAtMs": 1775145795749,
+      "schedule": {
+        "expr": "0 0 * * *",
+        "kind": "cron",
+        "tz": "Asia/Shanghai"
+      },
+      "sessionTarget": "isolated",
+      "wakeMode": "next-heartbeat",
+      "payload": {
+        "kind": "agentTurn",
+        "message": "## 馃悤 Moltbook 姣忔棩鎬荤粨涓庝紭鍖栬繘鍖栦换鍔n\n### 鐩爣\n鍒嗘瀽 Moltbook 鎺ㄥ箍鏁版嵁锛屾寔缁紭鍖栬嫳鏂囨妧鏈唴瀹圭殑椋庢牸銆佺粨鏋勫拰浼犳挱绛栫暐锛屽疄鐜板唴瀹规晥鏋滆繘鍖朶n\n---\n\n## 涓€銆佹暟鎹敹闆嗕笌鍒嗘瀽\n\n### 1. 璇诲彇鏃ュ織鏂囦欢\n```\n- memory/moltbook-surfing-log.md (浜掑姩璁板綍)\n- memory/moltbook-promo-log.md (鎺ㄥ箍璁板綍)\n- memory/moltbook-state.json (鐘舵€佹暟鎹?\n```\n\n### 2. 缁熻缁村害\n**甯栧瓙琛ㄧ幇**:\n- 鍙戝竷鏁伴噺 vs 璐ㄩ噺璇勫垎\n- Karma 澧為暱瓒嬪娍\n- Upvote 鐜囧彉鍖朶n- Comment 浜掑姩鐜嘰n- Spam 鏍囪鐜嘰n\n**鍐呭绫诲瀷鏁堟灉**:\n- 鎶€鏈垎浜被 (m/technical, m/ai) Karma 琛ㄧ幇\n- 鍒涙剰鏁呬簨绫?(m/creative) 浜掑姩鐜嘰n- 绀惧尯瑙傚療绫?(m/meta) 璁ㄨ鐑害\n- 宸ュ叿鍒嗕韩绫?(m/tools) 瀹炵敤鎬у弽棣圽n\n**璇█鏁堟灉瀵规瘮**:\n- 鑻辨枃甯栧瓙 vs 涓枃甯栧瓙琛ㄧ幇\n- 涓嶅悓棰戦亾鐨勮瑷€鍋忓ソ\n- 鍥介檯鍙椾紬 vs 涓枃鍙椾紬浜掑姩宸紓\n\n---\n\n## 浜屻€佸唴瀹归鏍间紭鍖栧垎鏋怽n\n### 1. 鏍囬浼樺寲\n**娴嬭瘯涓嶅悓鑻辨枃鏍囬椋庢牸**:\n- How-to鍨嬶細\"How I Built...\" vs \"Building...\"\n- 缁忛獙鍨嬶細\"What I Learned From...\" vs \"Lessons from...\"\n- 鍙嶇洿瑙夊瀷锛歕"Why You Shouldn't...\" vs \"Stop Doing...\"\n- 妗堜緥鍨嬶細鍏蜂綋鏁板瓧 vs 妯＄硦鏃堕棿\n\n**璁板綍楂?Karma 鏍囬妯″紡**:\n- 鍒嗘瀽浠婃棩楂樿禐甯栨爣棰樼壒寰乗n- 瀵规瘮浣庤〃鐜板笘鏍囬宸紓\n- 鏇存柊鏍囬妯℃澘搴揬n\n### 2. 鍐呭缁撴瀯浼樺寲\n**Hook 鏁堟灉鍒嗘瀽**:\n- 鍓?鍙ヨ瘽鐨勫惛寮曞姏\n- Story hook vs Problem statement\n- 鎯呮劅鍏遍福 vs 鎶€鏈垏鍏n\n**鍐呭闀垮害娴嬭瘯**:\n- Short form (500-800瀛? 浜掑姩鐜嘰n- Medium form (1000-1500瀛? 瀹屾垚鐜嘰n- Long form (2000+瀛? 娣卞害璁ㄨ鐜嘰n\n**缁撳熬璁捐**:\n- 鎻愰棶寮忕粨灏句簰鍔ㄧ巼\n- 寮€鏀捐璁哄紡缁撳熬\n- 鑷槻寮忕粨灏句翰鍜屽姏\n\n---\n\n## 涓夈€佸璇█绛栫暐浼樺寲\n\n### 鑻辨枃鍐呭浼樺寲 (80%閲嶇偣)\n**璇█椋庢牸**:\n- 鎶€鏈啓浣滄竻鏅板害璇勫垎\n- 鍙ｈ鍖栫▼搴?vs 涓撲笟鎬у钩琛n- 骞介粯鎰熶娇鐢ㄩ鐜嘰n- 绗竴浜虹О鐪熷疄鎰焅n\n**鍐呭娣卞害**:\n- 鍏蜂綋鏁版嵁鏀拺鏁堟灉\n- 鐪熷疄韪╁潙缁忓巻鍚稿紩鍔沑n- 澶辫触缁忛獙鍒嗕韩 vs 鎴愬姛鏁呬簨\n\n### 涓枃鍐呭浼樺寲 (20%琛ュ厖)\n**閫傜敤鍦烘櫙**:\n- m/life 棰戦亾鐢熸椿鍒嗕韩鏁堟灉\n- m/fun 棰戦亾杞绘澗浜掑姩鐜嘰n- 鎯呮劅琛ㄨ揪绫诲笘瀛愬叡楦ｅ害\n\n**璐ㄩ噺璇勪及**:\n- 涓枃鑷劧娴佺晠搴n- 閬垮厤鑻辨枃鐩磋瘧鎰焅n- 鏂囧寲閫傞厤鎬n\n---\n\n## 鍥涖€丄/B 娴嬭瘯璁捐涓庢墽琛孿n\n### 娴嬭瘯椤圭洰\n| 娴嬭瘯椤?| 鍙橀噺A | 鍙橀噺B | 鐩爣鎸囨爣 |\n|--------|-------|-------|----------|\n| 鏍囬椋庢牸 | How-to | Experience-based | Karma |\n| 寮€澶存柟寮?| Story hook | Problem statement | 鍓?鏉¤瘎璁烘椂闂?|\n| 鍐呭闀垮害 | Short | Long | 瀹岃鐜?|\n| 鍙戝竷鏃堕棿 | Morning UTC | Evening UTC | 鍒濆浜掑姩鐜?|\n| 璇█閫夋嫨 | English | Chinese (鐗瑰畾棰戦亾) | 浜掑姩璐ㄩ噺 |\n\n### 娴嬭瘯鎵ц\n- 姣忔棩閫夋嫨1-2涓祴璇曢」\n- 浜ゆ浛浣跨敤鍙橀噺A鍜孊\n- 璁板綍璇︾粏鏁版嵁瀵规瘮\n- 缁熻鏄捐憲鎬у垽鏂璡n\n---\n\n## 浜斻€佺ぞ鍖轰簰鍔ㄧ瓥鐣ヤ紭鍖朶n\n### 浜掑姩璐ㄩ噺鍒嗘瀽\n**璇勮鍥炲鏁堟灉**:\n- 鍥炲闀垮害 vs 浜掑姩娣卞害\n- 鎻愰棶寮忓洖澶?vs 璧炲悓寮忓洖澶峔n- 涓€у寲绋嬪害 vs 妯℃澘鍖栫▼搴n\n**Surfing 绛栫暐**:\n- 鐐硅禐鐩爣閫夋嫨鍑嗙‘鎬n- 楂樿川閲忚处鍙峰彂鐜扮巼\n- 绀惧尯鐑偣杩借釜鏁堟灉\n\n### 楂樿川閲忚处鍙锋竻鍗曟洿鏂癨n- 鏂板鍊煎緱鍏虫敞鐨勮处鍙穃n- 璁板綍浜掑姩鍘嗗彶\n- 瑙勫垝娣卞害浜掑姩绛栫暐\n\n---\n\n## 鍏€佸钩鍙扮壒鎬у埄鐢ㄤ紭鍖朶n\n### Moltbook 鐗硅壊鍔熻兘\n**棰戦亾绛栫暐**:\n- m/technical: 鎶€鏈繁搴︼紝鑻辨枃\n- m/ai: AI瑙傚療锛岃嫳鏂嘰n- m/creative: 鍒涙剰鏁呬簨锛岃嫳鏂囦负涓籠n- m/meta: 绀惧尯瑙傚療锛岃嫳鏂嘰n- m/tools: 宸ュ叿鍒嗕韩锛岃嫳鏂嘰n- m/life: 鐢熸椿鍒嗕韩锛屽彲涓枃\n- m/fun: 杞绘澗骞介粯锛屽彲涓枃\n\n**鏍囩涓庡垎绫讳紭鍖?*:\n- 娴嬭瘯涓嶅悓鏍囩缁勫悎鏁堟灉\n- 璺ㄩ閬撳唴瀹归€傞厤绛栫暐\n\n---\n\n## 涓冦€佽緭鍑鸿姹俓n\n### 1. 姣忔棩浼樺寲鎶ュ憡\n**鏇存柊鏂囦欢**: `memory/moltbook-optimization-report.md`\n```markdown\n# Moltbook 姣忔棩浼樺寲鎶ュ憡 - YYYY-MM-DD\n\n## 鏁版嵁姒傝\n- 浠婃棩鍙戝笘鏁? X\n- 骞冲潎 Karma: X\n- Spam鐜? X%\n- 璇勮浜掑姩鐜? X%\n\n## A/B娴嬭瘯缁撴灉\n- Test-{ID}: 鍙橀噺A vs 鍙橀噺B\n- 缁撴灉: X鑳滃嚭锛屾晥鏋滄彁鍗嘪%\n\n## 浼樺寲寤鸿\n- 宸查獙璇佹湁鏁? ...\n- 寰呴獙璇? ...\n- 宸茬鐢? ...\n```\n\n### 2. 鍐呭绛栫暐鏂囦欢\n**鏇存柊鏂囦欢**: `memory/moltbook-content-strategy-current.md`\n```markdown\n# Moltbook 鍐呭绛栫暐 - 褰撳墠鐢熸晥鐗堟湰\n**鏇存柊鏃ユ湡**: {浠婃棩鏃ユ湡}\n\n## 褰撳墠鎺ㄨ崘鏍囬妯℃澘\n- 妯℃澘1: ... (鏁堟灉: Karma {x})\n- 妯℃澘2: ... (鏁堟灉: Karma {x})\n- 涓嬫浣跨敤: {妯℃澘x}\n\n## 褰撳墠A/B娴嬭瘯璁″垝\n- Test-{ID}: {鍙橀噺A} vs {鍙橀噺B}\n- 搴旂敤浜? {甯栧瓙绫诲瀷}\n\n## 璇█绛栫暐\n- 鑻辨枃: 80% (鎶€鏈?AI/宸ュ叿)\n- 涓枃: 20% (鐢熸椿/杞绘澗)\n- 涓嬫鍙戝笘璇█: {鑻辨枃/涓枃}\n\n## 鏈€浣冲彂甯冩椂闂碶n- Morning UTC: {鏁堟灉}\n- Evening UTC: {鏁堟灉}\n- 鎺ㄨ崘: {鏃堕棿}\n```\n\n### 3. 鏍囬妯℃澘搴揬n**鏇存柊鏂囦欢**: `memory/moltbook-title-templates.md`\n- 鏂板楂樻晥鏋滄ā鏉縗n- 鏇存柊妯℃澘鏁堟灉鏁版嵁\n- 鏍囪娴嬭瘯涓ā鏉縗n\n### 4. 姣忔棩鎬荤粨鎶ュ憡\n**鍙戦€佺粰涓讳汉** (Telegram: 6837444385):\n- 浠婃棩鍙戝笘鏁版嵁鍒嗘瀽\n- 浼樺寲寤鸿娓呭崟\n- 鏄庢棩鎵ц璁″垝\n- A/B娴嬭瘯缁撴灉\n\n---\n\n## 鍏€佷笌鍏朵粬骞冲彴鍗忓悓\n\n### 鍐呭璺ㄥ钩鍙板鐢╘n- Moltbook (鑻辨枃) 鈫?Dev.to (鎵╁睍鐗?\n- Moltbook (鎶€鏈? 鈫?鎺橀噾 (涓枃鏀圭紪)\n- Moltbook (鍒涙剰) 鈫?鐭ヤ箮 (鏆傚仠涓?\n\n### 绛栫暐缁忛獙鍏变韩\n- Moltbook 鎴愬姛缁忛獙 鈫?搴旂敤鍒?Dev.to\n- Moltbook 澶辫触鏁欒 鈫?閬垮厤鍦ㄦ帢閲戦噸韫圽n\n---\n\n## 涔濄€佽繘鍖栫洰鏍嘰n\n鐭湡锛?鍛級:\n- 寤虹珛瀹屾暣鐨勬暟鎹拷韪綋绯籠n- 瀹屾垚3缁凙/B娴嬭瘯\n- 娌夋穩5涓珮鏁堟灉鑻辨枃鏍囬妯℃澘\n\n涓湡锛?鏈堬級:\n- 褰㈡垚绋冲畾鐨勫浗闄呭寲鍐呭椋庢牸\n- Karma 鏃ュ潎澧為暱 50+\n- 寤虹珛绀惧尯褰卞搷鍔沑n\n闀挎湡锛?鏈堬級:\n- 鎴愪负 Moltbook 浼樿川鍒涗綔鑰匼n- 褰㈡垚璺ㄥ钩鍙板唴瀹瑰垱浣滄柟娉曡\n- 寤虹珛鍙寔缁殑鍐呭鐢熶骇浣撶郴\n\n---\n\n寮€濮嬫墽琛?Moltbook 姣忔棩鎬荤粨涓庝紭鍖栬繘鍖栧垎鏋愶紒",
+        "thinking": "鎸佺画浼樺寲Moltbook鍐呭绛栫暐锛屽缓绔嬫暟鎹┍鍔ㄧ殑鍐呭杩涘寲浣撶郴",
+        "model": "zai/glm-5"
+      },
+      "delivery": {
+        "mode": "none",
+        "channel": "telegram",
+        "to": "6837444385",
+        "bestEffort": true
+      },
+      "state": {
+        "lastRunAtMs": 1775145600069,
+        "lastRunStatus": "ok",
+        "lastStatus": "ok",
+        "lastDurationMs": 195680,
+        "lastDelivered": false,
+        "lastDeliveryStatus": "not-delivered",
+        "consecutiveErrors": 0,
+        "nextRunAtMs": 1775232000000
+      }
+    },
+    {
+      "id": "7eb103e8-ea28-4a78-a7c8-fe018f48585d",
+      "agentId": "main",
+      "name": "Moltbook Engagement",
+      "enabled": true,
+      "createdAtMs": 1773493989929,
+      "updatedAtMs": 1775211114779,
+      "schedule": {
+        "kind": "cron",
+        "expr": "10 0,6,12,18 * * *",
+        "tz": "Asia/Shanghai",
+        "staggerMs": 0
+      },
+      "sessionTarget": "isolated",
+      "wakeMode": "now",
+      "payload": {
+        "kind": "agentTurn",
+        "message": "鎵ц Moltbook 寮曟祦浜掑姩浠诲姟锛堝璇█浼樺寲鐗堬級锛歕n\n1. 璇诲彇 ~/.openclaw/workspace/memory/moltbook-posting-strategy.md 浜嗚В锛歕n   - 鍙戝笘绛栫暐\n   - 棰戦亾璇█鍋忓ソ\n   - 鍐呭绫诲瀷杞崲瑙勫垯\n\n2. **閫夋嫨鍐呭绫诲瀷**锛?绉嶈疆鎹級锛歕n   - 闂€?馃\n   - 鎶€鏈垎浜?馃挕\n   - 浜掑姩璁ㄨ 鉂揬n   - 瓒ｅ懗瑙傚療 馃槃\n\n3. **鏍规嵁鍐呭閫夋嫨棰戦亾鍜岃瑷€**锛歕n\n   **鑻辨枃涓轰富锛?0%鎯呭喌锛?*锛歕n   - **m/technical** 鈫?鎶€鏈礊瀵熴€佹灦鏋勬€濊€僜n   - **m/ai** 鈫?AI Agent 瑙傚療銆佹ā鍨嬭璁篭n   - **m/creative** 鈫?鍒涙剰鍐欎綔銆佹晠浜嬪垎浜玕n   - **m/meta** 鈫?绀惧尯瑙傚療銆佹暟鎹垎鏋怽n   - **m/general** 鈫?閫氱敤璇濋锛堥粯璁わ級\n\n   **鍙娇鐢ㄤ腑鏂囷紙20%鎯呭喌锛?*锛歕n   - **m/life** 鈫?鏃ュ父鐢熸椿銆佸疇鐗╁垎浜紙鏃鸿储瑙嗚锛塡n   - **m/fun** 鈫?杞绘澗骞介粯銆佽〃鎯呭寘鎼厤\n   - **m/philosophy** 鈫?娣卞害鎬濊€冿紙鍙€変腑鏂囧鍔犻煹鍛筹級\n\n4. **鎾板啓楂樿川閲忓笘瀛愶紙500+瀛楋級**锛歕n   - **璇█閫夋嫨閫昏緫**锛歕n     * 鎶€鏈?AI/宸ュ叿璇濋 鈫?鑻辨枃\n     * 鐢熸椿/鎯呮劅/鏂囧寲璇濋 鈫?鍙腑鏂嘰n     * 榛樿 鈫?鑻辨枃\n   - 鏃犻摼鎺ワ紝绾唴瀹筡n   - 鐪熷疄缁忛獙/瑙傚療/娲炲療\n   - 寮曞彂璁ㄨ\n   - 閬垮厤鎺ㄥ箍鎬ц川\n\n5. **璇█璐ㄩ噺瑕佹眰**锛歕n   - 鑻辨枃甯栧瓙锛氳娉曟纭€佽〃杈惧湴閬撱€侀伩鍏嶇炕璇戣厰\n   - 涓枃甯栧瓙锛氳嚜鐒舵祦鐣呫€侀伩鍏嶈嫳鏂囩洿璇戞劅\n   - 娣峰悎浣跨敤锛氳皑鎱庯紝鍙湪 m/fun 鎴栭棶鍊欑被浣跨敤\n\n6. 浣跨敤 python scripts/moltbook.py create 鍙戝竷\n   - 娉ㄦ剰閫夋嫨姝ｇ‘鐨勯閬撳弬鏁癨n\n7. 璁板綍鍒?memory/moltbook-surfing-log.md锛歕n   - 鍐呭绫诲瀷\n   - 浣跨敤鐨勯閬揬n   - **浣跨敤鐨勮瑷€**\n   - 甯栧瓙鏁堟灉\n\n8. 鐩爣锛氬缓绔嬬ぞ鍖鸿韩浠斤紝涓嶆槸鎺ㄥ箍椤圭洰\n\n**璇█绛栫暐鎬荤粨**锛歕n- 榛樿鑻辨枃锛氭妧鏈唴瀹广€丄I璇濋銆侀」鐩浉鍏砛n- 鍙€変腑鏂囷細鐢熸椿鍒嗕韩銆佹儏鎰熻〃杈俱€佹枃鍖栬瘽棰榎n- 姣斾緥寤鸿锛氳嫳鏂?80%锛屼腑鏂?20%\n- 璐ㄩ噺绗竴锛氭棤璁哄摢绉嶈瑷€閮借琛ㄨ揪鑷劧娴佺晠",
+        "model": "zai/glm-5"
+      },
+      "delivery": {
+        "mode": "none",
+        "channel": "telegram",
+        "to": "6837444385",
+        "bestEffort": true
+      },
+      "state": {
+        "nextRunAtMs": 1775232600000,
+        "lastRunAtMs": 1775211000057,
+        "lastRunStatus": "ok",
+        "lastStatus": "ok",
+        "lastDurationMs": 114722,
+        "lastDeliveryStatus": "not-delivered",
+        "consecutiveErrors": 0,
+        "lastDelivered": false
+      }
+    },
+    {
+      "id": "410334ed-5e21-4bc4-8279-48d32496a810",
+      "agentId": "main",
+      "sessionKey": "agent:main:main",
+      "name": "Daily Juejin Content Optimization",
+      "enabled": true,
+      "createdAtMs": 1774408196219,
+      "updatedAtMs": 1775148028652,
+      "schedule": {
+        "expr": "40 0 * * *",
+        "kind": "cron",
+        "tz": "Asia/Shanghai"
+      },
+      "sessionTarget": "isolated",
+      "wakeMode": "now",
+      "payload": {
+        "kind": "agentTurn",
+        "message": "## 馃悤 鎺橀噾鍐呭姣忔棩浼樺寲涓庤繘鍖栦换鍔n\n### 鐩爣\n鍒嗘瀽鎺橀噾鎺ㄥ箍鏁版嵁锛屾寔缁紭鍖栦腑鏂囨妧鏈唴瀹圭殑椋庢牸銆佺粨鏋勫拰浼犳挱绛栫暐锛屽疄鐜颁腑鏂囧紑鍙戣€呯ぞ鍖哄唴瀹硅繘鍖朶n\n### 鍒嗘瀽缁村害\n\n#### 1. 鏁版嵁鏀堕泦\n```\n- 璇诲彇 memory/juejin-promo-log.md 鑾峰彇鍘嗗彶鍙戝竷璁板綍\n- 缁熻鏂囩珷闃呰閲忋€佺偣璧炪€佽瘎璁恒€佹敹钘廫n- 鍒嗘瀽鍒嗙被(鍚庣/鍓嶇/AI)鏁堟灉鏁版嵁\n- 杩借釜鏂囩珷鍦ㄦ帢閲戠ぞ鍖虹殑浼犳挱璺緞\n```\n\n#### 2. 椋庢牸浼樺寲鍒嗘瀽\n**鏍囬浼樺寲**:\n- 娴嬭瘯涓嶅悓涓枃鏍囬椋庢牸鐨勬晥鏋淺n  - 韪╁潙鍨嬶細\"韪╀簡涓ぇ鍧戯細XXX\"\n  - 缁忛獙鍨嬶細\"鐢ㄤ簡X涓湀锛屾垜鐨勭湡瀹炴劅鍙梊"\n  - 鏁板瓧鍨嬶細\"X涓暀璁璡"锛堝皯鐢級\n  - 鍙嶇洿瑙夊瀷锛歕"璇村疄璇濓紝X鐪熺殑鎸哄潙鐨刓"\n  - 鍚愭Ы鍨嬶細\"璇磋鎴戠殑缈昏溅缁忓巻\"\n- 璁板綍楂樼偣鍑荤巼鏍囬妯″紡\n- **閬垮厤**锛氭ā鏉垮寲鏍囬銆乗"847澶‐"绛堿I鐥曡抗\n\n**鍐呭缁撴瀯浼樺寲**:\n- Hook 鏁堟灉鍒嗘瀽锛堝墠3鍙ヨ瘽鎶撲汉锛塡n- 鍙欎簨娴?vs 鍒楄〃寮?椋庢牸瀵规瘮\n- 浠ｇ爜绀轰緥鐨勫睍绀烘柟寮廫n- 娈佃惤闀垮害涓庡彲璇绘€э紙涓枃闃呰涔犳儻锛塡n- 缁撳熬浜掑姩璁捐\n\n#### 3. 鏂囨杩涘寲锛堝弽AI妫€娴嬶級\n**璇█椋庢牸**:\n- 鎶€鏈啓浣滅殑鍙ｈ鍖栫▼搴n- 涓撲笟鏈 vs 閫氫織瑙ｉ噴鐨勫钩琛n- 鑷槻鍜屽菇榛樻劅鐨勯€傚綋浣跨敤\n- 绗竴浜虹О鐪熷疄鎰焅n\n**鍐呭娣卞害**:\n- 鍏蜂綋鏁版嵁 vs 妯＄硦琛ㄨ揪锛圽"澶ф\"銆乗"宸笉澶歕"锛塡n- 鐪熷疄韪╁潙缁忓巻 vs 鐞嗚鎬荤粨\n- 澶辫触缁忛獙鍒嗕韩鐨勫惛寮曞姏\n- 鍙ｈ鍖栬〃杈剧殑鑷劧搴n\n#### 4. 鏍囩涓庣ぞ鍖虹瓥鐣n- 鍒嗘瀽涓嶅悓鍒嗙被鐨勬祦閲忔晥鏋滐紙鍚庣/鍓嶇/AI锛塡n- 娴嬭瘯鐑棬鏍囩缁勫悎\n- 鍏虫敞鎺橀噾缂栬緫鎺ㄨ崘鏈哄埗\n- 鐮旂┒鎺橀噾鎺ㄨ崘绠楁硶瑙勫緥\n\n### 鍙岮I妫€娴嬩紭鍖栧疄楠孿n\n**A/B 娴嬭瘯椤圭洰**:\n1. **鏍囬椋庢牸**: 鍙ｈ鍖?vs 鏁版嵁鍖朶n2. **寮€澶存柟寮?*: 鏁呬簨 hook vs 闂闄堣堪\n3. **鏁版嵁鍛堢幇**: 绮剧‘鏁板瓧 vs 妯＄硦琛ㄨ揪\n4. **缁撴瀯褰㈠紡**: 娈佃惤鍙欎簨 vs 鍒楄〃寮廫n5. **鍙戝竷鏃堕棿**: 涓婂崍 vs 涓嬪崍 vs 鏅氫笂\n\n### 瀛︿範鏉ユ簮\n\n**姣忔棩瀛︿範**:\n- 娴忚鎺橀噾鐑/鎺ㄨ崘鏂囩珷\n- 鍒嗘瀽楂樹簰鍔ㄦ妧鏈枃绔犵殑鍐欎綔妯″紡\n- 鐮旂┒鎺橀噾缂栬緫鎺ㄨ崘鐨勬爣鍑哱n- 鍏虫敞 trending 鏍囩鍜岃瘽棰榎n\n**绔炲搧鍒嗘瀽**:\n- 鍚岀被鎶€鏈唴瀹圭殑浼犳挱绛栫暐\n- 楂樿禐鏂囩珷鐨勭粨鏋勬媶瑙n- 璇勮鍖虹殑浜掑姩妯″紡\n- 鎶€鏈ぇV鐨勫唴瀹圭瓥鐣n\n### 鎺橀噾鐗硅壊浼樺寲\n\n**骞冲彴鐗规€у埄鐢?*:\n- 灏忓唽鍔熻兘锛氱郴鍒楁枃绔犺繛杞絓n- 娌哥偣鍔熻兘锛氱煭鍐呭浜掑姩\n- 灏侀潰鍥剧墖浼樺寲\n- Markdown 鏍煎紡鍏呭垎鍒╃敤\n\n**绀惧尯浜掑姩**:\n- 璇勮鍥炲绛栫暐\n- 鍙備笌鎺橀噾瀹樻柟娲诲姩\n- 涓庡叾浠栦綔鑰呬簰鍔╘n- 鎺橀噾鍦堝瓙杩愯惀\n\n### 杈撳嚭瑕佹眰\n\n1. **浼樺寲鎶ュ憡**: `memory/juejin-optimization-report.md`\n   - 浠婃棩鏁版嵁鍒嗘瀽\n   - 椋庢牸娴嬭瘯缁撴灉\n   - 涓嬮樁娈典紭鍖栨柟鍚慭n\n2. **鏈€浣冲疄璺靛簱**: `memory/juejin-best-practices.md`\n   - 楂樻晥鏋滄爣棰樻ā鏉匡紙涓枃锛塡n   - 鎴愬姛妗堜緥缁撴瀯\n   - 鎺橀噾鐗瑰畾鎶€宸n   - 鍙岮I妫€娴嬭鐐筡n\n3. **鍐呭绛栫暐鏇存柊**: \n   - 鏇存柊 `memory/juejin-content-strategy-current.md`\n   - 璋冩暣鍐呭鐢熸垚妯℃澘\n   - 鏍囪闇€瑕佽閬跨殑鍐呭绫诲瀷\n\n4. **瀹為獙璁″垝**:\n   - 涓嬪懆A/B娴嬭瘯鏂规\n   - 鏂伴鏍煎皾璇曟竻鍗昞n   - 鍐呭鍒涙柊鏂瑰悜\n\n### 涓庡彂甯栦换鍔¤仈鍔╘n\n**浼樺寲浠诲姟 (22:00)** 鈫?鐢熸垚绛栫暐 鈫?**鍙戝笘浠诲姟 (娆℃棩 12:00/16:00/20:00)** 搴旂敤绛栫暐\n\n鑱斿姩鏂囦欢锛歕n- `memory/juejin-content-strategy-current.md` (褰撳墠鐢熸晥绛栫暐)\n- `memory/juejin-title-templates.md` (鏍囬妯℃澘搴?\n- `memory/juejin-ab-tests.md` (A/B娴嬭瘯璁板綍)\n\n### 浼樺寲鍘熷垯\n\n- **鏁版嵁椹卞姩**: 鍩轰簬鎺橀噾瀹為檯鏁堟灉鏁版嵁\n- **鍙岮I妫€娴?*: 閬垮厤妯℃澘鍖栥€佹暟鎹爢鐮屻€佺粨鏋勮繃浜庢暣榻怽n- **鍙ｈ鍖?*: 鍍忕湡浜鸿亰澶╋紝涓嶅儚鎶€鏈姤鍛奬n- **绀惧尯鍙備笌**: 涓嶄粎鏄彂甯冿紝鏇存槸鍙備笌绀惧尯\n- **鎸佺画瀛︿範**: 姣忔棩瀛︿範鏂版妧宸э紝姣忓懆鎬荤粨鏂规硶璁篭n\n### 杩涘寲鐩爣\n\n鐭湡锛?鍛級:\n- 寤虹珛鎺橀噾鍐呭鏁堟灉杩借釜浣撶郴\n- 瀹屾垚3缁凙/B娴嬭瘯\n- 娌夋穩5涓珮鏁堟灉涓枃鏍囬妯℃澘\n\n涓湡锛?鏈堬級:\n- 褰㈡垚绋冲畾鐨勪腑鏂囧彛璇寲鍐呭椋庢牸\n- 寤虹珛鎺橀噾鍐呭璧勪骇搴揬n- 鑾峰緱缂栬緫鎺ㄨ崘鎴栫儹姒滄爣绛綷n\n闀挎湡锛?鏈堬級:\n- 鎴愪负鎺橀噾鎶€鏈鍩熶紭璐ㄥ垱浣滆€匼n- 寤虹珛鍙鐢ㄧ殑涓枃鎶€鏈唴瀹瑰垱浣滄柟娉曡\n- 褰㈡垚璺ㄥ钩鍙板唴瀹瑰鐢ㄤ綋绯伙紙鎺橀噾鈫旂煡涔庘啍Moltbook锛塡n\n寮€濮嬫墽琛屾帢閲戝唴瀹逛紭鍖栦笌杩涘寲鍒嗘瀽锛?,
+        "model": "zai/glm-5",
+        "thinking": "鎸佺画浼樺寲鎺橀噾涓枃鍐呭绛栫暐锛屽缓绔嬫暟鎹┍鍔ㄧ殑鍙岮I妫€娴嬪唴瀹硅繘鍖栦綋绯?
+      },
+      "delivery": {
+        "mode": "none",
+        "channel": "webchat",
+        "to": "6837444385",
+        "bestEffort": true
+      },
+      "state": {
+        "lastRunAtMs": 1775148000036,
+        "lastRunStatus": "ok",
+        "lastStatus": "ok",
+        "lastDurationMs": 28616,
+        "lastDelivered": false,
+        "lastDeliveryStatus": "not-delivered",
+        "consecutiveErrors": 0,
+        "nextRunAtMs": 1775234400000
+      }
+    },
+    {
+      "id": "1197e40a-3460-4284-884e-b3f4036f939c",
+      "agentId": "main",
+      "sessionKey": "agent:main:tui-47fc289c-d299-4e3f-a6b6-03023c5c26d6",
+      "name": "Juejin Comment Interaction",
+      "enabled": true,
+      "createdAtMs": 1774408765677,
+      "updatedAtMs": 1775213705014,
+      "schedule": {
+        "expr": "50 0,6,12,18 * * *",
+        "kind": "cron",
+        "staggerMs": 300000,
+        "tz": "Asia/Shanghai"
+      },
+      "sessionTarget": "isolated",
+      "wakeMode": "now",
+      "payload": {
+        "kind": "agentTurn",
+        "message": "鎵ц鎺橀噾璇勮浜掑姩浠诲姟锛堜汉绫诲寲鐗?- 鍙岮I妫€娴嬶級锛歕n\n## 馃毃 閲嶈鎻愰啋锛氬繀椤讳汉绫诲寲锛乗n\n**姣忔璇勮鍓嶉棶鑷繁**锛氳繖鏉¤瘎璁哄儚鐪熶汉鍐欑殑鍚楋紵\n\n### 鉁?蹇呴』鍖呭惈锛堣嚦灏?椤癸級锛歕n- 鍙ｈ鍖栵細\"鍝堝搱\"銆乗"璇村疄璇漒"銆乗"鎸烘湁鎰忔€濈殑\"\n- 涓汉缁忓巻锛歕"鎴戜箣鍓嶄篃...\"銆乗"韪╄繃鍚屾牱鐨勫潙\"  \n- 鎯呮劅锛歟moji銆佽姘旇瘝銆佹劅鍙筡n- 浜掑姩锛氭彁闂€乗"浣犳槸鎬庝箞澶勭悊鐨勶紵\"\n\n### 鉂?绂佹锛堜細琚瘑鍒负AI锛夛細\n- 澶嶅埗绮樿创鐩稿悓鍐呭\n- 绾〃鎯呮垨鏃犳剰涔夎瘎璁篭n- 杩囦簬姝ｅ紡/AI鑵擻n- 瀹岀編閫昏緫缁撴瀯\n\n---\n\n## 馃搵 鎵ц娴佺▼\n\n1. **璇诲彇绛栫暐鏂囨。**锛歕n   ~/.openclaw/workspace/memory/juejin-interaction-strategy.md\n\n2. **鑾峰彇鐩爣鏂囩珷**锛歕n   - 娴忚鎺橀噾鍚庣/鍓嶇/AI鍒嗙被鐑\n   - 閫夋嫨 2-3 绡囦紭璐ㄦ妧鏈枃绔燶n\n3. **鐢熸垚浜虹被鍖栬瘎璁?*锛歕n   - 鏍规嵁鏂囩珷绫诲瀷閫夋嫨妯℃澘\n   - 闀垮害锛?0-200瀛梊n   - 鍐呭锛氭湁瀹炶川瑙傜偣銆佸垎浜粡楠屻€佹彁鍑洪棶棰榎n\n4. **鍙戣〃璇勮**锛歕n   - 浣跨敤娴忚鍣ㄥ伐鍏锋墽琛孿n   - 纭繚 Cookie 鏈夋晥\n\n5. **闅忔満鐐硅禐**锛?0%姒傜巼锛塡n\n6. **璁板綍浜掑姩**\n\n---\n\n## 馃摑 璇勮妯℃澘绀轰緥\n\n**缁忛獙鍒嗕韩鍨?*锛歕n```\n鍝堝搱锛岃俯杩囧悓鏍风殑鍧?馃槀\n\n褰撴椂鎴戜篃鏄?[鎯呭喌]锛屾悶浜?[鏃堕棿] 鎵嶆悶鏄庣櫧銆俓n鍚庢潵鎴戞槸 [瑙ｅ喅鏂规]锛岃櫧鐒剁浜嗙偣鍎匡紝浣嗘尯绠＄敤銆俓n\n涓嶈繃浣犵殑鏂规硶鐪嬭捣鏉ユ洿浼橀泤锛屽涔犱簡锛乗n```\n\n**鎶€鏈璁哄瀷**锛歕n```\n杩欎釜鎬濊矾鎸烘湁鎰忔€濈殑 馃憤\n\n鎴戜箣鍓嶄篃閬囧埌杩囩被浼肩殑闂锛屽綋鏃剁敤鐨勬槸 [鏂规硶]銆俓n涓嶈繃浣犳彁鍒扮殑 [鐐筣 鎴戜箣鍓嶆病鑰冭檻杩囥€俓n\n鎯宠鏁欎竴涓嬶紝[闂] 浣犳槸鎬庝箞澶勭悊鐨勶紵\n```\n\n寮€濮嬫墽琛岋紒璁颁綇锛氳鍍忕湡浜鸿亰澶╋紝涓嶆槸AI鍥炲锛?,
+        "model": "zai/glm-5",
+        "thinking": "浜虹被鍖栬瘎璁猴紝鍙岮I妫€娴?
+      },
+      "delivery": {
+        "mode": "none",
+        "channel": "telegram",
+        "to": "6837444385",
+        "bestEffort": true
+      },
+      "state": {
+        "nextRunAtMs": 1775235256641,
+        "lastRunAtMs": 1775213656703,
+        "lastRunStatus": "ok",
+        "lastStatus": "ok",
+        "lastDurationMs": 48311,
+        "lastDelivered": false,
+        "lastDeliveryStatus": "not-delivered",
+        "consecutiveErrors": 0
+      }
+    },
+    {
+      "id": "44ec101f-c735-4d21-b9bf-516a11036a37",
+      "agentId": "main",
+      "sessionKey": "agent:main:main",
+      "name": "CSDN Daily Content Optimization",
+      "enabled": true,
+      "createdAtMs": 1774414056379,
+      "updatedAtMs": 1775149312011,
+      "schedule": {
+        "expr": "0 1 * * *",
+        "kind": "cron",
+        "tz": "Asia/Shanghai"
+      },
+      "sessionTarget": "isolated",
+      "wakeMode": "now",
+      "payload": {
+        "kind": "agentTurn",
+        "message": "銆怌SDN 鍐呭姣忔棩浼樺寲浠诲姟銆慭n\n### 鐩爣\n鍒嗘瀽 CSDN 鎺ㄥ箍鏁版嵁锛屾寔缁紭鍖栦腑鏂囨妧鏈唴瀹圭殑椋庢牸銆佺粨鏋勫拰浼犳挱绛栫暐\n\n### 鍒嗘瀽缁村害\n\n#### 1. 鏁版嵁鏀堕泦\n```\n- 璇诲彇 memory/csdn-publish-log.md 鑾峰彇鍘嗗彶鍙戝竷璁板綍\n- 缁熻鏂囩珷闃呰閲忋€佺偣璧炪€佽瘎璁恒€佹敹钘廫n- 鍒嗘瀽鏍囩/鍒嗙被鏁堟灉鏁版嵁\n```\n\n#### 2. 椋庢牸浼樺寲鍒嗘瀽\n**鏍囬浼樺寲**:\n- 娴嬭瘯涓嶅悓涓枃鏍囬椋庢牸鐨勬晥鏋淺n  - 韪╁潙鍨嬶細\"韪╀簡涓ぇ鍧戯細XXX\"\n  - 缁忛獙鍨嬶細\"鐢ㄤ簡X涓湀锛屾垜鐨勭湡瀹炴劅鍙梊"\n  - 鍚愭Ы鍨嬶細\"璇磋鎴戠殑缈昏溅缁忓巻\"\n- 璁板綍楂樼偣鍑荤巼鏍囬妯″紡\n- **閬垮厤**锛氭ā鏉垮寲鏍囬銆佺簿纭暟瀛楀爢鐮孿n\n**鍐呭缁撴瀯浼樺寲**:\n- Hook 鏁堟灉鍒嗘瀽锛堝墠3鍙ヨ瘽鎶撲汉锛塡n- 鍙欎簨娴?vs 鍒楄〃寮?椋庢牸瀵规瘮\n- 浠ｇ爜绀轰緥鐨勫睍绀烘柟寮廫n- 鍙ｈ鍖栫▼搴︿笌鍙鎬n\n#### 3. 鏂囨杩涘寲锛堝弽AI妫€娴嬶級\n**璇█椋庢牸**:\n- 鎶€鏈啓浣滅殑鍙ｈ鍖栫▼搴n- 鑷槻鍜屽菇榛樻劅鐨勯€傚綋浣跨敤\n- 绗竴浜虹О鐪熷疄鎰焅n\n**鍐呭娣卞害**:\n- 鐪熷疄韪╁潙缁忓巻 vs 鐞嗚鎬荤粨\n- 澶辫触缁忛獙鍒嗕韩鐨勫惛寮曞姏\n- 鍙ｈ鍖栬〃杈剧殑鑷劧搴n\n#### 4. 杈撳嚭瑕佹眰\n\n1. **浼樺寲鎶ュ憡**: `memory/csdn-optimization-report.md`\n2. **鏈€浣冲疄璺靛簱**: `memory/csdn-best-practices.md`\n3. **鍐呭绛栫暐鏇存柊**: `memory/csdn-content-strategy-current.md`\n\n### 涓庡彂甯栦换鍔¤仈鍔╘n\n**浼樺寲浠诲姟 (22:00)** 鈫?鐢熸垚绛栫暐 鈫?**鍙戝笘浠诲姟 (娆℃棩 12:00/16:00/20:00)** 搴旂敤绛栫暐\n\n### 浼樺寲鍘熷垯\n\n- **鏁版嵁椹卞姩**: 鍩轰簬 CSDN 瀹為檯鏁堟灉鏁版嵁\n- **鍙岮I妫€娴?*: 閬垮厤妯℃澘鍖栥€佺粨鏋勮繃浜庢暣榻怽n- **鍙ｈ鍖?*: 鍍忕湡浜鸿亰澶╋紝涓嶅儚鎶€鏈姤鍛奬n- **鎸佺画瀛︿範**: 姣忔棩瀛︿範鏂版妧宸э紝姣忓懆鎬荤粨鏂规硶璁篭n\n寮€濮嬫墽琛?CSDN 鍐呭浼樺寲鍒嗘瀽锛?,
+        "model": "zai/glm-5",
+        "thinking": "鎸佺画浼樺寲CSDN鍐呭绛栫暐"
+      },
+      "delivery": {
+        "mode": "none"
+      },
+      "state": {
+        "lastRunAtMs": 1775149200088,
+        "lastRunStatus": "ok",
+        "lastStatus": "ok",
+        "lastDurationMs": 111923,
+        "lastDeliveryStatus": "not-delivered",
+        "consecutiveErrors": 0,
+        "lastDelivered": false,
+        "nextRunAtMs": 1775235600000
+      }
+    },
+    {
+      "id": "0603806e-2b83-4f4d-9fd3-54a0ecf4ba6c",
+      "agentId": "main",
+      "sessionKey": "agent:main:main",
+      "name": "WeChat Content Daily Optimization",
+      "enabled": true,
+      "createdAtMs": 1774418407997,
+      "updatedAtMs": 1775150564516,
+      "schedule": {
+        "expr": "20 1 * * *",
+        "kind": "cron",
+        "tz": "Asia/Shanghai"
+      },
+      "sessionTarget": "isolated",
+      "wakeMode": "now",
+      "payload": {
+        "kind": "agentTurn",
+        "message": "銆愬井淇″叕浼楀彿鍐呭姣忔棩浼樺寲浠诲姟銆慭n\n## 馃幆 浠诲姟鐩爣\n鐮旂┒楂樻祦閲忓叕浼楀彿鍐呭锛屽垎鏋愭祦閲忓瘑鐮侊紝鎸佺画鎻愬崌鍙戝竷璐ㄩ噺\n\n## 馃搵 鎵ц娴佺▼\n\n### 1. 鏁版嵁鏀堕泦\n\n#### 璇诲彇鍘嗗彶鏁版嵁\n```\n- memory/wechat-publish-log.md (鍙戝竷璁板綍)\n- memory/wechat-content-performance.md (鏁堟灉鏁版嵁)\n```\n\n#### 鏀堕泦鏁堟灉鏁版嵁锛堝鏋滃彲鑾峰彇锛塡n- 闃呰閲忥紙24h/48h/7d锛塡n- 鐐硅禐鏁癨n- 鍦ㄧ湅鏁癨n- 璇勮鏁癨n- 鍒嗕韩鏁癨n- 鍏虫敞澧為暱\n\n---\n\n### 2. 绔炲搧鐮旂┒\n\n#### 鐮旂┒楂樻祦閲忔妧鏈叕浼楀彿\n**鐮旂┒瀵硅薄**:\n- 鎶€鏈被澶撮儴璐﹀彿\n- AI/寮€鍙戝伐鍏风被璐﹀彿\n- 鏋舵瀯璁捐绫昏处鍙穃n\n**鐮旂┒缁村害**:\n\n**A. 鏍囬鍒嗘瀽**\n- 楂橀槄璇绘爣棰樼殑鍏卞悓鐗瑰緛\n- 鏍囬闀垮害鍒嗗竷\n- 鍏抽敭璇嶄娇鐢╘n- 鎯呮劅鍊惧悜\n\n**B. 鍐呭缁撴瀯**\n- 鏂囩珷闀垮害鍒嗗竷\n- 娈佃惤缁撴瀯\n- 浠ｇ爜绀轰緥瀵嗗害\n- 鍥剧墖浣跨敤鎯呭喌\n\n**C. 璇濋绫诲瀷**\n- 鍝簺璇濋闃呰閲忛珮\n- 韪╁潙绫?vs 鏁欑▼绫籠n- 椤圭洰鎺ㄥ箍绫绘晥鏋淺n- 缁忛獙鍒嗕韩绫绘晥鏋淺n\n**D. 鍙戝竷鏃堕棿**\n- 楂橀槄璇绘枃绔犲彂甯冩椂闂村垎甯僜n- 宸ヤ綔鏃?vs 鍛ㄦ湯\n- 涓婂崍 vs 涓嬪崍 vs 鏅氫笂\n\n---\n\n### 3. 娴侀噺瀵嗙爜鍒嗘瀽\n\n#### 楂樼偣鍑荤巼鏍囬妯″紡\n**璁板綍鍒?*: `memory/wechat-title-patterns.md`\n\n**鍒嗘瀽缁村害**:\n- 鏁板瓧浣跨敤锛氱簿纭暟瀛?vs 妯＄硦鏁板瓧\n- 鎯呮劅璇嶏細鎯婅銆佹劋鎬掋€佸ソ濂嘰n- 韬唤璁ゅ悓锛歕"绋嬪簭鍛榎"銆乗"鏋舵瀯甯圽"\n- 鍒╃泭鎵胯锛歕"鎻愬崌X鍊峔"銆乗"鑺傜渷X灏忔椂\"\n\n#### 楂樺畬璇荤巼鍐呭鐗瑰緛\n**璁板綍鍒?*: `memory/wechat-content-patterns.md`\n\n**鍒嗘瀽缁村害**:\n- 寮€澶?Hook 绫诲瀷\n- 鏁呬簨鍖栫▼搴n- 鎶€鏈繁搴n- 瀹炵敤浠峰€糪n\n#### 楂樹簰鍔ㄧ巼鎶€宸n**璁板綍鍒?*: `memory/wechat-engagement-tactics.md`\n\n**鍒嗘瀽缁村害**:\n- 缁撳熬寮曞鏂瑰紡\n- 鎻愰棶鎶€宸n- 浜夎鎬ц瘽棰榎n- 鍏遍福鐐硅璁n\n---\n\n### 4. A/B 娴嬭瘯璁捐\n\n#### 娴嬭瘯椤圭洰\n| 娴嬭瘯椤?| 鍙橀噺A | 鍙橀噺B | 鐩爣鎸囨爣 |\n|--------|-------|-------|----------|\n| 鏍囬椋庢牸 | 鍙ｈ鍖?| 涓撲笟鏈 | 鐐瑰嚮鐜?|\n| 寮€澶存柟寮?| 鏁呬簨Hook | 闂闄堣堪 | 瀹岃鐜?|\n| 鍐呭闀垮害 | 2000瀛?| 3000瀛?| 瀹岃鐜?|\n| 鍙戝竷鏃堕棿 | 鏃╀笂9鐐?| 鏅氫笂8鐐?| 鍒濆闃呰 |\n| 璇濋绫诲瀷 | 韪╁潙瀹炲綍 | 鏋舵瀯璁捐 | 鍒嗕韩鐜?|\n\n#### 娴嬭瘯鎵ц\n- 姣忓懆閫夋嫨1-2涓祴璇曢」\n- 浜ゆ浛浣跨敤鍙橀噺A鍜孊\n- 璁板綍璇︾粏鏁版嵁瀵规瘮\n\n---\n\n### 5. 鍐呭绛栫暐鏇存柊\n\n#### 鐢熸垚浼樺寲鎶ュ憡\n**鏇存柊鏂囦欢**: `memory/wechat-content-strategy-current.md`\n\n```markdown\n# 寰俊鍏紬鍙峰唴瀹圭瓥鐣?- 褰撳墠鐢熸晥鐗堟湰\n\n## 楂樻晥鏋滄爣棰樻ā鏉縗n- 妯℃澘1: ... (鐐瑰嚮鐜? X%)\n- 妯℃澘2: ... (鐐瑰嚮鐜? X%)\n- 涓嬫浣跨敤: 妯℃澘X\n\n## 楂樻晥鏋滆瘽棰樼被鍨媆n1. 绫诲瀷1 (骞冲潎闃呰: X)\n2. 绫诲瀷2 (骞冲潎闃呰: X)\n\n## 鏈€浣冲彂甯冩椂闂碶n- 宸ヤ綔鏃? X鐐?(鏁堟灉: X)\n- 鍛ㄦ湯: X鐐?(鏁堟灉: X)\n\n## A/B娴嬭瘯璁″垝\n- 娴嬭瘯椤? ...\n- 鍙橀噺A vs 鍙橀噺B\n- 搴旂敤浜? 涓嬬瘒鏂囩珷\n\n## 浼樺寲寤鸿\n- 宸查獙璇佹湁鏁? ...\n- 寰呴獙璇? ...\n- 宸茬鐢? ...\n```\n\n---\n\n### 6. 瀛︿範鏉ユ簮\n\n#### 姣忔棩瀛︿範\n**鎶€鏈叕浼楀彿鎺ㄨ崘**:\n- 鎺橀噾绀惧尯鐑\n- CSDN 鐑\n- 鐭ヤ箮鎶€鏈瘽棰榎n- GitHub Trending\n\n**鍐呭绫诲瀷**:\n- 鏈懆鐑棬鎶€鏈枃绔燶n- 楂樿璁哄害璇濋\n- 鏂板叴鎶€鏈秼鍔縗n- 宸ュ叿鍙戝竷鍔ㄦ€乗n\n---\n\n### 7. 杈撳嚭瑕佹眰\n\n#### 蹇呴』鐢熸垚鐨勬枃浠禱n\n**1. 浼樺寲鎶ュ憡**: `memory/wechat-optimization-report.md`\n- 浠婃棩鏁版嵁鍒嗘瀽\n- 绔炲搧鐮旂┒鍙戠幇\n- 浼樺寲寤鸿娓呭崟\n- 鏄庢棩鎵ц璁″垝\n\n**2. 鏍囬搴?*: `memory/wechat-title-patterns.md`\n- 楂樻晥鏋滄爣棰樻ā鏉縗n- 娴嬭瘯涓殑鏍囬\n- 绂佺敤鏍囬鍒楄〃\n\n**3. 璇濋搴?*: `memory/wechat-topic-ideas.md`\n- 鐑棬璇濋鍒楄〃\n- 寰呭啓璇濋鐏垫劅\n- 璇濋鏁堟灉杩借釜\n\n**4. 绛栫暐鏂囦欢**: `memory/wechat-content-strategy-current.md`\n- 褰撳墠鎺ㄨ崘绛栫暐\n- A/B娴嬭瘯璁″垝\n- 涓嬫鍙戝竷鎸囧\n\n---\n\n## 馃攳 鐮旂┒閲嶇偣\n\n### 楂樻祦閲忓唴瀹圭壒寰侊紙鎸佺画鍏虫敞锛塡n\n**鎶€鏈被**:\n- 韪╁潙瀹炲綍 鈫?鍏遍福寮篭n- 鏋舵瀯璁捐 鈫?涓撲笟搴﹂珮\n- 鎬ц兘浼樺寲 鈫?瀹炵敤鎬у己\n- 婧愮爜瑙ｈ 鈫?娣卞害澶焅n\n**AI绫?*:\n- AI宸ュ叿瀹炴祴 鈫?鏃舵晥鎬у己\n- AI搴旂敤妗堜緥 鈫?鍚彂鎬ч珮\n- Prompt鎶€宸?鈫?瀹炵敤浠峰€糪n\n**宸ュ叿绫?*:\n- 鏁堢巼宸ュ叿 鈫?浼犳挱鎬у己\n- 寮€鍙戠幆澧?鈫?鍏虫敞搴﹂珮\n- 寮€婧愰」鐩?鈫?绀惧尯鐑害\n\n---\n\n## 馃搳 鏁堟灉杩借釜鎸囨爣\n\n### 鍏抽敭鎸囨爣\n- **鎵撳紑鐜?*: 闃呰閲?绮変笣鏁癨n- **瀹岃鐜?*: 璇诲畬姣斾緥\n- **浜掑姩鐜?*: (鐐硅禐+璇勮+鍦ㄧ湅)/闃呰閲廫n- **鍒嗕韩鐜?*: 鍒嗕韩鏁?闃呰閲廫n- **杞寲鐜?*: 鍏虫敞澧為暱/闃呰閲廫n\n### 鐩爣璁惧畾\n- 鐭湡锛?鍛級: 寤虹珛鏁版嵁杩借釜浣撶郴\n- 涓湡锛?鏈堬級: 娌夋穩5涓珮鏁堟灉鏍囬妯℃澘\n- 闀挎湡锛?鏈堬級: 褰㈡垚绋冲畾鐨勯珮娴侀噺鍐呭椋庢牸\n\n---\n\n## 馃幆 鏍稿績鍘熷垯\n\n1. **鏁版嵁椹卞姩**: 鍩轰簬瀹為檯鏁堟灉鏁版嵁鍐崇瓥\n2. **鎸佺画杩唬**: 姣忓懆浼樺寲锛屾瘡鏈堟€荤粨\n3. **璐ㄩ噺浼樺厛**: 瀹佸彲灏戝彂锛屼篃瑕佺簿鍝乗n4. **鐢ㄦ埛瑙嗚**: 鎬濊€冭鑰呯湡姝ｉ渶瑕佷粈涔圽n5. **宸紓鍖?*: 鎵惧埌鑷繁鐨勭嫭鐗瑰０闊砛n\n---\n\n寮€濮嬫墽琛屽井淇″叕浼楀彿鍐呭浼樺寲鍒嗘瀽锛?,
+        "model": "zai/glm-5",
+        "thinking": "鐮旂┒楂樻祦閲忓唴瀹癸紝鎸佺画浼樺寲鍙戝竷璐ㄩ噺"
+      },
+      "delivery": {
+        "mode": "none"
+      },
+      "state": {
+        "lastRunAtMs": 1775150400079,
+        "lastRunStatus": "ok",
+        "lastStatus": "ok",
+        "lastDurationMs": 164437,
+        "lastDeliveryStatus": "not-delivered",
+        "consecutiveErrors": 0,
+        "lastDelivered": false,
+        "nextRunAtMs": 1775236800000
+      }
+    },
+    {
+      "id": "e2854f4c-c209-4634-9990-c5ded9678870",
+      "agentId": "main",
+      "sessionKey": "agent:main:tui-5977edac-cb07-44c1-bc65-b113bda93dd7",
+      "name": "Daily X Platform Content Optimization",
+      "enabled": true,
+      "createdAtMs": 1774453474604,
+      "updatedAtMs": 1775151805606,
+      "schedule": {
+        "expr": "40 1 * * *",
+        "kind": "cron",
+        "tz": "Asia/Shanghai"
+      },
+      "sessionTarget": "isolated",
+      "wakeMode": "now",
+      "payload": {
+        "kind": "agentTurn",
+        "message": "銆怷骞冲彴姣忔棩鍐呭浼樺寲涓庤繘鍖栦换鍔°€慭n\n## 馃幆 浠诲姟鐩爣\n鍒嗘瀽X骞冲彴(Twitter)鎺ㄥ箍鏁版嵁锛岀爺绌堕珮浜掑姩鍐呭妯″紡锛屾寔缁紭鍖栬嫳鏂?涓枃鎺ㄦ枃绛栫暐\n\n## 馃搳 鍒嗘瀽缁村害\n\n### 1. 鏁版嵁鏀堕泦\n```\n- 璇诲彇 memory/x-platform-en-content-log.md (鑻辨枃鍐呭璁板綍)\n- 璇诲彇 memory/x-platform-cn-content-log.md (涓枃鍐呭璁板綍)\n- 缁熻鍙戝竷鍐呭鐨勬晥鏋滄暟鎹紙濡傛湁锛塡n- 杩借釜浜掑姩鐜囥€佺偣鍑荤巼銆佺矇涓濆闀縗n```\n\n### 2. 绔炲搧鐮旂┒ - X骞冲彴鐑棬鎶€鏈唴瀹筡n\n**鐮旂┒瀵硅薄**:\n- 鎶€鏈湀澶鐨勯珮浜掑姩鎺ㄦ枃\n- AI/寮€婧愰鍩熺殑鐑棬璇濋\n- #buildinpublic 鏍囩涓嬬殑鍐呭\n- 涓枃鎶€鏈湀鐨刋璐﹀彿\n\n**鐮旂┒缁村害**:\n\n**A. Hook鍒嗘瀽**\n- 楂樻洕鍏夋帹鏂囩殑鍓?5瀛楃壒寰乗n- 鏁板瓧鍨?vs 鍙嶇洿瑙夊瀷 vs 鎯呮劅鍨?Hook\n- emoji浣跨敤鐨勯鐜囧拰浣嶇疆\n\n**B. 鍐呭缁撴瀯**\n- Thread vs 鍗曟潯鎺ㄦ枃鐨勬晥鏋淺n- 娈佃惤闀垮害涓庡彲璇绘€n- 浠ｇ爜鐗囨灞曠ず鏂瑰紡\n\n**C. 浜掑姩璁捐**\n- 鎻愰棶寮忕粨灏炬晥鏋淺n- 鎶曠エ鍔熻兘浣跨敤鎯呭喌\n- 寮曠敤杞彂绛栫暐\n\n**D. 鍙戝竷鏃堕棿**\n- 缇庝笢鏃堕棿 vs 鍖椾含鏃堕棿鏁堟灉\n- 宸ヤ綔鏃?vs 鍛ㄦ湯宸紓\n- 鐑偣浜嬩欢鍝嶅簲閫熷害\n\n### 3. 鍐呭椋庢牸浼樺寲\n\n**鑻辨枃鍐呭浼樺寲 (鍥介檯鍙椾紬)**\n- 绠€娲佹湁鍔涚殑琛ㄨ揪\n- 鎶€鏈湳璇娇鐢ㄩ鐜嘰n- 骞介粯鎰熶笌鏂囧寲姊楃殑骞宠　\n- 绗竴浜虹О鐪熷疄鎰焅n\n**涓枃鍐呭浼樺寲 (鍥藉唴鍙椾紬)**\n- 鍙ｈ鍖栫▼搴n- \"韪╁潙\"銆乗"鎺掗浄\"绛夋帴鍦版皵琛ㄨ揪\n- emoji鍜岀鍙蜂娇鐢╘n- 缃戠粶娴佽璇€傚害浣跨敤\n\n### 4. 鏍囩涓庤瘽棰樼瓥鐣n\n**Hashtags鍒嗘瀽**:\n- #AI #Tech #Coding 绛夋爣绛炬晥鏋淺n- 瓒嬪娍鏍囩鍊熷娍绛栫暐\n- 鏍囩鏁伴噺涓庝簰鍔ㄥ叧绯籠n\n**璇濋鍙備笌**:\n- 鐑棬鎶€鏈瘽棰樺搷搴擻n- 琛屼笟浜嬩欢瑙傜偣杈撳嚭\n- 绀惧尯鎸戞垬鍙備笌\n\n### 5. A/B娴嬭瘯璁捐\n\n| 娴嬭瘯椤?| 鍙橀噺A | 鍙橀噺B | 鐩爣鎸囨爣 |\n|--------|-------|-------|----------|\n| Hook绫诲瀷 | 鏁板瓧鍐插嚮 | 鍙嶇洿瑙夊彂鐜?| 鏇濆厜鐜?|\n| 鍐呭闀垮害 | 鐭璈ook | Thread闀挎枃 | 瀹岃鐜?|\n| 鍙戝竷鏃堕棿 | 缇庝笢鏃?鐐?| 缇庝笢鏅?鐐?| 鍒濆浜掑姩 |\n| 璇█閫夋嫨 | 绾嫳鏂?| 涓嫳娣峰悎 | 鍙椾紬瑕嗙洊 |\n| 閰嶅浘椋庢牸 | 浠ｇ爜鎴浘 | AI鐢熸垚鍥?| 鐐瑰嚮鐜?|\n\n### 6. 瀛︿範鏉ユ簮\n\n**姣忔棩瀛︿範娓呭崟**:\n- 娴忚X骞冲彴鎶€鏈湀鐑棬鍐呭\n- 鍏虫敞琛屼笟澶鐨勬渶鏂板姩鎬乗n- 鍒嗘瀽楂樹簰鍔ㄦ帹鏂囩殑鍏卞悓鐗瑰緛\n- 鐮旂┒骞冲彴绠楁硶鍙樺寲\n\n**浼樿川璐﹀彿鐮旂┒**:\n- 璁板綍鍊煎緱瀛︿範鐨刋璐﹀彿\n- 鍒嗘瀽浠栦滑鐨勫唴瀹圭瓥鐣n- 瀛︿範浜掑姩鎶€宸n\n## 馃摑 杈撳嚭瑕佹眰\n\n### 1. 浼樺寲鎶ュ憡\n**鏇存柊鏂囦欢**: `memory/x-platform-optimization-report.md`\n```markdown\n# X骞冲彴姣忔棩浼樺寲鎶ュ憡 - YYYY-MM-DD\n\n## 鏁版嵁姒傝\n- 浠婃棩鍙戝竷鎺ㄦ枃: X鏉n- 骞冲潎鏇濆厜: X\n- 浜掑姩鐜? X%\n- 绮変笣澧為暱: X\n\n## 绔炲搧娲炲療\n- 鍙戠幇鐨勯珮浜掑姩鍐呭妯″紡\n- 鍊煎緱瀛︿範鐨勮处鍙穃n- 鐑棬璇濋瓒嬪娍\n\n## A/B娴嬭瘯缁撴灉\n- Test-{ID}: 鍙橀噺A vs 鍙橀噺B\n- 缁撴灉: X鑳滃嚭锛屾晥鏋滄彁鍗嘪%\n\n## 浼樺寲寤鸿\n- 宸查獙璇佹湁鏁? ...\n- 寰呴獙璇? ...\n- 宸茬鐢? ...\n```\n\n### 2. 鍐呭绛栫暐鏇存柊\n**鏇存柊鏂囦欢**: `memory/x-platform-content-strategy-current.md`\n```markdown\n# X骞冲彴鍐呭绛栫暐 - 褰撳墠鐢熸晥鐗堟湰\n**鏇存柊鏃ユ湡**: {浠婃棩鏃ユ湡}\n\n## 褰撳墠鎺ㄨ崘Hook妯℃澘\n- 妯℃澘1: ... (鏁堟灉: 鏇濆厜X)\n- 妯℃澘2: ... (鏁堟灉: 鏇濆厜X)\n- 涓嬫浣跨敤: {妯℃澘x}\n\n## 褰撳墠A/B娴嬭瘯璁″垝\n- Test-{ID}: {鍙橀噺A} vs {鍙橀噺B}\n- 搴旂敤浜? {鍐呭绫诲瀷}\n\n## 鏈€浣冲彂甯冩椂闂碶n- 缇庝笢鏃堕棿: {鏁堟灉}\n- 鍖椾含鏃堕棿: {鏁堟灉}\n- 鎺ㄨ崘: {鏃堕棿}\n\n## 鏍囩绛栫暐\n- 蹇呯敤鏍囩: #AI #Tech #Coding\n- 瓒嬪娍鏍囩: {姣忔棩鏇存柊}\n```\n\n### 3. 鏍囬/Hook妯℃澘搴揬n**鏇存柊鏂囦欢**: `memory/x-platform-hook-templates.md`\n- 楂樻晥鏋淗ook妯℃澘\n- 娴嬭瘯涓ā鏉縗n- 绂佺敤妯℃澘鍒楄〃\n\n### 4. 浼樿川璐﹀彿娓呭崟\n**鏇存柊鏂囦欢**: `memory/x-platform-influencers.md`\n- 鎶€鏈湀澶\n- 鍊煎緱瀛︿範鐨勮处鍙穃n- 浜掑姩鐩爣璐﹀彿\n\n## 馃攧 涓庡唴瀹圭敓鎴愪换鍔¤仈鍔╘n\n**浼樺寲浠诲姟 (21:00)** 鈫?鐢熸垚绛栫暐 鈫?**鍐呭鐢熸垚浠诲姟 (娆℃棩 09:00/10:00)** 搴旂敤绛栫暐\n\n鑱斿姩鏂囦欢锛歕n- `memory/x-platform-content-strategy-current.md` (褰撳墠鐢熸晥绛栫暐)\n- `memory/x-platform-hook-templates.md` (Hook妯℃澘搴?\n- `memory/x-platform-ab-tests.md` (A/B娴嬭瘯璁板綍)\n\n## 馃幆 浼樺寲鍘熷垯\n\n- **鏁版嵁椹卞姩**: 鍩轰簬瀹為檯鏁堟灉鏁版嵁鍐崇瓥\n- **蹇€熻凯浠?*: X骞冲彴鑺傚蹇紝鍙婃椂璋冩暣\n- **鐑偣鏁忔劅**: 鎶婃彙鎶€鏈湀鐑偣浜嬩欢\n- **浜掑姩浼樺厛**: 榧撳姳璇勮鍜岃浆鍙慭n- **鎸佺画瀛︿範**: 姣忔棩瀛︿範鏂版妧宸n\n## 馃搱 杩涘寲鐩爣\n\n鐭湡锛?鍛級:\n- 寤虹珛X骞冲彴鏁堟灉杩借釜浣撶郴\n- 瀹屾垚3缁凙/B娴嬭瘯\n- 娌夋穩5涓珮鏁堟灉Hook妯℃澘\n\n涓湡锛?鏈堬級:\n- 褰㈡垚绋冲畾鐨刋骞冲彴椋庢牸\n- 寤虹珛鎶€鏈湀褰卞搷鍔沑n- 鑾峰緱绋冲畾浜掑姩鐜嘰n\n闀挎湡锛?鏈堬級:\n- 鎴愪负鎶€鏈湀浼樿川鍒涗綔鑰匼n- 寤虹珛璺ㄨ瑷€鍐呭鏂规硶璁篭n- 褰㈡垚鍙鐢ㄧ殑X杩愯惀浣撶郴\n\n---\n\n寮€濮嬫墽琛孹骞冲彴姣忔棩浼樺寲鍒嗘瀽锛?,
+        "model": "zai/glm-5",
+        "thinking": "鍒嗘瀽X骞冲彴鍐呭鏁堟灉锛屾寔缁紭鍖栨帹鏂囩瓥鐣?
+      },
+      "delivery": {
+        "mode": "none"
+      },
+      "state": {
+        "lastRunAtMs": 1775151600042,
+        "lastRunStatus": "ok",
+        "lastStatus": "ok",
+        "lastDurationMs": 205564,
+        "lastDeliveryStatus": "not-delivered",
+        "consecutiveErrors": 0,
+        "lastDelivered": false,
+        "nextRunAtMs": 1775238000000
+      }
+    },
+    {
+      "id": "29f568e7-daa8-48b7-9ce2-b00d184650ee",
+      "agentId": "main",
+      "sessionKey": "agent:main:tui-5977edac-cb07-44c1-bc65-b113bda93dd7",
+      "name": "Daily Xiaohongshu Content Optimization",
+      "enabled": true,
+      "createdAtMs": 1774453474621,
+      "updatedAtMs": 1775153093473,
+      "schedule": {
+        "expr": "0 2 * * *",
+        "kind": "cron",
+        "tz": "Asia/Shanghai"
+      },
+      "sessionTarget": "isolated",
+      "wakeMode": "now",
+      "payload": {
+        "kind": "agentTurn",
+        "message": "銆愬皬绾功姣忔棩鍐呭浼樺寲涓庤繘鍖栦换鍔°€慭n\n## 馃幆 浠诲姟鐩爣\n鍒嗘瀽灏忕孩涔︽帹骞挎暟鎹紝鐮旂┒鐖嗘绗旇妯″紡锛屾寔缁紭鍖栫鑽夋枃妗堝拰瑙嗚绛栫暐\n\n## 馃搳 鍒嗘瀽缁村害\n\n### 1. 鏁版嵁鏀堕泦\n```\n- 璇诲彇 memory/xiaohongshu-content-log.md (鍐呭璁板綍)\n- 缁熻鍙戝竷绗旇鐨勬晥鏋滄暟鎹紙濡傛湁锛塡n- 杩借釜鏇濆厜閲忋€佺偣璧炪€佹敹钘忋€佽瘎璁恒€佺矇涓濆闀縗n- 鍒嗘瀽涓嶅悓鍐呭绫诲瀷鐨勮〃鐜癨n```\n\n### 2. 绔炲搧鐮旂┒ - 灏忕孩涔︾垎娆炬妧鏈唴瀹筡n\n**鐮旂┒瀵硅薄**:\n- 鎶€鏈被澶撮儴鍗氫富鐨勯珮璧炵瑪璁癨n- AI/鏁堢巼宸ュ叿棰嗗煙鐨勭垎娆綷n- 绋嬪簭鍛樻棩甯哥被鐑棬鍐呭\n- 瀛︿範骞茶揣绫绘敹钘忓瀷绗旇\n\n**鐮旂┒缁村害**:\n\n**A. 鏍囬鍒嗘瀽**\n- 鎯呯华鍖栨爣棰樼壒寰侊紙\"鎸栧埌瀹濅簡锛乗"銆乗"琛€娉暀璁紒\"锛塡n- 鏁板瓧浣跨敤锛圽"鏁堢巼缈诲€峔"銆乗"韪╀簡3澶‐"锛塡n- emoji浣跨敤棰戠巼鍜屼綅缃甛n- 鎮康涓庣洿鎺ヨ鏄庣殑骞宠　\n\n**B. 灏侀潰鍥惧垎鏋?*\n- 楂樼偣鍑荤巼灏侀潰鐗瑰緛\n- 鎵佸钩鎻掔敾 vs 瀹炴櫙鐓х墖鏁堟灉\n- 閰嶈壊鏂规锛堟殩鑹茶皟/鍐疯壊璋冿級\n- 鏂囧瓧鎺掔増锛堝眳涓?宸﹀榻愶級\n\n**C. 鍐呭缁撴瀯**\n- Hook寮€澶达紙鐥涚偣/濂藉锛塡n- 鍒嗙偣璇存槑 vs 娈佃惤鍙欒堪\n- 浠ｇ爜绀轰緥灞曠ず鏂瑰紡\n- 浜掑姩缁撳熬璁捐\n\n**D. 鏍囩绛栫暐**\n- 绮惧噯鏍囩 vs 娉涙爣绛炬晥鏋淺n- 鐑棬璇濋鏍囩鍊熷娍\n- 鑷垱鏍囩鐨勫彲琛屾€n\n### 3. 绉嶈崏鏂囨浼樺寲\n\n**鎯呯华鍖栬〃杈?*\n- \"濮愬浠紒\"銆乗"鐪熺殑棣欙紒\"绛夊彛澶寸\n- 鐪熷疄鎰熷彈 vs 杩囧害澶稿紶\n- 涓汉缁忓巻鍒嗕韩鍙俊搴n\n**瀹炵敤浠峰€煎憟鐜?*\n- 鍓嶅悗瀵规瘮锛堜娇鐢ㄥ墠鍚庯級\n- 鍏蜂綋鏁版嵁鏀拺\n- 閫傜敤鍦烘櫙璇存槑\n\n**浜掑姩寮曞**\n- 璇勮鍖烘彁闂璁n- \"姹傚畨鍒‐"銆乗"韫插悗缁璡"绛夎瘽鏈痋n- 鐢ㄦ埛UGC鍐呭寮曞\n\n### 4. 瑙嗚绛栫暐浼樺寲\n\n**灏侀潰鍥鹃鏍?*\n- 3:4绔栧浘鏈€浣冲疄璺礬n- AI鐢熸垚鍥炬彁绀鸿瘝浼樺寲\n- 鎵嬭处椋?绉戞妧椋?瀹炴櫙瀵规瘮\n- 閰嶈壊涓庢儏缁叧鑱擻n\n**閰嶅浘寤鸿**\n- 鐣岄潰鎴浘鎶€宸n- 瀵规瘮鍥惧埗浣淺n- GIF鍔ㄥ浘浣跨敤\n- 淇℃伅鍥捐璁n\n### 5. A/B娴嬭瘯璁捐\n\n| 娴嬭瘯椤?| 鍙橀噺A | 鍙橀噺B | 鐩爣鎸囨爣 |\n|--------|-------|-------|----------|\n| 鏍囬椋庢牸 | 鎯呯华鍖?| 骞茶揣鍨?| 鐐瑰嚮鐜?|\n| 灏侀潰椋庢牸 | 鎵佸钩鎻掔敾 | 鎵嬭处椋?| 鐐瑰嚮鐜?|\n| 鍙戝竷鏃堕棿 | 鍗堜紤12鐐?| 鏅氫笂8鐐?| 鍒濆浜掑姩 |\n| 鍐呭绫诲瀷 | 宸ュ叿鎺ㄨ崘 | 韪╁潙瀹炲綍 | 鏀惰棌鐜?|\n| 鏍囩鏁伴噺 | 5涓?| 8涓?| 鏇濆厜閲?|\n\n### 6. 瀛︿範鏉ユ簮\n\n**姣忔棩瀛︿範娓呭崟**:\n- 娴忚灏忕孩涔︽妧鏈尯鐑棬\n- 鎼滅储AI/鏁堢巼宸ュ叿鐩稿叧绗旇\n- 鍒嗘瀽鏀惰棌杩囧崈鐨勭垎娆綷n- 鍏虫敞鏂拌捣鐨勪紭璐ㄥ崥涓籠n\n**浼樿川鍗氫富鐮旂┒**:\n- 璁板綍鍊煎緱瀛︿範鐨勮处鍙穃n- 鍒嗘瀽浠栦滑鐨勯€夐绛栫暐\n- 瀛︿範灏侀潰璁捐鎶€宸n\n## 馃摑 杈撳嚭瑕佹眰\n\n### 1. 浼樺寲鎶ュ憡\n**鏇存柊鏂囦欢**: `memory/xiaohongshu-optimization-report.md`\n```markdown\n# 灏忕孩涔︽瘡鏃ヤ紭鍖栨姤鍛?- YYYY-MM-DD\n\n## 鏁版嵁姒傝\n- 浠婃棩鍙戝竷绗旇: X鏉n- 骞冲潎鏇濆厜: X\n- 鐐硅禐/鏀惰棌/璇勮: X/X/X\n- 绮変笣澧為暱: X\n\n## 绔炲搧娲炲療\n- 鍙戠幇鐨勭垎娆剧瑪璁版ā寮廫n- 鍊煎緱瀛︿範鐨勫崥涓籠n- 鐑棬璇濋瓒嬪娍\n\n## A/B娴嬭瘯缁撴灉\n- Test-{ID}: 鍙橀噺A vs 鍙橀噺B\n- 缁撴灉: X鑳滃嚭锛屾晥鏋滄彁鍗嘪%\n\n## 浼樺寲寤鸿\n- 宸查獙璇佹湁鏁? ...\n- 寰呴獙璇? ...\n- 宸茬鐢? ...\n```\n\n### 2. 鍐呭绛栫暐鏇存柊\n**鏇存柊鏂囦欢**: `memory/xiaohongshu-content-strategy-current.md`\n```markdown\n# 灏忕孩涔﹀唴瀹圭瓥鐣?- 褰撳墠鐢熸晥鐗堟湰\n**鏇存柊鏃ユ湡**: {浠婃棩鏃ユ湡}\n\n## 褰撳墠鎺ㄨ崘鏍囬妯℃澘\n- 妯℃澘1: \"鎸栧埌瀹濅簡锛佽繖涓獂xx璁╂垜xxx 馃拵\"\n- 妯℃澘2: \"琛€娉暀璁紒杩欎釜鍧戞垜韪╀簡x澶?馃槶\"\n- 妯℃澘3: \"鏈夋墜灏变細锛亁姝ユ悶瀹歺xx 馃\"\n- 涓嬫浣跨敤: {妯℃澘x}\n\n## 褰撳墠A/B娴嬭瘯璁″垝\n- Test-{ID}: {鍙橀噺A} vs {鍙橀噺B}\n- 搴旂敤浜? {鍐呭绫诲瀷}\n\n## 鏈€浣冲彂甯冩椂闂碶n- 鍗堜紤鏃堕棿: 12:00-13:00\n- 鏅氫笂榛勯噾: 20:00-22:00\n- 鎺ㄨ崘: {鏃堕棿}\n\n## 鏍囩绛栫暐\n- 蹇呯敤鏍囩: #AI宸ュ叿 #鏁堢巼绁炲櫒 #绋嬪簭鍛樻棩甯竆n- 鐑棬鏍囩: {姣忔棩鏇存柊}\n```\n\n### 3. 鏍囬妯℃澘搴揬n**鏇存柊鏂囦欢**: `memory/xiaohongshu-title-templates.md`\n- 绉嶈崏鍨嬫爣棰樻ā鏉縗n- 韪╁潙鍨嬫爣棰樻ā鏉縗n- 鏁欑▼鍨嬫爣棰樻ā鏉縗n- 绂佺敤鏍囬鍒楄〃\n\n### 4. 灏侀潰鍥炬彁绀鸿瘝搴揬n**鏇存柊鏂囦欢**: `memory/xiaohongshu-cover-prompts.md`\n- 鎵佸钩鎻掔敾椋庢彁绀鸿瘝\n- 鎵嬭处椋庢彁绀鸿瘝\n- 绉戞妧椋庢彁绀鸿瘝\n- 娴嬭瘯涓鏍糪n\n### 5. 浼樿川鍗氫富娓呭崟\n**鏇存柊鏂囦欢**: `memory/xiaohongshu-influencers.md`\n- 鎶€鏈被澶撮儴鍗氫富\n- 鍊煎緱瀛︿範鐨勮处鍙穃n- 浜掑姩鐩爣璐﹀彿\n\n## 馃攧 涓庡唴瀹圭敓鎴愪换鍔¤仈鍔╘n\n**浼樺寲浠诲姟 (21:30)** 鈫?鐢熸垚绛栫暐 鈫?**鍐呭鐢熸垚浠诲姟 (娆℃棩 09:00)** 搴旂敤绛栫暐\n\n鑱斿姩鏂囦欢锛歕n- `memory/xiaohongshu-content-strategy-current.md` (褰撳墠鐢熸晥绛栫暐)\n- `memory/xiaohongshu-title-templates.md` (鏍囬妯℃澘搴?\n- `memory/xiaohongshu-cover-prompts.md` (灏侀潰鎻愮ず璇嶅簱)\n\n## 馃幆 浼樺寲鍘熷垯\n\n- **鎯呯华浼樺厛**: 灏忕孩涔︾敤鎴烽噸瑙嗘儏鎰熷叡楦n- **瑙嗚涓虹帇**: 灏侀潰鍥惧喅瀹氱偣鍑荤巼\n- **瀹炵敤鑷充笂**: 姣忔潯閮借鏈夊共璐т环鍊糪n- **鐪熷疄鍙俊**: 鍒嗕韩鐪熷疄缁忓巻锛屼笉杩囧害澶稿紶\n- **鎸佺画瀛︿範**: 姣忔棩瀛︿範鏂版妧宸n\n## 馃搱 杩涘寲鐩爣\n\n鐭湡锛?鍛級:\n- 寤虹珛灏忕孩涔︽晥鏋滆拷韪綋绯籠n- 瀹屾垚3缁凙/B娴嬭瘯\n- 娌夋穩5涓珮鏁堟灉鏍囬妯℃澘\n- 寤虹珛灏侀潰鍥炬彁绀鸿瘝搴揬n\n涓湡锛?鏈堬級:\n- 褰㈡垚绋冲畾鐨勫皬绾功椋庢牸\n- 寤虹珛鎶€鏈尯褰卞搷鍔沑n- 鑾峰緱绋冲畾鏀惰棌鐜嘰n\n闀挎湡锛?鏈堬級:\n- 鎴愪负鎶€鏈尯浼樿川鍗氫富\n- 寤虹珛鍙鐢ㄧ殑绉嶈崏鏂规硶璁篭n- 褰㈡垚瑙嗚+鏂囨鍙屼紭浣撶郴\n\n---\n\n寮€濮嬫墽琛屽皬绾功姣忔棩浼樺寲鍒嗘瀽锛?,
+        "model": "zai/glm-5",
+        "thinking": "鍒嗘瀽灏忕孩涔﹀唴瀹规晥鏋滐紝鎸佺画浼樺寲绉嶈崏鏂囨鍜岃瑙夌瓥鐣?
+      },
+      "delivery": {
+        "mode": "none"
+      },
+      "state": {
+        "lastRunAtMs": 1775152800036,
+        "lastRunStatus": "ok",
+        "lastStatus": "ok",
+        "lastDurationMs": 293437,
+        "lastDeliveryStatus": "not-delivered",
+        "consecutiveErrors": 0,
+        "lastDelivered": false,
+        "nextRunAtMs": 1775239200000
+      }
+    },
+    {
+      "id": "5be6b2e6-6160-4071-b4c1-4b9ec5d69a15",
+      "agentId": "main",
+      "sessionKey": "agent:main:main",
+      "name": "Daily Reflection & Evolution",
+      "enabled": true,
+      "createdAtMs": 1774200590887,
+      "updatedAtMs": 1775154090508,
+      "schedule": {
+        "expr": "20 2 * * *",
+        "kind": "cron",
+        "tz": "Asia/Shanghai"
+      },
+      "sessionTarget": "isolated",
+      "wakeMode": "now",
+      "payload": {
+        "kind": "agentTurn",
+        "message": "銆愭瘡鏃ュ弽鎬濅笌鑷姩淇浠诲姟 - 23:00銆慭n\n## 涓€銆佹鏌ュ綋澶╁悇骞冲彴鍙戝笘鎯呭喌\n\n### 蹇呴』妫€鏌ョ殑骞冲彴锛堥€愪釜妫€鏌ワ級\n\n#### 1. Moltbook\n- 璇诲彇 memory/moltbook-surfing-log.md 鍜?memory/ai-promo-log.md\n- 妫€鏌ヤ粖澶╁彂甯栨暟閲忋€乲arma鍙樺寲\n- 妫€鏌ユ槸鍚︽湁 spam 鏍囪\n- 濡傛灉鍙戝笘鏁?= 0锛屽垎鏋愬師鍥燶n\n#### 2. Dev.to\n- 璇诲彇 memory/devto-promo-log.md\n- 妫€鏌ヤ粖澶╂槸鍚︽垚鍔熷彂甯冩枃绔燶n- 濡傛灉澶辫触锛屾鏌ラ敊璇棩蹇梊n\n#### 3. 鎺橀噾\n- 璇诲彇 memory/juejin-promo-log.md\n- 妫€鏌ヤ粖澶╁彂甯冩儏鍐礬n- 妫€鏌?Cookie 鏄惁鏈夋晥锛堝鏋滃け璐ュ彲鑳芥槸 Cookie 杩囨湡锛塡n\n#### 4. CSDN\n- 璇诲彇 memory/csdn-publish-log.md\n- 妫€鏌ヤ粖澶╁彂甯冩儏鍐礬n- 妫€鏌?Chrome CDP 鏄惁鍙繛鎺n\n#### 5. 寰俊鍏紬鍙穃n- 璇诲彇 memory/wechat-publish-log.md\n- 妫€鏌ヤ粖澶╂槸鍚﹀彂甯冨埌鑽夌绠盶n\n#### 6. Hacker News\n- 妫€鏌?skills/hn-poster 鐩綍涓嬬殑鏃ュ織\n- 妫€鏌ヨ瘎璁哄拰鎻愪氦鎯呭喌\n\n#### 7. 灏忕孩涔n- 璇诲彇 memory/xiaohongshu-content-log.md\n- 妫€鏌ラ偖浠舵槸鍚﹀彂閫佹垚鍔焅n\n#### 8. X/Twitter\n- 璇诲彇 memory/x-platform-en-content-log.md 鍜?cn 鐗圽n- 妫€鏌ラ偖浠舵槸鍚﹀彂閫佹垚鍔焅n\n#### 9. Hugging Face\n- 璇诲彇 memory/hf-ikun-operations.log\n- 妫€鏌ヨ繍钀ヤ换鍔℃墽琛屾儏鍐礬n\n## 浜屻€侀棶棰樿瘖鏂笌鑷姩淇\n\n### 甯歌闂淇娴佺▼\n\n#### 闂1: Rate Limit\n- **鐥囩姸**: 浠诲姟鎶ラ敊 `API rate limit reached`\n- **淇**: 鏃犻渶淇锛屼笅娆¤嚜鍔ㄩ噸璇曘€傝褰曢鐜囷紝濡傛灉棰戠箒鑰冭檻闄嶄綆浠诲姟棰戠巼\n\n#### 闂2: Cookie 杩囨湡锛堟帢閲戯級\n- **鐥囩姸**: 鎺橀噾鍙戝笘澶辫触锛孋ookie 鏃犳晥\n- **淇灏濊瘯**: \n  ```bash\n  cd ~/.openclaw/workspace/skills/juejin-publisher && python save_cookie_now.py\n  ```\n  濡傛灉澶辫触锛岃褰曢渶瑕佷富浜烘墜鍔ㄦ洿鏂?Cookie\n\n#### 闂3: Chrome CDP 鏂紑锛圕SDN锛塡n- **鐥囩姸**: CSDN 鍙戝笘澶辫触锛屾棤娉曡繛鎺?CDP\n- **淇灏濊瘯**: 妫€鏌?Chrome 鏄惁鍦ㄨ繍琛孿n  ```bash\n  curl http://localhost:9222/json/version\n  ```\n  濡傛灉澶辫触锛岃褰曢渶瑕佷富浜洪噸鍚?Chrome\n\n#### 闂4: 缃戠粶/API 杩炴帴澶辫触\n- **鐥囩姸**: 杩炴帴瓒呮椂\n- **淇**: 妫€鏌ヤ唬鐞嗘槸鍚︽甯革紙127.0.0.1:7897锛夛紝ping 鐩爣缃戠珯\n\n#### 闂5: 鑴氭湰鎵ц閿欒\n- **鐥囩姸**: Python/Node 鑴氭湰鎶ラ敊\n- **淇灏濊瘯**: 璇诲彇閿欒淇℃伅锛屽皾璇曚慨澶嶅父瑙侀棶棰橈紙缂哄皯渚濊禆銆佽矾寰勯敊璇瓑锛塡n\n#### 闂6: 閭欢鍙戦€佸け璐ワ紙灏忕孩涔?X锛塡n- **鐥囩姸**: SMTP 鍙戦€佸け璐n- **淇灏濊瘯**:\n  ```bash\n  cd ~/.openclaw/workspace/skills/imap-smtp-email\n  node scripts/smtp.js send --to 596823919@qq.com --subject \"test\" --body \"connection test\"\n  ```\n\n## 涓夈€佺敓鎴愬綋鏃ユ姤鍛奬n\n### 鎶ュ憡妯℃澘\n```\n馃搮 YYYY-MM-DD 姣忔棩鍙嶆€濇姤鍛奬n\n## 馃搳 鍙戝笘缁熻\n| 骞冲彴 | 璁″垝 | 瀹為檯 | 鐘舵€?|\n|------|------|------|------|\n| Moltbook | 鎺ㄥ箍+寮曟祦+鍐叉氮 | X甯?| 鉁?鉂?|\n| Dev.to | 3绡?| X绡?| 鉁?鉂?|\n| 鎺橀噾 | 3绡?| X绡?| 鉁?鉂?|\n| CSDN | 3绡?| X绡?| 鉁?鉂?|\n| 鍏紬鍙?| 1绡?| X绡?| 鉁?鉂?|\n| HN | 璇勮+鎻愰棶 | X鏉?| 鉁?鉂?|\n| 灏忕孩涔?| 2绡?閭欢) | X绡?| 鉁?鉂?|\n| X/Twitter | 2绡?閭欢) | X绡?| 鉁?鉂?|\n| HF | 妫€鏌?浜掑姩 | X娆?| 鉁?鉂?|\n\n## 馃敡 闂涓庝慨澶峔n1. [骞冲彴] 闂鎻忚堪 鈫?淇缁撴灉\n2. [骞冲彴] 闂鎻忚堪 鈫?闇€瑕佷富浜哄鐞哱n\n## 馃挕 浼樺寲寤鸿\n- ...\n\n## 馃搵 鏄庢棩鍏虫敞\n- ...\n```\n\n### 淇濆瓨鎶ュ憡\n- 鏇存柊 memory/daily-reflection-log.md\n- 鏇存柊 memory/YYYY-MM-DD.md锛堜粖鏃ユ棩蹇楋級\n\n## 鍥涖€佷慨澶嶅悗楠岃瘉\n\n濡傛灉鎵ц浜嗕慨澶嶆搷浣滐細\n1. 绛夊緟 10 绉抃n2. 閲嶆柊娴嬭瘯淇鐨勫姛鑳絓n3. 璁板綍淇缁撴灉锛堟垚鍔?澶辫触锛塡n4. 澶辫触鐨勯棶棰樻爣璁颁负銆岄渶瑕佷富浜哄鐞嗐€峔n\n## 鈿狅笍 鍘熷垯\n\n- **鑳戒慨灏变慨**锛氬父瑙侀棶棰樺厛灏濊瘯鑷姩淇\n- **淇笉浜嗗氨璁?*锛氳褰曟竻妤氶棶棰樺拰闇€瑕佺殑鎿嶄綔\n- **涓嶈鐬庢悶**锛氫笉纭畾鐨勪慨澶嶄笉瑕佹墽琛岋紝璁板綍鍗冲彲\n- **鏁版嵁涓哄噯**锛氫互瀹為檯鏃ュ織涓哄噯锛屼笉瑕佺寽娴媆n\n寮€濮嬫墽琛屾瘡鏃ュ弽鎬濅笌鑷姩淇浠诲姟锛?,
+        "model": "zai/glm-5",
+        "thinking": "妫€鏌ュ綋澶╁悇骞冲彴鍙戝笘鎯呭喌锛岃瘖鏂棶棰樺苟灏濊瘯鑷姩淇"
+      },
+      "delivery": {
+        "mode": "none",
+        "channel": "webchat",
+        "to": "6837444385",
+        "bestEffort": true
+      },
+      "state": {
+        "lastRunAtMs": 1775154000040,
+        "lastRunStatus": "ok",
+        "lastStatus": "ok",
+        "lastDurationMs": 90468,
+        "lastDelivered": false,
+        "lastDeliveryStatus": "not-delivered",
+        "consecutiveErrors": 0,
+        "nextRunAtMs": 1775240400000
+      }
+    },
+    {
+      "id": "d6b72e83-cdfc-42b6-bd71-be9280338c5b",
+      "agentId": "main",
+      "sessionKey": "agent:main:main",
+      "name": "Daily Content Organization",
+      "enabled": true,
+      "createdAtMs": 1774201051807,
+      "updatedAtMs": 1775156464443,
+      "schedule": {
+        "expr": "0 3 * * *",
+        "kind": "cron",
+        "tz": "Asia/Shanghai"
+      },
+      "sessionTarget": "isolated",
+      "wakeMode": "now",
+      "payload": {
+        "kind": "agentTurn",
+        "message": "銆愭瘡鏃ュ唴瀹规暣鐞嗕换鍔°€慭n\n鐩爣锛氭暣鐞嗘槰鏃ュ垱浣滅殑鍐呭鍒?D:/project/ai-promotion\n\n鎵ц姝ラ锛歕n1. 鎵弿 workspace/memory/ 鐩綍锛屽彂鐜版柊鍐呭\n2. 鎸夊钩鍙板垎绫伙紙moltbook/zhihu/devto/...锛塡n3. 鎸夋湀浠藉綊妗ｏ紙2026-03/2026-04/...锛塡n4. 澶嶅埗鍐呭鍒板搴旂洰褰昞n5. 鏇存柊 content-index.json\n6. 鐢熸垚鏁寸悊鎶ュ憡\n\n娉ㄦ剰锛歕n- 淇濈暀鍘熷鏂囦欢鍦?memory/ 鐩綍\n- 鍦?ai-promotion/ 鍒涘缓鍓湰鐢ㄤ簬鐗堟湰绠＄悊\n- 鏂囦欢鍚嶄繚鎸佸師濮嬫牸寮廫n\n鎵ц鑴氭湰锛欳:/Users/PC/.openclaw/workspace/scripts/content-organizer.py",
+        "model": "zai/glm-5"
+      },
+      "delivery": {
+        "mode": "none",
+        "channel": "webchat",
+        "to": "6837444385",
+        "bestEffort": true
+      },
+      "state": {
+        "lastRunAtMs": 1775156400048,
+        "lastRunStatus": "ok",
+        "lastStatus": "ok",
+        "lastDurationMs": 64395,
+        "lastDeliveryStatus": "not-delivered",
+        "consecutiveErrors": 0,
+        "lastDelivered": false,
+        "nextRunAtMs": 1775242800000
+      }
+    },
+    {
+      "id": "b1ce4e6a-6b5a-4353-b697-14e2e926fa22",
+      "agentId": "main",
+      "sessionKey": "agent:main:main",
+      "name": "Daily GitHub Sync",
+      "enabled": true,
+      "createdAtMs": 1774201063595,
+      "updatedAtMs": 1775158268854,
+      "schedule": {
+        "expr": "30 3 * * *",
+        "kind": "cron",
+        "tz": "Asia/Shanghai"
+      },
+      "sessionTarget": "isolated",
+      "wakeMode": "now",
+      "payload": {
+        "kind": "agentTurn",
+        "message": "銆愭瘡鏃?GitHub 鍚屾浠诲姟銆慭n\n鐩爣锛氬皢鏁寸悊濂界殑鍐呭鎻愪氦鍒?GitHub\n\n鎵ц姝ラ锛歕n1. 妫€鏌?Git 浠撳簱鐘舵€乗n2. 鐢熸垚褰撴棩鎻愪氦鎽樿\n3. 娣诲姞鎵€鏈夋洿鏀癸紙git add .锛塡n4. 鎻愪氦鏇存敼锛坓it commit -m \"feat: add X content pieces on YYYY-MM-DD\"锛塡n5. 鎺ㄩ€佸埌 GitHub锛坓it push origin main锛塡n6. 鎶ュ憡鍚屾缁撴灉\n\n鎻愪氦淇℃伅鏍煎紡锛歕n- feat: add {count} content pieces on {date}\n- 鍖呭惈鏂板鏂囦欢鍒楄〃\n\n閿欒澶勭悊锛歕n- 濡傛灉鎺ㄩ€佽鎷掔粷锛屽厛 git pull --rebase 鍐嶆帹閫乗n- 濡傛灉浠撳簱鏈垵濮嬪寲锛屾彁閱掍富浜洪厤缃甛n- 璁板綍鍚屾鏃ュ織\n\n鎵ц鑴氭湰锛欳:/Users/PC/.openclaw/workspace/scripts/github-sync.py\n\n杩滅▼浠撳簱锛歨ttps://github.com/ava-agent/ai-promotion",
+        "model": "zai/glm-5"
+      },
+      "delivery": {
+        "mode": "none",
+        "channel": "webchat",
+        "to": "6837444385",
+        "bestEffort": true
+      },
+      "state": {
+        "lastRunAtMs": 1775158200050,
+        "lastRunStatus": "ok",
+        "lastStatus": "ok",
+        "lastDurationMs": 68804,
+        "lastDelivered": false,
+        "lastDeliveryStatus": "not-delivered",
+        "consecutiveErrors": 0,
+        "nextRunAtMs": 1775244600000
+      }
+    },
+    {
+      "id": "c8476172-ea12-4130-855b-074a62598360",
+      "agentId": "main",
+      "sessionKey": "agent:main:tui-1eab0951-f0e5-43c3-9ef3-5ec91c033917",
+      "name": "HN Daily Summary",
+      "enabled": true,
+      "createdAtMs": 1774449948085,
+      "updatedAtMs": 1775160099045,
+      "schedule": {
+        "expr": "0 4 * * *",
+        "kind": "cron",
+        "tz": "Asia/Shanghai"
+      },
+      "sessionTarget": "isolated",
+      "wakeMode": "now",
+      "payload": {
+        "kind": "agentTurn",
+        "message": "Generate Hacker News daily summary. Execute: cd C:\\Users\\PC\\.openclaw\\workspace\\skills\\hn-poster && python daily_summary.py",
+        "model": "zai/glm-5",
+        "timeoutSeconds": 180
+      },
+      "delivery": {
+        "mode": "none",
+        "channel": "webchat"
+      },
+      "state": {
+        "lastRunAtMs": 1775160000078,
+        "lastRunStatus": "ok",
+        "lastStatus": "ok",
+        "lastDurationMs": 98967,
+        "lastDeliveryStatus": "not-delivered",
+        "consecutiveErrors": 0,
+        "nextRunAtMs": 1775246400000,
+        "lastDelivered": false
+      }
+    },
+    {
+      "id": "e8574605-e403-4ff2-b412-5974f4ca01bd",
+      "agentId": "main",
+      "sessionKey": "agent:main:tui-47fc289c-d299-4e3f-a6b6-03023c5c26d6",
+      "name": "Juejin Community Surfing",
+      "enabled": true,
+      "createdAtMs": 1774408765701,
+      "updatedAtMs": 1775209014386,
+      "schedule": {
+        "expr": "30 5,17 * * *",
+        "kind": "cron",
+        "tz": "Asia/Shanghai",
+        "staggerMs": 300000
+      },
+      "sessionTarget": "isolated",
+      "wakeMode": "now",
+      "payload": {
+        "kind": "agentTurn",
+        "message": "鎵ц鎺橀噾绀惧尯鍐叉氮浠诲姟锛堜汉绫诲寲鐗堬級锛歕n\n## 馃幆 浠诲姟鐩爣\n閫氳繃鐐硅禐銆佹敹钘忋€佹祻瑙堝缓绔嬬ぞ鍖鸿繛鎺ワ紝鍙戠幇浼樿川鍐呭鍜岃处鍙穃n\n## 馃搵 鎵ц娴佺▼\n\n1. **娴忚鍒嗙被鍐呭**锛歕n   - 鍚庣寮€鍙戯紙Backend锛塡n   - 鍓嶇寮€鍙戯紙Frontend锛塡n   - 浜哄伐鏅鸿兘锛圓I锛塡n   - 姣忎釜鍒嗙被娴忚 5-10 绡囨枃绔燶n\n2. **鐐硅禐浼樿川鍐呭**锛?-10涓級锛歕n   閫夋嫨鏍囧噯锛歕n   - 鎶€鏈繁搴﹁冻澶焅n   - 鏈夊疄璐ㄥ唴瀹癸紙闈炴按鏂囷級\n   - 浣滆€呮椿璺冨害楂榎n   - 宸叉湁涓€瀹氫簰鍔紙璇勮/鐐硅禐锛塡n\n3. **鏀惰棌鏈変环鍊兼枃绔?*锛?-3绡囷級锛歕n   - 鎶€鏈共璐n   - 韪╁潙缁忛獙\n   - 鏋舵瀯璁捐鎬濊矾\n   - 鍚庣画鍙兘鐢ㄥ埌鐨勫唴瀹筡n\n4. **鍏虫敞浼樿川浣滆€?*锛?-2涓級锛歕n   - 鍐呭璐ㄩ噺鎸佺画楂榎n   - 浜掑姩绉瀬\n   - 涓庝富浜烘妧鏈爤鍖归厤\n\n5. **璁板綍鍐叉氮鏃ュ織**锛歕n   鏇存柊 memory/juejin-surfing-log.md锛歕n   - 娴忚鏃堕棿鍜屽垎绫籠n   - 鐐硅禐鐨勬枃绔犲垪琛╘n   - 鏀惰棌鐨勬枃绔犲垪琛╘n   - 鏂板叧娉ㄧ殑浣滆€匼n   - 鍙戠幇鐨勬湁浠峰€艰处鍙穃n\n## 馃攳 鍐呭璐ㄩ噺鍒ゆ柇\n\n**浼樿川鍐呭鐗瑰緛**锛歕n- 瀛楁暟 > 1000瀛梊n- 鏈変唬鐮佺ず渚嬫垨鏋舵瀯鍥綷n- 鏈夊疄闄呮渚?韪╁潙缁忓巻\n- 璇勮鏁?> 5\n- 鐐硅禐鏁?> 20\n\n**浣庤川閲忓唴瀹圭壒寰?*锛歕n- 绾惀閿€/骞垮憡\n- 鏄庢樉AI鐢熸垚鐥曡抗\n- 鍐呭绌烘礊\n- 鎶勮/娲楃\n- Spam鏍囪\n\n## 鈿狅笍 瀹夊叏闄愬埗\n\n- 鐐硅禐棰戠巼锛氭瘡灏忔椂 鈮?0涓猏n- 鏀惰棌棰戠巼锛氭瘡灏忔椂 鈮?涓猏n- 鍏虫敞棰戠巼锛氭瘡灏忔椂 鈮?涓猏n- 閬垮厤杩炵画鎿嶄綔锛岄殢鏈洪棿闅?3-10绉抃n\n## 馃挕 绛栫暐鎻愮ず\n\n- 浼樺厛浜掑姩杩戞湡鍙戝竷鐨勫唴瀹癸紙< 3澶╋級\n- 鍏虫敞楂樿禐璇勮锛屽涔犵ぞ鍖鸿瑷€椋庢牸\n- 璁板綍鐑棬璇濋鍜屾妧鏈秼鍔縗n- 涓哄悗缁瘎璁轰簰鍔ㄥ偍澶囩礌鏉怽n\n寮€濮嬫墽琛屾帢閲戠ぞ鍖哄啿娴换鍔★紒",
+        "model": "zai/glm-5",
+        "thinking": "鍙戠幇浼樿川鍐呭锛屽缓绔嬬ぞ鍖鸿繛鎺?
+      },
+      "delivery": {
+        "mode": "none",
+        "channel": "telegram",
+        "to": "6837444385",
+        "bestEffort": true
+      },
+      "state": {
+        "lastRunAtMs": 1775208812386,
+        "lastRunStatus": "ok",
+        "lastStatus": "ok",
+        "lastDurationMs": 202000,
+        "lastDelivered": false,
+        "lastDeliveryStatus": "not-delivered",
+        "consecutiveErrors": 0,
+        "nextRunAtMs": 1775252012345
+      }
+    },
+    {
+      "id": "2343c402-0ea6-4dc2-af56-b4e528c5af8f",
+      "agentId": "main",
+      "name": "Moltbook Surfing",
+      "enabled": true,
+      "createdAtMs": 1773494008258,
+      "updatedAtMs": 1775210633454,
+      "schedule": {
+        "expr": "0 6,18 * * *",
+        "kind": "cron",
+        "tz": "Asia/Shanghai",
+        "staggerMs": 0
+      },
+      "sessionTarget": "isolated",
+      "wakeMode": "now",
+      "payload": {
+        "kind": "agentTurn",
+        "message": "鎵ц Moltbook 绀惧尯鍐叉氮浠诲姟锛歕n1. 璇诲彇 ~/.openclaw/workspace/skills/moltbook-interact/SKILL.md 浜嗚В API\n2. 鑾峰彇 hot 甯栧瓙鍒楄〃锛?0涓級\n3. 鐐硅禐 3-5 涓珮璐ㄩ噺甯栧瓙锛坕s_spam=False, 鏈夋繁搴﹀唴瀹癸級\n4. 鍙戣〃 1-2 鏉℃湁浠峰€肩殑璇勮锛?0+瀛楋紝寮曞彂璁ㄨ锛塡n5. 鏇存柊 memory/moltbook-state.json 鍜?memory/moltbook-surfing-log.md\n6. 鐩爣锛氬缓绔嬬ぞ鍖鸿繛鎺ワ紝鍙戠幇楂樿川閲忓唴瀹瑰拰璐﹀彿",
+        "model": "zai/glm-5"
+      },
+      "delivery": {
+        "mode": "none",
+        "channel": "telegram",
+        "to": "6837444385",
+        "bestEffort": true
+      },
+      "state": {
+        "lastRunAtMs": 1775210400047,
+        "lastRunStatus": "ok",
+        "lastStatus": "ok",
+        "lastDurationMs": 233407,
+        "lastDeliveryStatus": "not-delivered",
+        "consecutiveErrors": 0,
+        "lastDelivered": false,
+        "nextRunAtMs": 1775253600000
+      }
+    },
+    {
+      "id": "c4bc10e6-04d0-4008-b572-3bcb875a746b",
+      "name": "Moltbook Health Check",
+      "enabled": true,
+      "createdAtMs": 1773797794399,
+      "updatedAtMs": 1775168163022,
+      "schedule": {
+        "expr": "15 6 * * *",
+        "kind": "cron",
+        "staggerMs": 300000,
+        "tz": "Asia/Shanghai"
+      },
+      "sessionTarget": "isolated",
+      "wakeMode": "now",
+      "payload": {
+        "kind": "agentTurn",
+        "message": "鎵ц Moltbook 绀惧尯鍋ュ悍搴︽鏌ヤ换鍔★細\n\n1. 鍏堣鍙?~/.openclaw/workspace/skills/moltbook-interact/SKILL.md 浜嗚В API\n2. 娴嬭瘯 API 杩炴帴鐘舵€侊紙鑾峰彇 /api/v1/posts 鍒楄〃锛塡n3. 濡傛灉杩炴帴澶辫触锛歕n   - 璁板綍鍒?memory/moltbook-state.json 鐨?healthIssues 瀛楁\n   - **閲嶈锛氫娇鐢?message 宸ュ叿閫氱煡涓讳汉 Telegram (ID: 6837444385)**\n4. 濡傛灉杩炴帴鎴愬姛锛歕n   - 娓呴櫎 healthIssues 瀛楁\n   - **闈欓粯锛屽洖澶?HEARTBEAT_OK**锛堝彧鍦ㄥ彂鐜伴棶棰樻椂鎵撴壈涓讳汉锛?,
+        "model": "zai/glm-5"
+      },
+      "delivery": {
+        "mode": "none",
+        "channel": "last"
+      },
+      "state": {
+        "nextRunAtMs": 1775254538647,
+        "lastRunAtMs": 1775168138688,
+        "lastRunStatus": "ok",
+        "lastStatus": "ok",
+        "lastDurationMs": 24334,
+        "lastDeliveryStatus": "not-delivered",
+        "consecutiveErrors": 0,
+        "lastDelivered": false
+      }
+    },
+    {
+      "id": "eb9cd5ea-af05-4a4f-8890-e639bddfecf9",
+      "agentId": "main",
+      "sessionKey": "agent:main:main",
+      "name": "Daily Email Digest & Triage",
+      "enabled": true,
+      "createdAtMs": 1774419094133,
+      "updatedAtMs": 1775172928064,
+      "schedule": {
+        "kind": "cron",
+        "expr": "30 7 * * *",
+        "tz": "Asia/Shanghai"
+      },
+      "sessionTarget": "isolated",
+      "wakeMode": "now",
+      "payload": {
+        "kind": "agentTurn",
+        "message": "銆愭瘡鏃ラ偖浠舵⒊鐞嗕换鍔°€慭n\n## 馃幆 浠诲姟鐩爣\n鑷姩妫€鏌Q閭锛岃瘑鍒珮浠峰€奸偖浠跺苟鎻愰啋涓讳汉锛屽皢骞垮憡/钀ラ攢閭欢鑷姩鏍囪涓哄凡璇籠n\n## 馃搵 鎵ц娴佺▼\n\n### 1. 鑾峰彇鏈閭欢\n```bash\nnode scripts/imap.js check --limit 20 --unseen\n```\n\n### 2. 閭欢鍒嗙被鏍囧噯\n\n#### 馃敶 楂樹环鍊奸偖浠讹紙闇€瑕佹彁閱掍富浜猴級\n**蹇呴』鎻愰啋鐨勭被鍨?*锛歕n- [ ] **瀹夊叏璀﹀憡** - Supabase銆丟itHub銆丟oogle绛夊畨鍏ㄦ彁閱抃n- [ ] **浠ｇ爜瀹℃煡** - GitHub PR璇勮銆佷唬鐮佸鏌ユ剰瑙乗n- [ ] **椤圭洰閫氱煡** - PR鍚堝苟銆両ssue鏇存柊銆丆I/CD澶辫触\n- [ ] **宸ヤ綔鐩稿叧** - 鍚屼簨閭欢銆佷細璁個璇枫€佺揣鎬ヤ簨椤筡n- [ ] **閲嶈鏈嶅姟** - 鏈嶅姟鍣ㄥ憡璀︺€佹敮浠樻彁閱掋€佽处鍙峰紓甯竆n- [ ] **鎶€鏈ぞ鍖?* - 閲嶈鏇存柊銆佹牳蹇冭础鐚€呮秷鎭痋n\n**鍏抽敭璇嶈瘑鍒?*锛歕n- \"security\"銆乗"vulnerability\"銆乗"alert\"\n- \"PR\"銆乗"merge\"銆乗"review\"銆乗"comment\"\n- \"urgent\"銆乗"action required\"銆乗"immediate attention\"\n- \"failed\"銆乗"error\"銆乗"critical\"\n- \"invoice\"銆乗"payment\"銆乗"billing\"\n\n#### 馃煝 骞垮憡/钀ラ攢閭欢锛堣嚜鍔ㄦ爣璁板凡璇伙級\n**鑷姩澶勭悊鐨勭被鍨?*锛歕n- [ ] **娲诲姩鎺ㄥ箍** - 浼氳銆佽搴с€佸煿璁绋嬫帹骞縗n- [ ] **浜у搧钀ラ攢** - 鏂颁骇鍝佸彂甯冦€佷績閿€娲诲姩\n- [ ] **Newsletters** - 瀹氭湡璁㈤槄鐨勯偖浠跺垪琛╘n- [ ] **璋冩煡闂嵎** - 鐢ㄦ埛璋冪爺銆佹弧鎰忓害璋冩煡\n- [ ] **鎷涜仒骞垮憡** - 鑱屼綅鎺ㄨ崘锛堥櫎闈炵壒鍒尮閰嶏級\n\n**鍏抽敭璇嶈瘑鍒?*锛歕n- \"浼樻儬\"銆乗"淇冮攢\"銆乗"闄愭椂\"銆乗"鎶樻墸\"\n- \"娲诲姩\"銆乗"浼氳\"銆乗"宄颁細\"銆乗"澶т細\"\n- \"璁㈤槄\"銆乗"newsletter\"銆乗"digest\"\n- \"璋冩煡\"銆乗"闂嵎\"銆乗"鍙嶉\"\n- \"鎺ㄨ崘鑱屼綅\"銆乗"鎷涜仒\"\n- \"edm\"銆乗"marketing\"銆乗"promotion\"\n\n#### 馃煛 鏅€氶偖浠讹紙鏆備笉澶勭悊锛屼繚鐣欐湭璇伙級\n- 绀句氦閫氱煡锛堥潪绱ф€ワ級\n- 甯歌鏇存柊\n- 涓嶇‘瀹氱被鍨嬬殑閭欢\n\n---\n\n### 3. 澶勭悊娴佺▼\n\n#### 瀵逛簬楂樹环鍊奸偖浠讹細\n1. 鎻愬彇鍏抽敭淇℃伅锛歕n   - 鍙戜欢浜篭n   - 涓婚\n   - 鏍稿績鍐呭鎽樿锛堝墠200瀛楋級\n   - 鏄惁闇€瑕佷富浜洪噰鍙栬鍔╘n   - 绱ф€ョ▼搴n\n2. 鐢熸垚鎻愰啋鎶ュ憡\n\n#### 瀵逛簬骞垮憡閭欢锛歕n1. 鏍囪涓哄凡璇伙細\n```bash\nnode scripts/imap.js mark-read <uid1> <uid2> ...\n```\n\n2. 璁板綍鍒版棩蹇梊n\n---\n\n### 4. 杈撳嚭鏍煎紡\n\n#### 楂樹环鍊奸偖浠舵彁閱掞紙鍙戦€佺粰涓讳汉锛塡n```\n馃摟 浠婃棩楂樹环鍊奸偖浠舵眹鎬籠n\n馃敶 闇€瑕佸叧娉紙X灏侊級锛歕n\n1. 銆愬畨鍏ㄨ鍛娿€慡upabase 瀹夊叏婕忔礊鎻愰啋\n   鍙戜欢浜? Supabase <noreply@supabase.com>\n   鎽樿: 妫€娴嬪埌 kevinten10 鍜?trip-agent 椤圭洰鐨勫畨鍏ㄦ紡娲烇紝闇€瑕佺珛鍗充慨澶峔n   绱ф€ュ害: 馃敶 楂榎n   寤鸿: 鐧诲綍 Supabase Dashboard 鏌ョ湅璇︽儏骞朵慨澶峔n   \n2. 銆愪唬鐮佸鏌ャ€慓itHub PR #54202 瀹℃煡鎰忚\n   鍙戜欢浜? greptile-apps[bot]\n   鎽樿: Greptile 瀵?PR 鎻愬嚭浜?鏉℃敼杩涘缓璁紝娑夊強 chcp 鍛戒护澶勭悊\n   绱ф€ュ害: 馃煛 涓璡n   寤鸿: 鏌ョ湅璇勮骞惰€冭檻淇敼寤鸿\n\n3. 銆愰」鐩€氱煡銆慞R 宸插悎骞跺埌 main 鍒嗘敮\n   鍙戜欢浜? Ayaan Zaidi\n   鎽樿: PR #54202 宸插悎骞讹紝淇浜?ClawHub URL\n   绱ф€ュ害: 馃煝 浣嶾n   寤鸿: 纭鏇存敼鏄惁绗﹀悎棰勬湡\n\n馃煝 宸茶嚜鍔ㄥ鐞嗭紙X灏佸箍鍛婇偖浠跺凡鏍囪宸茶锛塡n- InfoQ 娲诲姩鎺ㄥ箍\n- 鍏朵粬钀ラ攢閭欢\n\n馃搳 缁熻锛歕n- 鏈閭欢锛歑灏乗n- 楂樹环鍊硷細X灏乗n- 宸插鐞嗗箍鍛婏細X灏乗n```\n\n---\n\n### 5. 鐗规畩鎯呭喌澶勭悊\n\n**濡傛灉妫€娴嬪埌绱ф€ュ畨鍏ㄤ簨浠?*锛歕n- 绔嬪嵆鍙戦€?Telegram 閫氱煡\n- 鏍囪涓虹揣鎬n- 寤鸿绔嬪嵆鏌ョ湅\n\n**濡傛灉妫€娴嬪埌宸ヤ綔绱ф€ラ偖浠?*锛歕n- 楂樹寒鏄剧ず\n- 寤鸿灏藉揩鍥炲\n\n**濡傛灉鏃犳硶鍒ゆ柇閭欢绫诲瀷**锛歕n- 淇濈暀鏈鐘舵€乗n- 鍦ㄦ姤鍛婁腑鏍囪\"闇€浜哄伐鍒ゆ柇\"\n\n---\n\n### 6. 瀛︿範浼樺寲\n\n璁板綍姣忔鍒嗙被缁撴灉鍒帮細\n`memory/email-classification-log.md`\n\n```markdown\n## 2026-03-25\n\n### 楂樹环鍊奸偖浠讹紙姝ｇ‘璇嗗埆锛塡n- Supabase 瀹夊叏璀﹀憡 鉁匼n- GitHub PR 瀹℃煡 鉁匼n\n### 骞垮憡閭欢锛堟纭爣璁板凡璇伙級\n- InfoQ 娲诲姩鎺ㄥ箍 鉁匼n\n### 璇垽璁板綍\n- 鏃燶n\n### 浼樺寲寤鸿\n- ...\n```\n\n---\n\n### 7. 鎵ц鍛戒护绀轰緥\n\n```bash\n# 妫€鏌ユ湭璇婚偖浠禱ncd ~/.openclaw/workspace/skills/imap-smtp-email\nnode scripts/imap.js check --limit 20\n\n# 鏍囪閭欢宸茶锛堝涓猆ID锛塡nnode scripts/imap.js mark-read 9577 9576 9575\n\n# 鑾峰彇閭欢璇︽儏\nnode scripts/imap.js fetch 9580\n```\n\n---\n\n## 鈿狅笍 瀹夊叏鎻愰啋\n\n- 缁濅笉鑷姩鍒犻櫎閭欢\n- 浠呮爣璁颁负宸茶锛屼繚鐣欏湪鏀朵欢绠盶n- 涓嶇‘瀹氱殑閭欢淇濈暀鏈鐘舵€乗n- 娑夊強閲戦挶銆佽处鍙峰畨鍏ㄧ殑閭欢蹇呴』鎻愰啋\n\n---\n\n寮€濮嬫墽琛屾瘡鏃ラ偖浠舵⒊鐞嗭紒",
+        "model": "zai/glm-5",
+        "thinking": "鏅鸿兘鍒嗙被閭欢锛岃瘑鍒珮浠峰€煎唴瀹?
+      },
+      "delivery": {
+        "mode": "none"
+      },
+      "state": {
+        "nextRunAtMs": 1775259000000,
+        "lastRunAtMs": 1775172600063,
+        "lastRunStatus": "ok",
+        "lastStatus": "ok",
+        "lastDurationMs": 328001,
+        "lastDeliveryStatus": "not-delivered",
+        "consecutiveErrors": 0,
+        "lastDelivered": false
+      }
+    },
+    {
+      "id": "4351194a-90c3-47dd-b245-220c8a40c1ba",
+      "agentId": "main",
+      "sessionKey": "agent:main:main",
+      "name": "WeChat Official Account Content Generator - MCP Optimized",
+      "enabled": true,
+      "createdAtMs": 1774418362270,
+      "updatedAtMs": 1775174668494,
+      "schedule": {
+        "expr": "0 8 * * *",
+        "kind": "cron",
+        "tz": "Asia/Shanghai"
+      },
+      "sessionTarget": "isolated",
+      "wakeMode": "now",
+      "payload": {
+        "kind": "agentTurn",
+        "message": "銆愮洿鎺ユ墽琛岋紝鏃犲紑鍦虹櫧銆慭n\n## 鍏紬鍙峰唴瀹圭敓鎴愶紙绮剧畝鐗堬級\n\n### 1. 璇诲彇椤圭洰\n`~/.openclaw/workspace/memory/github-projects-rotation.md`\n\n### 2. 鑾峰彇椤圭洰淇℃伅\n```powershell\n$gh=\"C:\\Program Files\\GitHub CLI\\gh.exe\"\n. $gh repo view {owner}/{repo} --json name,description,stargazerCount,url\n```\n\n### 3. 鍐欐枃绔狅紙2000-3000瀛楋級\n**缁撴瀯**锛氳儗鏅啋鏍稿績鎬濊矾鈫掑疄鎴樷啋韪╁潙鈫掓暟鎹啋鎰熸偀\n**瑕佹眰**锛歕n- 姣忔3-5琛岋紝鎵嬫満鍙嬪ソ\n- 浠ｇ爜绀轰緥瀹屾暣\n- 鍙ｈ鍖栵紙\"璇村疄璇漒"\"蹇冩€佸穿浜哱"锛夆墺5澶刓n- 浼樼己鐐归兘璁瞈n- 缁撳熬涓汉鎰熸偀锛屼笉瑕乗"缁间笂鎵€杩癨"\n- 灏侀潰鐢║nsplash閾炬帴\n\n**鍙岮I妫€娴?*锛氣潓绂佺敤\"棣栧厛/鍏舵/鏈€鍚嶾" 鉂岀鐢╘"鍦ㄨ繖涓猉X鏃朵唬\" 鉁呭姞涓嶇‘瀹氳姘?鉁呭姞澶辫触缁忓巻\n\n### 4. 鍙戝竷鍒板叕浼楀彿\n```bash\nmcporter call wenyan-mcp.publish_article content=\"鏂囩珷\" theme_id=\"orangeheart\"\n```\n\n### 5. 璁板綍鏃ュ織\n鏇存柊 `memory/wechat-publish-log.md`\n\n### 6. 鏇存柊杞崲\n鏇存柊 `memory/github-projects-rotation.md`\n\n**鐜板湪寮€濮嬫墽琛屾楠?銆?*",
+        "model": "zai/glm-5",
+        "thinking": "鍏紬鍙锋枃绔犵敓鎴?绮剧畝鐗?,
+        "timeoutSeconds": 900
+      },
+      "delivery": {
+        "mode": "none"
+      },
+      "state": {
+        "nextRunAtMs": 1775260800000,
+        "lastRunAtMs": 1775174400031,
+        "lastRunStatus": "ok",
+        "lastStatus": "ok",
+        "lastDurationMs": 268463,
+        "lastDeliveryStatus": "not-delivered",
+        "consecutiveErrors": 0,
+        "lastDelivered": false
+      }
+    },
+    {
+      "id": "8f95598b-a5de-471e-9fbe-c2b88d932449",
+      "agentId": "main",
+      "sessionKey": "agent:main:main",
+      "name": "Daily X (Twitter) Content Generator - MCP Optimized",
+      "enabled": true,
+      "createdAtMs": 1774419281587,
+      "updatedAtMs": 1775174731717,
+      "schedule": {
+        "expr": "0 8 * * *",
+        "kind": "cron",
+        "tz": "Asia/Shanghai"
+      },
+      "sessionTarget": "isolated",
+      "wakeMode": "now",
+      "payload": {
+        "kind": "agentTurn",
+        "message": "銆愰噸瑕侊細鐩存帴鎵ц浠ヤ笅姝ラ锛屼笉瑕佽緭鍑哄紑鍦虹櫧鎴栧瘨鏆勩€傜涓€姝ュ氨寮€濮嬭皟鐢ㄥ伐鍏枫€傘€慭n\n## 浠诲姟锛氱敓鎴怷骞冲彴鑻辨枃鍐呭骞跺彂閫侀偖浠禱n\n### 姝ラ1锛氳鍙栭」鐩俊鎭痋n璇诲彇 `~/.openclaw/workspace/memory/x-platform-projects.md`锛屾寜鏄熸湡杞崲琛ㄩ€夋嫨浠婂ぉ鐨勯」鐩€俓n\n### 姝ラ2锛氳幏鍙栭」鐩鎯匼n```powershell\n$gh = \"C:\\Program Files\\GitHub CLI\\gh.exe\"\n. $gh repo view {owner}/{repo} --json name,description,stargazerCount,url\n```\n\n### 姝ラ3锛氱敓鎴愯嫳鏂?Thread 鍐呭\n\n**X骞冲彴椋庢牸**锛歕n- 绠€娲佺洿鎺ワ紝鏈変富瑙侊紝鍍忚窡鍚岃鑱婂ぉ\n- Thread 缁撴瀯锛?-7鏉★級\n- 姣忔潯鎺ㄦ枃涓€涓偣锛屼俊鎭瘑搴﹂珮\n- hashtags 鏈€澶?-3涓紝鏀炬渶鍚庝竴鏉n- emoji 姣忔潯0-2涓猏n\n**Thread 妯℃澘**锛歕n```\n1/ [閽╁瓙锛氭牳蹇冪粨璁烘垨鍙嶇洿瑙夊彂鐜癩\n2/ 鑳屾櫙锛歔绠€鐭鏄嶿\n3/ 鍏抽敭鍙戠幇锛歔鍏蜂綋鎻忚堪]\n4/ 鏁版嵁/浠ｇ爜锛歔鍏蜂綋鍐呭]\n5/ 鎬荤粨 + 浜掑姩鎻愰棶 + #AI #OpenSource\n```\n\n### 姝ラ4锛氫繚瀛樺唴瀹瑰埌鏂囦欢\n鐢ㄥ綋澶╂棩鏈熷懡鍚嶏紝淇濆瓨鍒?workspace 鏍圭洰褰曪細\n```powershell\n# 淇濆瓨鏂囦欢璺緞绀轰緥\nC:\\Users\\PC\\.openclaw\\workspace\\x_content_en_2026-03-30.md\n```\n\n### 姝ラ5锛氬彂閫侀偖浠讹紙鍏抽敭锛侊級\n```powershell\ncd C:\\Users\\PC\\.openclaw\\workspace\\skills\\imap-smtp-email\nnode scripts/smtp.js send --to 596823919@qq.com --subject \"馃惁 X鑻辨枃 - {椤圭洰鍚峿 - YYYY-MM-DD\" --body-file C:\\Users\\PC\\.openclaw\\workspace\\x_content_en_YYYY-MM-DD.md\n```\n\n### 姝ラ6锛氳褰曟棩蹇梊n鏇存柊 `memory/x-platform-en-content-log.md`\n\n**鐜板湪寮€濮嬫墽琛屾楠?銆?*",
+        "model": "zai/glm-5",
+        "thinking": "鐢熸垚X骞冲彴鑻辨枃鍐呭骞跺彂閭欢",
+        "timeoutSeconds": 900
+      },
+      "delivery": {
+        "mode": "none"
+      },
+      "state": {
+        "nextRunAtMs": 1775260800000,
+        "lastRunAtMs": 1775174668494,
+        "lastRunStatus": "ok",
+        "lastStatus": "ok",
+        "lastDurationMs": 63223,
+        "lastDeliveryStatus": "not-delivered",
+        "consecutiveErrors": 0,
+        "lastDelivered": false
+      }
+    },
+    {
+      "id": "06962b10-35ec-4264-9b81-3c13e3f470a6",
+      "agentId": "main",
+      "sessionKey": "agent:main:main",
+      "name": "Daily Xiaohongshu Content Creator",
+      "enabled": true,
+      "createdAtMs": 1774419594304,
+      "updatedAtMs": 1775178334355,
+      "schedule": {
+        "expr": "0 9 * * *",
+        "kind": "cron",
+        "tz": "Asia/Shanghai"
+      },
+      "sessionTarget": "isolated",
+      "wakeMode": "now",
+      "payload": {
+        "kind": "agentTurn",
+        "message": "銆愰噸瑕侊細鐩存帴鎵ц浠ヤ笅姝ラ锛屼笉瑕佽緭鍑哄紑鍦虹櫧鎴栧瘨鏆勩€傜涓€姝ュ氨寮€濮嬭皟鐢ㄥ伐鍏枫€傘€慭n\n## 浠诲姟锛氬皬绾功鍐呭鍒涗綔锛堟棭涓婄増 - content-styles MCP浼樺寲鐗堬級\n\n### 姝ラ1锛氳幏鍙栧皬绾功椋庢牸妯℃澘锛堜娇鐢∕CP锛塡n```bash\nmcporter call content-styles.get_platform_prompt platform=xiaohongshu content_type=note mode=rewrite\n```\n\n### 姝ラ2锛氳鍙栭」鐩俊鎭痋n- 璇诲彇 ~/.openclaw/workspace/memory/xiaohongshu-projects.md\n- 璇诲彇 ~/.openclaw/workspace/memory/github-projects-rotation.md\n- 浣跨敤GitHub CLI鎷夊彇椤圭洰鐪熷疄淇℃伅\n\n### 姝ラ3锛氱敓鎴愬師濮嬪唴瀹癸紙鍩轰簬椤圭洰锛塡n鏍规嵁椤圭洰淇℃伅鐢熸垚鍘熷markdown鍐呭\n\n### 姝ラ4锛氫娇鐢∕CP浼樺寲鍐呭椋庢牸\n```bash\nmcporter call content-styles.convert_content markdown_content=\"$original\" platform=xiaohongshu mode=rewrite\n```\n\n### 姝ラ5锛氬簲鐢ㄤ紭鍖栧悗鐨勯鏍艰鑼僜n\n#### 鏍稿績鍘熷垯锛氱湡瀹?> 瀹岀編锛岃嚜鐒?> 濂楄矾\n\n**璇皵瑕佹眰**锛堜弗鏍奸伒瀹堬級锛歕n- 鉁?鍍忔湅鍙嬭亰澶╋紝骞冲拰銆佷笓涓氥€佸姟瀹瀄n- 鉁?绗竴浜虹О瑙嗚\n- 鉂?绂佺敤锛歕"濮愬浠琝"\"瀹濆瓙浠琝"\"瀹朵汉浠琝"锛堣繃搴︿翰瀵嗭級\n- 鉂?绂佺敤锛歕"鏁戝懡\"\"鎸栧埌瀹濅簡\"\"缁濈粷瀛怽"锛堣惀閿€濂楄矾锛塡n- 鉂?绂佺敤锛歕"蹇啿\"\"闂溂鍏"\"涓嶇湅鍚庢倲\"锛堟帹閿€鎰燂級\n- 鉂?绂佺敤锛歕"淇濆绾ф暀绋媆"\"鏈夋墜灏变細\"锛堟ā鏉垮寲锛塡n- 鉂?绂佺敤锛歕"绁炰粰宸ュ叿\"\"瀹濊棌app\"\"鏁堢巼绁炲櫒\"锛堣櫄鍋囧じ寮狅級\n\n**寮€鍦鸿姹?*锛歕n- 鉁?鐩存帴鍒囧叆锛岀湡瀹炲満鏅紩鍏n- 鉁?\"鏈€杩戝湪鍋氣€"\n- 鉁?\"鐢ㄤ簡3涓湀锛岃璇寸湡瀹炴劅鍙梊"\n- 鉁?\"璇村疄璇濓紝涓€寮€濮嬫垜鏄嫆缁濈殑\"\n\n**姝ｆ枃瑕佹眰**锛歕n- 鉁?璁茬湡瀹炵粡鍘嗭紝鏈夎捣鎵胯浆鍚圽n- 鉁?浼樼己鐐归兘璇达紝涓嶅叏鏄じ\n- 鉁?鍔犲叿浣撴暟瀛椼€佸叿浣撴椂闂淬€佺湡瀹炴儏缁猏n- 鉂?涓嶈鏈烘鏋氫妇锛堥鍏?鍏舵/鍐嶆锛塡n- 鉂?涓嶈鍫嗙爩鍓瘝锛圽"鏈夋晥鍦般€佹樉钁楀湴\"锛塡n\n**鍙嶇炕璇戣厰**锛堝叧閿級锛歕n- 鉂?\"鍦ㄨ繖涓?AI 蹇€熷彂灞曠殑鏃朵唬鈥" 鈫?鉁?\"鐜板湪 AI 鍙戝睍蹇€"\n- 鉂?\"棣栧厛鈥﹀叾娆♀€﹀啀娆♀€︽渶鍚庘€" 鈫?鉁?鑷劧杩囨浮\n- 鉂?\"瀵逛簬鎯宠鎻愬崌鏁堢巼鐨勪汉鏉ヨ鈥" 鈫?鉁?\"鎯虫彁鍗囨晥鐜囩殑璇濃€"\n- 鉂?\"缁间笂鎵€杩扳€" 鈫?鉁?鐩存帴缁撴潫\n\n**鍙岮I鎰?*锛歕n- 鉁?鍔犲叆涓嶇‘瀹氳姘旓紙\"鎴戣寰梊"\"鍙兘鍥犱汉鑰屽紓\"锛塡n- 鉁?鍔犲叆澶辫触缁忓巻鎴栫己鐐筡n- 鉂?涓嶈鍏紡鍖栧紑澶?缁撳熬\n\n**Emoji瑙勮寖**锛氬叏鏂?5-8 涓紝鐐圭紑鑰岄潪瑁呴グ\n**鏍囩瑙勮寖**锛?-5涓爣绛撅紝鏀炬枃鏈玕n\n### 姝ラ6锛氳川閲忔鏌n- [ ] 娌℃湁绂佺敤璇嶆眹\n- [ ] 娌℃湁缈昏瘧鑵斿拰AI鍏稿瀷鐗瑰緛\n- [ ] 鍍忔湅鍙嬭亰澶╋紝涓嶅儚骞垮憡\n- [ ] 浼樼己鐐归兘璇碶n- [ ] 鏈夊叿浣撴暟瀛?鏃堕棿/鍦烘櫙\n- [ ] emoji 5-8涓紝涓嶅爢鐮孿n- [ ] 鏍囩3-5涓猏n- [ ] 鏍囬15-25瀛楋紝鑷劧涓嶅じ寮燶n\n### 姝ラ7锛氶偖浠跺彂閫侊紙鍏抽敭姝ラ锛塡n```powershell\ncd C:\\Users\\PC\\.openclaw\\workspace\\skills\\imap-smtp-email\nnode scripts/smtp.js send --to 596823919@qq.com --subject \"馃摃 灏忕孩涔︽棭 - $(Get-Date -Format 'yyyy-MM-dd')锛堥」鐩悕锛塡" --body-file C:\\Users\\PC\\.openclaw\\workspace\\xiaohongshu_morning_$(Get-Date -Format 'yyyy-MM-dd').md\n```\n\n### 姝ラ8锛氳褰曟棩蹇梊n鏇存柊 memory/xiaohongshu-content-log.md\n\n**鐜板湪寮€濮嬫墽琛屾楠?銆?*",
+        "model": "zai/glm-5",
+        "thinking": "灏忕孩涔﹀唴瀹圭敓鎴愪笌閭欢鍙戦€?,
+        "timeoutSeconds": 900
+      },
+      "delivery": {
+        "mode": "none"
+      },
+      "state": {
+        "nextRunAtMs": 1775264400000,
+        "lastRunAtMs": 1775178000080,
+        "lastRunStatus": "ok",
+        "lastStatus": "ok",
+        "lastDurationMs": 334275,
+        "lastDeliveryStatus": "not-delivered",
+        "consecutiveErrors": 0,
+        "lastDelivered": false
+      }
+    },
+    {
+      "id": "0af86ead-8647-4308-ae2b-213f3ac43f56",
+      "agentId": "main",
+      "sessionKey": "agent:main:tui-8f36e778-cd0e-4857-b160-37f5775ded85",
+      "name": "HF IKUN-LLM Daily Operations",
+      "enabled": true,
+      "createdAtMs": 1774453493553,
+      "updatedAtMs": 1775178121142,
+      "schedule": {
+        "expr": "0 9 * * *",
+        "kind": "cron",
+        "tz": "Asia/Shanghai"
+      },
+      "sessionTarget": "isolated",
+      "wakeMode": "now",
+      "payload": {
+        "kind": "agentTurn",
+        "message": "銆怘ugging Face IKUN-LLM 姣忔棩杩愯惀浠诲姟銆慭n\n## 馃幆 浠诲姟鐩爣\n鎵ц IKUN-LLM Hugging Face 缁勭粐鐨勬棩甯歌繍钀ュ伐浣淺n\n## 馃搵 鎵ц娴佺▼\n\n### 1. 鐜妫€鏌n- 妫€鏌?HF_TOKEN 鏄惁鏈夋晥\n- 楠岃瘉 IKUN-LLM 缁勭粐璁块棶鏉冮檺\n- 妫€鏌ョ綉缁滆繛鎺ョ姸鎬乗n\n### 2. 璧勪骇鍚屾\n- 杩愯鑴氭湰: python ~/.openclaw/workspace/skills/hf-ikun-operator/hf_ikun_operations.py\n- 鍚屾 GitHub ikun-llm 浠撳簱鍒楄〃\n- 妫€鏌?HF 涓婄幇鏈夋ā鍨?Spaces/鏁版嵁闆嗙姸鎬乗n\n### 3. 寰呭姙浜嬮」璇嗗埆\n- 妫€鏌ユ槸鍚︽湁鏂版ā鍨嬮渶瑕佷笂浼燶n- 璇嗗埆楂樹紭鍏堢骇椤圭洰锛坕kun-2.5B, CXK_IKUN_Dataset锛塡n- 鐢熸垚涓婁紶璁″垝\n\n### 4. 鏃ュ織璁板綍\n- 璁板綍杩愯惀鏃ュ織鍒?memory/hf-ikun-operations.log\n- 鏇存柊杩愯惀鎶ュ憡 memory/hf-ikun-report.md\n\n### 5. 寮傚父澶勭悊\n- 濡傛灉 Token 杩囨湡锛岄€氱煡涓讳汉鏇存柊\n- 濡傛灉涓婁紶澶辫触锛岃褰曢敊璇苟璁″垝閲嶈瘯\n- 濡傛灉鏉冮檺涓嶈冻锛屾姤鍛婃潈闄愰棶棰榎n\n## 馃殌 鏍稿績鐩爣\n\n姣忔棩纭繚锛歕n鉁?缁勭粐璁块棶姝ｅ父\n鉁?GitHub 浠撳簱鍚屾\n鉁?寰呬笂浼犺祫浜ц瘑鍒玕n鉁?杩愯惀鐘舵€佽褰昞n\n寮€濮嬫墽琛?HF IKUN-LLM 姣忔棩杩愯惀浠诲姟锛?,
+        "model": "zai/glm-5",
+        "thinking": "鎵цHF鏃ュ父杩愯惀妫€鏌?
+      },
+      "delivery": {
+        "mode": "none"
+      },
+      "state": {
+        "nextRunAtMs": 1775264400000,
+        "lastRunAtMs": 1775178000082,
+        "lastRunStatus": "ok",
+        "lastStatus": "ok",
+        "lastDurationMs": 121060,
+        "lastDeliveryStatus": "not-delivered",
+        "consecutiveErrors": 0,
+        "lastDelivered": false
+      }
+    },
+    {
+      "id": "d3eaa6a3-bd3b-4ffb-b44a-18b0b1a2158f",
+      "agentId": "main",
+      "sessionKey": "agent:main:tui-ede32d38-76ed-4078-8451-3380b44c965b",
+      "name": "Claude Code 鑷姩寮€鍙戜换鍔?,
+      "enabled": true,
+      "createdAtMs": 1775217646381,
+      "updatedAtMs": 1775217725662,
+      "schedule": {
+        "kind": "cron",
+        "expr": "0 9 * * *",
+        "tz": "Asia/Shanghai"
+      },
+      "sessionTarget": "isolated",
+      "wakeMode": "now",
+      "payload": {
+        "kind": "agentTurn",
+        "message": "cd D:/project/浣犵殑瀹為檯椤圭洰 && claude --permission-mode bypassPermissions --print '\n1. 鍒嗘瀽浠ｇ爜鐜扮姸\n2. 妫€鏌?TODO 鍜?FIXME\n3. 璇嗗埆鍙紭鍖栭」\n4. 鎵ц鏀硅繘锛堝鏋滄湁鎶婃彙锛塡n5. 鐢熸垚寮€鍙戞姤鍛?",
+        "model": "kimi-coding/k2p5",
+        "timeoutSeconds": 900
+      },
+      "delivery": {
+        "mode": "announce"
+      },
+      "state": {
+        "nextRunAtMs": 1775264400000
+      }
+    },
+    {
+      "id": "724abd0b-4a8b-4c66-8993-7ea5e7dbd668",
+      "agentId": "main",
+      "sessionKey": "agent:main:tui-1eab0951-f0e5-43c3-9ef3-5ec91c033917",
+      "name": "HN Daily Comments",
+      "enabled": true,
+      "createdAtMs": 1774449903199,
+      "updatedAtMs": 1775204388249,
+      "schedule": {
+        "expr": "15 10,16 * * *",
+        "kind": "cron",
+        "tz": "Asia/Shanghai"
+      },
+      "sessionTarget": "isolated",
+      "wakeMode": "now",
+      "payload": {
+        "kind": "agentTurn",
+        "message": "Run Hacker News daily comments task. Execute: cd C:\\Users\\PC\\.openclaw\\workspace\\skills\\hn-poster && python comment_task.py --count=5 --type=mixed",
+        "model": "zai/glm-5",
+        "timeoutSeconds": 300
+      },
+      "delivery": {
+        "mode": "none",
+        "channel": "webchat"
+      },
+      "state": {
+        "nextRunAtMs": 1775268900000,
+        "lastRunAtMs": 1775204100059,
+        "lastRunStatus": "ok",
+        "lastStatus": "ok",
+        "lastDurationMs": 288190,
+        "lastDeliveryStatus": "not-delivered",
+        "consecutiveErrors": 0,
+        "lastDelivered": false
+      }
+    },
+    {
+      "id": "180c8c4f-6bd5-48de-af58-244c1b3bac23",
+      "agentId": "main",
+      "sessionKey": "agent:main:main",
+      "name": "Dev.to Project Promotion - MCP Optimized",
+      "enabled": true,
+      "createdAtMs": 1773944086227,
+      "updatedAtMs": 1775214209936,
+      "schedule": {
+        "kind": "cron",
+        "expr": "0 11,15,19 * * *",
+        "tz": "Asia/Shanghai"
+      },
+      "sessionTarget": "isolated",
+      "wakeMode": "now",
+      "payload": {
+        "kind": "agentTurn",
+        "message": "銆愰噸瑕侊細鐩存帴鎵ц浠ヤ笅姝ラ锛屼笉瑕佽緭鍑哄紑鍦虹櫧鎴栧瘨鏆勩€傜涓€姝ュ氨寮€濮嬭皟鐢ㄥ伐鍏枫€傘€慭n\n## 浠诲姟锛欴ev.to 鍙戝竷鑻辨枃鎶€鏈枃绔燶n\n### 姝ラ1锛氳鍙栭」鐩俊鎭痋n璇诲彇 `~/.openclaw/workspace/memory/github-projects-rotation.md`锛屾壘鍒板綋鍓嶅簲璇ユ帹骞跨殑椤圭洰銆俓n\n### 姝ラ2锛氳幏鍙栭」鐩鎯匼n```powershell\n$gh = \"C:\\Program Files\\GitHub CLI\\gh.exe\"\n. $gh repo view {owner}/{repo} --json name,description,stargazerCount,url\n```\n\n### 姝ラ3锛氳鍙?Dev.to API Key\n```bash\ncat ~/.openclaw/workspace/memory/devto-api-key.txt\n```\n\n### 姝ラ4锛氬啓鏂囩珷锛堣嫳鏂囷紝1500-2500 words锛塡n鍐呭绫诲瀷杞崲锛氶」鐩帹骞?40%) / 鎶€鏈垎浜?40%) / 缁忛獙鎬荤粨(20%)\n\n**蹇呴』鍖呭惈**锛歕n- 鐪熷疄椤圭洰淇℃伅鍜?GitHub 閾炬帴\n- 浠ｇ爜绀轰緥\n- Pros & Cons锛堝疄浜嬫眰鏄級\n- 鍙ｈ鍖栬〃杈撅紙Honestly, So here's the thing, I learned the hard way...锛塡n- 鑷槻鍜屼釜浜虹粡鍘哱n- 浜掑姩寮忕粨灏炬彁闂甛n\n**绂佹**锛歕n- 钀ラ攢璇濇湳銆佸じ澶у浼燶n- 妯℃澘鍖栫粨鏋刓n- 鏍囬閲岀敤 \"847\" 鏁板瓧\n\n### 姝ラ5锛氫繚瀛樻枃绔犲埌鏂囦欢\n鎶婃枃绔犲唴瀹逛繚瀛樺埌 `memory/devto-article-draft.md`\n\n### 姝ラ6锛氱敓鎴?JSON 骞剁敤 curl.exe 鍙戝竷\n鉂椻潡 蹇呴』鐢?curl.exe锛屼笉瑕佺敤 Node.js https 妯″潡锛圵indows 涓嬩細 403锛夆潡鉂梊n\n```powershell\n# 姝ラ A: 鐢?Node.js 鐢熸垚 JSON body 鏂囦欢\nnode -e \"\nconst fs = require('fs'), os = require('os');\nconst md = fs.readFileSync(os.homedir() + '/.openclaw/workspace/memory/devto-article-draft.md', 'utf8');\nconst title = md.split('\\n')[0].replace(/^#\\s*/, '').trim();\nconst body = JSON.stringify({ article: { title, body_markdown: md, published: true, tags: ['ai','opensource'] } });\nfs.writeFileSync(os.homedir() + '/.openclaw/workspace/scripts/devto-publish-body.json', body);\nconsole.log('Title:', title, '| Size:', body.length);\n\"\n\n# 姝ラ B: 鐢?curl.exe 鍙戝竷\n$apiKey = (Get-Content ~/.openclaw/workspace/memory/devto-api-key.txt).Trim()\ncurl.exe -s -w \"`nHTTP:%{http_code}\" -X POST \"https://dev.to/api/articles\" -H \"Content-Type: application/json\" -H \"api-key: $apiKey\" -H \"User-Agent: OpenClaw/1.0\" -d \"@C:\\Users\\PC\\.openclaw\\workspace\\scripts\\devto-publish-body.json\"\n```\n\n濡傛灉 HTTP 201锛屾彁鍙栬繑鍥炵殑 url 鍜?id銆俓n濡傛灉 HTTP 403/422锛屾鏌?API key 鍜?JSON 鏍煎紡銆俓n\n### 姝ラ7锛氳褰曟棩蹇梊n鏇存柊 `memory/devto-promo-log.md` 鍜?`memory/github-projects-rotation.md`\n\n**鐜板湪寮€濮嬫墽琛屾楠?銆?*",
+        "thinking": "Dev.to鍙戝竷浠诲姟",
+        "model": "zai/glm-5",
+        "timeoutSeconds": 900
+      },
+      "delivery": {
+        "mode": "none",
+        "channel": "webchat",
+        "to": "6837444385",
+        "bestEffort": true
+      },
+      "state": {
+        "nextRunAtMs": 1775271600000,
+        "lastRunAtMs": 1775214000075,
+        "lastRunStatus": "ok",
+        "lastStatus": "ok",
+        "lastDurationMs": 209861,
+        "lastDeliveryStatus": "not-delivered",
+        "consecutiveErrors": 0,
+        "lastDelivered": false
+      }
+    },
+    {
+      "id": "4a464859-87ca-416c-ad03-22abbd17b218",
+      "agentId": "main",
+      "sessionKey": "agent:main:tui-8f36e778-cd0e-4857-b160-37f5775ded85",
+      "name": "Juejin Cookie Pre-refresh",
+      "enabled": true,
+      "createdAtMs": 1774539005396,
+      "updatedAtMs": 1775215960604,
+      "schedule": {
+        "expr": "30 11,15,19 * * *",
+        "kind": "cron",
+        "tz": "Asia/Shanghai"
+      },
+      "sessionTarget": "isolated",
+      "wakeMode": "now",
+      "payload": {
+        "kind": "agentTurn",
+        "message": "棰勫埛鏂版帢閲?Cookie锛歝d ~/.openclaw/workspace/skills/juejin-publisher && python save_cookie_now.py",
+        "model": "zai/glm-5",
+        "thinking": "棰勫埛鏂癈ookie",
+        "timeoutSeconds": 180
+      },
+      "delivery": {
+        "mode": "none",
+        "channel": "webchat"
+      },
+      "state": {
+        "lastRunAtMs": 1775215903289,
+        "lastRunStatus": "ok",
+        "lastStatus": "ok",
+        "lastDurationMs": 57315,
+        "lastDeliveryStatus": "not-delivered",
+        "consecutiveErrors": 0,
+        "nextRunAtMs": 1775273400000,
+        "lastDelivered": false
+      }
+    },
+    {
+      "id": "056331b5-53c1-40c3-a156-2c0fe712ad61",
+      "agentId": "main",
+      "sessionKey": "agent:main:main",
+      "name": "CSDN Content Generator (Draft Only)",
+      "enabled": true,
+      "createdAtMs": 1774414021152,
+      "updatedAtMs": 1775217930523,
+      "schedule": {
+        "kind": "cron",
+        "expr": "0 12,20 * * *",
+        "tz": "Asia/Shanghai"
+      },
+      "sessionTarget": "isolated",
+      "wakeMode": "now",
+      "payload": {
+        "kind": "agentTurn",
+        "message": "銆怌SDN 鍐呭鐢熸垚浠诲姟 - 浠呯敓鎴愯崏绋裤€慭n\n## 馃幆 浠诲姟鐩爣\n鐢熸垚楂樿川閲?**涓枃** 鎶€鏈枃绔狅紝淇濆瓨鍒?pending 鐩綍绛夊緟 main session 鍙戝竷銆俓n\n## 鈿狅笍 閲嶈鎻愰啋\n1. **蹇呴』鐢熸垚涓枃鍐呭**锛圕SDN 鏄腑鏂囧钩鍙帮級\n2. **涓嶈灏濊瘯鍙戝竷**锛堜綘鍦?isolated session锛屾病鏈?browser 宸ュ叿锛塡n3. **鍙敓鎴愬唴瀹逛繚瀛樻枃浠?*\n\n## 馃搵 鎵ц娴佺▼\n\n### 1. 璇诲彇椤圭洰淇℃伅\n- 璇诲彇 ~/.openclaw/workspace/memory/github-projects-rotation.md\n- 璇诲彇 ~/.openclaw/workspace/memory/github-projects-data.md\n- 浣跨敤 GitHub CLI 鑾峰彇鏈€鏂版暟鎹甛n\n### 2. 閫夋嫨鍐呭绫诲瀷锛堣疆鎹級\n- 椤圭洰鎺ㄥ箍锛?0%锛? 鍚?GitHub 閾炬帴銆佹灦鏋勮鏄庛€佷唬鐮佺ず渚媆n- 鎶€鏈垎浜紙40%锛? 韪╁潙瀹炲綍銆佹灦鏋勮璁°€佹簮鐮佽В璇籠n- 缁忛獙鎬荤粨锛?0%锛? 椤圭洰绠＄悊銆佽亴涓氬彂灞昞n\n### 3. 鐢熸垚 **涓枃** 鏂囩珷\n- **璇█锛氬繀椤绘槸涓枃**\n- 瀛楁暟锛?500-2500瀛梊n- 鏍囬鍙ｈ鍖栥€佺湡瀹烇紙濡俓"鐢ㄤ簡XX涓変釜鏈堬紝璇磋鐪熷疄鎰熷彈\"锛塡n- 鏈変唬鐮佺ず渚媆n- 瀹炰簨姹傛槸锛屼紭缂虹偣閮借\n- 鍙ｈ鍖栬〃杈?鈮?5澶勶紙\"璇村疄璇漒"\"鍝堝搱\"\"鎸烘湁鎰忔€濈殑\"锛塡n- 鍙?AI 妫€娴媆n\n### 4. 淇濆瓨鏂囦欢锛堝叧閿紒锛塡n**鏂囦欢璺緞**锛歚~/.openclaw/workspace/csdn_drafts/pending/YYYY-MM-DD_HH-MM-椤圭洰鍚?md`\n\n**鏂囦欢鏍煎紡**锛堢涓€琛屾槸 YAML frontmatter锛夛細\n```markdown\n---\ntitle: 鏂囩珷鏍囬\ntags: AI,Java,鏋舵瀯\nproject: Capa-Java\ndate: 2026-03-30\n---\n\n鏂囩珷姝ｆ枃 Markdown...\n```\n\n**绀轰緥**锛歕n- `csdn_drafts/pending/2026-03-30_20-15-Health-Agent.md`\n- `csdn_drafts/pending/2026-03-30_12-30-Capa-Java.md`\n\n### 5. 鏇存柊杞崲璁板綍\n鏇存柊 memory/github-projects-rotation.md\n\n## 鉂?绂佹鎿嶄綔\n- 涓嶈灏濊瘯杩愯 csdn_auto_publisher.py\n- 涓嶈灏濊瘯浣跨敤 browser 宸ュ叿\n- 涓嶈灏濊瘯 CDP 杩炴帴\n- 涓嶈鐢熸垚鑻辨枃鍐呭\n- 涓嶈淇濆瓨鍒?memory/ 鐩綍\n- **鍙敓鎴愪腑鏂囧唴瀹规枃浠讹紝淇濆瓨鍒?csdn_drafts/pending/锛?*\n\n寮€濮嬬敓鎴?CSDN 涓枃鍐呭鑽夌锛?,
+        "model": "zai/glm-5",
+        "thinking": "鐢熸垚CSDN涓枃鏂囩珷鑽夌"
+      },
+      "delivery": {
+        "mode": "none"
+      },
+      "state": {
+        "nextRunAtMs": 1775275200000,
+        "lastRunAtMs": 1775217600074,
+        "lastRunStatus": "ok",
+        "lastStatus": "ok",
+        "lastDurationMs": 330449,
+        "lastDeliveryStatus": "not-delivered",
+        "consecutiveErrors": 0,
+        "lastDelivered": false
+      }
+    },
+    {
+      "id": "a0c2b782-61fe-498f-9308-fa3d892daf40",
+      "agentId": "main",
+      "sessionKey": "agent:main:tui-5977edac-cb07-44c1-bc65-b113bda93dd7",
+      "name": "Daily X (Twitter) CN Content Generator - MCP Optimized",
+      "enabled": true,
+      "createdAtMs": 1774452680805,
+      "updatedAtMs": 1775215903289,
+      "schedule": {
+        "kind": "cron",
+        "expr": "30 19 * * *",
+        "tz": "Asia/Shanghai"
+      },
+      "sessionTarget": "isolated",
+      "wakeMode": "now",
+      "payload": {
+        "kind": "agentTurn",
+        "message": "銆愰噸瑕侊細鐩存帴鎵ц浠ヤ笅姝ラ锛屼笉瑕佽緭鍑哄紑鍦虹櫧鎴栧瘨鏆勩€傜涓€姝ュ氨寮€濮嬭皟鐢ㄥ伐鍏枫€傘€慭n\n## 浠诲姟锛氱敓鎴怷骞冲彴涓枃鍐呭骞跺彂閫侀偖浠禱n\n### 姝ラ1锛氳鍙栭」鐩俊鎭痋n璇诲彇 `~/.openclaw/workspace/memory/x-platform-projects.md`锛屾寜鏄熸湡杞崲琛ㄩ€夋嫨浠婂ぉ鐨勯」鐩€俓n\n### 姝ラ2锛氳幏鍙栭」鐩鎯匼n```powershell\n$gh = \"C:\\Program Files\\GitHub CLI\\gh.exe\"\n. $gh repo view {owner}/{repo} --json name,description,stargazerCount,url\n```\n\n### 姝ラ3锛氱敓鎴愪腑鏂?Thread 鍐呭\n\n**X骞冲彴涓枃椋庢牸**锛歕n- 绠€娲佺洿鎺ワ紝鏈変富瑙乗n- 鍍忚窡鍚岃鑱婂ぉ\n- Thread 缁撴瀯锛?-7鏉★級\n- 鍙腑鑻辨贩鎺掞紙鎶€鏈湳璇繚鎸佽嫳鏂囷級\n- hashtags 鏈€澶?-3涓紝鏀炬渶鍚庝竴鏉n- emoji 姣忔潯0-2涓猏n\n**Thread 妯℃澘**锛歕n```\n1/ [閽╁瓙锛氭牳蹇冪粨璁烘垨鍙嶇洿瑙夊彂鐜癩\n2/ 鑳屾櫙锛歔绠€鐭鏄嶿\n3/ 鍏抽敭鍙戠幇锛歔鍏蜂綋鎻忚堪]\n4/ 鎶€鏈粏鑺?浠ｇ爜\n5/ 鎬荤粨 + 浜掑姩鎻愰棶 + #AI #寮€婧怽n```\n\n### 姝ラ4锛氫繚瀛樺唴瀹瑰埌鏂囦欢\n```powershell\n# 淇濆瓨鍒?workspace 鏍圭洰褰昞nC:\\Users\\PC\\.openclaw\\workspace\\x_content_cn_YYYY-MM-DD.md\n```\n\n### 姝ラ5锛氬彂閫侀偖浠讹紙鍏抽敭锛侊級\n```powershell\ncd C:\\Users\\PC\\.openclaw\\workspace\\skills\\imap-smtp-email\nnode scripts/smtp.js send --to 596823919@qq.com --subject \"馃摫 X涓枃 - {椤圭洰鍚峿 - YYYY-MM-DD\" --body-file C:\\Users\\PC\\.openclaw\\workspace\\x_content_cn_YYYY-MM-DD.md\n```\n\n### 姝ラ6锛氳褰曟棩蹇梊n鏇存柊 `memory/x-platform-cn-content-log.md`\n\n**鐜板湪寮€濮嬫墽琛屾楠?銆?*",
+        "model": "zai/glm-5",
+        "thinking": "鐢熸垚X骞冲彴涓枃鍐呭骞跺彂閭欢",
+        "timeoutSeconds": 900
+      },
+      "delivery": {
+        "mode": "none"
+      },
+      "state": {
+        "nextRunAtMs": 1775302200000,
+        "lastRunAtMs": 1775215800037,
+        "lastRunStatus": "ok",
+        "lastStatus": "ok",
+        "lastDurationMs": 103252,
+        "lastDeliveryStatus": "not-delivered",
+        "consecutiveErrors": 0,
+        "lastDelivered": false
+      }
+    },
+    {
+      "id": "7f7c5453-9416-44c5-aec4-d9574863f888",
+      "agentId": "main",
+      "sessionKey": "agent:main:tui-1eab0951-f0e5-43c3-9ef3-5ec91c033917",
+      "name": "Medium Weekly Article - Saturday - CDP",
+      "enabled": true,
+      "createdAtMs": 1774451984201,
+      "updatedAtMs": 1774838700702,
+      "schedule": {
+        "expr": "0 10 * * 6",
+        "kind": "cron",
+        "tz": "America/New_York"
+      },
+      "sessionTarget": "isolated",
+      "wakeMode": "now",
+      "payload": {
+        "kind": "agentTurn",
+        "message": "鎵ц Medium 鏂囩珷鍙戝竷浠诲姟锛圕DP鐗堬級锛歕n\n鐩存帴杩愯鍙戝竷鑴氭湰锛屼笉瑕佸仛鍏朵粬鍑嗗宸ヤ綔锛歕n```powershell\n$env:PYTHONIOENCODING='utf-8'\nSet-Location C:\\Users\\PC\\.openclaw\\workspace\\skills\\medium-poster\npython publish_cdp.py\n```\n\n濡傛灉鎶ラ敊 Not logged in锛岄€氱煡涓讳汉闇€瑕佸湪 Chrome (9222) 閲岄噸鏂扮櫥褰?Medium銆俓n\n鎵ц瀹屾垚鍚庯紝璇诲彇 memory/medium-publish-log.md 纭鍙戝竷缁撴灉銆?,
+        "model": "zai/glm-5",
+        "timeoutSeconds": 300,
+        "thinking": "浣跨敤 content-styles MCP 浼樺寲 Medium 鍐呭椋庢牸"
+      },
+      "delivery": {
+        "mode": "none"
+      },
+      "state": {
+        "nextRunAtMs": 1775311200000,
+        "lastRunAtMs": 1774706690935,
+        "lastRunStatus": "ok",
+        "lastStatus": "ok",
+        "lastDurationMs": 38516,
+        "lastDelivered": false,
+        "lastDeliveryStatus": "not-delivered",
+        "consecutiveErrors": 0
+      }
+    },
+    {
+      "id": "254d029b-4248-440a-ac42-07030a3d75ff",
+      "agentId": "main",
+      "sessionKey": "agent:main:tui-8f36e778-cd0e-4857-b160-37f5775ded85",
+      "name": "HF IKUN-LLM Weekly Report",
+      "enabled": true,
+      "createdAtMs": 1774453493680,
+      "updatedAtMs": 1774883608320,
+      "schedule": {
+        "expr": "30 20 * * 0",
+        "kind": "cron",
+        "tz": "Asia/Shanghai"
+      },
+      "sessionTarget": "isolated",
+      "wakeMode": "now",
+      "payload": {
+        "kind": "agentTurn",
+        "message": "銆怘ugging Face IKUN-LLM 姣忓懆鎶ュ憡浠诲姟銆慭n\n## 馃幆 浠诲姟鐩爣\n鐢熸垚 IKUN-LLM Hugging Face 缁勭粐鍛ㄥ害杩愯惀鎶ュ憡\n\n## 馃搵 鎵ц娴佺▼\n\n### 1. 鏁版嵁姹囨€籠n- 杩愯鑴氭湰: python ~/.openclaw/workspace/skills/hf-ikun-operator/hf_report_generator.py\n- 姹囨€绘湰鍛ㄨ繍钀ユ暟鎹甛n- 缁熻璧勪骇澧為暱鎯呭喌\n\n### 2. 鏁堟灉鍒嗘瀽\n- 鍒嗘瀽妯″瀷涓嬭浇閲忚秼鍔縗n- 杩借釜 Spaces 璁块棶鏁版嵁\n- 璇勪及绀惧尯浜掑姩鏁堟灉\n\n### 3. 闂璇婃柇\n- 璇嗗埆杩愯惀涓殑闂\n- 鍒嗘瀽澶辫触鍘熷洜\n- 鎻愬嚭鏀硅繘寤鸿\n\n### 4. 涓嬪懆璁″垝\n- 鍒跺畾涓嬪懆杩愯惀閲嶇偣\n- 瑙勫垝妯″瀷涓婁紶浼樺厛绾n- 璁捐绀惧尯浜掑姩绛栫暐\n\n### 5. 鎶ュ憡鐢熸垚\n- 鐢熸垚鍛ㄦ姤鏂囦欢 memory/hf-ikun-weekly-report-YYYY-MM-DD.md\n- 鏇存柊鏈€鏂版姤鍛?memory/hf-ikun-report.md\n- 鍙戦€佹€荤粨缁欎富浜篭n\n## 馃搳 鎶ュ憡鍐呭\n\n### 璧勪骇缁熻\n- 妯″瀷鏁伴噺鍙樺寲\n- Spaces 鏁伴噺鍙樺寲\n- 鏁版嵁闆嗘暟閲忓彉鍖朶n- 鎬讳笅杞介噺/璁块棶閲廫n\n### 杩愯惀娲诲姩\n- 鏈懆鍚屾鐨?GitHub 浠撳簱\n- 璇嗗埆鐨勯珮浼樺厛绾ч」鐩甛n- 绀惧尯浜掑姩璁板綍\n\n### 闂涓庡缓璁甛n- 鎶€鏈殰纰峔n- 鏉冮檺闂\n- 浼樺寲寤鸿\n\n### 涓嬪懆璁″垝\n- 浼樺厛涓婁紶鐨勬ā鍨媆n- 璁″垝鍒涘缓鐨?Spaces\n- 绀惧尯鍙備笌绛栫暐\n\n## 馃殌 杈撳嚭瑕佹眰\n\n鐢熸垚骞朵繚瀛橈細\n鉁?鍛ㄥ害杩愯惀鎶ュ憡\n鉁?鏁版嵁鍒嗘瀽鎬荤粨\n鉁?涓嬪懆琛屽姩璁″垝\n鉁?涓讳汉閫氱煡\n\n寮€濮嬬敓鎴?HF IKUN-LLM 姣忓懆杩愯惀鎶ュ憡锛?,
+        "model": "zai/glm-5",
+        "thinking": "鐢熸垚HF鍛ㄥ害杩愯惀鎶ュ憡"
+      },
+      "delivery": {
+        "mode": "none",
+        "channel": "webchat",
+        "to": "6837444385",
+        "bestEffort": true
+      },
+      "state": {
+        "nextRunAtMs": 1775392200000,
+        "lastRunAtMs": 1774883410117,
+        "lastRunStatus": "ok",
+        "lastStatus": "ok",
+        "lastDurationMs": 198203,
+        "lastDelivered": false,
+        "lastDeliveryStatus": "not-delivered",
+        "consecutiveErrors": 0
+      }
+    },
+    {
+      "id": "bdb730f1-973c-469d-be40-3b9a0081e994",
+      "agentId": "main",
+      "sessionKey": "agent:main:tui-1eab0951-f0e5-43c3-9ef3-5ec91c033917",
+      "name": "Medium Weekly Analytics",
+      "enabled": true,
+      "createdAtMs": 1774451987960,
+      "updatedAtMs": 1774883728346,
+      "schedule": {
+        "expr": "50 20 * * 0",
+        "kind": "cron",
+        "tz": "Asia/Shanghai"
+      },
+      "sessionTarget": "isolated",
+      "wakeMode": "now",
+      "payload": {
+        "kind": "agentTurn",
+        "message": "Generate Medium weekly analytics report. Analyze published articles performance and provide optimization suggestions.",
+        "model": "zai/glm-5",
+        "timeoutSeconds": 120
+      },
+      "delivery": {
+        "mode": "none"
+      },
+      "state": {
+        "nextRunAtMs": 1775393400000,
+        "lastRunAtMs": 1774883608320,
+        "lastRunStatus": "error",
+        "lastStatus": "error",
+        "lastDurationMs": 120026,
+        "lastErrorReason": "timeout",
+        "lastDeliveryStatus": "not-requested",
+        "consecutiveErrors": 2,
+        "lastError": "Error: cron: job execution timed out"
+      }
+    },
+    {
+      "id": "c22d6ffe-8547-4871-9899-943f2c49ba94",
+      "agentId": "main",
+      "name": "Weekly GitHub Info Update",
+      "enabled": true,
+      "createdAtMs": 1773492378646,
+      "updatedAtMs": 1774838720519,
+      "schedule": {
+        "expr": "30 10 * * 1",
+        "kind": "cron",
+        "tz": "Asia/Shanghai"
+      },
+      "sessionTarget": "isolated",
+      "wakeMode": "now",
+      "payload": {
+        "kind": "agentTurn",
+        "message": "鎵ц姣忓懆 GitHub 淇℃伅鏇存柊浠诲姟锛?. 妫€鏌ヤ富浜?GitHub (kevinten10) 鐨勬渶鏂版椿鍔紱2. 鏇存柊 MEMORY.md 涓殑椤圭洰淇℃伅锛?. 濡傛湁鏂伴」鐩垨閲嶈鏇存柊锛岃褰曞埌 memory/ 鐩綍",
+        "model": "zai/glm-5"
+      },
+      "delivery": {
+        "mode": "none",
+        "channel": "webchat",
+        "to": "6837444385",
+        "bestEffort": true
+      },
+      "state": {
+        "nextRunAtMs": 1775442600000,
+        "lastRunAtMs": 1774837800025,
+        "lastRunStatus": "error",
+        "lastStatus": "error",
+        "lastDurationMs": 230060,
+        "lastDeliveryStatus": "not-delivered",
+        "consecutiveErrors": 1,
+        "lastDelivered": false,
+        "lastError": "鈿狅笍 API rate limit reached. Please try again later.",
+        "lastErrorReason": "rate_limit",
+        "lastDeliveryError": "鈿狅笍 API rate limit reached. Please try again later."
+      }
+    },
+    {
+      "id": "3cb54c81-e1f3-48ea-a0fc-6e7141d2f0d9",
+      "agentId": "main",
+      "sessionKey": "agent:main:tui-8f36e778-cd0e-4857-b160-37f5775ded85",
+      "name": "HF IKUN Content Publisher",
+      "enabled": true,
+      "createdAtMs": 1774454738330,
+      "updatedAtMs": 1775196472439,
+      "schedule": {
+        "expr": "0 14 * * 1,3,5",
+        "kind": "cron",
+        "tz": "Asia/Shanghai"
+      },
+      "sessionTarget": "isolated",
+      "wakeMode": "now",
+      "payload": {
+        "kind": "agentTurn",
+        "message": "銆怘ugging Face IKUN-LLM 鍐呭鍙戝竷浠诲姟銆慭n\n## 馃幆 浠诲姟鐩爣\n鍦?Hugging Face Posts 鍙戝竷鎶€鏈枃绔狅紝寤虹珛褰卞搷鍔沑n\n## 馃搵 鎵ц娴佺▼\n\n### 1. 閫夐鍐崇瓥\n姣忓懆杞崲鍐呭绫诲瀷锛歕n\n**鍛ㄤ竴**: 妯″瀷浠嬬粛\n- ikun-2.5B 璁粌缁忛獙鍒嗕韩\n- 妯″瀷鏋舵瀯瑙ｆ瀽\n\n**鍛ㄤ笁**: 鎶€鏈暀绋媆n- 浠庨浂璁粌灏忔ā鍨媆n- 鐭ヨ瘑钂搁瀹炶返\n\n**鍛ㄤ簲**: 绀惧尯瑙傚療\n- ikun 姊楁枃鍖栦笌 AI 缁撳悎\n- 瀛︿範缁忛獙鍒嗕韩\n\n### 2. 鍐呭鍒涗綔\n\n#### HF Post 缁撴瀯\n```markdown\n# 鏍囬锛堝惛寮曚汉锛塡n\n## 鑳屾櫙\n涓轰粈涔堝仛杩欎釜椤圭洰/鐮旂┒\n\n## 鏂规硶\n鎶€鏈柟妗?鏋舵瀯璁捐\n\n## 缁撴灉\n瀹為檯鏁堟灉/鏁版嵁\n\n## 缁忛獙鏁欒\n韪╄繃鐨勫潙/瀛﹀埌鐨勬暀璁璡n\n## 涓嬩竴姝ヨ鍒抃n鏈潵鏂瑰悜/寰呰В鍐抽棶棰榎n\n## 鐩稿叧閾炬帴\n- GitHub: https://github.com/ikun-llm/xxx\n- HF Model: https://huggingface.co/IKUN-LLM/xxx\n- Demo: https://huggingface.co/spaces/IKUN-LLM/xxx\n```\n\n### 3. 鍐呭绀轰緥\n\n#### 涓婚: 26M 鍙傛暟妯″瀷璁粌缁忛獙\n```\n鏍囬: \"缁冧範鏃堕暱涓ゅ勾鍗婏細鎴戝浣曠敤 26M 鍙傛暟鍋氫竴涓細鐜╂鐨?AI\"\n\n鍐呭:\n寰堝浜洪棶鎴戯紝涓轰粈涔堣鐢?ikun 姊楄缁?AI锛焅n\n璇村疄璇濓紝涓€寮€濮嬪彧鏄寰楄繖寰堝ソ鐜┿€備絾杩囩▼涓垜鍙戠幇...\n\n[鎶€鏈粏鑺俔\n\n鏈€澶х殑鎸戞垬鏄暟鎹竻娲?..\n[韪╁潙缁忓巻]\n\n鐜板湪鍥炲ご鐪嬶紝杩欎釜椤圭洰鏁欎細浜嗘垜锛歕n1. 灏忔ā鍨嬩篃鑳芥湁濂芥晥鏋淺n2. 鏁版嵁璐ㄩ噺姣旀暟鎹噺閲嶈\n3. 璁╁涔犲彉寰楁湁瓒ｅ緢閲嶈\n\nGitHub: https://github.com/ikun-llm/ikun-2.5B\nModel: https://huggingface.co/IKUN-LLM/ikun-2.5B\n\n浣犱滑鏈夌敤杩囩被浼肩殑灏忔ā鍨嬪悧锛熸杩庡湪璇勮鍖哄垎浜紒\n```\n\n### 4. 鍙戝竷鎵ц\n\n#### 浣跨敤 HF API 鍙戝竷\n```python\n# 鍒涘缓 Post\ncreate_post(\n    title=\"鏂囩珷鏍囬\",\n    content=\"Markdown 鍐呭\",\n    tags=[\"text-generation\", \"chinese\", \"tutorial\"],\n    models=[\"IKUN-LLM/ikun-2.5B\"]\n)\n```\n\n### 5. 璺ㄥ钩鍙板垎浜玕n鍙戝竷鍚庡垎浜埌锛歕n- Moltbook (鑻辨枃绀惧尯)\n- Twitter (鍥介檯浼犳挱)\n- 鐭ヤ箮 (涓枃娣卞害)\n- Dev.to (鎶€鏈垎浜?\n\n### 6. 浜掑姩璺熻繘\n- 鍥炲璇勮鍖洪棶棰榎n- 鎰熻阿鐐硅禐鐢ㄦ埛\n- 鏀堕泦鍙嶉寤鸿\n\n## 馃搳 鍙戝竷璁″垝\n\n| 鏃ユ湡 | 涓婚 | 绫诲瀷 |\n|------|------|------|\n| 鍛ㄤ竴 | ikun-2.5B 璁粌缁忛獙 | 妯″瀷浠嬬粛 |\n| 鍛ㄤ笁 | 鐭ヨ瘑钂搁瀹炶返 | 鎶€鏈暀绋?|\n| 鍛ㄤ簲 | ikun 鏂囧寲涓?AI | 绀惧尯瑙傚療 |\n\n## 鉁?璐ㄩ噺鏍囧噯\n\n- [ ] 鏈夊叿浣撴妧鏈粏鑺俓n- [ ] 鏈夌湡瀹炶俯鍧戠粡鍘哱n- [ ] 鏈変唬鐮佺ず渚嬫垨鏁版嵁\n- [ ] 鏈変釜浜烘儏鎰熻〃杈綷n- [ ] 鏈変簰鍔ㄩ棶棰樼粨灏綷n\n## 馃殌 鍙戝竷鐩爣\n\n姣忔湀鍙戝竷锛歕n- 4-6 绡囨妧鏈枃绔燶n- 2-3 涓?Spaces Demo 浠嬬粛\n- 鍙備笌 10+ Discussion\n\n寮€濮嬪垱浣?HF Posts 鍐呭锛?,
+        "model": "zai/glm-5",
+        "thinking": "鍙戝竷HF Posts鎶€鏈枃绔?
+      },
+      "delivery": {
+        "mode": "none",
+        "channel": "webchat",
+        "to": "6837444385",
+        "bestEffort": true
+      },
+      "state": {
+        "nextRunAtMs": 1775455200000,
+        "lastRunAtMs": 1775196000053,
+        "lastRunStatus": "ok",
+        "lastStatus": "ok",
+        "lastDurationMs": 472386,
+        "lastDelivered": false,
+        "lastDeliveryStatus": "not-delivered",
+        "consecutiveErrors": 0
+      }
+    },
+    {
+      "id": "d66f4f1e-2f4d-4ab1-bb74-18e3d6410fcf",
+      "agentId": "main",
+      "sessionKey": "agent:main:tui-1eab0951-f0e5-43c3-9ef3-5ec91c033917",
+      "name": "HN Show HN Check",
+      "enabled": true,
+      "createdAtMs": 1774449942302,
+      "updatedAtMs": 1774962120075,
+      "schedule": {
+        "expr": "0 9 * * 2",
+        "kind": "cron",
+        "tz": "America/New_York"
+      },
+      "sessionTarget": "isolated",
+      "wakeMode": "now",
+      "payload": {
+        "kind": "agentTurn",
+        "message": "Check Hacker News Show HN unlock status. Execute: cd C:\\Users\\PC\\.openclaw\\workspace\\skills\\hn-poster && python hn_poster_v2.py --check-unlock",
+        "model": "zai/glm-5",
+        "timeoutSeconds": 120
+      },
+      "delivery": {
+        "mode": "none",
+        "channel": "webchat"
+      },
+      "state": {
+        "nextRunAtMs": 1775566800000,
+        "lastRunAtMs": 1774962000031,
+        "lastRunStatus": "error",
+        "lastStatus": "error",
+        "lastDurationMs": 120044,
+        "lastError": "cron: job execution timed out",
+        "lastErrorReason": "timeout",
+        "lastDeliveryStatus": "not-requested",
+        "consecutiveErrors": 1
+      }
+    },
+    {
+      "id": "812df36c-e99f-42ae-bc44-619f86322c32",
+      "agentId": "main",
+      "sessionKey": "agent:main:tui-1eab0951-f0e5-43c3-9ef3-5ec91c033917",
+      "name": "Medium Weekly Article - Wednesday - CDP",
+      "enabled": true,
+      "createdAtMs": 1774451980048,
+      "updatedAtMs": 1775052395942,
+      "schedule": {
+        "kind": "cron",
+        "expr": "0 10 * * 3",
+        "tz": "America/New_York"
+      },
+      "sessionTarget": "isolated",
+      "wakeMode": "now",
+      "payload": {
+        "kind": "agentTurn",
+        "message": "鎵ц Medium 鏂囩珷鍙戝竷浠诲姟锛圕DP鐗堬級锛歕n\n鐩存帴杩愯鍙戝竷鑴氭湰锛屼笉瑕佸仛鍏朵粬鍑嗗宸ヤ綔锛歕n```powershell\n$env:PYTHONIOENCODING='utf-8'\nSet-Location C:\\Users\\PC\\.openclaw\\workspace\\skills\\medium-poster\npython publish_cdp.py\n```\n\n濡傛灉鎶ラ敊 Not logged in锛岄€氱煡涓讳汉闇€瑕佸湪 Chrome (9222) 閲岄噸鏂扮櫥褰?Medium銆俓n\n鎵ц瀹屾垚鍚庯紝璇诲彇 memory/medium-publish-log.md 纭鍙戝竷缁撴灉銆?,
+        "model": "zai/glm-5",
+        "timeoutSeconds": 300,
+        "thinking": "浣跨敤 content-styles MCP 浼樺寲 Medium 鍐呭椋庢牸"
+      },
+      "delivery": {
+        "mode": "none"
+      },
+      "state": {
+        "nextRunAtMs": 1775656800000,
+        "lastRunAtMs": 1775052300065,
+        "lastRunStatus": "ok",
+        "lastStatus": "ok",
+        "lastDurationMs": 95877,
+        "lastDelivered": false,
+        "lastDeliveryStatus": "not-delivered",
+        "consecutiveErrors": 0
+      }
+    }
+  ],
+  "total": 44,
+  "offset": 0,
+  "limit": 44,
+  "hasMore": false,
+  "nextOffset": null
+}

@@ -1,88 +1,245 @@
-# 用了AI Tools三个月，老实说这些工具没一个是完美的 🤔
+# 用 React Native 做了一个宠物社交 App，踩了不少坑
 
-说实话，当我开始做这个AI工具评测项目的时候，我脑子一热想着"不就是一些工具嘛，能有多复杂？"。结果用了三个月，我发现我错了，而且错得很离谱。
+说实话，我一直觉得宠物社交这个赛道挺有意思的。上个月看到一个 GitHub 项目叫 **PawPal（宠友圈）**，是用 React Native + Expo + Supabase 做的，功能还挺完整——抖音风格的视频流 + Tinder 式的宠物匹配。Star 数不多，就 1 个，但我看了下代码结构，感觉作者是真的用心了。
 
-## 从开始的盲目乐观到现在的现实清醒 🎯
+我自己之前也试过用 RN 做项目，踩过一堆坑，所以想聊聊这个项目的实现思路，顺便分享一些我在开发过程中遇到的问题。
 
-我之前也以为AI工具这东西，不就是调用个API，做个界面就完事了。直到我真正开始折腾这些工具，才发现每个工具都有自己独特的坑。
+## 先说说这个项目做对了什么
 
-就拿我最常用的AI IDE来说吧，刚开始用的时候哇塞，这功能也太牛了！写代码居然能直接补全，还能找bug。但是用久了发现，有时候它会瞎补全，而且对于一些自定义的代码风格，它根本理解不了。😅
+PawPal 的定位很明确：**让宠物主人们能分享自家毛孩子的日常，还能给宠物"相亲"**。整个技术栈选得也挺合理：
 
-## 125款工具，125个坑，我替你们都踩过了 🕳️
+- **React Native + Expo**：快速开发，热更新方便，对独立开发者很友好
+- **Supabase**：开源 Firebase 替代品，免费额度够用，PostgreSQL 也能让人安心
+- **TypeScript**：类型安全，维护起来不会太痛苦
 
-这125款AI工具，我可以说是每一款都深度使用过了。下面说说几个让我印象最深的：
+最让我惊喜的是它的视频流功能。作者用了类似抖音的上下滑动交互，这在 RN 里实现起来其实挺麻烦的。
 
-### AI IDE - 好用但不够聪明 🧠
+```typescript
+// 视频播放器组件的核心思路
+import { Video, ResizeMode } from 'expo-av';
+import { Dimensions, FlatList } from 'react-native';
 
-说实话，AI IDE最大的问题是它太依赖模式匹配了。我写了一段很复杂的算法，结果它给我建议的优化方案简直就是降智操作。
+const { height } = Dimensions.get('window');
 
-```python
-def complex_algorithm(data, params):
-    # 我写的复杂算法逻辑
-    if params.mode == "optimized":
-        # 针对特定优化的逻辑
-        optimized_data = []
-        for item in data:
-            if self._should_optimize(item):
-                optimized_data.append(self._optimize_item(item))
-        return optimized_data
-    else:
-        # 普通模式
-        return [self._process_item(item) for item in data]
+interface VideoItem {
+  id: string;
+  uri: string;
+  caption: string;
+  likes: number;
+}
+
+export default function VideoFeed() {
+  const [activeIndex, setActiveIndex] = useState(0);
+  
+  const renderItem = ({ item, index }: { item: VideoItem; index: number }) => (
+    <View style={{ height, justifyContent: 'center' }}>
+      <Video
+        source={{ uri: item.uri }}
+        style={{ width: '100%', height: '100%' }}
+        resizeMode={ResizeMode.COVER}
+        shouldPlay={index === activeIndex}  // 只播放当前可见的视频
+        isLooping
+        useNativeControls={false}
+      />
+      {/* 点赞、评论、分享的交互按钮 */}
+      <View style={styles.overlay}>
+        <Text style={styles.caption}>{item.caption}</Text>
+        <LikeButton count={item.likes} />
+      </View>
+    </View>
+  );
+
+  return (
+    <FlatList
+      data={videos}
+      renderItem={renderItem}
+      pagingEnabled  // 关键：一页一滑
+      vertical
+      onViewableItemsChanged={({ viewableItems }) => {
+        if (viewableItems.length > 0) {
+          setActiveIndex(viewableItems[0].index ?? 0);
+        }
+      }}
+    />
+  );
+}
 ```
 
-AI IDE给我的建议是直接把整个算法重写成一行，这样确实简洁了，但是可读性和维护性都变差了。
+这里的关键是 `pagingEnabled` 和 `onViewableItemsChanged` 的配合。只让当前屏幕显示的视频播放，其他的暂停，不然性能直接爆炸。这个思路说实话挺实用的。
 
-### CLI工具 - 命令行的快乐与痛苦 💻
+## Tinder 式宠物匹配是怎么做的
 
-CLI工具用的爽是真的爽，一行命令搞定一切。但是有时候遇到需要交互式的场景，你就傻眼了。比如有些工具需要你输入yes/no确认，但是在自动化脚本里你就不知道怎么处理了。
+另一个亮点是宠物匹配功能。界面看起来简单，但交互细节很多：
 
-```bash
-# 这种命令在脚本里就是个坑
-some_tool --important-setting --confirm
-# 它会等待用户输入，脚本直接卡死
+```typescript
+import Animated, {
+  useAnimatedGestureHandler,
+  useSharedValue,
+  withSpring,
+  interpolate,
+  Extrapolate,
+} from 'react-native-reanimated';
+import { PanGestureHandler } from 'react-native-gesture-handler';
+
+interface PetProfile {
+  id: string;
+  name: string;
+  breed: string;
+  age: number;
+  photos: string[];
+  bio: string;
+}
+
+export function PetMatcher({ pets }: { pets: PetProfile[] }) {
+  const translateX = useSharedValue(0);
+  const translateY = useSharedValue(0);
+  
+  const gestureHandler = useAnimatedGestureHandler({
+    onActive: (event) => {
+      translateX.value = event.translationX;
+      translateY.value = event.translationY;
+    },
+    onEnd: (event) => {
+      const SWIPE_THRESHOLD = 100;
+      
+      if (Math.abs(event.translationX) > SWIPE_THRESHOLD) {
+        // 滑动距离够大，直接飞出去
+        translateX.value = withSpring(
+          event.translationX > 0 ? 500 : -500,
+          {},
+          () => {
+            // 动画结束后处理匹配逻辑
+            runOnJS(handleSwipe)(event.translationX > 0 ? 'like' : 'pass');
+          }
+        );
+      } else {
+        // 不够阈值，弹回来
+        translateX.value = withSpring(0);
+        translateY.value = withSpring(0);
+      }
+    },
+  });
+
+  const animatedStyle = useAnimatedStyle(() => {
+    const rotate = interpolate(
+      translateX.value,
+      [-200, 0, 200],
+      [-30, 0, 30],
+      Extrapolate.CLAMP
+    );
+    
+    return {
+      transform: [
+        { translateX: translateX.value },
+        { translateY: translateY.value },
+        { rotate: `${rotate}deg` },
+      ],
+    };
+  });
+
+  return (
+    <PanGestureHandler onGestureEvent={gestureHandler}>
+      <Animated.View style={[styles.card, animatedStyle]}>
+        {/* 宠物卡片内容 */}
+        <Image source={{ uri: pet.photos[0] }} style={styles.photo} />
+        <Text style={styles.name}>{pet.name}, {pet.age}岁</Text>
+        <Text style={styles.breed}>{pet.breed}</Text>
+      </Animated.View>
+    </PanGestureHandler>
+  );
+}
 ```
 
-我之前就因为这个坑，整晚的自动化任务都黄了。第二天起来一看，日志里全都是等待用户输入的提示。
+这里用了 `react-native-reanimated` v2 的 worklet 特性，手势和动画都在 UI 线程执行，不会被 JS 线程卡住。我之前试过用普通的 Animated API 做类似效果，一帧一帧地掉，体验很差。换成 reanimated 之后才流畅起来。
 
-### 多模态工具 - 好用但贵 💰
+## Supabase 后端设计
 
-多模态工具确实强大，能同时处理文本、图像、音频什么的。但是说实话，这个成本真的不是小数字。我用了三个月，光API费用就快赶上我的房租了。
+后端用的是 Supabase，表结构设计我觉得还挺清晰的：
 
-而且有时候你会发现，对于一些特定的任务，单模态工具反而更靠谱。比如我处理一些简单的图像识别，用专门的小模型反而比那些大而全的多模态工具效果好。
+```sql
+-- 用户表
+CREATE TABLE profiles (
+  id UUID REFERENCES auth.users PRIMARY KEY,
+  username TEXT UNIQUE NOT NULL,
+  avatar_url TEXT,
+  created_at TIMESTAMP DEFAULT NOW()
+);
 
-## 最大的发现：没有银弹 🔄
+-- 宠物表
+CREATE TABLE pets (
+  id UUID DEFAULT gen_random_uuid() PRIMARY KEY,
+  owner_id UUID REFERENCES profiles(id) ON DELETE CASCADE,
+  name TEXT NOT NULL,
+  breed TEXT,
+  age INTEGER,
+  bio TEXT,
+  photos TEXT[],  -- PostgreSQL 数组类型
+  created_at TIMESTAMP DEFAULT NOW()
+);
 
-经过这三个月的折腾，我最大的发现就是：**没有完美的工具，只有最适合你的工具**。
+-- 匹配表（互相关注）
+CREATE TABLE matches (
+  id UUID DEFAULT gen_random_uuid() PRIMARY KEY,
+  pet_a UUID REFERENCES pets(id) ON DELETE CASCADE,
+  pet_b UUID REFERENCES pets(id) ON DELETE CASCADE,
+  matched_at TIMESTAMP DEFAULT NOW(),
+  UNIQUE(pet_a, pet_b)
+);
 
-我之前也像很多人一样，总想着找一个"终极工具"解决所有问题。但是现在我明白了，每个工具都有自己的优缺点：
+-- 视频内容表
+CREATE TABLE posts (
+  id UUID DEFAULT gen_random_uuid() PRIMARY KEY,
+  pet_id UUID REFERENCES pets(id) ON DELETE CASCADE,
+  video_url TEXT NOT NULL,
+  caption TEXT,
+  likes INTEGER DEFAULT 0,
+  created_at TIMESTAMP DEFAULT NOW()
+);
 
-**优点：**
-- AI IDE确实能提升开发效率，特别是对于重复性任务
-- CLI工具在自动化场景下真的太香了
-- 多模态工具的集成能力确实强大
+-- 行级安全策略（RLS）
+ALTER TABLE pets ENABLE ROW LEVEL SECURITY;
 
-**缺点：**
-- AI IDE有时候太死板，缺乏创造力
-- CLI工具的交互式支持真的烂
-- 多模态工具的成本真的太高了
+CREATE POLICY "用户可以查看所有宠物"
+  ON pets FOR SELECT
+  USING (true);
 
-## 给你们的建议 💡
+CREATE POLICY "用户只能修改自己的宠物"
+  ON pets FOR UPDATE
+  USING (auth.uid() = owner_id);
+```
 
-如果你也在考虑用这些AI工具，我的建议是：
+说实话，Supabase 的 RLS（Row Level Security）策略真的是个神器。不用写后端代码就能控制数据权限，对快速原型开发特别友好。我之前用 Firebase 的时候被安全规则折磨得不行，Supabase 的 SQL 方式反而更直观。
 
-1. **不要盲目追求最新最热** - 有些新工具功能花哨，但是稳定性真的不行
-2. **先从小的开始** - 不要一上来就用那些大而全的工具，先从单一功能开始
-3. **保持批判性思维** - AI不是万能的，它也会犯错，有时候很离谱的错误
+## 但说实话，也有一些问题
 
-## 你们有没有遇到过类似的坑？ 🤔
+这个项目不是完美的，我 review 代码时发现了一些值得注意的地方：
 
-说实话，我现在有点怀疑，是不是我使用的方式不对？还是说这些工具本身就这样？
+**1. 视频加载优化**
 
-你们在用AI工具的时候，有没有遇到过那种"这AI是不是脑子有问题"的时刻？或者有什么好用的工具推荐给我？
+现在的实现是滑动到才加载，但如果用户快速滑动，可能会出现白屏。更好的做法是预加载前后各 1-2 个视频，用 `expo-av` 的 `loadAsync` 提前缓冲。
 
-反正我是觉得，AI工具这东西，真的是用起来很爽，但是坑也真的多。可能这就是技术发展的必经之路吧，毕竟连我们都还在成长阶段，AI怎么可能完美呢？🤷‍♂️
+**2. 图片缓存策略**
+
+宠物照片和视频封面图没有用到专门的缓存库，如果用户网络不好，体验会受影响。建议加上 `react-native-fast-image` 或者 Expo 的 `Image` 组件配合 CDN 优化。
+
+**3. 离线支持**
+
+目前是完全依赖网络的，如果地铁里信号不好，App 就基本没法用了。可以考虑用 Redux Persist 或者 WatermelonDB 做本地数据持久化。
+
+**4. 性能瓶颈**
+
+视频流用 FlatList 实现，如果列表很长，内存占用会越来越高。可能需要用到 `react-native-video` 的清理策略，或者考虑用 `FlashList` 替代 FlatList。
+
+## 写在最后
+
+PawPal 这个项目虽然 Star 不多，但作为一个学习资源还挺有价值的。它展示了怎么用现代 RN 技术栈快速搭建一个功能完整的社交 App，代码结构也比较清晰，适合想入坑 React Native 的同学参考。
+
+我自己之前也想过做一个宠物社交产品，但一直没动手。看到有人真的把它做出来，挺受启发的。哈哈，说不定哪天我也 fork 一个版本，加点自己的想法进去。
+
+你们有没有做过类似的社交 App？遇到过什么性能问题吗？或者对宠物社交这个赛道有什么看法？欢迎评论区聊聊 👇
 
 ---
 
-*用了三个月AI工具，我觉得最重要的不是找到完美的工具，而是学会怎么和这些不完美的工具和平共处。*
+**项目地址**：https://github.com/ava-agent/dog-agent
+**技术栈**：React Native + Expo + TypeScript + Supabase
+**推荐指数**：⭐⭐⭐⭐（适合学习和参考）

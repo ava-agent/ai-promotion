@@ -1,0 +1,53 @@
+{
+  "account_issue": {
+    "status": "taken_down",
+    "date": "2026-04-06",
+    "error_type": "AccountTakedown",
+    "possible_causes": [
+      "违反社区准则",
+      "被用户举报",
+      "算法误判",
+      "违规内容"
+    ]
+  },
+  "recovery_steps": [
+    {
+      "step": 1,
+      "action": "检查邮件通知",
+      "priority": "high",
+      "description": "查看Bluesky发送的违规通知邮件",
+      "deadline": "2026-04-07"
+    },
+    {
+      "step": 2,
+      "action": "联系支持团队",
+      "priority": "high",
+      "description": "通过bsky.app/settings页面发送支持请求",
+      "deadline": "2026-04-08"
+    },
+    {
+      "step": 3,
+      "action": "提交申诉",
+      "priority": "medium",
+      "description": "提供详细的情况说明和申诉材料",
+      "deadline": "2026-04-10"
+    }
+  ],
+  "alternative_platforms": [
+    {
+      "platform": "Mastodon",
+      "status": "待配置",
+      "priority": "high"
+    },
+    {
+      "platform": "X/Twitter",
+      "status": "活跃",
+      "priority": "medium"
+    },
+    {
+      "platform": "LinkedIn",
+      "status": "待优化",
+      "priority": "low"
+    }
+  ]
+}
