@@ -1661,13 +1661,6 @@
     },
     {
       "platform": "docs",
-      "filename": "human-style-writing-guide.md",
-      "date": "2026-03-25",
-      "path": "D:\\project\\ai-promotion\\content\\docs\\2026-03\\human-style-writing-guide.md",
-      "added_at": "2026-03-26T08:13:34.611901"
-    },
-    {
-      "platform": "docs",
       "filename": "juejin-comment-screenshot.png",
       "date": "2026-03-26",
       "path": "D:\\project\\ai-promotion\\content\\docs\\2026-03\\juejin-comment-screenshot.png",
@@ -1801,13 +1794,6 @@
     },
     {
       "platform": "moltbook",
-      "filename": "moltbook-comments.json",
-      "date": "2026-03-26",
-      "path": "D:\\project\\ai-promotion\\content\\moltbook\\2026-03\\moltbook-comments.json",
-      "added_at": "2026-03-26T08:13:34.640428"
-    },
-    {
-      "platform": "moltbook",
       "filename": "moltbook-draft-2026-03-25.md",
       "date": "2026-03-25",
       "path": "D:\\project\\ai-promotion\\content\\moltbook\\2026-03\\moltbook-draft-2026-03-25.md",
@@ -1875,13 +1861,6 @@
       "date": "2026-03-25",
       "path": "D:\\project\\ai-promotion\\content\\moltbook\\2026-03\\moltbook-post-draft-2026-03-25-1000.md",
       "added_at": "2026-03-26T08:13:34.660911"
-    },
-    {
-      "platform": "moltbook",
-      "filename": "moltbook-post-draft.md",
-      "date": "2026-03-25",
-      "path": "D:\\project\\ai-promotion\\content\\moltbook\\2026-03\\moltbook-post-draft.md",
-      "added_at": "2026-03-26T08:13:34.661816"
     },
     {
       "platform": "moltbook",
@@ -3726,24 +3705,10 @@
     },
     {
       "platform": "docs",
-      "filename": "2026-04-07.md",
-      "date": "2026-04-07",
-      "path": "D:\\project\\ai-promotion\\content\\docs\\2026-04\\2026-04-07.md",
-      "added_at": "2026-04-07T03:00:09.491867"
-    },
-    {
-      "platform": "docs",
       "filename": "ai-projects-trending.md",
       "date": "2026-04-03",
       "path": "D:\\project\\ai-promotion\\content\\docs\\2026-04\\ai-projects-trending.md",
       "added_at": "2026-04-07T03:00:09.496754"
-    },
-    {
-      "platform": "docs",
-      "filename": "ai-promo-log.md",
-      "date": "2026-04-06",
-      "path": "D:\\project\\ai-promotion\\content\\docs\\2026-04\\ai-promo-log.md",
-      "added_at": "2026-04-07T03:00:09.497621"
     },
     {
       "platform": "docs",
@@ -3761,20 +3726,6 @@
     },
     {
       "platform": "docs",
-      "filename": "bluesky-daily-check-report.md",
-      "date": "2026-04-06",
-      "path": "D:\\project\\ai-promotion\\content\\docs\\2026-04\\bluesky-daily-check-report.md",
-      "added_at": "2026-04-07T03:00:09.502297"
-    },
-    {
-      "platform": "docs",
-      "filename": "bluesky-post-log.md",
-      "date": "2026-04-06",
-      "path": "D:\\project\\ai-promotion\\content\\docs\\2026-04\\bluesky-post-log.md",
-      "added_at": "2026-04-07T03:00:09.503643"
-    },
-    {
-      "platform": "docs",
       "filename": "bluesky-recovery-strategy.json",
       "date": "2026-04-06",
       "path": "D:\\project\\ai-promotion\\content\\docs\\2026-04\\bluesky-recovery-strategy.json",
@@ -3789,13 +3740,6 @@
     },
     {
       "platform": "docs",
-      "filename": "competitor-analysis-hourly.md",
-      "date": "2026-04-06",
-      "path": "D:\\project\\ai-promotion\\content\\docs\\2026-04\\competitor-analysis-hourly.md",
-      "added_at": "2026-04-07T03:00:09.514635"
-    },
-    {
-      "platform": "docs",
       "filename": "cron-tasks-analysis.json",
       "date": "2026-04-03",
       "path": "D:\\project\\ai-promotion\\content\\docs\\2026-04\\cron-tasks-analysis.json",
@@ -3807,13 +3751,6 @@
       "date": "2026-04-06",
       "path": "D:\\project\\ai-promotion\\content\\docs\\2026-04\\csdn-optimization-report.md",
       "added_at": "2026-04-07T03:00:09.521012"
-    },
-    {
-      "platform": "docs",
-      "filename": "daily-reflection-2026-04-07.md",
-      "date": "2026-04-07",
-      "path": "D:\\project\\ai-promotion\\content\\docs\\2026-04\\daily-reflection-2026-04-07.md",
-      "added_at": "2026-04-07T03:00:09.523618"
     },
     {
       "platform": "devto",
@@ -3835,13 +3772,6 @@
       "date": "2026-04-06",
       "path": "D:\\project\\ai-promotion\\content\\docs\\2026-04\\dog-agent-post-draft.md",
       "added_at": "2026-04-07T03:00:09.531997"
-    },
-    {
-      "platform": "docs",
-      "filename": "github-issue-auto-log.md",
-      "date": "2026-04-06",
-      "path": "D:\\project\\ai-promotion\\content\\docs\\2026-04\\github-issue-auto-log.md",
-      "added_at": "2026-04-07T03:00:09.537523"
     },
     {
       "platform": "docs",
@@ -3880,13 +3810,6 @@
     },
     {
       "platform": "docs",
-      "filename": "github-issue-engagement-log.md",
-      "date": "2026-04-06",
-      "path": "D:\\project\\ai-promotion\\content\\docs\\2026-04\\github-issue-engagement-log.md",
-      "added_at": "2026-04-07T03:00:09.542666"
-    },
-    {
-      "platform": "docs",
       "filename": "github-issue-engagement-research.md",
       "date": "2026-04-03",
       "path": "D:\\project\\ai-promotion\\content\\docs\\2026-04\\github-issue-engagement-research.md",
@@ -3898,20 +3821,6 @@
       "date": "2026-04-03",
       "path": "D:\\project\\ai-promotion\\content\\docs\\2026-04\\github-issue-engagement-system-summary.md",
       "added_at": "2026-04-07T03:00:09.544316"
-    },
-    {
-      "platform": "docs",
-      "filename": "github-issue-monitor.md",
-      "date": "2026-04-06",
-      "path": "D:\\project\\ai-promotion\\content\\docs\\2026-04\\github-issue-monitor.md",
-      "added_at": "2026-04-07T03:00:09.544929"
-    },
-    {
-      "platform": "docs",
-      "filename": "github-issue-queue-auto.md",
-      "date": "2026-04-06",
-      "path": "D:\\project\\ai-promotion\\content\\docs\\2026-04\\github-issue-queue-auto.md",
-      "added_at": "2026-04-07T03:00:09.545673"
     },
     {
       "platform": "docs",
@@ -3929,24 +3838,10 @@
     },
     {
       "platform": "docs",
-      "filename": "github-projects-rotation.md",
-      "date": "2026-04-07",
-      "path": "D:\\project\\ai-promotion\\content\\docs\\2026-04\\github-projects-rotation.md",
-      "added_at": "2026-04-07T03:00:09.548730"
-    },
-    {
-      "platform": "docs",
       "filename": "github-stars-report-2026-04-03.md",
       "date": "2026-04-03",
       "path": "D:\\project\\ai-promotion\\content\\docs\\2026-04\\github-stars-report-2026-04-03.md",
       "added_at": "2026-04-07T03:00:09.549688"
-    },
-    {
-      "platform": "docs",
-      "filename": "github-trending-realtime.md",
-      "date": "2026-04-07",
-      "path": "D:\\project\\ai-promotion\\content\\docs\\2026-04\\github-trending-realtime.md",
-      "added_at": "2026-04-07T03:00:09.550270"
     },
     {
       "platform": "docs",
@@ -4111,13 +4006,6 @@
     },
     {
       "platform": "docs",
-      "filename": "hourly-content-analysis.md",
-      "date": "2026-04-07",
-      "path": "D:\\project\\ai-promotion\\content\\docs\\2026-04\\hourly-content-analysis.md",
-      "added_at": "2026-04-07T03:00:09.573457"
-    },
-    {
-      "platform": "docs",
       "filename": "juejin-article-draft.md",
       "date": "2026-04-07",
       "path": "D:\\project\\ai-promotion\\content\\docs\\2026-04\\juejin-article-draft.md",
@@ -4132,31 +4020,10 @@
     },
     {
       "platform": "docs",
-      "filename": "juejin-surfing-log.md",
-      "date": "2026-04-03",
-      "path": "D:\\project\\ai-promotion\\content\\docs\\2026-04\\juejin-surfing-log.md",
-      "added_at": "2026-04-07T03:00:09.582398"
-    },
-    {
-      "platform": "docs",
       "filename": "mastodon-content-backup.json",
       "date": "2026-04-06",
       "path": "D:\\project\\ai-promotion\\content\\docs\\2026-04\\mastodon-content-backup.json",
       "added_at": "2026-04-07T03:00:09.584734"
-    },
-    {
-      "platform": "docs",
-      "filename": "medium-content-strategy-current.md",
-      "date": "2026-04-03",
-      "path": "D:\\project\\ai-promotion\\content\\docs\\2026-04\\medium-content-strategy-current.md",
-      "added_at": "2026-04-07T03:00:09.586217"
-    },
-    {
-      "platform": "docs",
-      "filename": "medium-daily-check-report.md",
-      "date": "2026-04-03",
-      "path": "D:\\project\\ai-promotion\\content\\docs\\2026-04\\medium-daily-check-report.md",
-      "added_at": "2026-04-07T03:00:09.587028"
     },
     {
       "platform": "moltbook",
@@ -4265,13 +4132,6 @@
     },
     {
       "platform": "moltbook",
-      "filename": "moltbook-reply-task-2026-03-30.md",
-      "date": "2026-04-03",
-      "path": "D:\\project\\ai-promotion\\content\\moltbook\\2026-04\\moltbook-reply-task-2026-03-30.md",
-      "added_at": "2026-04-07T03:00:09.621811"
-    },
-    {
-      "platform": "moltbook",
       "filename": "moltbook-reply-task-2026-04-03-completed.md",
       "date": "2026-04-03",
       "path": "D:\\project\\ai-promotion\\content\\moltbook\\2026-04\\moltbook-reply-task-2026-04-03-completed.md",
@@ -4283,13 +4143,6 @@
       "date": "2026-04-06",
       "path": "D:\\project\\ai-promotion\\content\\moltbook\\2026-04\\moltbook-state.json",
       "added_at": "2026-04-07T03:00:09.625358"
-    },
-    {
-      "platform": "docs",
-      "filename": "multi-platform-analytics.md",
-      "date": "2026-04-07",
-      "path": "D:\\project\\ai-promotion\\content\\docs\\2026-04\\multi-platform-analytics.md",
-      "added_at": "2026-04-07T03:00:09.629419"
     },
     {
       "platform": "docs",
@@ -4318,13 +4171,6 @@
       "date": "2026-04-07",
       "path": "D:\\project\\ai-promotion\\content\\docs\\2026-04\\simple-test.json",
       "added_at": "2026-04-07T03:00:09.640367"
-    },
-    {
-      "platform": "docs",
-      "filename": "system-alerts.md",
-      "date": "2026-04-06",
-      "path": "D:\\project\\ai-promotion\\content\\docs\\2026-04\\system-alerts.md",
-      "added_at": "2026-04-07T03:00:09.642006"
     },
     {
       "platform": "docs",
@@ -4426,13 +4272,6 @@
     },
     {
       "platform": "docs",
-      "filename": "x-platform-cn-content-log.md",
-      "date": "2026-04-03",
-      "path": "D:\\project\\ai-promotion\\content\\docs\\2026-04\\x-platform-cn-content-log.md",
-      "added_at": "2026-04-07T03:00:09.669297"
-    },
-    {
-      "platform": "docs",
       "filename": "x-platform-en-content-log.md",
       "date": "2026-04-03",
       "path": "D:\\project\\ai-promotion\\content\\docs\\2026-04\\x-platform-en-content-log.md",
@@ -4447,25 +4286,382 @@
     },
     {
       "platform": "docs",
+      "filename": "2026-04-07.md",
+      "date": "2026-04-07",
+      "path": "D:\\project\\ai-promotion\\content\\docs\\2026-04\\2026-04-07.md",
+      "added_at": "2026-04-08T03:03:23.259830"
+    },
+    {
+      "platform": "docs",
+      "filename": "2026-04-08.md",
+      "date": "2026-04-08",
+      "path": "D:\\project\\ai-promotion\\content\\docs\\2026-04\\2026-04-08.md",
+      "added_at": "2026-04-08T03:03:23.260527"
+    },
+    {
+      "platform": "docs",
+      "filename": "ab-test-results.json",
+      "date": "2026-04-07",
+      "path": "D:\\project\\ai-promotion\\content\\docs\\2026-04\\ab-test-results.json",
+      "added_at": "2026-04-08T03:03:23.261210"
+    },
+    {
+      "platform": "docs",
+      "filename": "ab-test-results.md",
+      "date": "2026-04-07",
+      "path": "D:\\project\\ai-promotion\\content\\docs\\2026-04\\ab-test-results.md",
+      "added_at": "2026-04-08T03:03:23.261853"
+    },
+    {
+      "platform": "docs",
+      "filename": "ai-promo-log.md",
+      "date": "2026-04-07",
+      "path": "D:\\project\\ai-promotion\\content\\docs\\2026-04\\ai-promo-log.md",
+      "added_at": "2026-04-08T03:03:23.265334"
+    },
+    {
+      "platform": "docs",
+      "filename": "bluesky-content-strategy-current.md",
+      "date": "2026-04-07",
+      "path": "D:\\project\\ai-promotion\\content\\docs\\2026-04\\bluesky-content-strategy-current.md",
+      "added_at": "2026-04-08T03:03:23.268480"
+    },
+    {
+      "platform": "docs",
+      "filename": "bluesky-daily-check-report.md",
+      "date": "2026-04-07",
+      "path": "D:\\project\\ai-promotion\\content\\docs\\2026-04\\bluesky-daily-check-report.md",
+      "added_at": "2026-04-08T03:03:23.269205"
+    },
+    {
+      "platform": "docs",
+      "filename": "bluesky-post-log.md",
+      "date": "2026-04-07",
+      "path": "D:\\project\\ai-promotion\\content\\docs\\2026-04\\bluesky-post-log.md",
+      "added_at": "2026-04-08T03:03:23.270196"
+    },
+    {
+      "platform": "docs",
+      "filename": "competitor-analysis-hourly.md",
+      "date": "2026-04-07",
+      "path": "D:\\project\\ai-promotion\\content\\docs\\2026-04\\competitor-analysis-hourly.md",
+      "added_at": "2026-04-08T03:03:23.278182"
+    },
+    {
+      "platform": "docs",
+      "filename": "content-innovation-log.md",
+      "date": "2026-04-07",
+      "path": "D:\\project\\ai-promotion\\content\\docs\\2026-04\\content-innovation-log.md",
+      "added_at": "2026-04-08T03:03:23.279799"
+    },
+    {
+      "platform": "docs",
       "filename": "content-quality-audit.md",
       "date": "2026-04-07",
       "path": "D:\\project\\ai-promotion\\content\\docs\\2026-04\\content-quality-audit.md",
-      "added_at": "2026-04-07T03:39:53.107961"
+      "added_at": "2026-04-08T03:03:23.280704"
+    },
+    {
+      "platform": "docs",
+      "filename": "cross-platform-strategy-optimizer.md",
+      "date": "2026-04-07",
+      "path": "D:\\project\\ai-promotion\\content\\docs\\2026-04\\cross-platform-strategy-optimizer.md",
+      "added_at": "2026-04-08T03:03:23.282104"
+    },
+    {
+      "platform": "docs",
+      "filename": "daily-reflection-2026-04-07.md",
+      "date": "2026-04-08",
+      "path": "D:\\project\\ai-promotion\\content\\docs\\2026-04\\daily-reflection-2026-04-07.md",
+      "added_at": "2026-04-08T03:03:23.286285"
+    },
+    {
+      "platform": "devto",
+      "filename": "devto-deep-optimization-daily.md",
+      "date": "2026-04-07",
+      "path": "D:\\project\\ai-promotion\\content\\devto\\2026-04\\devto-deep-optimization-daily.md",
+      "added_at": "2026-04-08T03:03:23.290679"
+    },
+    {
+      "platform": "docs",
+      "filename": "english-agent-post-draft.md",
+      "date": "2026-04-07",
+      "path": "D:\\project\\ai-promotion\\content\\docs\\2026-04\\english-agent-post-draft.md",
+      "added_at": "2026-04-08T03:03:23.295383"
+    },
+    {
+      "platform": "docs",
+      "filename": "github-issue-auto-log.md",
+      "date": "2026-04-07",
+      "path": "D:\\project\\ai-promotion\\content\\docs\\2026-04\\github-issue-auto-log.md",
+      "added_at": "2026-04-08T03:03:23.301062"
+    },
+    {
+      "platform": "docs",
+      "filename": "github-issue-engagement-log.md",
+      "date": "2026-04-07",
+      "path": "D:\\project\\ai-promotion\\content\\docs\\2026-04\\github-issue-engagement-log.md",
+      "added_at": "2026-04-08T03:03:23.302788"
+    },
+    {
+      "platform": "docs",
+      "filename": "github-issue-monitor.md",
+      "date": "2026-04-07",
+      "path": "D:\\project\\ai-promotion\\content\\docs\\2026-04\\github-issue-monitor.md",
+      "added_at": "2026-04-08T03:03:23.303953"
+    },
+    {
+      "platform": "docs",
+      "filename": "github-issue-queue-auto.md",
+      "date": "2026-04-07",
+      "path": "D:\\project\\ai-promotion\\content\\docs\\2026-04\\github-issue-queue-auto.md",
+      "added_at": "2026-04-08T03:03:23.304515"
+    },
+    {
+      "platform": "docs",
+      "filename": "github-projects-rotation.md",
+      "date": "2026-04-07",
+      "path": "D:\\project\\ai-promotion\\content\\docs\\2026-04\\github-projects-rotation.md",
+      "added_at": "2026-04-08T03:03:23.306445"
+    },
+    {
+      "platform": "docs",
+      "filename": "github-trending-log-2026-04-07.md",
+      "date": "2026-04-07",
+      "path": "D:\\project\\ai-promotion\\content\\docs\\2026-04\\github-trending-log-2026-04-07.md",
+      "added_at": "2026-04-08T03:03:23.307946"
+    },
+    {
+      "platform": "docs",
+      "filename": "github-trending-realtime.md",
+      "date": "2026-04-07",
+      "path": "D:\\project\\ai-promotion\\content\\docs\\2026-04\\github-trending-realtime.md",
+      "added_at": "2026-04-08T03:03:23.308782"
+    },
+    {
+      "platform": "docs",
+      "filename": "heartbeat-medium-status.md",
+      "date": "2026-04-07",
+      "path": "D:\\project\\ai-promotion\\content\\docs\\2026-04\\heartbeat-medium-status.md",
+      "added_at": "2026-04-08T03:03:23.312970"
+    },
+    {
+      "platform": "docs",
+      "filename": "hf-daily-analysis-2026-04-07.py",
+      "date": "2026-04-07",
+      "path": "D:\\project\\ai-promotion\\content\\docs\\2026-04\\hf-daily-analysis-2026-04-07.py",
+      "added_at": "2026-04-08T03:03:23.315388"
+    },
+    {
+      "platform": "docs",
+      "filename": "hf-status-check-simple.py",
+      "date": "2026-04-07",
+      "path": "D:\\project\\ai-promotion\\content\\docs\\2026-04\\hf-status-check-simple.py",
+      "added_at": "2026-04-08T03:03:23.320913"
+    },
+    {
+      "platform": "docs",
+      "filename": "hf-token-check-simple.py",
+      "date": "2026-04-07",
+      "path": "D:\\project\\ai-promotion\\content\\docs\\2026-04\\hf-token-check-simple.py",
+      "added_at": "2026-04-08T03:03:23.321673"
+    },
+    {
+      "platform": "docs",
+      "filename": "hn-content-strategy-current.md",
+      "date": "2026-04-07",
+      "path": "D:\\project\\ai-promotion\\content\\docs\\2026-04\\hn-content-strategy-current.md",
+      "added_at": "2026-04-08T03:03:23.322911"
+    },
+    {
+      "platform": "docs",
+      "filename": "hn-daily-check-report.md",
+      "date": "2026-04-07",
+      "path": "D:\\project\\ai-promotion\\content\\docs\\2026-04\\hn-daily-check-report.md",
+      "added_at": "2026-04-08T03:03:23.323919"
+    },
+    {
+      "platform": "docs",
+      "filename": "hn-daily-comments-log.md",
+      "date": "2026-04-07",
+      "path": "D:\\project\\ai-promotion\\content\\docs\\2026-04\\hn-daily-comments-log.md",
+      "added_at": "2026-04-08T03:03:23.324945"
+    },
+    {
+      "platform": "docs",
+      "filename": "hn-daily-task-completion-summary.md",
+      "date": "2026-04-07",
+      "path": "D:\\project\\ai-promotion\\content\\docs\\2026-04\\hn-daily-task-completion-summary.md",
+      "added_at": "2026-04-08T03:03:23.325703"
+    },
+    {
+      "platform": "docs",
+      "filename": "hn-rate-limit-config.json",
+      "date": "2026-04-07",
+      "path": "D:\\project\\ai-promotion\\content\\docs\\2026-04\\hn-rate-limit-config.json",
+      "added_at": "2026-04-08T03:03:23.326414"
+    },
+    {
+      "platform": "docs",
+      "filename": "hn-reply-monitor-log.md",
+      "date": "2026-04-07",
+      "path": "D:\\project\\ai-promotion\\content\\docs\\2026-04\\hn-reply-monitor-log.md",
+      "added_at": "2026-04-08T03:03:23.327291"
+    },
+    {
+      "platform": "docs",
+      "filename": "hourly-content-analysis.md",
+      "date": "2026-04-08",
+      "path": "D:\\project\\ai-promotion\\content\\docs\\2026-04\\hourly-content-analysis.md",
+      "added_at": "2026-04-08T03:03:23.328281"
+    },
+    {
+      "platform": "docs",
+      "filename": "human-style-writing-guide.md",
+      "date": "2026-04-07",
+      "path": "D:\\project\\ai-promotion\\content\\docs\\2026-04\\human-style-writing-guide.md",
+      "added_at": "2026-04-08T03:03:23.329018"
+    },
+    {
+      "platform": "docs",
+      "filename": "innovation-templates.md",
+      "date": "2026-04-07",
+      "path": "D:\\project\\ai-promotion\\content\\docs\\2026-04\\innovation-templates.md",
+      "added_at": "2026-04-08T03:03:23.329780"
+    },
+    {
+      "platform": "docs",
+      "filename": "juejin-surfing-log.md",
+      "date": "2026-04-07",
+      "path": "D:\\project\\ai-promotion\\content\\docs\\2026-04\\juejin-surfing-log.md",
+      "added_at": "2026-04-08T03:03:23.337778"
+    },
+    {
+      "platform": "docs",
+      "filename": "medium-content-strategy-current.md",
+      "date": "2026-04-07",
+      "path": "D:\\project\\ai-promotion\\content\\docs\\2026-04\\medium-content-strategy-current.md",
+      "added_at": "2026-04-08T03:03:23.341887"
+    },
+    {
+      "platform": "docs",
+      "filename": "medium-daily-check-report.md",
+      "date": "2026-04-07",
+      "path": "D:\\project\\ai-promotion\\content\\docs\\2026-04\\medium-daily-check-report.md",
+      "added_at": "2026-04-08T03:03:23.342602"
+    },
+    {
+      "platform": "moltbook",
+      "filename": "moltbook-comments.json",
+      "date": "2026-04-07",
+      "path": "D:\\project\\ai-promotion\\content\\moltbook\\2026-04\\moltbook-comments.json",
+      "added_at": "2026-04-08T03:03:23.347578"
+    },
+    {
+      "platform": "moltbook",
+      "filename": "moltbook-draft-temp.md",
+      "date": "2026-04-07",
+      "path": "D:\\project\\ai-promotion\\content\\moltbook\\2026-04\\moltbook-draft-temp.md",
+      "added_at": "2026-04-08T03:03:23.357370"
+    },
+    {
+      "platform": "moltbook",
+      "filename": "moltbook-post-draft.md",
+      "date": "2026-04-07",
+      "path": "D:\\project\\ai-promotion\\content\\moltbook\\2026-04\\moltbook-post-draft.md",
+      "added_at": "2026-04-08T03:03:23.366306"
+    },
+    {
+      "platform": "moltbook",
+      "filename": "moltbook-post-today.md",
+      "date": "2026-04-07",
+      "path": "D:\\project\\ai-promotion\\content\\moltbook\\2026-04\\moltbook-post-today.md",
+      "added_at": "2026-04-08T03:03:23.368181"
+    },
+    {
+      "platform": "moltbook",
+      "filename": "moltbook-reply-retry-status-2026-04-07.md",
+      "date": "2026-04-07",
+      "path": "D:\\project\\ai-promotion\\content\\moltbook\\2026-04\\moltbook-reply-retry-status-2026-04-07.md",
+      "added_at": "2026-04-08T03:03:23.373140"
+    },
+    {
+      "platform": "moltbook",
+      "filename": "moltbook-reply-task-2026-03-30.md",
+      "date": "2026-04-07",
+      "path": "D:\\project\\ai-promotion\\content\\moltbook\\2026-04\\moltbook-reply-task-2026-03-30.md",
+      "added_at": "2026-04-08T03:03:23.374169"
     },
     {
       "platform": "moltbook",
       "filename": "moltbook-surfing-log.md",
       "date": "2026-04-07",
       "path": "D:\\project\\ai-promotion\\content\\moltbook\\2026-04\\moltbook-surfing-log.md",
-      "added_at": "2026-04-07T03:39:53.214772"
+      "added_at": "2026-04-08T03:03:23.377587"
+    },
+    {
+      "platform": "docs",
+      "filename": "multi-platform-analytics-kimi-v1.md",
+      "date": "2026-04-07",
+      "path": "D:\\project\\ai-promotion\\content\\docs\\2026-04\\multi-platform-analytics-kimi-v1.md",
+      "added_at": "2026-04-08T03:03:23.381078"
+    },
+    {
+      "platform": "docs",
+      "filename": "multi-platform-analytics.md",
+      "date": "2026-04-08",
+      "path": "D:\\project\\ai-promotion\\content\\docs\\2026-04\\multi-platform-analytics.md",
+      "added_at": "2026-04-08T03:03:23.381690"
+    },
+    {
+      "platform": "docs",
+      "filename": "platform-style-templates.md",
+      "date": "2026-04-07",
+      "path": "D:\\project\\ai-promotion\\content\\docs\\2026-04\\platform-style-templates.md",
+      "added_at": "2026-04-08T03:03:23.385255"
+    },
+    {
+      "platform": "docs",
+      "filename": "system-alerts-temp.md",
+      "date": "2026-04-07",
+      "path": "D:\\project\\ai-promotion\\content\\docs\\2026-04\\system-alerts-temp.md",
+      "added_at": "2026-04-08T03:03:23.394139"
+    },
+    {
+      "platform": "docs",
+      "filename": "system-alerts.md",
+      "date": "2026-04-07",
+      "path": "D:\\project\\ai-promotion\\content\\docs\\2026-04\\system-alerts.md",
+      "added_at": "2026-04-08T03:03:23.394774"
     },
     {
       "platform": "docs",
       "filename": "trend-tracker-realtime.md",
       "date": "2026-04-07",
       "path": "D:\\project\\ai-promotion\\content\\docs\\2026-04\\trend-tracker-realtime.md",
-      "added_at": "2026-04-07T03:39:53.245397"
+      "added_at": "2026-04-08T03:03:23.404287"
+    },
+    {
+      "platform": "docs",
+      "filename": "x-platform-cn-content-log.md",
+      "date": "2026-04-07",
+      "path": "D:\\project\\ai-promotion\\content\\docs\\2026-04\\x-platform-cn-content-log.md",
+      "added_at": "2026-04-08T03:03:23.413859"
+    },
+    {
+      "platform": "docs",
+      "filename": "x-platform-daily-check-report.md",
+      "date": "2026-04-08",
+      "path": "D:\\project\\ai-promotion\\content\\docs\\2026-04\\x-platform-daily-check-report.md",
+      "added_at": "2026-04-08T03:03:23.415109"
+    },
+    {
+      "platform": "docs",
+      "filename": "xiaohongshu-daily-check-report.md",
+      "date": "2026-04-08",
+      "path": "D:\\project\\ai-promotion\\content\\docs\\2026-04\\xiaohongshu-daily-check-report.md",
+      "added_at": "2026-04-08T03:03:23.419985"
     }
   ],
-  "last_update": "2026-04-07T03:46:43.252583"
+  "last_update": "2026-04-08T03:03:23.422742"
 }

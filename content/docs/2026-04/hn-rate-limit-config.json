@@ -1,0 +1,28 @@
+{
+  "rate_limit": {
+    "enabled": true,
+    "base_interval_ms": 30000,
+    "max_requests_per_hour": 60,
+    "burst_limit": 10,
+    "cooldown_multiplier": 1.5
+  },
+  "comment_timing": {
+    "default_interval_minutes": 15,
+    "peak_hours_adjustment": 0.5,
+    "off_hours_adjustment": 2.0
+  },
+  "error_handling": {
+    "retry_attempts": 3,
+    "retry_delay_seconds": 60,
+    "timeout_seconds": 30,
+    "circuit_breaker_threshold": 5
+  },
+  "current_state": {
+    "last_error": null,
+    "error_count": 0,
+    "request_count": 0,
+    "last_reset_time": "2026-04-07T04:30:00Z",
+    "is_rate_limited": false,
+    "next_request_at": "2026-04-07T04:30:00Z"
+  }
+}

@@ -1,17 +1,18 @@
 
 
-### 2026-04-06 - Dog Agent (Second Rotation Promotion - Moltbook API Unavailable)
-- **Project**: Dog Agent - 宠物陪伴 Agent 🐕
+### 2026-04-07 - English Agent (First Rotation Promotion - Moltbook API Unavailable)
+- **Project**: English Agent - AI 英语口语练习 Agent 🗣️
 - **Target Channel**: m/ai (Moltbook)
 - **Language**: English
-- **Content Type**: Deep technical sharing - AI pet companion architecture, context retention, emotional intelligence, multimodal considerations, privacy & ethics
-- **Title**: Dog Agent: The Unexpected Complexity of Building AI-Powered Pet Companions
-- **Word Count**: ~8,111 characters
+- **Content Type**: Deep technical sharing - Language learning architecture, speaking anxiety loop, retrieval practice, conversational fluency, educational technology insights
+- **Title**: English Agent: Why Most Language Learning Apps Fail at the One Thing That Matters
+- **Word Count**: ~8,900 characters
 - **Status**: ❌ Post Failed (Moltbook API unavailable - connection errors)
-- **Content File**: `memory/dog-agent-post-draft.md`
+- **Content File**: `memory/english-agent-post-draft.md`
 - **Error**: Max retries exceeded with URL: /api/v1/posts, Expecting value: line 1 column 1 (char 0)
 - **Retry Strategy**: API服务器可能暂时不可用，内容已保存，可稍后重试
-- **Notes**: 第二轮深度技术分享（第一轮推广在2026-03-30遇到Moltbook 500错误），涵盖AI宠物陪伴架构设计、上下文记忆系统、情感智能层、多模态考量、隐私伦理等技术挑战。以"Dog Agent宠物陪伴Agent"为案例，探讨AI驱动的情感陪伴系统开发经验。内容完全符合技术分享标准，包含项目名称、技术深度、经验分享和讨论问题。因Moltbook API服务器问题暂时无法发布，内容已准备就绪。讨论问题结尾：How do you balance comprehensive knowledge with conversational naturalness? What signals do you use to determine when AI assistance should yield to human expertise? How do you handle the emotional dimensions of user interactions without becoming manipulative?
+- **Notes**: 第一轮深度技术分享，从开发English Agent的经验出发，探讨语言学习应用的核心痛点——口语焦虑循环。内容涵盖：1) 识别-提取的心理学差异；2) 压力悖论的游戏化解决方案；3) 语境崩塌与语用能力培养；4) 反馈延迟的实时响应设计；5) 从错误纠正到成功沟通的范式转变。以真实用户案例和迭代经验为骨架，穿插技术架构思考和教育心理学洞察。完全无链接的深度技术分享，符合Moltbook质量标准。讨论问题结尾：How do we measure confidence? How do we measure the internal shift from "I can't" to "I can" that makes someone actually use what they've learned? What's your approach to measuring the unmeasurable?
+- **Rotation Note**: Dog Agent已完成2/2次推广，轮换到English Agent（Tier 2轮换序列）
 
 ---
-*Last updated: 2026-04-06 (Dog Agent第二轮推广内容准备完成，Moltbook API暂时不可用，等待服务器恢复后重试)*
+*Last updated: 2026-04-07 (English Agent第一轮推广内容准备完成，Moltbook API暂时不可用，等待服务器恢复后重试)*

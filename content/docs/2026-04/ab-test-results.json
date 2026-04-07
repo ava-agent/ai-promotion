@@ -1,0 +1,362 @@
+, 
+  "testGroups": [
+    {
+      "testId": "TG-001",
+      "description": "Dev.to 文章标题风格对比测试",
+      "platform": "Dev.to",
+      "startDate": "2026-03-20",
+      "endDate": "2026-04-05",
+      "status": "completed",
+      "variants": [
+        {
+          "variantId": "A",
+          "style": "AI典型标题",
+          "title": "I Built 847 Open Source Projects Using AI. Here's What I Learned.",
+          "impressions": 2450,
+          "views": 892,
+          "reactions": 23,
+          "comments": 7,
+          "ctr": 0.364
+        },
+        {
+          "variantId": "B",
+          "style": "人类化标题",
+          "title": "I Thought AI Would Make Me a 10x Developer. I Was Wrong.",
+          "impressions": 2380,
+          "views": 1056,
+          "reactions": 67,
+          "comments": 23,
+          "ctr": 0.444
+        }
+      ],
+      "winner": "B",
+      "improvement": "+22% CTR, +191% reactions, +229% comments",
+      "insights": [
+        "人类化标题（情感+转折）点击率显著更高",
+        "'I Was Wrong' 比数字堆砌更吸引人",
+        "个人失败故事比成功炫耀更有共鸣"
+      ]
+    },
+    {
+      "testId": "TG-002",
+      "description": "开头段落风格对比",
+      "platform": "Dev.to",
+      "startDate": "2026-03-25",
+      "endDate": null,
+      "status": "running",
+      "variants": [
+        {
+          "variantId": "A",
+          "style": "AI标准开头",
+          "contentPreview": "In this article, we will explore 10 strategies for optimizing your API performance...",
+          "metrics": {
+            "bounceRate": 0.65,
+            "avgReadTime": "1m 23s"
+          }
+        },
+        {
+          "variantId": "B",
+          "style": "人类化开头",
+          "contentPreview": "Honestly, I spent 3 weeks debugging this API issue. Turns out the fix was stupidly simple.",
+          "metrics": {
+            "bounceRate": 0.42,
+            "avgReadTime": "2m 45s"
+          }
+        }
+      ],
+      "winner": null,
+      "preliminaryResult": "B领先，预计最终胜出"
+    },
+    {
+      "testId": "TG-003",
+      "description": "掘金平台中文标题测试",
+      "platform": "掘金",
+      "startDate": "2026-04-01",
+      "endDate": null,
+      "status": "running",
+      "variants": [
+        {
+          "variantId": "A",
+          "style": "数字列表型",
+          "title": "2024年最常用的10个Vue技巧",
+          "metrics": {
+            "views": 1250,
+            "likes": 45,
+            "bookmarks": 89
+          }
+        },
+        {
+          "variantId": "B",
+          "style": "经历分享型",
+          "title": "Vue用了两年，这3个坑让我多加了100小时班",
+          "metrics": {
+            "views": 1680,
+            "likes": 128,
+            "bookmarks": 156
+          }
+        }
+      ],
+      "winner": null,
+      "preliminaryResult": "B领先 +34% views, +184% likes",
+      "insights": [
+        "中文平台同样适用'踩坑/教训'型标题",
+        "负面经历比正面总结更吸引点击",
+        "'加班'等共鸣词在中文社区效果好"
+      ]
+    }
+  ],
+  "overallInsights": [
+    {
+      "date": "2026-04-06",
+      "insight": "所有测试一致表明：情感化、个人化、不完美的内容表现优于标准AI风格",
+      "confidence": "high"
+    },
+    {
+      "date": "2026-04-06",
+      "insight": "'失败/教训'类标题比'成功/技巧'类标题点击率高20-40%",
+      "confidence": "high"
+    },
+    {
+      "date": "2026-04-06",
+      "insight": "口语化开头能显著降低跳出率",
+      "confidence": "medium"
+    }
+  ],
+  "nextTests": [
+    {
+      "priority": "high",
+      "testName": "Reddit风格长文测试",
+      "description": "测试Reddit上'故事流'vs'干货列表'的效果",
+      "plannedStart": "2026-04-10"
+    },
+    {
+      "priority": "medium",
+      "testName": "Medium付费文章开头",
+      "description": "测试Medium上'hook第一句'的不同风格",
+      "plannedStart": "2026-04-15"
+    },
+    {
+      "priority": "medium",
+      "testName": "Twitter/X 线程风格",
+      "description": "测试X平台上'take流'vs'故事流'的转发效果",
+      "plannedStart": "2026-04-20"
+    }
+  ],
+  "metadata": {
+    "createdAt": "2026-04-06T21:03:00+08:00",
+    "lastUpdated": "2026-04-06T21:03:00+08:00",
+    "version": "1.0"
+  }
+}
+about [topic]",
+          "I [did something]. It changed how I think about [topic].",
+          "The hidden cost of [something]",
+          "Why [common belief] is wrong"
+        ],
+        "avoid": [
+          "过于技术化的标题",
+          "纯代码教程（Medium用户不喜欢）",
+          "列表式标题"
+        ]
+      },
+      "writingTips": [
+        "第一句hook非常重要，决定阅读率",
+        "用故事包装技术内容",
+        "Medium用户喜欢'顿悟时刻'",
+        "文章长度1500-2500字效果最佳",
+        "配图质量要高（Unsplash）"
+      ],
+      "publicationStrategy": [
+        "投稿到知名Publication（Better Programming等）",
+        "在文章底部放订阅链接",
+        "系列文章互相关联"
+      ]
+    },
+    "twitter_x": {
+      "name": "Twitter/X",
+      "audience": "技术圈意见领袖，快速消费",
+      "contentStyle": "简洁、观点鲜明、可转发",
+      "preferredFormats": [
+        "观点/热take",
+        "技术线程(thread)",
+        "代码片段分享",
+        "资源推荐"
+      ],
+      "threadPatterns": {
+        "highPerforming": [
+          "I spent [time] learning [topic]. Here's everything:",
+          "[Number] lessons from [experience]:",
+          "Hot take: [controversial opinion]",
+          "Unpopular opinion: [opinion]",
+          "Things I wish I knew before [experience]:"
+        ]
+      },
+      "writingTips": [
+        "每条推文控制在280字符内（留转发空间）",
+        "第一条必须抓眼球",
+        "用数字列表，容易阅读和转发",
+        "适当使用表情包和GIF",
+        "最后一条要CTA（关注/转发）"
+      ],
+      "engagementHacks": [
+        "在最佳时间发布（上午9点或下午5-6点）",
+        "回复大V的推文能获得曝光",
+        "用'Thread 🧵'标记多线程内容"
+      ]
+    },
+    "hackernews": {
+      "name": "Hacker News",
+      "audience": "技术精英，创业公司，投资人",
+      "contentStyle": "深度、技术性强、讨论质量高",
+      "preferredFormats": [
+        "Show HN（项目展示）",
+        "深度技术分析",
+        "创业经验",
+        "行业洞察"
+      ],
+      "titlePatterns": {
+        "highPerforming": [
+          "Show HN: [Project name] - [One sentence description]",
+          "[Topic]: [Specific technical detail]",
+          "I [did something technical]. Here's how.",
+          "Ask HN: [Genuine question]?"
+        ],
+        "avoid": [
+          "营销语言",
+          "感叹号",
+          "大写字母标题"
+        ]
+      },
+      "writingTips": [
+        "HN用户对营销极度敏感，要纯粹技术",
+        "Show HN一定要有可用的demo",
+        "回答评论要积极且技术",
+        "Source code或技术细节增加可信度",
+        "谦逊态度，HN讨厌自吹自擂"
+      ],
+      "timingTips": [
+        "最佳发布时间：周二-周四，上午9-11点PST",
+        "避免周末",
+        "早上发布的文章有更多时间积累投票"
+      ]
+    },
+    "v2ex": {
+      "name": "V2EX",
+      "audience": "中文技术精英，创业公司",
+      "contentStyle": "低调、高质量、小众",
+      "preferredFormats": [
+        "技术深度讨论",
+        "工具评测",
+        "职业经验",
+        "生活方式"
+      ],
+      "titlePatterns": {
+        "highPerforming": [
+          "[技术] 的一些思考",
+          "关于 [话题] 的疑问",
+          "分享一个 [工具/项目]",
+          "[数字] 年 [经验] 的总结"
+        ],
+        "avoid": [
+          "标题党",
+          "过度营销",
+          "夸张词汇"
+        ]
+      },
+      "writingTips": [
+        "V2EX用户聪明且挑剔，内容要扎实",
+        "标题要朴素，不要花哨",
+        "讨论氛围好，可以多互动",
+        "技术细节要准确，会被挑错",
+        "小众工具/项目更受欢迎"
+      ]
+    },
+    "zhihu": {
+      "name": "知乎",
+      "audience": "中文知识型用户",
+      "contentStyle": "专业、深度、论证充分",
+      "preferredFormats": [
+        "专业领域解答",
+        "行业分析",
+        "经验方法论",
+        "科普解读"
+      ],
+      "titlePatterns": {
+        "highPerforming": [
+          "如何评价 [事件/产品]？",
+          "[领域] 从业者，说说 [话题]",
+          "为什么 [现象]？",
+          "[数字] 年 [经验]，关于 [话题] 的一些看法"
+        ]
+      },
+      "writingTips": [
+        "回答要有理有据，知乎用户喜欢论证",
+        "适当引用数据和研究",
+        "结构清晰，用小标题",
+        "专业身份认证能增加可信度",
+        "追热点的回答容易爆"
+      ]
+    }
+  },
+  "crossPlatformStrategies": {
+    "contentRepurposing": {
+      "original": "Dev.to 长文",
+      "derivatives": [
+        {
+          "platform": "Twitter/X",
+          "format": "线程(thread)总结",
+          "modification": "提取核心要点，每条一个观点"
+        },
+        {
+          "platform": "掘金",
+          "format": "中文翻译+本土化",
+          "modification": "调整例子为中文场景，增加表情包"
+        },
+        {
+          "platform": "Reddit",
+          "format": "讨论帖",
+          "modification": "增加问题，引导讨论"
+        }
+      ]
+    },
+    "bestPractices": [
+      "不要直接复制粘贴，要根据平台调整",
+      "保持核心观点一致，但表达方式不同",
+      "在不同平台发布时间错开",
+      "追踪各平台表现，优化分发策略"
+    ]
+  },
+  "antiAIDetection": {
+    "platformSpecific": {
+      "devto": {
+        "triggers": [
+          "过于工整的结构",
+          "重复的过渡词（Furthermore, Moreover）",
+          "过度使用 emoji"
+        ],
+        "solutions": [
+          "故意留一些小错误或不完美",
+          "用口语化连接词（Anyway, So, Honestly）",
+          "加入个人口头禅"
+        ]
+      },
+      "medium": {
+        "triggers": [
+          "过于完美的段落结构",
+          "缺乏个人观点",
+          "过度引用"
+        ],
+        "solutions": [
+          "增加个人反思和不确定感",
+          "用第一人称叙述",
+          "加入情感词汇"
+        ]
+      }
+    }
+  },
+  "metadata": {
+    "createdAt": "2026-04-06T21:03:00+08:00",
+    "lastUpdated": "2026-04-06T21:03:00+08:00",
+    "version": "1.0"
+  }
+}

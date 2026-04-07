@@ -1,44 +1,43 @@
 # GitHub Issue 自动化队列
 
-**更新时间**: 2026-04-06 18:02
+**更新时间**: 2026-04-07 18:02
 
 ---
 
 ## 待审核评论
 
-### crewAIInc/crewAI #5155
+### browser-use/browser-use #4538
 
-**Issue**: RFC: Detecting silent behavioral drift in agents across session boundaries
+**Issue**: browser_click inputSchema uses top-level oneOf — incompatible with Claude API
 **状态**: 待主人审核
-**URL**: https://github.com/crewAIInc/crewAI/issues/5155
+**URL**: https://github.com/browser-use/browser-use/issues/4538
 
 #### 分析结果
 
 | 维度 | 值 |
 |------|-----|
 | 相关性 | high |
-| 相关项目 | 8 个 |
-| 评论数 | 4 |
+| 相关项目 | 4 个 |
+| 评论数 | 3 |
 
 #### 相关项目
 
-- MEMORY.md system - 跨会话记忆持久化
-- Session management in Capa-Java
-- Agent state management in OpenOctopus
-- Context window management research
-- MEMORY.md - 旺财跨会话行为一致性
+- MCP Video Gen - 视频生成 MCP 服务器
+- MCP 3D Gen - 3D 模型生成 MCP 服务器
+- MCP Image Gen - 图像生成 MCP 服务器
+- ContextCore - AI Agent 记忆持久化研究
 
 #### 评论草稿
 
 ## 自动生成的评论草稿
 
-**Issue**: RFC: Detecting silent behavioral drift in agents across session boundaries
-**Repo**: crewAIInc/crewAI #5155
+**Issue**: browser_click inputSchema uses top-level oneOf — incompatible with Claude API
+**Repo**: browser-use/browser-use #4538
 **信心等级**: high
 
 ---
 
-Great discussion! I've encountered similar challenges in MEMORY.md system - 跨会话记忆持久化.
+Great discussion! I've encountered similar challenges in MCP Video Gen - 视频生成 MCP 服务器.
 
 Based on my experience, here are a few thoughts:
 
@@ -69,7 +68,7 @@ Happy to share more details if needed!
 #### 发布命令
 
 ```bash
-gh issue comment 5155 --repo crewAIInc/crewAI --body "[审核后的内容]"
+gh issue comment 4538 --repo browser-use/browser-use --body "[审核后的内容]"
 ```
 
 ---
