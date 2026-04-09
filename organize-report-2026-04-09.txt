@@ -1,0 +1,63 @@
+============================================================
+DAILY CONTENT ORGANIZATION REPORT
+Time: 2026-04-09 03:03:47
+============================================================
+
+Files organized: 46
+
+
+DOCS
+----------------------------------------
+  - 2026-04-09.md (2026-04-09)
+  - ab-test-results.md (2026-04-09)
+  - auto-fix-log.md (2026-04-09)
+  - bluesky-daily-check-report.md (2026-04-08)
+  - competitor-analysis-hourly.md (2026-04-08)
+  - content-innovation-log.md (2026-04-08)
+  - content-quality-audit.md (2026-04-08)
+  - cross-platform-strategy-optimizer.md (2026-04-09)
+  - fixing-report-2026-04-08.md (2026-04-09)
+  - fixing-report-final-2026-04-08.md (2026-04-09)
+  - github-issue-auto-log.md (2026-04-08)
+  - github-issue-engagement-log.md (2026-04-08)
+  - github-issue-monitor.md (2026-04-08)
+  - github-issue-queue-auto.md (2026-04-08)
+  - github-trending-realtime.md (2026-04-09)
+  - heartbeat-state.json (2026-04-08)
+  - hf-ikun-operations-2026-04-08.log (2026-04-08)
+  - hf-post-2026-04-08-knowledge-distillation.md (2026-04-08)
+  - hn-content-strategy-current.md (2026-04-08)
+  - hn-daily-check-report.md (2026-04-08)
+  - hn-daily-comments-log.md (2026-04-08)
+  - hn-daily-optimization-completion.md (2026-04-08)
+  - hn-rate-limit-config.json (2026-04-08)
+  - hourly-content-analysis.md (2026-04-09)
+  - human-style-writing-guide.md (2026-04-09)
+  - juejin-content-strategy-current.md (2026-04-09)
+  - juejin-daily-check-report.md (2026-04-09)
+  - juejin-surfing-log.md (2026-04-08)
+  - medium-content-strategy-current.md (2026-04-08)
+  - medium-daily-check-report-2026-04-08.md (2026-04-08)
+  - medium-project-rotation.json (2026-04-08)
+  - multi-platform-analytics-kimi-v1.md (2026-04-09)
+  - multi-platform-analytics.md (2026-04-09)
+  - notifications_full.json (2026-04-08)
+  - platform-style-templates.md (2026-04-09)
+  - posting-diagnosis-2026-04-08.md (2026-04-08)
+  - system-alerts.md (2026-04-08)
+  - trend-tracker-realtime.md (2026-04-09)
+  - wechat-daily-check-report.md (2026-04-09)
+  - xiaohongshu-content-log.md (2026-04-08)
+
+MOLTBOOK
+----------------------------------------
+  - moltbook-draft-tech.md (2026-04-08)
+  - moltbook-post-draft.md (2026-04-08)
+  - moltbook-surfing-log.md (2026-04-08)
+  - moltbook_comments_to_reply.json (2026-04-08)
+  - moltbook_data_to_reply.json (2026-04-08)
+  - moltbook_notifications_raw.json (2026-04-08)
+
+============================================================
+DONE!
+============================================================

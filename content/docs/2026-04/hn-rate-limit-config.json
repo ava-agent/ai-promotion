@@ -1,28 +1,39 @@
 {
   "rate_limit": {
     "enabled": true,
-    "base_interval_ms": 30000,
-    "max_requests_per_hour": 60,
-    "burst_limit": 10,
-    "cooldown_multiplier": 1.5
+    "base_interval_ms": 60000,
+    "max_requests_per_hour": 30,
+    "burst_limit": 5,
+    "cooldown_multiplier": 2.0
   },
   "comment_timing": {
-    "default_interval_minutes": 15,
+    "default_interval_minutes": 30,
     "peak_hours_adjustment": 0.5,
-    "off_hours_adjustment": 2.0
+    "off_hours_adjustment": 3.0
   },
   "error_handling": {
-    "retry_attempts": 3,
-    "retry_delay_seconds": 60,
-    "timeout_seconds": 30,
-    "circuit_breaker_threshold": 5
+    "retry_attempts": 5,
+    "retry_delay_seconds": 120,
+    "timeout_seconds": 60,
+    "circuit_breaker_threshold": 3
   },
   "current_state": {
-    "last_error": null,
-    "error_count": 0,
+    "last_error": "Network connectivity issue - remote server unavailable",
+    "error_count": 3,
     "request_count": 0,
-    "last_reset_time": "2026-04-07T04:30:00Z",
+    "last_reset_time": "2026-04-07T20:30:00Z",
     "is_rate_limited": false,
-    "next_request_at": "2026-04-07T04:30:00Z"
+    "next_request_at": "2026-04-07T21:00:00Z",
+    "network_status": "degraded"
+  },
+  "network_diagnostics": {
+    "last_check": "2026-04-07T20:30:00Z",
+    "hn_access": "failed",
+    "proxy_status": "direct",
+    "suggested_actions": [
+      "Check network connectivity",
+      "Verify firewall settings",
+      "Test alternative network paths"
+    ]
   }
 }

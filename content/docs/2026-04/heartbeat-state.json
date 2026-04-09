@@ -5,44 +5,65 @@
     "weather": null,
     "csdn_publish": "2026-04-03T12:29:00+08:00",
     "moltbook_promotion": "2026-04-03T04:24:00+08:00",
-    "heartbeat_notify": "2026-04-07T00:52:00+08:00"
+    "heartbeat_notify": "2026-04-08T09:37:00+08:00"
   },
   "pendingTasks": {
     "csdn": {
       "files": [
         {
-          "file": "2026-04-03_12-00-Capa-BFF.md",
-          "title": "用了Capa-BFF一个月，说实话这个零成本BFF框架真香！",
+          "file": "2026-04-07_19-05-Capa-Java.md",
+          "title": "维护Capa-Java三年，聊聊多运行时架构的那些坑和收获",
           "status": "waiting_for_browser",
-          "since": "2026-04-03T12:29:00+08:00",
+          "since": "2026-04-07T19:06:00+08:00",
           "priority": "high"
         },
         {
-          "file": "2026-04-02_20-00-Capa-Java.md",
-          "title": "Capa-Java 文章（待确认标题）",
+          "file": "2026-04-07_12-00-Capa-BFF.md",
+          "title": "用了 Capa-BFF 三年，说说真实感受：零成本 BFF 到底靠不靠谱？",
           "status": "waiting_for_browser",
-          "since": "2026-04-02T21:10:00+08:00"
+          "since": "2026-04-07T12:05:00+08:00",
+          "priority": "high"
         },
         {
-          "file": "2026-04-02_12-00-Voice-Notes-Assistant.md",
-          "title": "用了三个月语音笔记助手，说实话，踩的坑比记的笔记还多",
+          "file": "2026-04-03_20-00-Fish-Agent.md",
+          "title": "Fish-Agent 文章",
           "status": "waiting_for_browser",
-          "since": "2026-04-02T21:10:00+08:00"
+          "since": "2026-04-03T20:03:00+08:00"
+        },
+        {
+          "file": "2026-04-03_12-00-Capa-BFF.md",
+          "title": "Capa-BFF（第一次发布）",
+          "status": "waiting_for_browser",
+          "since": "2026-04-03T12:03:00+08:00"
+        },
+        {
+          "file": "2026-04-02_20-00-Capa-Java.md",
+          "title": "Capa-Java（第一次发布）",
+          "status": "waiting_for_browser",
+          "since": "2026-04-02T20:02:00+08:00"
         }
       ],
       "issue": "Chrome running but remote debugging not enabled. Requires Chrome restart with --remote-debugging-port=9222. User decision needed.",
-      "last_attempt": "2026-04-03T12:29:00+08:00"
+      "last_attempt": "2026-04-03T12:29:00+08:00",
+      "pending_count": 5,
+      "days_since_last_publish": 9
     },
-    "moltbook": {
-      "project": "Capa-BFF",
-      "promotion": "Second promotion",
-      "status": "rate_limited",
-      "content_file": "memory/capa-bff-promotion-content.md",
-      "wait_time": "177 seconds",
-      "since": "2026-04-03T04:24:00+08:00",
-      "target": "m/technical",
-      "retry_after": "2026-04-03T04:26:49+08:00",
-      "note": "Rate limit should have expired. Can retry on next heartbeat."
+    "github_issue": {
+      "queue_file": "memory/github-issue-queue-auto.md",
+      "pending_review": [
+        {
+          "repo": "browser-use/browser-use",
+          "issue": 4538,
+          "title": "browser_click inputSchema uses top-level oneOf",
+          "status": "waiting_for_user_review",
+          "since": "2026-04-07T18:02:00+08:00"
+        }
+      ]
+    },
+    "juejin": {
+      "status": "no_publish_since_2026-04-03",
+      "days_since_last_publish": 4,
+      "possible_issue": "Cookie expired or script error"
     }
   }
 }
