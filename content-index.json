@@ -681,13 +681,6 @@
     },
     {
       "platform": "moltbook",
-      "filename": "moltbook-pending-replies.json",
-      "date": "2026-03-21",
-      "path": "D:\\project\\ai-promotion\\content\\moltbook\\2026-03\\moltbook-pending-replies.json",
-      "added_at": "2026-03-24T08:10:17.165818"
-    },
-    {
-      "platform": "moltbook",
       "filename": "moltbook-planned-replies.json",
       "date": "2026-03-20",
       "path": "D:\\project\\ai-promotion\\content\\moltbook\\2026-03\\moltbook-planned-replies.json",
@@ -1426,13 +1419,6 @@
       "filename": "moltbook-upvoted.json",
       "date": "2026-03-24",
       "path": "D:\\project\\ai-promotion\\content\\moltbook\\2026-03\\moltbook-upvoted.json",
-      "added_at": "2026-03-25T08:02:23.628554"
-    },
-    {
-      "platform": "moltbook",
-      "filename": "moltbook-temp-post.txt",
-      "date": "2026-03-24",
-      "path": "D:\\project\\ai-promotion\\content\\moltbook\\2026-03\\moltbook-temp-post.txt",
       "added_at": "2026-03-25T08:02:23.628554"
     },
     {
@@ -2578,13 +2564,6 @@
     },
     {
       "platform": "moltbook",
-      "filename": "moltbook-notifications-raw.json",
-      "date": "2026-03-27",
-      "path": "D:\\project\\ai-promotion\\content\\moltbook\\2026-03\\moltbook-notifications-raw.json",
-      "added_at": "2026-03-30T03:03:50.647911"
-    },
-    {
-      "platform": "moltbook",
       "filename": "moltbook-posts-comments.json",
       "date": "2026-03-26",
       "path": "D:\\project\\ai-promotion\\content\\moltbook\\2026-03\\moltbook-posts-comments.json",
@@ -3145,13 +3124,6 @@
     },
     {
       "platform": "docs",
-      "filename": "daily-reflection-log.md",
-      "date": "2026-04-02",
-      "path": "D:\\project\\ai-promotion\\content\\docs\\2026-04\\daily-reflection-log.md",
-      "added_at": "2026-04-02T03:00:51.125753"
-    },
-    {
-      "platform": "docs",
       "filename": "english-agent-second-promotion.md",
       "date": "2026-04-01",
       "path": "D:\\project\\ai-promotion\\content\\docs\\2026-04\\english-agent-second-promotion.md",
@@ -3621,13 +3593,6 @@
     },
     {
       "platform": "docs",
-      "filename": "x-platform-content-strategy-current.md",
-      "date": "2026-04-03",
-      "path": "D:\\project\\ai-promotion\\content\\docs\\2026-04\\x-platform-content-strategy-current.md",
-      "added_at": "2026-04-03T03:00:48.986383"
-    },
-    {
-      "platform": "docs",
       "filename": "x-platform-daily-summary-2026-04-02.md",
       "date": "2026-04-03",
       "path": "D:\\project\\ai-promotion\\content\\docs\\2026-04\\x-platform-daily-summary-2026-04-02.md",
@@ -3971,13 +3936,6 @@
     },
     {
       "platform": "docs",
-      "filename": "juejin-article-draft.md",
-      "date": "2026-04-07",
-      "path": "D:\\project\\ai-promotion\\content\\docs\\2026-04\\juejin-article-draft.md",
-      "added_at": "2026-04-07T03:00:09.575637"
-    },
-    {
-      "platform": "docs",
       "filename": "mastodon-content-backup.json",
       "date": "2026-04-06",
       "path": "D:\\project\\ai-promotion\\content\\docs\\2026-04\\mastodon-content-backup.json",
@@ -4059,13 +4017,6 @@
       "date": "2026-04-03",
       "path": "D:\\project\\ai-promotion\\content\\moltbook\\2026-04\\moltbook-post-d1d37f88-12ee-4e13-9fcb-634f64b07987.json",
       "added_at": "2026-04-07T03:00:09.612928"
-    },
-    {
-      "platform": "moltbook",
-      "filename": "moltbook-post-d3718882-400d-4998-a5c4-0885d275915b.json",
-      "date": "2026-04-03",
-      "path": "D:\\project\\ai-promotion\\content\\moltbook\\2026-04\\moltbook-post-d3718882-400d-4998-a5c4-0885d275915b.json",
-      "added_at": "2026-04-07T03:00:09.613511"
     },
     {
       "platform": "moltbook",
@@ -4195,13 +4146,6 @@
     },
     {
       "platform": "docs",
-      "filename": "wechat-publish-log.md",
-      "date": "2026-04-03",
-      "path": "D:\\project\\ai-promotion\\content\\docs\\2026-04\\wechat-publish-log.md",
-      "added_at": "2026-04-07T03:00:09.665025"
-    },
-    {
-      "platform": "docs",
       "filename": "wechat-publish-payload.json",
       "date": "2026-04-07",
       "path": "D:\\project\\ai-promotion\\content\\docs\\2026-04\\wechat-publish-payload.json",
@@ -4271,25 +4215,11 @@
       "added_at": "2026-04-08T03:03:23.286285"
     },
     {
-      "platform": "devto",
-      "filename": "devto-deep-optimization-daily.md",
-      "date": "2026-04-07",
-      "path": "D:\\project\\ai-promotion\\content\\devto\\2026-04\\devto-deep-optimization-daily.md",
-      "added_at": "2026-04-08T03:03:23.290679"
-    },
-    {
       "platform": "docs",
       "filename": "english-agent-post-draft.md",
       "date": "2026-04-07",
       "path": "D:\\project\\ai-promotion\\content\\docs\\2026-04\\english-agent-post-draft.md",
       "added_at": "2026-04-08T03:03:23.295383"
-    },
-    {
-      "platform": "docs",
-      "filename": "github-projects-rotation.md",
-      "date": "2026-04-07",
-      "path": "D:\\project\\ai-promotion\\content\\docs\\2026-04\\github-projects-rotation.md",
-      "added_at": "2026-04-08T03:03:23.306445"
     },
     {
       "platform": "docs",
@@ -4381,13 +4311,6 @@
       "date": "2026-04-07",
       "path": "D:\\project\\ai-promotion\\content\\docs\\2026-04\\system-alerts-temp.md",
       "added_at": "2026-04-08T03:03:23.394139"
-    },
-    {
-      "platform": "docs",
-      "filename": "x-platform-daily-check-report.md",
-      "date": "2026-04-08",
-      "path": "D:\\project\\ai-promotion\\content\\docs\\2026-04\\x-platform-daily-check-report.md",
-      "added_at": "2026-04-08T03:03:23.415109"
     },
     {
       "platform": "docs",
@@ -4510,13 +4433,6 @@
     },
     {
       "platform": "moltbook",
-      "filename": "moltbook-post-draft.md",
-      "date": "2026-04-08",
-      "path": "D:\\project\\ai-promotion\\content\\moltbook\\2026-04\\moltbook-post-draft.md",
-      "added_at": "2026-04-09T03:03:47.293517"
-    },
-    {
-      "platform": "moltbook",
       "filename": "moltbook_comments_to_reply.json",
       "date": "2026-04-08",
       "path": "D:\\project\\ai-promotion\\content\\moltbook\\2026-04\\moltbook_comments_to_reply.json",
@@ -4580,38 +4496,10 @@
     },
     {
       "platform": "docs",
-      "filename": "ab-test-results.md",
-      "date": "2026-04-10",
-      "path": "D:\\project\\ai-promotion\\content\\docs\\2026-04\\ab-test-results.md",
-      "added_at": "2026-04-10T03:00:19.007584"
-    },
-    {
-      "platform": "docs",
-      "filename": "auto-fix-log.md",
-      "date": "2026-04-10",
-      "path": "D:\\project\\ai-promotion\\content\\docs\\2026-04\\auto-fix-log.md",
-      "added_at": "2026-04-10T03:00:19.012149"
-    },
-    {
-      "platform": "docs",
       "filename": "bluesky-daily-check-report.md",
       "date": "2026-04-09",
       "path": "D:\\project\\ai-promotion\\content\\docs\\2026-04\\bluesky-daily-check-report.md",
       "added_at": "2026-04-10T03:00:19.014790"
-    },
-    {
-      "platform": "docs",
-      "filename": "competitor-analysis-hourly.md",
-      "date": "2026-04-10",
-      "path": "D:\\project\\ai-promotion\\content\\docs\\2026-04\\competitor-analysis-hourly.md",
-      "added_at": "2026-04-10T03:00:19.023071"
-    },
-    {
-      "platform": "docs",
-      "filename": "cross-platform-strategy-optimizer.md",
-      "date": "2026-04-10",
-      "path": "D:\\project\\ai-promotion\\content\\docs\\2026-04\\cross-platform-strategy-optimizer.md",
-      "added_at": "2026-04-10T03:00:19.026372"
     },
     {
       "platform": "docs",
@@ -4650,13 +4538,6 @@
     },
     {
       "platform": "docs",
-      "filename": "github-trending-realtime.md",
-      "date": "2026-04-10",
-      "path": "D:\\project\\ai-promotion\\content\\docs\\2026-04\\github-trending-realtime.md",
-      "added_at": "2026-04-10T03:00:19.050067"
-    },
-    {
-      "platform": "docs",
       "filename": "hn-daily-check-report.md",
       "date": "2026-04-09",
       "path": "D:\\project\\ai-promotion\\content\\docs\\2026-04\\hn-daily-check-report.md",
@@ -4664,52 +4545,10 @@
     },
     {
       "platform": "docs",
-      "filename": "hourly-content-analysis.md",
-      "date": "2026-04-10",
-      "path": "D:\\project\\ai-promotion\\content\\docs\\2026-04\\hourly-content-analysis.md",
-      "added_at": "2026-04-10T03:00:19.070110"
-    },
-    {
-      "platform": "docs",
-      "filename": "human-style-writing-guide.md",
-      "date": "2026-04-10",
-      "path": "D:\\project\\ai-promotion\\content\\docs\\2026-04\\human-style-writing-guide.md",
-      "added_at": "2026-04-10T03:00:19.071661"
-    },
-    {
-      "platform": "docs",
-      "filename": "juejin-content-strategy-current.md",
-      "date": "2026-04-10",
-      "path": "D:\\project\\ai-promotion\\content\\docs\\2026-04\\juejin-content-strategy-current.md",
-      "added_at": "2026-04-10T03:00:19.097227"
-    },
-    {
-      "platform": "docs",
-      "filename": "juejin-daily-check-report.md",
-      "date": "2026-04-10",
-      "path": "D:\\project\\ai-promotion\\content\\docs\\2026-04\\juejin-daily-check-report.md",
-      "added_at": "2026-04-10T03:00:19.097915"
-    },
-    {
-      "platform": "docs",
       "filename": "juejin-interaction-2026-04-09.md",
       "date": "2026-04-09",
       "path": "D:\\project\\ai-promotion\\content\\docs\\2026-04\\juejin-interaction-2026-04-09.md",
       "added_at": "2026-04-10T03:00:19.099708"
-    },
-    {
-      "platform": "docs",
-      "filename": "juejin-promo-log.md",
-      "date": "2026-04-10",
-      "path": "D:\\project\\ai-promotion\\content\\docs\\2026-04\\juejin-promo-log.md",
-      "added_at": "2026-04-10T03:00:19.103427"
-    },
-    {
-      "platform": "docs",
-      "filename": "juejin-surfing-log.md",
-      "date": "2026-04-09",
-      "path": "D:\\project\\ai-promotion\\content\\docs\\2026-04\\juejin-surfing-log.md",
-      "added_at": "2026-04-10T03:00:19.104999"
     },
     {
       "platform": "docs",
@@ -4734,13 +4573,6 @@
     },
     {
       "platform": "moltbook",
-      "filename": "moltbook-notifications.json",
-      "date": "2026-04-10",
-      "path": "D:\\project\\ai-promotion\\content\\moltbook\\2026-04\\moltbook-notifications.json",
-      "added_at": "2026-04-10T03:00:19.127398"
-    },
-    {
-      "platform": "moltbook",
       "filename": "moltbook-reply-log-2026-04-09.md",
       "date": "2026-04-09",
       "path": "D:\\project\\ai-promotion\\content\\moltbook\\2026-04\\moltbook-reply-log-2026-04-09.md",
@@ -4761,20 +4593,6 @@
       "added_at": "2026-04-10T03:00:19.140825"
     },
     {
-      "platform": "moltbook",
-      "filename": "moltbook-surfing-log.md",
-      "date": "2026-04-09",
-      "path": "D:\\project\\ai-promotion\\content\\moltbook\\2026-04\\moltbook-surfing-log.md",
-      "added_at": "2026-04-10T03:00:19.146041"
-    },
-    {
-      "platform": "docs",
-      "filename": "multi-platform-analytics.md",
-      "date": "2026-04-10",
-      "path": "D:\\project\\ai-promotion\\content\\docs\\2026-04\\multi-platform-analytics.md",
-      "added_at": "2026-04-10T03:00:19.149814"
-    },
-    {
       "platform": "docs",
       "filename": "openclaw-health-report-2026-04-09.md",
       "date": "2026-04-09",
@@ -4783,53 +4601,382 @@
     },
     {
       "platform": "docs",
-      "filename": "platform-style-templates.md",
+      "filename": "2026-04-10.md",
+      "date": "2026-04-11",
+      "path": "D:\\project\\ai-promotion\\content\\docs\\2026-04\\2026-04-10.md",
+      "added_at": "2026-04-11T03:00:08.689563"
+    },
+    {
+      "platform": "docs",
+      "filename": "2026-04-11.md",
+      "date": "2026-04-11",
+      "path": "D:\\project\\ai-promotion\\content\\docs\\2026-04\\2026-04-11.md",
+      "added_at": "2026-04-11T03:00:08.690347"
+    },
+    {
+      "platform": "docs",
+      "filename": "ab-test-results.md",
+      "date": "2026-04-11",
+      "path": "D:\\project\\ai-promotion\\content\\docs\\2026-04\\ab-test-results.md",
+      "added_at": "2026-04-11T03:00:08.691643"
+    },
+    {
+      "platform": "docs",
+      "filename": "auto-fix-log.md",
+      "date": "2026-04-11",
+      "path": "D:\\project\\ai-promotion\\content\\docs\\2026-04\\auto-fix-log.md",
+      "added_at": "2026-04-11T03:00:08.695982"
+    },
+    {
+      "platform": "docs",
+      "filename": "competitor-analysis-hourly.md",
+      "date": "2026-04-11",
+      "path": "D:\\project\\ai-promotion\\content\\docs\\2026-04\\competitor-analysis-hourly.md",
+      "added_at": "2026-04-11T03:00:08.737899"
+    },
+    {
+      "platform": "docs",
+      "filename": "cross-platform-strategy-optimizer.md",
+      "date": "2026-04-11",
+      "path": "D:\\project\\ai-promotion\\content\\docs\\2026-04\\cross-platform-strategy-optimizer.md",
+      "added_at": "2026-04-11T03:00:08.740974"
+    },
+    {
+      "platform": "docs",
+      "filename": "daily-reflection-log.md",
+      "date": "2026-04-11",
+      "path": "D:\\project\\ai-promotion\\content\\docs\\2026-04\\daily-reflection-log.md",
+      "added_at": "2026-04-11T03:00:08.745972"
+    },
+    {
+      "platform": "devto",
+      "filename": "devto-deep-optimization-daily.md",
       "date": "2026-04-10",
+      "path": "D:\\project\\ai-promotion\\content\\devto\\2026-04\\devto-deep-optimization-daily.md",
+      "added_at": "2026-04-11T03:00:08.749775"
+    },
+    {
+      "platform": "docs",
+      "filename": "email-classification-log.md",
+      "date": "2026-04-10",
+      "path": "D:\\project\\ai-promotion\\content\\docs\\2026-04\\email-classification-log.md",
+      "added_at": "2026-04-11T03:00:08.753607"
+    },
+    {
+      "platform": "docs",
+      "filename": "github-projects-rotation.md",
+      "date": "2026-04-10",
+      "path": "D:\\project\\ai-promotion\\content\\docs\\2026-04\\github-projects-rotation.md",
+      "added_at": "2026-04-11T03:00:08.763082"
+    },
+    {
+      "platform": "docs",
+      "filename": "github-stars-report-2026-04-10.md",
+      "date": "2026-04-10",
+      "path": "D:\\project\\ai-promotion\\content\\docs\\2026-04\\github-stars-report-2026-04-10.md",
+      "added_at": "2026-04-11T03:00:08.764309"
+    },
+    {
+      "platform": "docs",
+      "filename": "github-trending-realtime.md",
+      "date": "2026-04-11",
+      "path": "D:\\project\\ai-promotion\\content\\docs\\2026-04\\github-trending-realtime.md",
+      "added_at": "2026-04-11T03:00:08.765221"
+    },
+    {
+      "platform": "docs",
+      "filename": "human-style-writing-guide.md",
+      "date": "2026-04-11",
+      "path": "D:\\project\\ai-promotion\\content\\docs\\2026-04\\human-style-writing-guide.md",
+      "added_at": "2026-04-11T03:00:08.777926"
+    },
+    {
+      "platform": "docs",
+      "filename": "juejin-article-draft.md",
+      "date": "2026-04-10",
+      "path": "D:\\project\\ai-promotion\\content\\docs\\2026-04\\juejin-article-draft.md",
+      "added_at": "2026-04-11T03:00:08.780231"
+    },
+    {
+      "platform": "docs",
+      "filename": "juejin-content-strategy-current.md",
+      "date": "2026-04-11",
+      "path": "D:\\project\\ai-promotion\\content\\docs\\2026-04\\juejin-content-strategy-current.md",
+      "added_at": "2026-04-11T03:00:08.782467"
+    },
+    {
+      "platform": "docs",
+      "filename": "juejin-daily-check-report.md",
+      "date": "2026-04-11",
+      "path": "D:\\project\\ai-promotion\\content\\docs\\2026-04\\juejin-daily-check-report.md",
+      "added_at": "2026-04-11T03:00:08.783226"
+    },
+    {
+      "platform": "docs",
+      "filename": "juejin-interaction-2026-04-10.md",
+      "date": "2026-04-10",
+      "path": "D:\\project\\ai-promotion\\content\\docs\\2026-04\\juejin-interaction-2026-04-10.md",
+      "added_at": "2026-04-11T03:00:08.784908"
+    },
+    {
+      "platform": "docs",
+      "filename": "juejin-promo-log.md",
+      "date": "2026-04-10",
+      "path": "D:\\project\\ai-promotion\\content\\docs\\2026-04\\juejin-promo-log.md",
+      "added_at": "2026-04-11T03:00:08.788223"
+    },
+    {
+      "platform": "docs",
+      "filename": "juejin-surfing-log.md",
+      "date": "2026-04-10",
+      "path": "D:\\project\\ai-promotion\\content\\docs\\2026-04\\juejin-surfing-log.md",
+      "added_at": "2026-04-11T03:00:08.789518"
+    },
+    {
+      "platform": "moltbook",
+      "filename": "moltbook-comments-all.json",
+      "date": "2026-04-10",
+      "path": "D:\\project\\ai-promotion\\content\\moltbook\\2026-04\\moltbook-comments-all.json",
+      "added_at": "2026-04-11T03:00:08.797749"
+    },
+    {
+      "platform": "moltbook",
+      "filename": "moltbook-draft.md",
+      "date": "2026-04-10",
+      "path": "D:\\project\\ai-promotion\\content\\moltbook\\2026-04\\moltbook-draft.md",
+      "added_at": "2026-04-11T03:00:08.808934"
+    },
+    {
+      "platform": "moltbook",
+      "filename": "moltbook-draft.txt",
+      "date": "2026-04-10",
+      "path": "D:\\project\\ai-promotion\\content\\moltbook\\2026-04\\moltbook-draft.txt",
+      "added_at": "2026-04-11T03:00:08.809719"
+    },
+    {
+      "platform": "moltbook",
+      "filename": "moltbook-notifications-raw.json",
+      "date": "2026-04-10",
+      "path": "D:\\project\\ai-promotion\\content\\moltbook\\2026-04\\moltbook-notifications-raw.json",
+      "added_at": "2026-04-11T03:00:08.812617"
+    },
+    {
+      "platform": "moltbook",
+      "filename": "moltbook-notifications-temp.json",
+      "date": "2026-04-11",
+      "path": "D:\\project\\ai-promotion\\content\\moltbook\\2026-04\\moltbook-notifications-temp.json",
+      "added_at": "2026-04-11T03:00:08.813588"
+    },
+    {
+      "platform": "moltbook",
+      "filename": "moltbook-notifications.json",
+      "date": "2026-04-10",
+      "path": "D:\\project\\ai-promotion\\content\\moltbook\\2026-04\\moltbook-notifications.json",
+      "added_at": "2026-04-11T03:00:08.814904"
+    },
+    {
+      "platform": "moltbook",
+      "filename": "moltbook-pending-replies.json",
+      "date": "2026-04-10",
+      "path": "D:\\project\\ai-promotion\\content\\moltbook\\2026-04\\moltbook-pending-replies.json",
+      "added_at": "2026-04-11T03:00:08.816916"
+    },
+    {
+      "platform": "moltbook",
+      "filename": "moltbook-post-30eb6b49-97a3-4494-8207-6aff2d20c892.json",
+      "date": "2026-04-10",
+      "path": "D:\\project\\ai-promotion\\content\\moltbook\\2026-04\\moltbook-post-30eb6b49-97a3-4494-8207-6aff2d20c892.json",
+      "added_at": "2026-04-11T03:00:08.818629"
+    },
+    {
+      "platform": "moltbook",
+      "filename": "moltbook-post-432a2642-64a9-4eeb-a0e9-e4774faf241d.json",
+      "date": "2026-04-10",
+      "path": "D:\\project\\ai-promotion\\content\\moltbook\\2026-04\\moltbook-post-432a2642-64a9-4eeb-a0e9-e4774faf241d.json",
+      "added_at": "2026-04-11T03:00:08.819845"
+    },
+    {
+      "platform": "moltbook",
+      "filename": "moltbook-post-6b9af8b6-d432-4110-bda7-2fd8148be431.json",
+      "date": "2026-04-10",
+      "path": "D:\\project\\ai-promotion\\content\\moltbook\\2026-04\\moltbook-post-6b9af8b6-d432-4110-bda7-2fd8148be431.json",
+      "added_at": "2026-04-11T03:00:08.820770"
+    },
+    {
+      "platform": "moltbook",
+      "filename": "moltbook-post-8872d4a4-39dc-4948-be3c-f05d8b963e46.json",
+      "date": "2026-04-10",
+      "path": "D:\\project\\ai-promotion\\content\\moltbook\\2026-04\\moltbook-post-8872d4a4-39dc-4948-be3c-f05d8b963e46.json",
+      "added_at": "2026-04-11T03:00:08.822641"
+    },
+    {
+      "platform": "moltbook",
+      "filename": "moltbook-post-90f9a6fe-64e5-4085-92f3-6c979e7b58bd.json",
+      "date": "2026-04-10",
+      "path": "D:\\project\\ai-promotion\\content\\moltbook\\2026-04\\moltbook-post-90f9a6fe-64e5-4085-92f3-6c979e7b58bd.json",
+      "added_at": "2026-04-11T03:00:08.823675"
+    },
+    {
+      "platform": "moltbook",
+      "filename": "moltbook-post-98e505b8-8011-4688-810f-a27e8a0e589a.json",
+      "date": "2026-04-10",
+      "path": "D:\\project\\ai-promotion\\content\\moltbook\\2026-04\\moltbook-post-98e505b8-8011-4688-810f-a27e8a0e589a.json",
+      "added_at": "2026-04-11T03:00:08.824478"
+    },
+    {
+      "platform": "moltbook",
+      "filename": "moltbook-post-bc4d245f-8275-498b-84cf-f62d91532e1a.json",
+      "date": "2026-04-10",
+      "path": "D:\\project\\ai-promotion\\content\\moltbook\\2026-04\\moltbook-post-bc4d245f-8275-498b-84cf-f62d91532e1a.json",
+      "added_at": "2026-04-11T03:00:08.825744"
+    },
+    {
+      "platform": "moltbook",
+      "filename": "moltbook-post-d3718882-400d-4998-a5c4-0885d275915b.json",
+      "date": "2026-04-10",
+      "path": "D:\\project\\ai-promotion\\content\\moltbook\\2026-04\\moltbook-post-d3718882-400d-4998-a5c4-0885d275915b.json",
+      "added_at": "2026-04-11T03:00:08.827631"
+    },
+    {
+      "platform": "moltbook",
+      "filename": "moltbook-post-draft.md",
+      "date": "2026-04-10",
+      "path": "D:\\project\\ai-promotion\\content\\moltbook\\2026-04\\moltbook-post-draft.md",
+      "added_at": "2026-04-11T03:00:08.829310"
+    },
+    {
+      "platform": "moltbook",
+      "filename": "moltbook-post-f0513b4c-e431-4d6c-8839-602824411a6c.json",
+      "date": "2026-04-10",
+      "path": "D:\\project\\ai-promotion\\content\\moltbook\\2026-04\\moltbook-post-f0513b4c-e431-4d6c-8839-602824411a6c.json",
+      "added_at": "2026-04-11T03:00:08.830317"
+    },
+    {
+      "platform": "moltbook",
+      "filename": "moltbook-reply-log-2026-04-10.json",
+      "date": "2026-04-10",
+      "path": "D:\\project\\ai-promotion\\content\\moltbook\\2026-04\\moltbook-reply-log-2026-04-10.json",
+      "added_at": "2026-04-11T03:00:08.834836"
+    },
+    {
+      "platform": "moltbook",
+      "filename": "moltbook-temp-post.txt",
+      "date": "2026-04-10",
+      "path": "D:\\project\\ai-promotion\\content\\moltbook\\2026-04\\moltbook-temp-post.txt",
+      "added_at": "2026-04-11T03:00:08.841863"
+    },
+    {
+      "platform": "docs",
+      "filename": "multi-platform-analytics.md",
+      "date": "2026-04-10",
+      "path": "D:\\project\\ai-promotion\\content\\docs\\2026-04\\multi-platform-analytics.md",
+      "added_at": "2026-04-11T03:00:08.845457"
+    },
+    {
+      "platform": "docs",
+      "filename": "platform-style-templates.md",
+      "date": "2026-04-11",
       "path": "D:\\project\\ai-promotion\\content\\docs\\2026-04\\platform-style-templates.md",
-      "added_at": "2026-04-10T03:00:19.154257"
+      "added_at": "2026-04-11T03:00:08.849061"
     },
     {
       "platform": "docs",
       "filename": "system-alerts.md",
-      "date": "2026-04-10",
+      "date": "2026-04-11",
       "path": "D:\\project\\ai-promotion\\content\\docs\\2026-04\\system-alerts.md",
-      "added_at": "2026-04-10T03:00:19.163318"
+      "added_at": "2026-04-11T03:00:08.858632"
+    },
+    {
+      "platform": "docs",
+      "filename": "trend_tracker_data.json",
+      "date": "2026-04-10",
+      "path": "D:\\project\\ai-promotion\\content\\docs\\2026-04\\trend_tracker_data.json",
+      "added_at": "2026-04-11T03:00:08.868775"
     },
     {
       "platform": "docs",
       "filename": "wechat-content-strategy-current.md",
-      "date": "2026-04-10",
+      "date": "2026-04-11",
       "path": "D:\\project\\ai-promotion\\content\\docs\\2026-04\\wechat-content-strategy-current.md",
-      "added_at": "2026-04-10T03:00:19.178714"
+      "added_at": "2026-04-11T03:00:08.875087"
     },
     {
       "platform": "docs",
       "filename": "wechat-daily-check-report.md",
-      "date": "2026-04-10",
+      "date": "2026-04-11",
       "path": "D:\\project\\ai-promotion\\content\\docs\\2026-04\\wechat-daily-check-report.md",
-      "added_at": "2026-04-10T03:00:19.179644"
+      "added_at": "2026-04-11T03:00:08.875914"
+    },
+    {
+      "platform": "docs",
+      "filename": "wechat-publish-log.md",
+      "date": "2026-04-11",
+      "path": "D:\\project\\ai-promotion\\content\\docs\\2026-04\\wechat-publish-log.md",
+      "added_at": "2026-04-11T03:00:08.877692"
+    },
+    {
+      "platform": "docs",
+      "filename": "wechat-retry-queue.md",
+      "date": "2026-04-11",
+      "path": "D:\\project\\ai-promotion\\content\\docs\\2026-04\\wechat-retry-queue.md",
+      "added_at": "2026-04-11T03:00:08.878700"
     },
     {
       "platform": "docs",
       "filename": "x-platform-cn-content-log.md",
-      "date": "2026-04-09",
+      "date": "2026-04-10",
       "path": "D:\\project\\ai-promotion\\content\\docs\\2026-04\\x-platform-cn-content-log.md",
-      "added_at": "2026-04-10T03:00:19.183478"
+      "added_at": "2026-04-11T03:00:08.881019"
+    },
+    {
+      "platform": "docs",
+      "filename": "x-platform-content-strategy-current.md",
+      "date": "2026-04-11",
+      "path": "D:\\project\\ai-promotion\\content\\docs\\2026-04\\x-platform-content-strategy-current.md",
+      "added_at": "2026-04-11T03:00:08.882150"
+    },
+    {
+      "platform": "docs",
+      "filename": "x-platform-daily-check-report.md",
+      "date": "2026-04-11",
+      "path": "D:\\project\\ai-promotion\\content\\docs\\2026-04\\x-platform-daily-check-report.md",
+      "added_at": "2026-04-11T03:00:08.883190"
     },
     {
       "platform": "docs",
       "filename": "content-quality-audit.md",
-      "date": "2026-04-10",
+      "date": "2026-04-11",
       "path": "D:\\project\\ai-promotion\\content\\docs\\2026-04\\content-quality-audit.md",
-      "added_at": "2026-04-10T03:35:11.740359"
+      "added_at": "2026-04-11T03:35:20.042359"
+    },
+    {
+      "platform": "docs",
+      "filename": "hourly-content-analysis.md",
+      "date": "2026-04-11",
+      "path": "D:\\project\\ai-promotion\\content\\docs\\2026-04\\hourly-content-analysis.md",
+      "added_at": "2026-04-11T03:35:20.064180"
+    },
+    {
+      "platform": "moltbook",
+      "filename": "moltbook-surfing-log.md",
+      "date": "2026-04-11",
+      "path": "D:\\project\\ai-promotion\\content\\moltbook\\2026-04\\moltbook-surfing-log.md",
+      "added_at": "2026-04-11T03:35:20.093126"
     },
     {
       "platform": "docs",
       "filename": "trend-tracker-realtime.md",
-      "date": "2026-04-10",
+      "date": "2026-04-11",
       "path": "D:\\project\\ai-promotion\\content\\docs\\2026-04\\trend-tracker-realtime.md",
-      "added_at": "2026-04-10T03:35:11.830934"
+      "added_at": "2026-04-11T03:35:20.109350"
+    },
+    {
+      "platform": "docs",
+      "filename": "trend_tracker_fetch.py",
+      "date": "2026-04-11",
+      "path": "D:\\project\\ai-promotion\\content\\docs\\2026-04\\trend_tracker_fetch.py",
+      "added_at": "2026-04-11T03:35:20.110553"
     }
   ],
-  "last_update": "2026-04-10T03:35:11.847101"
+  "last_update": "2026-04-11T03:35:20.122122"
 }

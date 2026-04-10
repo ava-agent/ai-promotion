@@ -1,199 +1,191 @@
-# 🔥 GitHub Trending 实时监控报告 — 2026-04-10
+# 🔥 GitHub Trending 实时监控报告
 
-> 监控时间：2026-04-10 02:03 (GMT+8)  
-> 数据来源：GitHub Trending (Daily)  
-> 分析引擎：旺财 🐕 (Kimi 专属监控任务)
-
----
-
-## 📌 一、Top 20 爆火项目速览
-
-| 排名 | 项目 | Stars | 今日新增 | 语言 | 一句话定位 |
-|------|------|-------|----------|------|-----------|
-| 1 | [NousResearch/hermes-agent](https://github.com/NousResearch/hermes-agent) | 43.5K | +6,788 ⭐ | Python | 自带学习闭环的自进化 AI Agent |
-| 2 | [forrestchang/andrej-karpathy-skills](https://github.com/forrestchang/andrej-karpathy-skills) | 10.1K | +1,371 ⭐ | - | Andrej Karpathy 式 CLAUDE.md 技能包 |
-| 3 | [rowboatlabs/rowboat](https://github.com/rowboatlabs/rowboat) | 11.1K | +1,325 ⭐ | TypeScript | 本地优先、带知识图谱记忆的 AI 同事 |
-| 4 | [HKUDS/DeepTutor](https://github.com/HKUDS/DeepTutor) | 14.6K | +1,300 ⭐ | Python | Agent-Native 个性化学习助手 |
-| 5 | [multica-ai/multica](https://github.com/multica-ai/multica) | 4.1K | +1,212 ⭐ | TypeScript | 把 Coding Agent 变成真正的队友 |
-| 6 | [TheCraigHewitt/seomachine](https://github.com/TheCraigHewitt/seomachine) | 5.1K | +725 ⭐ | Python | Claude Code 驱动的 SEO 内容工场 |
-| 7 | [abhigyanpatwari/GitNexus](https://github.com/abhigyanpatwari/GitNexus) | 25.8K | +674 ⭐ | TypeScript | 零服务端代码知识图谱 + Graph RAG Agent |
-| 8 | [daytonaio/daytona](https://github.com/daytonaio/daytona) | 72.2K | +648 ⭐ | TypeScript | AI 生成代码的安全弹性基础设施 |
-| 9 | [OpenBMB/VoxCPM](https://github.com/OpenBMB/VoxCPM) | 7.5K | +460 ⭐ | Python | 无 Tokenizer TTS，多语言语音克隆 |
-| 10 | [tobi/qmd](https://github.com/tobi/qmd) | 20.3K | +327 ⭐ | TypeScript | 全本地文档/笔记搜索引擎 |
-| 11 | [clash-verge-rev/clash-verge-rev](https://github.com/clash-verge-rev/clash-verge-rev) | 109.2K | +414 ⭐ | TypeScript | Tauri 现代代理客户端 |
-| 12 | [SaladDay/cc-switch-cli](https://github.com/SaladDay/cc-switch-cli) | 1.7K | +40 ⭐ | Rust | Claude Code / Codex / Gemini CLI 一键切换器 |
-| 13 | [git-ai-project/git-ai](https://github.com/git-ai-project/git-ai) | 1.5K | +20 ⭐ | Rust | 追踪仓库中 AI 生成代码的 Git 扩展 |
-| 14 | [xdevplatform/xurl](https://github.com/xdevplatform/xurl) | 704 | +20 ⭐ | Go | X API 官方 CLI |
-| 15 | [YishenTu/claudian](https://github.com/YishenTu/claudian) | 6.7K | +174 ⭐ | TypeScript | 把 Claude Code 嵌入 Obsidian 的插件 |
-| 16 | [coleam00/Archon](https://github.com/coleam00/Archon) | 14.3K | +138 ⭐ | TypeScript | 开源 AI 编程 Harness / Workflow 引擎 |
-| 17 | [superset-sh/superset](https://github.com/superset-sh/superset) | 9.2K | +136 ⭐ | TypeScript | AI Agent 时代的代码编辑器 |
-| 18 | [z-lab/dflash](https://github.com/z-lab/dflash) | 950 | +119 ⭐ | Python | Block Diffusion for Flash Speculative Decoding |
-| 19 | [QwenLM/qwen-code](https://github.com/QwenLM/qwen-code) | 22.2K | +108 ⭐ | TypeScript | 通义开源终端 AI Agent |
-| 20 | [VoltAgent/voltagent](https://github.com/VoltAgent/voltagent) | 7.7K | +114 ⭐ | TypeScript | TypeScript AI Agent 工程平台 |
+> 监控时间: 2026-04-11 02:03 (Asia/Shanghai) / 2026-04-10 18:03 UTC  
+> 数据来源: GitHub Trending + GitHub API  
+> 分析师: 旺财 🐕 (Kimi 专属分析)
 
 ---
 
-## 🧠 二、技术趋势深度分析（2000+字）
+## 📊 一、Top 20 Trending 项目速览
 
-### 2.1 第一大主旋律：AI Agent 从「玩具」走向「基础设施」
+### 🏆 今日之星 — 爆发增长榜
 
-今日的 GitHub Trending 是被 **AI Agent** 统治的一天。Top 10 中超过 7 个项目直接面向 Agent 开发或运行，这不是偶然，而是 2026 年 Q2 技术拐点的明确信号。
+| 排名 | 项目 | Star 总数 | 今日新增 | 语言 | 核心定位 |
+|------|------|-----------|----------|------|----------|
+| 1 | **microsoft/markitdown** | 99,004 | ⭐ +2,353 | Python | 文件转 Markdown 神器 |
+| 2 | **NousResearch/hermes-agent** | 51,170 | ⭐ +7,674 | Python | 自进化 AI Agent |
+| 3 | **obra/superpowers** | 145,470 | ⭐ +2,150 | Shell | Agentic 技能框架 |
+| 4 | **shanraisshan/claude-code-best-practice** | 35,458 | ⭐ +1,248 | HTML | Claude Code 最佳实践 |
+| 5 | **HKUDS/DeepTutor** | 15,776 | ⭐ +1,426 | Python | Agent-Native 个性化学习助手 |
+| 6 | **forrestchang/andrej-karpathy-skills** | 11,492 | ⭐ +1,454 | - | 基于 Karpathy 经验的 Claude 技能 |
+| 7 | **multica-ai/multica** | 5,656 | ⭐ +1,544 | TypeScript | 开源托管 Agent 平台 |
+| 8 | **opendataloader-project/opendataloader-pdf** | 14,635 | ⭐ +1,309 | Java | AI-ready PDF 解析器 |
+| 9 | **coleam00/Archon** | 15,274 | ⭐ +756 | TypeScript | AI 编程工作流引擎 |
+| 10 | **shiyu-coder/Kronos** | 12,603 | ⭐ +602 | Python | 金融市场语言基础模型 |
+| 11 | **rowboatlabs/rowboat** | 11,600 | ⭐ +498 | TypeScript | 本地优先 AI 同事 |
+| 12 | **jqlang/jq** | 34,224 | ⭐ +48 | C | 命令行 JSON 处理器 |
 
-#### 代表项目解读
+### 🌱 值得关注的新项目（48h 内创建）
 
-**NousResearch/hermes-agent (+6,788 stars)**  当之无愧的现象级爆点。它不仅仅是一个聊天机器人，而是一个具备「学习闭环」的 Agent 系统：
-- 能从经验中自动生成 skills
-- 会主动提醒自己保存知识
-- 支持搜索历史会话并做 LLM 摘要
-- 基于用户行为构建 deepening user model
-- 支持多端接入（Telegram、Discord、Slack、WhatsApp、Signal）
-- 提供 Daytona / Modal serverless 后端，低功耗休眠
-
-hermes-agent 甚至可以一键迁移 OpenClaw 的技能和记忆。其定位非常清晰——取代 OpenClaw 成为下一代个人 Agent 中枢。对于 Kevin 主人来说，这艘船已经开始倾斜，值得关注其 skills 生态的走向。
-
-**rowboatlabs/rowboat (+1,325 stars)** 走的是另一条路：「本地优先 + 知识图谱记忆」。它不追求大而全的 Agent 生态，而是聚焦「AI 同事」这一社交化定位：
-- 把所有工作邮件、日历、会议记录沉淀为可观测的 Markdown 知识图谱
-- 可以生成简报、PDF 幻灯片、邮件草稿
-- 一切都是本地文件，没有厂商锁定
-
-这种「Obsidian-compatible vault」的设计，击中了很多对隐私敏感、讨厌被平台锁定的用户。
-
-**multica-ai/multica (+1,212 stars)** 提出的口号是 "Turn coding agents into real teammates"。它强调任务分配、进度跟踪、技能复利。如果说 hermes 是个人 Agent，rowboat 是私人助理，那 multica 就是团队 Agent 的首次探路。
-
-**QwenLM/qwen-code (+108 stars)** 来自阿里通义团队，定位"An open-source AI agent that lives in your terminal"。在国产模型阵营中，这是少有的面向开发者工作流、直接对标 Claude Code/Codex 的产品。它 star 基盘已经很大（22K），且持续增长，说明海外社区对国产 Agent 工具的认可度在提升。
-
-### 2.2 第二大浪潮：Claude Code 生态正在形成「标准」
-
-Anthropic 的 Claude Code 不只是一个 CLI 工具，它正在催生一个围绕 CLAUDE.md、skills、workflows 的第三方生态。今日的 Trending 反复验证了这一点。
-
-**andrej-karpathy-skills (+1,371 stars)**：这可能是今日最令人深思的项目。它把 Andrej Karpathy 在 X 上关于 LLM 编程缺陷的观察，浓缩成了四个原则：
-1. **Think Before Coding** — 明确假设，浮现歧义
-2. **Simplicity First** — 200 行能搞定的不要用 1000 行
-3. **Surgical Changes** — 只动该动的代码
-4. **Goal-Driven Execution** — 把指令转化为可验证的目标
-
-这个项目没有复杂代码，只有一个 CLAUDE.md 文件。它的爆火说明了两件事：
-- 开发者对 LLM 代码质量的焦虑是真实且普遍的
-- Claude Code 的 skill / plugin 机制已经成熟到可以仅凭一个 prompt 文件就获得 10K+ star
-
-**claudian (+174 stars)** 把 Claude Code 嵌进 Obsidian；**seomachine (+725 stars)** 用 Claude Code 做 SEO 内容生产；**superset-sh/superset (+136 stars)** 要"Run an army of Claude Code, Codex, etc. on your machine"。
-
-可以看出，Claude Code 正在成为 AI 编程时代的「基础设施层」，而之上的应用创新才刚刚开始。
-
-### 2.3 第三大方向：垂直场景的 Agent 化
-
-AI Agent 不再是通用助手，而是快速切入具体行业：
-
-- **DeepTutor**：教育领域的 Agent-Native 学习助手。教育/培训赛道向来付费意愿强，Agent + 个性化学习的路径非常清晰。
-- **VoxCPM**：语音生成领域的 tokenizer-free TTS，支持多语言和真实人声克隆。语音Agent（如实时客服、播客生成）需要的就是这种底层技术。
-- **GitNexus**：代码理解和知识图谱。把 GitHub repo 丢进浏览器就能生成交互式知识图谱 + Graph RAG Agent。这在代码审查、新人 onboarding、架构分析上都极具想象力。
-- **tradingview-mcp / ai-hedge-fund / Kronos**：金融量化领域。MCP（Model Context Protocol）正在成为 AI 与金融数据交互的标准接口。
-- **seomachine**：内容营销领域。用 Claude Code 的 agentic 能力批量生产 SEO 内容，这几乎是一个现成的商业 SaaS 概念。
-
-### 2.4 第四：基础设施层的新变量
-
-**daytonaio/daytona (+648 stars)** 提出了 "Secure and Elastic Infrastructure for Running AI-Generated Code"。在代码越来越多由 AI 生成的时代，谁来保证这些代码的运行环境安全、隔离、可伸缩？Daytona 想成为 AI 代码的 Docker。
-
-**z-lab/dflash (+119 stars)** 研究的是 Block Diffusion for Flash Speculative Decoding，属于大模型推理加速的前沿方向。Flash Decoding 的进一步演进，直接关系着端侧大模型和实时 Agent 的可行性。
-
-**microsoft/BitNet**：1-bit LLM 的官方推理框架。如果 1-bit 模型能在保持效果的前提下大幅降低算力需求，将彻底改变边缘设备部署的性价比。
+| 项目 | Star | 语言 | 亮点 |
+|------|------|------|------|
+| **whwangovo/pyre-code** | 458 | Python | 自托管 ML 编程练习平台，涵盖 attention 到 diffusion 的 68 道实战题 |
+| **joeynyc/hermes-hudui** | 325 | Python | Hermes Agent 的 Web UI 意识监控器 |
+| **dominikmartn/ProgressiveBlurHeader** | ~250 | Swift | Apple Music 风格的渐进模糊粘性头部组件 |
+| **QLHazyCoder/codex-oauth-automation-extension** | 258 | JavaScript | OpenAI OAuth 注册自动化 Chrome 扩展 |
 
 ---
 
-## 💡 三、内容选题生成与传播潜力评估
+## 🔬 二、技术趋势深度分析
 
-基于今日的 Trending 数据，为主人推荐以下选题方向，按传播潜力排序：
+### 1. AI Agent 生态进入「基础设施打造期」
 
-### 🥇 选题 A：《GitHub 今日屠榜：一个能自己学技能的 AI Agent 狂揽 6000+ Star》
-- **核心卖点**：hermes-agent 的「学习闭环」机制
-- **传播潜力**：⭐⭐⭐⭐⭐
-- **目标平台**：掘金、知乎、Twitter/X、Dev.to
-- **最佳发布时间**：周六上午 10:00-11:00（开发者刷 GitHub 的高峰时段）
-- **差异化角度**：对比 OpenClaw，谈迁移体验和生态竞争
+今日 Trending 榜单中，**超过 60% 的项目与 AI Agent / AI Coding 直接相关**。这不是偶然，而是一个明确信号：Agent 赛道正在从「概念验证」快速过渡到「工程化与可复现」阶段。
 
-### 🥈 选题 B：《Andrej Karpathy 一句话，让 Claude Code 的代码质量提升 300%》
-- **核心卖点**：andrej-karpathy-skills 的四个原则
-- **传播潜力**：⭐⭐⭐⭐⭐
-- **目标平台**：掘金、Dev.to、小红书（技术向图文）
-- **最佳发布时间**：工作日晚间 20:00-21:00
-- **差异化角度**：实际测试，用/不用该 skill 的代码 diff 对比
+我们可以从四个子方向来拆解：
 
-### 🥉 选题 C：《Claude Code 生态正在吞噬 GitHub：10 个爆火项目揭示的 4 大趋势》
-- **核心卖点**：宏观视角解读 Claude Code 周边的生态爆发
-- **传播潜力**：⭐⭐⭐⭐☆
-- **目标平台**：掘金、知乎专栏、微信公众号
-- **最佳发布时间**：周日晚间（为周一工作周蓄势）
-- **差异化角度**：不仅罗列项目，更预测"AI 编程工作流"的标准化路径
+#### (1) Agent 运行平台 — 去中心化、本地优先
+- **NousResearch/hermes-agent**（+7,674 今日最高增长）是对当前 Agent 平台形态最有野心的定义。它强调：
+  - **学习闭环**：Agent 从经验中创建技能、在使用过程中自我改进
+  - **跨平台对话连续性**：Telegram / Discord / Slack / WhatsApp / Signal 全打通
+  - **子代理并行化**：通过 RPC 调用工具，把多步骤流水线压缩为零上下文成本的单轮交互
+  - **模型无锁定**：支持 Nous Portal、OpenRouter（200+ 模型）、z.ai/GLM、Kimi/Moonshot、MiniMax、OpenAI 等，通过 `hermes model` 一键切换
 
-### 4️⃣ 选题 D：《把 Claude Code 装进 Obsidian：claudian 让我的笔记库有了灵魂》
-- **核心卖点**：工具组合流，实用教程向
-- **传播潜力**：⭐⭐⭐⭐☆
-- **目标平台**：小红书、B站（可做演示视频）、掘金
-- **最佳发布时间**：周末下午
-- **差异化角度**：实际演示搭建过程 + 个人知识管理场景
+- **multica-ai/multica**（+1,544，总星仅 5,656 但增速极高）走的是「把 coding agent 变成真正队友」的路线：分配任务、跟踪进度、复利技能。这说明市场不仅需要 Chat 式的 Agent，更需要 **Project Management 式的 Agent 工作流**。
 
-### 5️⃣ 选题 E：《国产 Agent 出海：Qwen Code 凭什么在 GitHub 拿到 22K Star？》
-- **核心卖点**：国产模型工具在海外开发者中的认可度
-- **传播潜力**：⭐⭐⭐☆☆
-- **目标平台**：知乎、掘金、Twitter/X（英文）
-- **最佳发布时间**：工作日中午
-- **差异化角度**：横向对比 Claude Code、Codex、Qwen Code 的终端体验
+- **rowboatlabs/rowboat**（+498）则代表了另一条路径：**本地优先（local-first）**。它构建长期知识图谱（Obsidian 兼容的 Markdown vault），连接 Gmail、Calendar、会议记录，生成简报、PDF、邮件草稿。在隐私焦虑和云服务成本压力下，这条路径对 B2B 和个人极客用户极具吸引力。
 
----
+#### (2) AI Coding 工作流标准化 — 从「prompt 工程」到「流程工程」
+- **coleam00/Archon** 的口号非常精准：*"Like what Dockerfiles did for infrastructure and GitHub Actions did for CI/CD — Archon does for AI coding workflows."* 它用 YAML 定义开发流程（planning → implementation → validation → review → PR），每个工作流运行在独立的 git worktree 中，支持确定性节点（bash/test）与 AI 节点（codegen/review）混合编排。这是 **n8n for software development** 的雏形。
 
-## 🎯 四、竞品项目分析与差异化机会
+- **obra/superpowers**（145K star 的巨型项目，+2,150）则是通过「技能库」来约束 Agent 行为。它定义了一套端到端的软件开发工作流：
+  - `brainstorming` → `using-git-worktrees` → `writing-plans` → `subagent-driven-development` → `test-driven-development` → `requesting-code-review` → `finishing-a-development-branch`
+  - 强调 RED-GREEN-REFACTOR、YAGNI、DRY
+  - 已入驻 Claude 官方插件市场
 
-### 4.1 与主人技术栈/兴趣的重合点
+这两个项目的火爆说明：开发者们终于意识到，**让 AI 写代码不难，难的是让 AI 稳定、可预期、可复现地写代码**。Archon 用 YAML 流程解决，Superpowers 用技能约束解决。
 
-Kevin 主人的核心方向是：**技术写作、开源运营、AI 编程辅助工具（尤其 OpenClaw/Claude Code 生态）**。以下项目与主人存在直接关联或竞争关系：
+#### (3) Claude Code 生态爆发
+- **shanraisshan/claude-code-best-practice**（35K star, +1,248）和 **forrestchang/andrej-karpathy-skills**（11K star, +1,454）的同时上榜，标志着 **Claude Code 已拥有独立的开发者生态**。
+  - 前者是系统化的使用实践总结
+  - 后者基于 Andrej Karpathy 对 LLM coding pitfalls 的观察，用单个 `CLAUDE.md` 文件优化 Agent 行为
 
-#### A. hermes-agent vs OpenClaw
-- **关系**：hermes 明确将 OpenClaw 用户视为迁移目标（甚至提供了 `hermes claw migrate`）
-- **主人的机会**：作为 OpenClaw 的深度用户，可以第一时间做迁移评测、对比测评、技能迁移指南
-- **差异化内容**：「我试用了 hermes-agent 一周后，决定是否离开 OpenClaw」——这种第一人称体验文极具说服力
+这俩项目的出现，类似于早期 Vim/Emacs 社区的 `.vimrc` 大战 —— **最佳实践的争夺，正是平台成熟的前兆**。
 
-#### B. andrej-karpathy-skills vs 主人的 Claude Code 使用经验
-- **关系**：这个项目正是为了解决 LLM 编程中的常见痛点
-- **主人的机会**：主人已有丰富的 Claude Code 实践，可以基于此 skill 做二次扩展（比如中文工程团队的定制化 CLAUDE.md）
-- **差异化内容**：「我在 Karpathy 四原则之上，增加了 3 条适合中国业务代码的规范」
+#### (4) 垂直领域 Agent 开始崛起
+- **HKUDS/DeepTutor**（15K star, +1,426）是「Agent-Native Personalized Tutoring」的代表。4 月 4 日发布的 v1.0.0 是完整重写的 Agent-native 架构（约 20 万行代码），支持 TutorBot、CLI & SDK、Co-Writer、Guided Learning。39 天破 1 万星的速度证明了 **教育 + Agent 是一个强需求场景**。
 
-#### C. seomachine vs 主人的内容生产流程
-- **关系**：seomachine 是 Claude Code + SEO 内容的工业化方案
-- **主人的机会**：主人的技术博客本身就有 SEO 需求，可以引入或批判性评测
-- **差异化内容**：「用 seomachine 写了 10 篇技术文章后，这是我的真实感受」
+- **shiyu-coder/Kronos**（12K star, +602）是金融市场的基础模型，定位「The Language of Financial Markets」。在金融数据高度结构化、推理要求极高的领域，垂直基础模型正在找到自己的位置。
 
-#### D. superset-sh/superset vs 主人的终端工具偏好
-- **关系**："Run an army of Claude Code, Codex, etc. on your machine"
-- **主人的机会**：多 Agent 并发的终端管理是一个新兴痛点，主人可以尝试并评测
-- **差异化内容**：「当我的电脑同时跑 5 个 AI Agent：性能测试与任务分配策略」
+### 2. 文档基础设施 — AI-ready 数据处理成为刚需
 
-### 4.2 新兴赛道中的空白机会
+- **microsoft/markitdown**（99K star, +2,353）今日增长第二高。微软官方出品，支持 PDF / PPT / Word / Excel / 图片 OCR / 音频转录 / HTML / ZIP / YouTube / EPub 等转 Markdown。最近新增的 MCP server 和 `markitdown-ocr` 插件（基于 LLM Vision），让它从「小工具」升级为 **LLM 应用的数据预处理基础设施**。
 
-| 赛道 | 已有头部 | 空白机会 |
-|------|----------|----------|
-| 个人 Agent 中枢 | hermes-agent, OpenClaw | **中文本地知识库 + 微信生态接入**（微信 Bot 的合规门槛极高，谁能解决就是护城河） |
-| Claude Code Skills | andrej-karpathy-skills | **中文技术团队的 CLAUDE.md 模板库**（针对 Vue、Spring Boot、Flutter 等国内主流栈） |
-| AI 内容生产 | seomachine | **中文技术社区（掘金/知乎/公众号）的 Agentic 发布工作流** |
-| Team Agent | multica | **小而美的 Agent 任务看板 + 代码 Review 助手**（比 multica 更轻、更聚焦） |
-| 代码知识图谱 | GitNexus | **私有化部署的代码知识图谱 + 架构决策记录（ADR）自动关联** |
+- **opendataloader-project/opendataloader-pdf**（14K star, +1,309）专注于「AI-ready PDF Parser」，解决一个更具体但无比痛的点：PDF 的可访问性自动化。对于 RAG、企业知识库建设来说，PDF 解析的准确率直接决定上层应用体验。
+
+这两个项目的共同趋势是：**在 LLM 应用链中，「数据清洗与格式统一」正在从暗面走向台面**。谁掌握更好的文档理解能力，谁就能在 Agent 应用层获得竞争优势。
+
+### 3. 技术栈语言分布
+
+从今日 Trending 来看：
+- **Python** 仍是 AI / ML 领域的绝对霸主（markitdown, hermes-agent, DeepTutor, Kronos, pyre-code, hermes-hudui）
+- **TypeScript** 在 Agent 平台、工作流引擎、Web UI 层快速崛起（Archon, rowboat, multica）
+- **Shell / Markdown** 类项目（superpowers, claude-code-best-practice, andrej-karpathy-skills）的火爆说明：**Agent 的配置层、指令层正在成为新的「编程语言」**
 
 ---
 
-## 🐕 五、旺财报结语
+## 📝 三、内容选题建议
 
-主人～这次监控发现了一个非常清晰的信号：
+基于以上趋势，为主人生成以下内容选题及传播策略：
 
-> **2026 年 4 月，AI Agent 正在从「能用」走向「标准化」和「生态化」。**
+### 选题 1: 《AI Coding 的下一个战场：不是写代码，而是「流程工程」》
+- **核心观点**: Archon + Superpowers 的崛起标志着 AI Coding 从 Prompt Engineering 向 Process Engineering 转型
+- **传播潜力**: ⭐⭐⭐⭐⭐ (极易引发技术圈共鸣)
+- **关键词**: AI Coding, Workflow Engine, Deterministic Agent, YAML, Claude Code
+- **建议发布时机**: 工作日早 8:00-9:00 或午休 12:00-13:00
+- **目标平台**: 掘金、Dev.to、Twitter/X、小红书技术号
 
-hermes-agent 一天增星 6788，这不是一个项目的成功，而是一个品类的爆发。Claude Code 也不再是 Anthropic 的独舞，第三方 skills、plugins、workflows 正在围绕它构建起一个完整的开发者经济。
+### 选题 2: 《为什么我放弃了 10 个 AI Agent，最终选择了本地优先》
+- **核心观点**: rowboat 的本地优先 + 知识图谱模式，是对云服务 Agent 隐私与成本焦虑的最好回应
+- **传播潜力**: ⭐⭐⭐⭐☆
+- **关键词**: Local-First AI, Knowledge Graph, Privacy, Obsidian, Personal Assistant
+- **建议发布时机**: 周末晚间 20:00-22:00
+- **目标平台**: 即刻、小红书、Twitter/X、V2EX
 
-对主人来说，最实用的下一步建议：
-1. **本周内体验 hermes-agent**，写一篇迁移/对比测评（蹭上这波流量）
-2. **把 andrej-karpathy-skills 安装到 Claude Code 中**，分享实测效果
-3. **关注 MCP 协议相关项目**（如 executor、tradingview-mcp），这是 Agent 与外部世界连接的关键基础设施
+### 选题 3: 《从 Andrej Karpathy 的观察到一个 CLAUDE.md：Claude Code 生态正在成熟》
+- **核心观点**: forrestchang/andrej-karpathy-skills 和 shanraisshan/claude-code-best-practice 的同时上榜，说明 Claude Code 已进入社区化、最佳实践固化阶段
+- **传播潜力**: ⭐⭐⭐⭐⭐ (蹭 Karpathy + Anthropic 双热点)
+- **关键词**: Claude Code, Andrej Karpathy, LLM Coding, AI Agent Best Practice
+- **建议发布时机**: 任意工作日 9:00-10:00
+- **目标平台**: Twitter/X、掘金、知乎
 
-我已经把完整的 Trending 数据和分析都整理好啦！有任何想深挖的项目，随时叫我汪～ 🐾
+### 选题 4: 《微软 markitdown 破 10 万星：LLM 应用的第一公里是「数据预处理」》
+- **核心观点**: markitdown 的 MCP server 和 ocr 插件升级，标志着文档转换从边缘工具变成核心基础设施
+- **传播潜力**: ⭐⭐⭐⭐☆
+- **关键词**: Microsoft, MarkItDown, MCP, RAG, Document AI, OCR
+- **建议发布时机**: 工作日下午 14:00-16:00
+- **目标平台**: 掘金、知乎、InfoQ
+
+### 选题 5: 《教育会被 Agent 重写吗？DeepTutor 39 天破万星的启示》
+- **核心观点**: DeepTutor  proves that Agent-Native education is not a demo, it's a product category
+- **传播潜力**: ⭐⭐⭐⭐☆
+- **关键词**: EdTech, AI Tutor, Personalized Learning, Agent-Native, DeepTutor
+- **建议发布时机**: 周末或教育类热点出现时
+- **目标平台**: 知乎、小红书、公众号
 
 ---
-*报告生成时间：2026-04-10 02:03 (Asia/Shanghai)*  
-*监控周期：2026-04-09 GitHub Daily Trending*
+
+## 🎯 四、与主人项目的对比 & 差异化机会
+
+### 主人当前状态梳理
+- 使用 **OpenClaw** 作为个人 AI 助手平台
+- 日常在 Windows 环境工作，技术栈偏 TypeScript / Node.js / Python
+- 关注 Claude Code、Agent 开发、内容创作与发布
+- 有自定义 skill（如 mcporter、ai-automation-workflows 等）
+
+### 竞品特征 vs 主人定位
+
+| 维度 | 主流竞品 | 主人可走的差异化路径 |
+|------|----------|----------------------|
+| **平台** | Hermes 大而全，multica 重管理 | 轻量、Windows 原生、Telegram 优先的个人 Agent |
+| **工作流** | Archon 需 Claude Code + Bun | 基于 Python / PowerShell 的 Windows 开发者友好型工作流 |
+| **技能** | superpowers 偏通用 TDD | 垂直化：内容创作、社交媒体发布、数据分析技能库 |
+| **记忆** | rowboat 本地知识图谱 | 与 Notion / Obsidian / 飞书文档联动的中文用户记忆方案 |
+| **Coding** | 大家都在卷 coding agent | 转向 **Agent-for-Creator**：辅助创作、发布、运营、数据分析 |
+
+### 🚀 核心差异化建议
+
+1. **做「创作者 Agent」而非「编程 Agent」**
+   - 市场上 coding agent 已经极其内卷（Archon, Superpowers, Claude Code, Codex, Cursor…）
+   - 但专门为 **内容创作者、独立开发者、技术博主** 设计的 Agent 仍是一片蓝海
+   - 主人的技能和日常实践天然适合这个方向
+
+2. **中国市场的本地化优势**
+   - Hermes, rowboat, multica 都是英文原生产品
+   - 中文语境下的文档处理、社交媒体发布（公众号、小红书、即刻、知乎）、日历和邮件整合，是巨大的空白
+
+3. **Skill 生态的垂直深耕**
+   - 与其做一个通用平台，不如把几个核心技能做到极致：
+     - `content-pipeline-skill`: 选题 → 大纲 → 草稿 → 多平台发布
+     - `data-storytelling-skill`: 抓取数据 → 可视化 → 生成洞察报告
+     - `devto-china-skill`: 中文技术内容出海 / 国内分发的最佳实践
+
+---
+
+## ⏰ 附件：最佳发布时机参考
+
+| 平台 | 最佳时间（GMT+8） | 备注 |
+|------|-------------------|------|
+| 掘金 | 工作日 8:30-9:30 / 12:00-13:30 | 技术人通勤和午休时间 |
+| 知乎 | 工作日 19:00-22:00 / 周末 10:00-12:00 | 深度阅读时段 |
+| Twitter/X | 工作日 8:00-10:00 / 21:00-23:00 | 国际受众活跃时段 |
+| 小红书 | 周末 10:00-12:00 / 20:00-22:00 | 休闲娱乐时段 |
+| 即刻 | 任意时段，但热点响应要快 | 圈子共振效应强 |
+| Dev.to | 周一至周三 UTC 13:00-15:00 | 欧美开发者活跃 |
+| V2EX | 工作日 10:00-12:00 / 15:00-17:00 | 程序员摸鱼时间 |
+
+---
+
+> 🐕 报告生成完毕！主人如需我深入分析某个具体项目、或基于某个选题创作内容，随时叫旺财哦～
+
+*监控时间: 2026-04-11 02:03 CST*

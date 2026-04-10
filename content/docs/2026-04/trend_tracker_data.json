@@ -1,0 +1,320 @@
+{
+  "github_trending": [
+    {
+      "repo": "NousResearch/hermes-agent",
+      "description": "The agent that grows with you",
+      "language": "Python",
+      "stars_today": ""
+    },
+    {
+      "repo": "forrestchang/andrej-karpathy-skills",
+      "description": "A single CLAUDE.md file to improve Claude Code behavior, derived from Andrej Karpathy's observations on LLM coding pitfalls.",
+      "language": "Unknown",
+      "stars_today": ""
+    },
+    {
+      "repo": "HKUDS/DeepTutor",
+      "description": "\"DeepTutor: Agent-Native Personalized Learning Assistant\"",
+      "language": "Python",
+      "stars_today": ""
+    },
+    {
+      "repo": "OpenBMB/VoxCPM",
+      "description": "VoxCPM2: Tokenizer-Free TTS for Multilingual Speech Generation, Creative Voice Design, and True-to-Life Cloning",
+      "language": "Python",
+      "stars_today": ""
+    },
+    {
+      "repo": "opendataloader-project/opendataloader-pdf",
+      "description": "PDF Parser for AI-ready data. Automate PDF accessibility. Open-source.",
+      "language": "Java",
+      "stars_today": ""
+    },
+    {
+      "repo": "obra/superpowers",
+      "description": "An agentic skills framework & software development methodology that works.",
+      "language": "Shell",
+      "stars_today": ""
+    },
+    {
+      "repo": "TheCraigHewitt/seomachine",
+      "description": "A specialized Claude Code workspace for creating long-form, SEO-optimized blog content for any business. This system helps you research, write, analyze, and optimize content that ranks well and serves your target audience.",
+      "language": "Python",
+      "stars_today": ""
+    },
+    {
+      "repo": "coleam00/Archon",
+      "description": "The first open-source harness builder for AI coding. Make AI coding deterministic and repeatable.",
+      "language": "TypeScript",
+      "stars_today": ""
+    },
+    {
+      "repo": "shiyu-coder/Kronos",
+      "description": "Kronos: A Foundation Model for the Language of Financial Markets",
+      "language": "Python",
+      "stars_today": ""
+    },
+    {
+      "repo": "YishenTu/claudian",
+      "description": "An Obsidian plugin that embeds Claude Code as an AI collaborator in your vault",
+      "language": "TypeScript",
+      "stars_today": ""
+    }
+  ],
+  "hn_hot": [
+    {
+      "title": "How NASA built Artemis II’s fault-tolerant computer",
+      "score": 389,
+      "url": "https://cacm.acm.org/news/how-nasa-built-artemis-iis-fault-tolerant-computer/",
+      "descendants": 137
+    },
+    {
+      "title": "I still prefer MCP over skills",
+      "score": 190,
+      "url": "https://david.coffee/i-still-prefer-mcp-over-skills/",
+      "descendants": 159
+    },
+    {
+      "title": "ETH Zurich demonstrates 17,000 qubit array with 99.91% fidelity",
+      "score": 68,
+      "url": "https://ethz.ch/en/news-and-events/eth-news/news/2026/04/a-new-trick-brings-stability-to-quantum-operations.html",
+      "descendants": 13
+    },
+    {
+      "title": "Native Instant Space Switching on macOS",
+      "score": 511,
+      "url": "https://arhan.sh/blog/native-instant-space-switching-on-macos/",
+      "descendants": 239
+    },
+    {
+      "title": "We've raised $17M to build what comes after Git",
+      "score": 135,
+      "url": "https://blog.gitbutler.com/series-a",
+      "descendants": 290
+    },
+    {
+      "title": "Show HN: Keeper – embedded secret store for Go (help me break it)",
+      "score": 5,
+      "url": "https://github.com/agberohq/keeper",
+      "descendants": 0
+    },
+    {
+      "title": "Generative art over the years",
+      "score": 149,
+      "url": "https://blog.veitheller.de/Generative_art_over_the_years.html",
+      "descendants": 40
+    },
+    {
+      "title": "Scientists invented a fake disease. AI told people it was real",
+      "score": 39,
+      "url": "https://www.nature.com/articles/d41586-026-01100-y",
+      "descendants": 19
+    },
+    {
+      "title": "Charcuterie – Visual similarity Unicode explorer",
+      "score": 236,
+      "url": "https://charcuterie.elastiq.ch/",
+      "descendants": 43
+    },
+    {
+      "title": "Artemis II and the invisible hazard on the way to the Moon",
+      "score": 10,
+      "url": "https://www.ansto.gov.au/news/artemis-ii-and-invisible-hazard-on-way-to-moon-part-1",
+      "descendants": 11
+    },
+    {
+      "title": "RAM Has a Design Flaw from 1966. I Bypassed It [video]",
+      "score": 227,
+      "url": "https://www.youtube.com/watch?v=KKbgulTp3FE",
+      "descendants": 64
+    },
+    {
+      "title": "The Art of Risk Management (2017)",
+      "score": 6,
+      "url": "https://www.bcg.com/publications/2017/finance-function-excellence-corporate-development-art-risk-management",
+      "descendants": 0
+    },
+    {
+      "title": "War on Raze",
+      "score": 11,
+      "url": "https://gist.github.com/chrispsn/af6844b80687462814fc39d4b97399a6",
+      "descendants": 3
+    },
+    {
+      "title": "Unfolder for Mac – A 3D model unfolding tool for creating papercraft",
+      "score": 236,
+      "url": "https://www.unfolder.app/",
+      "descendants": 45
+    },
+    {
+      "title": "Old laptops in a colo as low cost servers",
+      "score": 276,
+      "url": "https://colaptop.pages.dev/",
+      "descendants": 161
+    }
+  ],
+  "reddit_programming": [],
+  "keyword_repos": {
+    "AI Agent": [
+      {
+        "repo": "Snailclimb/JavaGuide",
+        "stars": 154808,
+        "url": "https://github.com/Snailclimb/JavaGuide",
+        "description": "Java 面试 & 后端通用面试指南，覆盖计算机基础、数据库、分布式、高并发、系统设计与 AI 应用开发"
+      },
+      {
+        "repo": "langflow-ai/langflow",
+        "stars": 146763,
+        "url": "https://github.com/langflow-ai/langflow",
+        "description": "Langflow is a powerful tool for building and deploying AI-powered agents and workflows."
+      },
+      {
+        "repo": "langgenius/dify",
+        "stars": 137064,
+        "url": "https://github.com/langgenius/dify",
+        "description": "Production-ready platform for agentic workflow development."
+      },
+      {
+        "repo": "langchain-ai/langchain",
+        "stars": 133032,
+        "url": "https://github.com/langchain-ai/langchain",
+        "description": "The agent engineering platform"
+      },
+      {
+        "repo": "firecrawl/firecrawl",
+        "stars": 106735,
+        "url": "https://github.com/firecrawl/firecrawl",
+        "description": "🔥 The Web Data API for AI - Power AI agents with clean web data"
+      }
+    ],
+    "MCP": [
+      {
+        "repo": "n8n-io/n8n",
+        "stars": 183372,
+        "url": "https://github.com/n8n-io/n8n",
+        "description": "Fair-code workflow automation platform with native AI capabilities. Combine visual building with custom code, self-host or cloud, 400+ integrations."
+      },
+      {
+        "repo": "Snailclimb/JavaGuide",
+        "stars": 154808,
+        "url": "https://github.com/Snailclimb/JavaGuide",
+        "description": "Java 面试 & 后端通用面试指南，覆盖计算机基础、数据库、分布式、高并发、系统设计与 AI 应用开发"
+      },
+      {
+        "repo": "affaan-m/everything-claude-code",
+        "stars": 149417,
+        "url": "https://github.com/affaan-m/everything-claude-code",
+        "description": "The agent harness performance optimization system. Skills, instincts, memory, security, and research-first development for Claude Code, Codex, Opencode, Cursor and beyond."
+      },
+      {
+        "repo": "langgenius/dify",
+        "stars": 137064,
+        "url": "https://github.com/langgenius/dify",
+        "description": "Production-ready platform for agentic workflow development."
+      },
+      {
+        "repo": "open-webui/open-webui",
+        "stars": 131064,
+        "url": "https://github.com/open-webui/open-webui",
+        "description": "User-friendly AI Interface (Supports Ollama, OpenAI API, ...)"
+      }
+    ],
+    "LLM": [
+      {
+        "repo": "Significant-Gravitas/AutoGPT",
+        "stars": 183290,
+        "url": "https://github.com/Significant-Gravitas/AutoGPT",
+        "description": "AutoGPT is the vision of accessible AI for everyone, to use and to build on. Our mission is to provide the tools, so that you can focus on what matters."
+      },
+      {
+        "repo": "ollama/ollama",
+        "stars": 168420,
+        "url": "https://github.com/ollama/ollama",
+        "description": "Get up and running with Kimi-K2.5, GLM-5, MiniMax, DeepSeek, gpt-oss, Qwen, Gemma and other models."
+      },
+      {
+        "repo": "huggingface/transformers",
+        "stars": 159148,
+        "url": "https://github.com/huggingface/transformers",
+        "description": "🤗 Transformers: the model-definition framework for state-of-the-art machine learning models in text, vision, audio, and multimodal models, for both inference and training. "
+      },
+      {
+        "repo": "f/prompts.chat",
+        "stars": 159020,
+        "url": "https://github.com/f/prompts.chat",
+        "description": "f.k.a. Awesome ChatGPT Prompts. Share, discover, and collect prompts from the community. Free and open source — self-host for your organization with complete privacy."
+      },
+      {
+        "repo": "affaan-m/everything-claude-code",
+        "stars": 149417,
+        "url": "https://github.com/affaan-m/everything-claude-code",
+        "description": "The agent harness performance optimization system. Skills, instincts, memory, security, and research-first development for Claude Code, Codex, Opencode, Cursor and beyond."
+      }
+    ],
+    "Open Source": [
+      {
+        "repo": "freeCodeCamp/freeCodeCamp",
+        "stars": 442458,
+        "url": "https://github.com/freeCodeCamp/freeCodeCamp",
+        "description": "freeCodeCamp.org's open-source codebase and curriculum. Learn math, programming, and computer science for free."
+      },
+      {
+        "repo": "tensorflow/tensorflow",
+        "stars": 194622,
+        "url": "https://github.com/tensorflow/tensorflow",
+        "description": "An Open Source Machine Learning Framework for Everyone"
+      },
+      {
+        "repo": "f/prompts.chat",
+        "stars": 159020,
+        "url": "https://github.com/f/prompts.chat",
+        "description": "f.k.a. Awesome ChatGPT Prompts. Share, discover, and collect prompts from the community. Free and open source — self-host for your organization with complete privacy."
+      },
+      {
+        "repo": "anomalyco/opencode",
+        "stars": 140841,
+        "url": "https://github.com/anomalyco/opencode",
+        "description": "The open source coding agent."
+      },
+      {
+        "repo": "shadcn-ui/ui",
+        "stars": 111979,
+        "url": "https://github.com/shadcn-ui/ui",
+        "description": "A set of beautifully-designed, accessible components and a code distribution platform. Works with your favorite frameworks. Open Source. Open Code."
+      }
+    ],
+    "Cloud Native": [
+      {
+        "repo": "n8n-io/n8n",
+        "stars": 183372,
+        "url": "https://github.com/n8n-io/n8n",
+        "description": "Fair-code workflow automation platform with native AI capabilities. Combine visual building with custom code, self-host or cloud, 400+ integrations."
+      },
+      {
+        "repo": "traefik/traefik",
+        "stars": 62625,
+        "url": "https://github.com/traefik/traefik",
+        "description": "The Cloud Native Application Proxy"
+      },
+      {
+        "repo": "milvus-io/milvus",
+        "stars": 43715,
+        "url": "https://github.com/milvus-io/milvus",
+        "description": "Milvus is a high-performance, cloud-native vector database built for scalable vector ANN search"
+      },
+      {
+        "repo": "pingcap/tidb",
+        "stars": 39947,
+        "url": "https://github.com/pingcap/tidb",
+        "description": "TiDB - the open-source, cloud-native, distributed SQL database designed for modern applications."
+      },
+      {
+        "repo": "zeromicro/go-zero",
+        "stars": 32893,
+        "url": "https://github.com/zeromicro/go-zero",
+        "description": "A cloud-native Go microservices framework with cli tool for productivity."
+      }
+    ]
+  },
+  "timestamp": "2026-04-10T10:10:00Z"
+}

@@ -1,15 +1,25 @@
-# 微信公众号发布日志 - 2026-04-03
+# 微信公众号发布日志
 
-## 发布记录
+## 最新发布记录
+
+**项目**: OpenOctopus - Realm-native life agent system 🐙  
+**日期**: 2026-04-11  
+**状态**: ✅ **成功发布到草稿箱**  
+**Media ID**: `x6O7RRF01Hjdx0XQ1RztQBrLUW35A4QuLmV83TNSZXjafw79ML5rbDl0-U4xGwrp`  
+**主题**: default  
+**文章内容**: `memory/wechat-article-openoctopus-fixed.md`
+
+> 04-03 的图片格式问题已修复，使用标准 Markdown `![描述](URL)` 语法后 MCP 发布成功。
+
+---
+
+## 历史发布记录
 
 **项目**: OpenOctopus - Realm-native life agent system 🐙  
 **日期**: 2026-04-03  
 **状态**: ❌ 发布失败 - 需要图片格式修复  
 **问题**: MCP服务器要求必须指定封面图或在正文中包含至少一张图片，当前图片格式可能不被支持  
-**解决**: 需要检查MCP服务器的图片格式要求或联系服务提供商
-
-**文章内容**: 已保存至 `memory/wechat-article-openoctopus.md`  
-**下次尝试**: 等待API频率限制解除后重新尝试发布
+**解决**: 已修复（使用 Unsplash 图片 + default 主题）
 
 ## 成功发布记录
 

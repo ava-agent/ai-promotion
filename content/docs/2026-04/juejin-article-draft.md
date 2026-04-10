@@ -1,245 +1,248 @@
-# 用 React Native 做了一个宠物社交 App，踩了不少坑
+# 写了个"乞丐版"Dapr，三年后发现有些场景还真够用
 
-说实话，我一直觉得宠物社交这个赛道挺有意思的。上个月看到一个 GitHub 项目叫 **PawPal（宠友圈）**，是用 React Native + Expo + Supabase 做的，功能还挺完整——抖音风格的视频流 + Tinder 式的宠物匹配。Star 数不多，就 1 个，但我看了下代码结构，感觉作者是真的用心了。
+> 先声明一下，这篇不是来碰瓷 Dapr 的。Dapr 很厉害，25k+ star，社区活跃，我这小项目真没法比。但有时候吧，资源有限、历史包袱重的情况下，一个"精简版"的方案反而更顺手。这篇文章就是想说说我这三年维护 Capa-Java 的一些真实感受。
 
-我自己之前也试过用 RN 做项目，踩过一堆坑，所以想聊聊这个项目的实现思路，顺便分享一些我在开发过程中遇到的问题。
+## 先说说背景，为啥不直接用 Dapr
 
-## 先说说这个项目做对了什么
+2021 年我在携程中间件团队，公司业务要出海，核心系统得部署到 AWS。
 
-PawPal 的定位很明确：**让宠物主人们能分享自家毛孩子的日常，还能给宠物"相亲"**。整个技术栈选得也挺合理：
+问题是我们内部的中间件生态全是在私有云上建的：RocketMQ、Nacos、自研日志系统……一股脑儿换到 AWS 的理论上可行，但成本太高了。😅
 
-- **React Native + Expo**：快速开发，热更新方便，对独立开发者很友好
-- **Supabase**：开源 Firebase 替代品，免费额度够用，PostgreSQL 也能让人安心
-- **TypeScript**：类型安全，维护起来不会太痛苦
+当时 Dapr 刚出来不久，Multi-Runtime 的概念确实让我眼前一亮。但我们评估了一下，直接上 Dapr 有几个现实问题：
 
-最让我惊喜的是它的视频流功能。作者用了类似抖音的上下滑动交互，这在 RN 里实现起来其实挺麻烦的。
+1. **太重了**： sidecar 模式对资源消耗不小，而且我们有些老系统对延迟很敏感
+2. **学习成本高**：业务团队那么多人，全员学习 Dapr 的 API 和概念，培训成本吓人
+3. **存量代码迁移难**：成千上万的接口如果都要改，这活儿三年内干不完
+4. **内部已有沉淀**：公司其实已经有了一套比较成熟的中间件封装，推倒重来有点浪费
 
-```typescript
-// 视频播放器组件的核心思路
-import { Video, ResizeMode } from 'expo-av';
-import { Dimensions, FlatList } from 'react-native';
+所以我们就想，能不能搞一个**更轻量的方案**——不用 sidecar，直接通过 SDK 抽象，让业务代码写一次，换环境的时候只改配置就行。
 
-const { height } = Dimensions.get('window');
+这就是 Capa-Java 的由来，GitHub 地址：https://github.com/capa-cloud/capa-java
 
-interface VideoItem {
-  id: string;
-  uri: string;
-  caption: string;
-  likes: number;
-}
+说实话，开始做的时候心里也没底。毕竟"重复造轮子"这个帽子谁都不想戴。但后来发现，有些轮子你不自己造，还真不好上车。😂
 
-export default function VideoFeed() {
-  const [activeIndex, setActiveIndex] = useState(0);
-  
-  const renderItem = ({ item, index }: { item: VideoItem; index: number }) => (
-    <View style={{ height, justifyContent: 'center' }}>
-      <Video
-        source={{ uri: item.uri }}
-        style={{ width: '100%', height: '100%' }}
-        resizeMode={ResizeMode.COVER}
-        shouldPlay={index === activeIndex}  // 只播放当前可见的视频
-        isLooping
-        useNativeControls={false}
-      />
-      {/* 点赞、评论、分享的交互按钮 */}
-      <View style={styles.overlay}>
-        <Text style={styles.caption}>{item.caption}</Text>
-        <LikeButton count={item.likes} />
-      </View>
-    </View>
-  );
+## Capa-Java 定位：不是替代 Dapr，是另一种解法
 
-  return (
-    <FlatList
-      data={videos}
-      renderItem={renderItem}
-      pagingEnabled  // 关键：一页一滑
-      vertical
-      onViewableItemsChanged={({ viewableItems }) => {
-        if (viewableItems.length > 0) {
-          setActiveIndex(viewableItems[0].index ?? 0);
-        }
-      }}
-    />
-  );
-}
-```
+如果你把 Dapr 比作一辆功能齐全的 SUV，Capa-Java 更像是一辆改装过的皮卡——没那么多花里胡哨的功能，但拉货搬家特别顺手。
 
-这里的关键是 `pagingEnabled` 和 `onViewableItemsChanged` 的配合。只让当前屏幕显示的视频播放，其他的暂停，不然性能直接爆炸。这个思路说实话挺实用的。
+我们的核心目标是：**Write once, run anywhere**。但这个"anywhere"不是指操作系统，而是指**云环境**——私有云、AWS、阿里云，业务代码不用动。
 
-## Tinder 式宠物匹配是怎么做的
+架构上非常简单，就三层：
 
-另一个亮点是宠物匹配功能。界面看起来简单，但交互细节很多：
-
-```typescript
-import Animated, {
-  useAnimatedGestureHandler,
-  useSharedValue,
-  withSpring,
-  interpolate,
-  Extrapolate,
-} from 'react-native-reanimated';
-import { PanGestureHandler } from 'react-native-gesture-handler';
-
-interface PetProfile {
-  id: string;
-  name: string;
-  breed: string;
-  age: number;
-  photos: string[];
-  bio: string;
-}
-
-export function PetMatcher({ pets }: { pets: PetProfile[] }) {
-  const translateX = useSharedValue(0);
-  const translateY = useSharedValue(0);
-  
-  const gestureHandler = useAnimatedGestureHandler({
-    onActive: (event) => {
-      translateX.value = event.translationX;
-      translateY.value = event.translationY;
-    },
-    onEnd: (event) => {
-      const SWIPE_THRESHOLD = 100;
-      
-      if (Math.abs(event.translationX) > SWIPE_THRESHOLD) {
-        // 滑动距离够大，直接飞出去
-        translateX.value = withSpring(
-          event.translationX > 0 ? 500 : -500,
-          {},
-          () => {
-            // 动画结束后处理匹配逻辑
-            runOnJS(handleSwipe)(event.translationX > 0 ? 'like' : 'pass');
-          }
-        );
-      } else {
-        // 不够阈值，弹回来
-        translateX.value = withSpring(0);
-        translateY.value = withSpring(0);
-      }
-    },
-  });
-
-  const animatedStyle = useAnimatedStyle(() => {
-    const rotate = interpolate(
-      translateX.value,
-      [-200, 0, 200],
-      [-30, 0, 30],
-      Extrapolate.CLAMP
-    );
+```java
+// 1. 业务层：完全无感知
+@Service
+public class OrderService {
+    @Autowired
+    private CapaMessageClient messageClient;
     
-    return {
-      transform: [
-        { translateX: translateX.value },
-        { translateY: translateY.value },
-        { rotate: `${rotate}deg` },
-      ],
-    };
-  });
-
-  return (
-    <PanGestureHandler onGestureEvent={gestureHandler}>
-      <Animated.View style={[styles.card, animatedStyle]}>
-        {/* 宠物卡片内容 */}
-        <Image source={{ uri: pet.photos[0] }} style={styles.photo} />
-        <Text style={styles.name}>{pet.name}, {pet.age}岁</Text>
-        <Text style={styles.breed}>{pet.breed}</Text>
-      </Animated.View>
-    </PanGestureHandler>
-  );
+    public void createOrder(Order order) {
+        messageClient.publish("order-created", order);
+    }
 }
 ```
 
-这里用了 `react-native-reanimated` v2 的 worklet 特性，手势和动画都在 UI 线程执行，不会被 JS 线程卡住。我之前试过用普通的 Animated API 做类似效果，一帧一帧地掉，体验很差。换成 reanimated 之后才流畅起来。
-
-## Supabase 后端设计
-
-后端用的是 Supabase，表结构设计我觉得还挺清晰的：
-
-```sql
--- 用户表
-CREATE TABLE profiles (
-  id UUID REFERENCES auth.users PRIMARY KEY,
-  username TEXT UNIQUE NOT NULL,
-  avatar_url TEXT,
-  created_at TIMESTAMP DEFAULT NOW()
-);
-
--- 宠物表
-CREATE TABLE pets (
-  id UUID DEFAULT gen_random_uuid() PRIMARY KEY,
-  owner_id UUID REFERENCES profiles(id) ON DELETE CASCADE,
-  name TEXT NOT NULL,
-  breed TEXT,
-  age INTEGER,
-  bio TEXT,
-  photos TEXT[],  -- PostgreSQL 数组类型
-  created_at TIMESTAMP DEFAULT NOW()
-);
-
--- 匹配表（互相关注）
-CREATE TABLE matches (
-  id UUID DEFAULT gen_random_uuid() PRIMARY KEY,
-  pet_a UUID REFERENCES pets(id) ON DELETE CASCADE,
-  pet_b UUID REFERENCES pets(id) ON DELETE CASCADE,
-  matched_at TIMESTAMP DEFAULT NOW(),
-  UNIQUE(pet_a, pet_b)
-);
-
--- 视频内容表
-CREATE TABLE posts (
-  id UUID DEFAULT gen_random_uuid() PRIMARY KEY,
-  pet_id UUID REFERENCES pets(id) ON DELETE CASCADE,
-  video_url TEXT NOT NULL,
-  caption TEXT,
-  likes INTEGER DEFAULT 0,
-  created_at TIMESTAMP DEFAULT NOW()
-);
-
--- 行级安全策略（RLS）
-ALTER TABLE pets ENABLE ROW LEVEL SECURITY;
-
-CREATE POLICY "用户可以查看所有宠物"
-  ON pets FOR SELECT
-  USING (true);
-
-CREATE POLICY "用户只能修改自己的宠物"
-  ON pets FOR UPDATE
-  USING (auth.uid() = owner_id);
+```java
+// 2. Capa 抽象层：统一 API
+public interface CapaMessageClient {
+    void publish(String topic, Object payload);
+    void subscribe(String topic, MessageListener<?> listener);
+}
 ```
 
-说实话，Supabase 的 RLS（Row Level Security）策略真的是个神器。不用写后端代码就能控制数据权限，对快速原型开发特别友好。我之前用 Firebase 的时候被安全规则折磨得不行，Supabase 的 SQL 方式反而更直观。
+```java
+// 3. 实现层：根据环境自动加载不同实现
+@Component
+@ConditionalOnProperty(name = "capa.message.provider", havingValue = "rocketmq")
+public class RocketMQCapaMessageClient implements CapaMessageClient {
+    // RocketMQ 的具体实现……
+}
+```
 
-## 但说实话，也有一些问题
+通过 Spring 的 `@ConditionalOnProperty` 和 SPI 机制，启动时会根据配置文件自动注入对应的实现类。
 
-这个项目不是完美的，我 review 代码时发现了一些值得注意的地方：
+配置文件示例：
 
-**1. 视频加载优化**
+```yaml
+capa:
+  environment: aws
+  message:
+    provider: sqs
+  config:
+    provider: appconfig
+  lock:
+    provider: dynamodb
+```
 
-现在的实现是滑动到才加载，但如果用户快速滑动，可能会出现白屏。更好的做法是预加载前后各 1-2 个视频，用 `expo-av` 的 `loadAsync` 提前缓冲。
+改成 `environment: private-cloud`，provider 全换成内部中间件，代码一行不改。
 
-**2. 图片缓存策略**
+哈哈，听着是不是很理想化？但说实话，前两年我们就靠这个思路，把一个核心交易系统从私有云迁到了 AWS，业务代码几乎零改动。😎
 
-宠物照片和视频封面图没有用到专门的缓存库，如果用户网络不好，体验会受影响。建议加上 `react-native-fast-image` 或者 Expo 的 `Image` 组件配合 CDN 优化。
+## 贴一段真实的迁移前后对比
 
-**3. 离线支持**
+先看一下没用 Capa 之前，一个通知服务的代码长啥样：
 
-目前是完全依赖网络的，如果地铁里信号不好，App 就基本没法用了。可以考虑用 Redux Persist 或者 WatermelonDB 做本地数据持久化。
+```java
+// 私有云版本
+@Service
+public class NotificationService {
+    @Autowired
+    private RocketMQTemplate rocketMQTemplate;
+    
+    @Autowired
+    private NacosConfigService nacosConfig;
+    
+    public void sendNotification(String userId, String content) {
+        String topic = nacosConfig.getConfig("notification.topic");
+        rocketMQTemplate.asyncSend(topic, content, new SendCallback() {
+            @Override
+            public void onSuccess(SendResult result) {
+                log.info("发送成功: {}", result.getMsgId());
+            }
+            @Override
+            public void onException(Throwable e) {
+                log.error("发送失败", e);
+            }
+        });
+    }
+}
+```
 
-**4. 性能瓶颈**
+到了 AWS 环境，这条代码基本得重写，换成 SQS 的 API：
 
-视频流用 FlatList 实现，如果列表很长，内存占用会越来越高。可能需要用到 `react-native-video` 的清理策略，或者考虑用 `FlashList` 替代 FlatList。
+```java
+// AWS 版本（痛苦的重复劳动）
+@Service
+public class NotificationServiceAWS {
+    @Autowired
+    private AmazonSQS sqsClient;
+    
+    @Autowired
+    private AWSSimpleSystemsManager ssmClient;
+    
+    public void sendNotification(String userId, String content) {
+        String queueUrl = ssmClient.getParameter(
+            new GetParameterRequest().withName("/prod/notification-queue")
+        ).getParameter().getValue();
+        
+        sqsClient.sendMessage(new SendMessageRequest()
+            .withQueueUrl(queueUrl)
+            .withMessageBody(content));
+    }
+}
+```
 
-## 写在最后
+两个版本除了底层实现不同，业务逻辑一模一样。😓 一旦业务逻辑要改，两边都得改，迟早会出不一致的 bug。
 
-PawPal 这个项目虽然 Star 不多，但作为一个学习资源还挺有价值的。它展示了怎么用现代 RN 技术栈快速搭建一个功能完整的社交 App，代码结构也比较清晰，适合想入坑 React Native 的同学参考。
+用了 Capa 之后，代码变成了这样：
 
-我自己之前也想过做一个宠物社交产品，但一直没动手。看到有人真的把它做出来，挺受启发的。哈哈，说不定哪天我也 fork 一个版本，加点自己的想法进去。
+```java
+@Service
+public class NotificationService {
+    @Autowired
+    private CapaMessageClient messageClient;
+    
+    @CapaConfig(key = "notification.topic", defaultValue = "default-notify")
+    private String topic;
+    
+    public void sendNotification(String userId, String content) {
+        messageClient.publish(topic, new NotificationEvent(userId, content));
+    }
+}
+```
 
-你们有没有做过类似的社交 App？遇到过什么性能问题吗？或者对宠物社交这个赛道有什么看法？欢迎评论区聊聊 👇
+不管是在私有云还是 AWS，这段代码都不变。配置文件决定底层走哪个实现。
 
----
+说实话，这个改动省下来的维护成本，远比那点抽象开销值钱。
 
-**项目地址**：https://github.com/ava-agent/dog-agent
-**技术栈**：React Native + Expo + TypeScript + Supabase
-**推荐指数**：⭐⭐⭐⭐（适合学习和参考）
+## 几个真实踩过的坑
+
+### 坑 1：SPI 扫描把启动时间拖惨了
+
+最早我们用的 Java 原生 SPI（`ServiceLoader`），启动时要扫描整个 classpath。😰 一个中等规模的应用启动时间从 12 秒变成了 40 秒。
+
+业务团队开始疯狂吐槽。后来我们改成了 Spring 的 `SpringFactoriesLoader`，并且让各个实现模块在编译期生成索引文件。启动时间降到了 8 秒左右，才算是 acceptable。
+
+```java
+// 优化后的 SPI 加载方式
+public class CapaSPI {
+    public static <T> T load(Class<T> clazz, String provider) {
+        List<T> factories = SpringFactoriesLoader.loadFactories(clazz, null);
+        return factories.stream()
+            .filter(f -> f.getClass().getSimpleName().toLowerCase().contains(provider))
+            .findFirst()
+            .orElseThrow(() -> new CapaException("找不到 provider: " + provider));
+    }
+}
+```
+
+### 坑 2：不同消息队列的语义差异，真不是换个 API 那么简单
+
+RocketMQ 和 AWS SQS 看着都是消息队列，但细节差异能把人搞疯：
+
+- RocketMQ 支持**顺序消息**，SQS 默认 FIFO 队列才能保证顺序，标准队列不保证
+- RocketMQ 延时消息精确到秒级，SQS 只有固定的 15 个延时等级（最长 15 分钟）
+- 消息属性大小限制：RocketMQ 单个属性最多 16KB，SQS 全部属性加起来最多 256KB
+- 消费确认机制也不同：RocketMQ 是 offset 提交，SQS 是显式删除消息
+
+我们最后的解法挺无奈的——搞了一套"最小公约数"抽象。😅 只支持两边都能实现的能力，比如普通消息、延迟消息（取 SQS 的最大值限制）、广播/集群消费模式等。一些高级特性比如事务消息，在跨云场景下干脆不支持。
+
+这个决策当时有争议，有人说"功能阉割太厉害了"。但从实际落地来看，绝大多数业务场景根本用不到那些高级特性。反而是"能跑通、不出错"比什么都重要。
+
+### 坑 3：本地开发和 CI 测试的折磨
+
+业务同学最大的抱怨不是运行时的问题，而是**本地没法调试**。"我连不上 AWS 的 SQS 啊，你让我怎么跑测试？"
+
+这确实是我们早期设计考虑不周的地方。后来我们搞了一套本地模拟器，用 Testcontainers 在本地启动 LocalStack，模拟 AWS 的服务环境。
+
+```java
+@Test
+@CapaTestEnvironment(provider = "sqs")
+public class NotificationServiceTest {
+    @Autowired
+    private CapaMessageClient messageClient;
+    
+    @Test
+    public void testSendNotification() {
+        messageClient.publish("test-topic", new NotificationEvent("user_001", "hello"));
+        // 验证消息是否送达...
+    }
+}
+```
+
+测试启动时自动拉起 LocalStack 容器，跑完自动销毁。业务团队在本地也能完整跑 CI 了，这个改动获得了无数好评。🎉
+
+## 这个项目的优势，我得客观说说
+
+用了三年，Capa-Java 确实解决了我们的核心问题，但优点和缺点都挺明显的。
+
+**优点：**
+
+1. **足够轻量**：就是一套 Java SDK，没有 sidecar，没有额外的进程开销
+2. **迁移成本低**：老系统接入基本只改配置文件，业务代码几乎不用动
+3. **学习曲线平缓**：API 设计参考了 Spring 的风格，Java 开发者基本秒懂
+4. **内部已验证**：在携程核心系统跑了两年多，稳定性还行
+
+**缺点（实话实说）：**
+
+1. **社区几乎为零**：GitHub 只有 14 个 star，主要靠公司内部几个人维护，外部贡献很少
+2. **文档不全**：最佳实践、故障排查这些文档都比较欠缺
+3. **语言绑定严重**：只有 Java 版本，Go/Python 版本一直没排上优先级
+4. **功能深度不够**：事务消息、死信队列这些高级特性支持得比较粗糙
+
+所以这个项目适合什么场景呢？我觉得：
+
+- ✅ **适合**：有存量 Java 系统、需要平滑上云/混合云、有中间件团队支撑的公司
+- ❌ **不适合**：从零开始的新系统（直接上 Dapr 或云原生框架更好）、对延迟极其敏感的场景、没有专职中间件团队的小团队
+
+## 最后碎碎念几句
+
+开源三年，这个项目从来没有"火"过。14 个 star 说实话有时候看着也挺沮丧的。😅 但我后来想明白了，**开源项目不一定要火，能解决真实问题就够了**。
+
+我们在生产环境里用它迁移了好几个核心系统，省下了大量的人力和时间成本。对于做基础架构的人来说，这种"幕后英雄"的角色其实也挺有成就感的。
+
+如果你也在做多运行时架构、或者正在为上云迁移头疼，欢迎来 GitHub 交流。虽然回复不一定特别及时，但都会认真看。
+
+🔗 GitHub: https://github.com/capa-cloud/capa-java
+
+最后想问问大家：**你们公司在做云迁移的时候，是怎么处理存量系统的中间件依赖问题的？是直接重写一遍，还是做了一层抽象？** 评论区聊聊呗，挺好奇大家都是怎么选的。🤔
