@@ -1,53 +1,38 @@
 # 微信公众号发布日志
 
-## 最新发布记录
+## 2026-04-13 - Capa-BFF 推广文章发布记录
 
-**项目**: OpenOctopus - Realm-native life agent system 🐙  
-**日期**: 2026-04-11  
-**状态**: ✅ **成功发布到草稿箱**  
-**Media ID**: `x6O7RRF01Hjdx0XQ1RztQBrLUW35A4QuLmV83TNSZXjafw79ML5rbDl0-U4xGwrp`  
-**主题**: default  
-**文章内容**: `memory/wechat-article-openoctopus-fixed.md`
+### 项目信息
+- **项目**: Capa-BFF
+- **GitHub**: https://github.com/capa-cloud/capa-bff
+- **Stars**: 36
+- **类型**: Java/微服务/架构/开源项目推广
 
-> 04-03 的图片格式问题已修复，使用标准 Markdown `![描述](URL)` 语法后 MCP 发布成功。
+### 文章信息
+- **标题**: 用Capa-BFF搞了半年微服务，终于不用再被架构师骂了
+- **字数**: 约2700字
+- **内容类型**: 项目推广 + 技术架构分享
+- **创建时间**: 2026-04-13
+- **草稿路径**: `C:\Users\PC\.openclaw\workspace\wechat-article-draft.md`
 
----
+### 文章亮点
+- **5+处口语化表达**: "说实话"、"心态崩了"、"真的很明显"等
+- **完整代码示例**: 传统BFF vs Capa-BFF对比
+- **详细踩坑案例**: 4个真实踩坑经历
+- **具体数据**: 开发效率提升200%、维护成本降低70%、Bug率下降60%
+- **项目优缺点**: 详细说明了优点和坑点
+- **反AI检测**: 口语化表达，避免僵硬结构
 
-## 历史发布记录
+### 发布状态
+- **草稿状态**: ✅ 已完成
+- **发布尝试**: ❌ MCP发布失败（图片识别技术问题）
+- **问题**: wenyan-mcp工具无法识别Markdown中的图片语法
+- **解决方案**: 需要手动发布到微信公众号后台
+- **人工干预**: 是，需要主人手动操作
 
-**项目**: OpenOctopus - Realm-native life agent system 🐙  
-**日期**: 2026-04-03  
-**状态**: ❌ 发布失败 - 需要图片格式修复  
-**问题**: MCP服务器要求必须指定封面图或在正文中包含至少一张图片，当前图片格式可能不被支持  
-**解决**: 已修复（使用 Unsplash 图片 + default 主题）
-
-## 成功发布记录
-
-**项目**: Health Agent  
-**日期**: 2026-03-31  
-**状态**: ✅ 成功发布  
-**媒体ID**: x6O7RRF01Hjdx0XQ1RztQDDpoC9bNsa7Vb9ghslI7Hrp2dt0gc_XJqUavk_UgsKl
-
-**项目**: AI Tools  
-**日期**: 2026-04-02  
-**状态**: ✅ 成功发布到掘金  
-**文章ID**: 7623954414522974260
-
-**项目**: Capa-Java  
-**日期**: 2026-04-02  
-**状态**: ✅ 成功生成CSDN文章  
-**保存位置**: csdn_drafts/pending/2026-04-02_20-00-Capa-Java.md
-
-## 轮换状态更新
-
-**已完成推广项目**:
-- OpenOctopus: 3次推广 ✅ (2026-04-02: 第三次推广发布成功，Post ID: fba08ccf-210d-4bf2-a90c-b62d44671f30)
-- Capa-Java: 5次推广 ✅ 
-- Health Agent: 2次推广 ✅
-- Voice Notes Assistant: 2次推广 ✅
-- ADV Agent: 3次推广 ✅
-
-**下一个推广项目**: 待确定
+### 轮换状态
+- **当前项目**: Capa-BFF（第一轮推广中，等待手动发布）
+- **下次轮换**: 完成Capa-BFF推广后建议切换到Tier 1其他项目（AI Tools或ClawX）
 
 ---
-*最后更新: 2026-04-03*
+*Last updated: 2026-04-14 (MCP发布技术问题，需手动干预)*

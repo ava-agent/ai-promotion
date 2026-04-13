@@ -1,0 +1,135 @@
+{
+  "timestamp": "2026-04-13T00:52:05.563212",
+  "github_trending": [
+    {
+      "repo": "NousResearch/hermes-agent",
+      "description": "The agent that grows with you",
+      "language": "Python",
+      "stars_today": "7,450"
+    },
+    {
+      "repo": "shiyu-coder/Kronos",
+      "description": "Kronos: A Foundation Model for the Language of Financial Markets",
+      "language": "Python",
+      "stars_today": "1,998"
+    },
+    {
+      "repo": "forrestchang/andrej-karpathy-skills",
+      "description": "A single CLAUDE.md file to improve Claude Code behavior, derived from Andrej Karpathy's observations on LLM coding pitfalls.",
+      "language": "Markdown",
+      "stars_today": "N/A"
+    },
+    {
+      "repo": "microsoft/markitdown",
+      "description": "Python tool for converting files and office documents to Markdown.",
+      "language": "Python",
+      "stars_today": "N/A"
+    },
+    {
+      "repo": "multica-ai/multica",
+      "description": "The open-source managed agents platform. Turn coding agents into real teammates — assign tasks, track progress, compound skills.",
+      "language": "TypeScript",
+      "stars_today": "1,626"
+    },
+    {
+      "repo": "coleam00/Archon",
+      "description": "The first open-source harness builder for AI coding. Make AI coding deterministic and repeatable.",
+      "language": "TypeScript",
+      "stars_today": "612"
+    },
+    {
+      "repo": "shanraisshan/claude-code-best-practice",
+      "description": "practice made claude perfect",
+      "language": "Markdown",
+      "stars_today": "N/A"
+    },
+    {
+      "repo": "OpenBMB/VoxCPM",
+      "description": "VoxCPM2: Tokenizer-Free TTS for Multilingual Speech Generation, Creative Voice Design, and True-to-Life Cloning",
+      "language": "Python",
+      "stars_today": "1,276"
+    },
+    {
+      "repo": "thedotmack/claude-mem",
+      "description": "A Claude Code plugin that automatically captures everything Claude does during your coding sessions, compresses it with AI (using Claude's agent-sdk), and injects relevant context back into future sessions.",
+      "language": "TypeScript",
+      "stars_today": "814"
+    },
+    {
+      "repo": "rustfs/rustfs",
+      "description": "🚀2.3x faster than MinIO for 4KB object payloads. RustFS is an open-source, S3-compatible high-performance object storage system",
+      "language": "Rust",
+      "stars_today": "N/A"
+    }
+  ],
+  "hn_hot": [
+    {
+      "title": "Building a SaaS in 2026 Using Only EU Infrastructure",
+      "score": 29,
+      "url": "https://eualternative.eu/guides/building-saas-eu-stack/",
+      "descendants": 2
+    },
+    {
+      "title": "Bring Back Idiomatic Design",
+      "score": 157,
+      "url": "https://essays.johnloeber.com/p/4-bring-back-idiomatic-design",
+      "descendants": 73
+    },
+    {
+      "title": "Show HN: Oberon System 3 runs natively on Raspberry Pi 3 (with ready SD card)",
+      "score": 75,
+      "url": "https://github.com/rochus-keller/OberonSystem3Native/releases",
+      "descendants": 8
+    },
+    {
+      "title": "Seven countries now generate 100% of their electricity from renewable energy",
+      "score": 220,
+      "url": "https://www.the-independent.com/tech/renewable-energy-solar-nepal-bhutan-iceland-b2533699.html",
+      "descendants": 82
+    },
+    {
+      "title": "JVM Options Explorer",
+      "score": 118,
+      "url": "https://chriswhocodes.com/vm-options-explorer.html",
+      "descendants": 55
+    },
+    {
+      "title": "Tell HN: docker pull fails in spain due to football cloudflare block",
+      "score": 265,
+      "url": "",
+      "descendants": 112
+    },
+    {
+      "title": "Eternity in six hours: Intergalactic spreading of intelligent life (2013)",
+      "score": 22,
+      "url": "https://www.researchgate.net/publication/256935390_Eternity_in_six_hours_Intergalactic_spreading_of_intelligent_life_and_sharpening_the_Fermi_paradox",
+      "descendants": 15
+    },
+    {
+      "title": "AI Will Be Met with Violence, and Nothing Good Will Come of It",
+      "score": 271,
+      "url": "https://www.thealgorithmicbridge.com/p/ai-will-be-met-with-violence-and",
+      "descendants": 459
+    },
+    {
+      "title": "Phyphox – Physical Experiments Using a Smartphone",
+      "score": 116,
+      "url": "https://phyphox.org/",
+      "descendants": 23
+    },
+    {
+      "title": "Anthropic downgraded cache TTL on March 6th",
+      "score": 293,
+      "url": "https://github.com/anthropics/claude-code/issues/46829",
+      "descendants": 210
+    }
+  ],
+  "ai_agent_trend": {
+    "total_mentions": 3,
+    "top_projects": [
+      "NousResearch/hermes-agent",
+      "multica-ai/multica",
+      "thedotmack/claude-mem"
+    ]
+  }
+}

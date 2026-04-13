@@ -1,24 +1,24 @@
 # GitHub Issue 自动化队列
 
-**更新时间**: 2026-04-09 18:01
+**更新时间**: 2026-04-13 10:03
 
 ---
 
 ## 待审核评论
 
-### browser-use/browser-use #4538
+### dapr/dapr #9724
 
-**Issue**: browser_click inputSchema uses top-level oneOf — incompatible with Claude API
+**Issue**: MCP Server support for Dapr APIs
 **状态**: 待主人审核
-**URL**: https://github.com/browser-use/browser-use/issues/4538
+**URL**: https://github.com/dapr/dapr/issues/9724
 
 #### 分析结果
 
 | 维度 | 值 |
 |------|-----|
 | 相关性 | high |
-| 相关项目 | 4 个 |
-| 评论数 | 3 |
+| 相关项目 | 8 个 |
+| 评论数 | 5 |
 
 #### 相关项目
 
@@ -26,13 +26,14 @@
 - MCP 3D Gen - 3D 模型生成 MCP 服务器
 - MCP Image Gen - 图像生成 MCP 服务器
 - ContextCore - AI Agent 记忆持久化研究
+- Dapr contributor
 
 #### 评论草稿
 
 ## 自动生成的评论草稿
 
-**Issue**: browser_click inputSchema uses top-level oneOf — incompatible with Claude API
-**Repo**: browser-use/browser-use #4538
+**Issue**: MCP Server support for Dapr APIs
+**Repo**: dapr/dapr #9724
 **信心等级**: high
 
 ---
@@ -68,7 +69,7 @@ Happy to share more details if needed!
 #### 发布命令
 
 ```bash
-gh issue comment 4538 --repo browser-use/browser-use --body "[审核后的内容]"
+gh issue comment 9724 --repo dapr/dapr --body "[审核后的内容]"
 ```
 
 ---

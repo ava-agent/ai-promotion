@@ -1,0 +1,236 @@
+{
+  "healthScore": {
+    "date": "2026-04-13",
+    "timestamp": "2026-04-13T23:00:00Z",
+    "overall": 45,
+    "trend": "down",
+    "previousScore": 60,
+    "change": -15,
+    "rating": "Poor"
+  },
+  "dimensions": {
+    "operationalStability": {
+      "score": 20,
+      "max": 40,
+      "description": "主要平台异常较多，Moltbook、CSDN、Medium等核心平台存在严重问题",
+      "issues": [
+        "Moltbook API速率限制持续影响",
+        "CSDN Chrome CDP端口关闭15天",
+        "Medium Chrome CDP端口关闭15天",
+        "Bluesky账号被下架",
+        "Hacker News网络访问受限"
+      ]
+    },
+    "automationLevel": {
+      "score": 25,
+      "max": 40,
+      "description": "部分自动化功能正常，但关键依赖需要手动干预",
+      "working": [
+        "掘金自动化发布修复完成",
+        "小红书内容生成和发送",
+        "微信公众号自动发布",
+        "X平台中文内容生成"
+      ],
+      "broken": [
+        "CSDN自动化发布中断",
+        "Medium自动化发布中断",
+        "X平台英文内容生成中断9天",
+        "Moltbook自动发布受限"
+      ]
+    },
+    "recoveryCapability": {
+      "score": 15,
+      "max": 40,
+      "description": "自动修复能力有限，主要依赖手动处理",
+      "autoFixed": [
+        "掘金时间匹配问题",
+        "小红书内容补发",
+        "微信公众号发布恢复"
+      ],
+      "manualRequired": [
+        "Chrome CDP端口问题",
+        "网络连接问题",
+        "账号被封问题",
+        "系统配置问题"
+      ]
+    },
+    "dataIntegrity": {
+      "score": 20,
+      "max": 40,
+      "description": "发布中断影响数据完整性和统计分析",
+      "issues": [
+        "CSDN数据样本仅3篇（远低于10-15篇基线）",
+        "Medium数据缺失严重",
+        "Moltbook数据不连续",
+        "X平台英文数据缺失9天"
+      ],
+      "dataLoss": {
+        "estimatedExposure": 5000,
+        "lostPosts": 26,
+        "platformsAffected": ["CSDN", "Medium", "Moltbook", "X_EN"]
+      }
+    },
+    "userExperience": {
+      "score": 15,
+      "max": 40,
+      "description": "发布节奏不规律，用户预期管理困难",
+      "issues": [
+        "发布时间不连续",
+        "平台间进度差异大",
+        "内容质量不稳定",
+        "读者预期混乱"
+      ]
+    }
+  },
+  "platforms": {
+    "moltbook": {
+      "status": "poor",
+      "score": 20,
+      "issues": ["API速率限制影响发布"],
+      "health": "Critical"
+    },
+    "devto": {
+      "status": "good", 
+      "score": 80,
+      "issues": [],
+      "health": "Normal"
+    },
+    "juejin": {
+      "status": "excellent",
+      "score": 95,
+      "issues": [],
+      "health": "Excellent"
+    },
+    "csdn": {
+      "status": "critical",
+      "score": 0,
+      "issues": ["Chrome CDP端口持续关闭", "15天发布中断"],
+      "health": "Critical"
+    },
+    "wechat": {
+      "status": "excellent",
+      "score": 95,
+      "issues": [],
+      "health": "Excellent"
+    },
+    "medium": {
+      "status": "critical",
+      "score": 0,
+      "issues": ["Chrome CDP端口持续关闭", "发布完全中断"],
+      "health": "Critical"
+    },
+    "hackernews": {
+      "status": "poor",
+      "score": 0,
+      "issues": ["网络无法访问", "7天无法执行任务"],
+      "health": "Critical"
+    },
+    "bluesky": {
+      "status": "poor",
+      "score": 10,
+      "issues": ["账号被下架"],
+      "health": "Disabled"
+    },
+    "huggingface": {
+      "status": "unknown",
+      "score": 0,
+      "issues": ["未找到运营日志文件"],
+      "health": "Unknown"
+    },
+    "xiaohongshu": {
+      "status": "excellent",
+      "score": 95,
+      "issues": [],
+      "health": "Excellent"
+    },
+    "x_twitter": {
+      "status": "fair",
+      "score": 50,
+      "issues": ["英文内容中断9天", "中文内容不规律"],
+      "health": "Degraded"
+    }
+  },
+  "alerts": {
+    "critical": [
+      {
+        "id": "CDP-PORT-001",
+        "platform": ["CSDN", "Medium"],
+        "severity": "Critical",
+        "title": "Chrome CDP端口持续关闭",
+        "description": "已持续15天，影响4篇文章发布",
+        "impact": "运营危机",
+        "resolution": "需要主人手动重启Chrome并开启CDP",
+        "urgency": "Immediate"
+      },
+      {
+        "id": "MOLTBOOK-RL-001", 
+        "platform": ["Moltbook"],
+        "severity": "High",
+        "title": "API速率限制",
+        "description": "发布受阻，等待113秒",
+        "impact": "推广功能受限",
+        "resolution": "调整发布间隔策略",
+        "urgency": "High"
+      }
+    ],
+    "warning": [
+      {
+        "id": "X-EN-CONTENT-001",
+        "platform": ["X/Twitter"],
+        "severity": "Medium", 
+        "title": "英文内容生成中断",
+        "description": "连续9天未生成英文内容",
+        "impact": "推广机会损失",
+        "resolution": "更新Cron配置，切换模型",
+        "urgency": "Medium"
+      },
+      {
+        "id": "HN-NETWORK-001",
+        "platform": ["Hacker News"],
+        "severity": "Medium",
+        "title": "网络访问受限", 
+        "description": "7天无法访问HN",
+        "impact": "社区互动受限",
+        "resolution": "检查网络配置",
+        "urgency": "Medium"
+      }
+    ],
+    "info": [
+      {
+        "id": "BLUESKY-ACCOUNT-001",
+        "platform": ["Bluesky"],
+        "severity": "Low",
+        "title": "账号被下架",
+        "description": "需要联系支持或放弃该平台",
+        "impact": "次要推广渠道损失",
+        "resolution": "联系支持或停止使用",
+        "urgency": "Low"
+      }
+    ]
+  },
+  "recommendations": {
+    "immediate": [
+      "立即修复Chrome CDP问题：关闭所有Chrome进程，重启并开启--remote-debugging-port=9222",
+      "批量发布CSDN和Medium积压的4篇文章"
+    ],
+    "shortTerm": [
+      "更新X平台英文内容Cron配置，切换模型避免rate limit",
+      "解决Hacker News网络访问问题",
+      "建立Chrome CDP状态监控机制"
+    ],
+    "longTerm": [
+      "建立多平台容错机制",
+      "优化内容发布策略",
+      "加强系统健康监控",
+      "提升自动化修复能力"
+    ]
+  },
+  "metrics": {
+    "totalTasks": 38,
+    "completedTasks": 12,
+    "successRate": "32%",
+    "affectedPlatforms": 7,
+    "healthyPlatforms": 4,
+    "manualInterventionsRequired": 3
+  }
+}

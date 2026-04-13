@@ -1,0 +1,30 @@
+{
+  "start_time": "2026-04-12T23:41:42.943573",
+  "categories": {
+    "backend": {
+      "browsed": 8,
+      "liked": 0,
+      "collected": 0,
+      "followed": 0
+    },
+    "frontend": {
+      "browsed": 8,
+      "liked": 0,
+      "collected": 0,
+      "followed": 0
+    },
+    "ai": {
+      "browsed": 8,
+      "liked": 0,
+      "collected": 0,
+      "followed": 0
+    }
+  },
+  "total_liked": 0,
+  "total_collected": 0,
+  "total_followed": 0,
+  "articles_liked": [],
+  "articles_collected": [],
+  "authors_followed": [],
+  "valuable_accounts": []
+}
