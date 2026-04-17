@@ -1,0 +1,78 @@
+{
+  "test_completed_at": "2026-04-17T01:31:46.738069",
+  "test_scenarios": [
+    50,
+    100,
+    200
+  ],
+  "results": [
+    {
+      "notification_count": 50,
+      "original": {
+        "method": "original",
+        "total_notifications": 50,
+        "execution_time": 136.92308068275452,
+        "avg_time_per_notification": 2.7384616136550903,
+        "throughput": 0.36516852929892857,
+        "concurrent_requests": 1
+      },
+      "optimized": {
+        "method": "optimized",
+        "total_notifications": 50,
+        "execution_time": 14.506759881973267,
+        "avg_time_per_notification": 0.2901351976394653,
+        "throughput": 3.446669029252506,
+        "concurrent_requests": 5,
+        "batches_processed": 10
+      },
+      "improvement_factor": 9.438570831581842
+    },
+    {
+      "notification_count": 100,
+      "original": {
+        "method": "original",
+        "total_notifications": 100,
+        "execution_time": 274.7767798900604,
+        "avg_time_per_notification": 2.7477677989006044,
+        "throughput": 0.3639317705084487,
+        "concurrent_requests": 1
+      },
+      "optimized": {
+        "method": "optimized",
+        "total_notifications": 100,
+        "execution_time": 29.516451358795166,
+        "avg_time_per_notification": 0.29516451358795165,
+        "throughput": 3.3879411445645378,
+        "concurrent_requests": 5,
+        "batches_processed": 20
+      },
+      "improvement_factor": 9.309275581604894
+    },
+    {
+      "notification_count": 200,
+      "original": {
+        "method": "original",
+        "total_notifications": 200,
+        "execution_time": 550.5326874256134,
+        "avg_time_per_notification": 2.752663437128067,
+        "throughput": 0.36328451437685705,
+        "concurrent_requests": 1
+      },
+      "optimized": {
+        "method": "optimized",
+        "total_notifications": 200,
+        "execution_time": 59.5298388004303,
+        "avg_time_per_notification": 0.2976491940021515,
+        "throughput": 3.3596596938635477,
+        "concurrent_requests": 5,
+        "batches_processed": 40
+      },
+      "improvement_factor": 9.248012400491064
+    }
+  ],
+  "summary": {
+    "avg_improvement": 9.3319529378926,
+    "best_improvement": 9.438570831581842,
+    "worst_improvement": 9.248012400491064
+  }
+}

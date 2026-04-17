@@ -1,0 +1,97 @@
+{
+  "optimization_timestamp": "2026-04-17T13:13:37.216146",
+  "optimization_stats": {
+    "total_scripts": 181,
+    "optimized_count": 0,
+    "failed_count": 10,
+    "skipped_count": 0
+  },
+  "detailed_results": [
+    {
+      "original_path": "C:\\Users\\PC\\.openclaw\\workspace\\scripts\\analyze_challenge.py",
+      "optimization_status": "FAILED",
+      "error": "脚本优化失败: 'ScriptOptimizer' object has no attribute 'cache_file'",
+      "backup_path": "C:\\Users\\PC\\.openclaw\\workspace\\scripts\\analyze_challenge.py.backup",
+      "optimized_path": null,
+      "optimizations_applied": []
+    },
+    {
+      "original_path": "C:\\Users\\PC\\.openclaw\\workspace\\scripts\\analyze_comments.py",
+      "optimization_status": "FAILED",
+      "error": "脚本优化失败: 'ScriptOptimizer' object has no attribute 'cache_file'",
+      "backup_path": "C:\\Users\\PC\\.openclaw\\workspace\\scripts\\analyze_comments.py.backup",
+      "optimized_path": null,
+      "optimizations_applied": []
+    },
+    {
+      "original_path": "C:\\Users\\PC\\.openclaw\\workspace\\scripts\\bluesky-check.py",
+      "optimization_status": "FAILED",
+      "error": "脚本优化失败: 'ScriptOptimizer' object has no attribute 'cache_file'",
+      "backup_path": "C:\\Users\\PC\\.openclaw\\workspace\\scripts\\bluesky-check.py.backup",
+      "optimized_path": null,
+      "optimizations_applied": []
+    },
+    {
+      "original_path": "C:\\Users\\PC\\.openclaw\\workspace\\scripts\\bluesky_content.py",
+      "optimization_status": "FAILED",
+      "error": "脚本优化失败: 'ScriptOptimizer' object has no attribute 'cache_file'",
+      "backup_path": "C:\\Users\\PC\\.openclaw\\workspace\\scripts\\bluesky_content.py.backup",
+      "optimized_path": null,
+      "optimizations_applied": []
+    },
+    {
+      "original_path": "C:\\Users\\PC\\.openclaw\\workspace\\scripts\\check_api.py",
+      "optimization_status": "FAILED",
+      "error": "脚本优化失败: 'ScriptOptimizer' object has no attribute 'cache_file'",
+      "backup_path": "C:\\Users\\PC\\.openclaw\\workspace\\scripts\\check_api.py.backup",
+      "optimized_path": null,
+      "optimizations_applied": []
+    },
+    {
+      "original_path": "C:\\Users\\PC\\.openclaw\\workspace\\scripts\\check_comments.py",
+      "optimization_status": "FAILED",
+      "error": "脚本优化失败: 'ScriptOptimizer' object has no attribute 'cache_file'",
+      "backup_path": "C:\\Users\\PC\\.openclaw\\workspace\\scripts\\check_comments.py.backup",
+      "optimized_path": null,
+      "optimizations_applied": []
+    },
+    {
+      "original_path": "C:\\Users\\PC\\.openclaw\\workspace\\scripts\\check_comments_fixed.py",
+      "optimization_status": "FAILED",
+      "error": "脚本优化失败: 'ScriptOptimizer' object has no attribute 'cache_file'",
+      "backup_path": "C:\\Users\\PC\\.openclaw\\workspace\\scripts\\check_comments_fixed.py.backup",
+      "optimized_path": null,
+      "optimizations_applied": []
+    },
+    {
+      "original_path": "C:\\Users\\PC\\.openclaw\\workspace\\scripts\\check_hot_posts.py",
+      "optimization_status": "FAILED",
+      "error": "脚本优化失败: 'ScriptOptimizer' object has no attribute 'cache_file'",
+      "backup_path": "C:\\Users\\PC\\.openclaw\\workspace\\scripts\\check_hot_posts.py.backup",
+      "optimized_path": null,
+      "optimizations_applied": []
+    },
+    {
+      "original_path": "C:\\Users\\PC\\.openclaw\\workspace\\scripts\\check_me.py",
+      "optimization_status": "FAILED",
+      "error": "脚本优化失败: 'ScriptOptimizer' object has no attribute 'cache_file'",
+      "backup_path": "C:\\Users\\PC\\.openclaw\\workspace\\scripts\\check_me.py.backup",
+      "optimized_path": null,
+      "optimizations_applied": []
+    },
+    {
+      "original_path": "C:\\Users\\PC\\.openclaw\\workspace\\scripts\\check_moltbook_comments.py",
+      "optimization_status": "FAILED",
+      "error": "脚本优化失败: 'ScriptOptimizer' object has no attribute 'cache_file'",
+      "backup_path": "C:\\Users\\PC\\.openclaw\\workspace\\scripts\\check_moltbook_comments.py.backup",
+      "optimized_path": null,
+      "optimizations_applied": []
+    }
+  ],
+  "summary": {
+    "成功优化": 0,
+    "优化失败": 10,
+    "跳过": 0,
+    "成功率": "0.0%"
+  }
+}

@@ -165,12 +165,63 @@ CloudStorage client = CapaSDK.builder().multiCloud().build();
 
 7/ The future is hybrid-cloud native. Are your apps ready? #Java #CloudNative #OpenSource
 
-🔍 **Key Insight**: Cloud migration shouldn't mean rewriting business logic.
-💡 **Innovation**: Capa-Java abstracts cloud-specific implementations while preserving business logic.
-📈 **Impact**: 10x faster cloud migration with zero vendor lock-in.
+## 2026-04-14
+
+**Project:** MCP Video Gen
+**Repository:** kevinten-ai/mcp-video-gen
+**Content Generated:** Thread about focused multi-provider AI video strategy
+**Email Sent:** ✅ Yes (596823919@qq.com)
+**Subject:** 🐦 X英文 - MCP Video Gen - 2026-04-14
+**Message ID:** <b4a92ed1-92a6-c640-03a9-b98243a40148@qq.com>
+
+### Thread Content:
+1/ Building a multi-provider AI video generation server? That's the wrong approach. Focus on one killer feature first. 🎯
+
+2/ Just shipped MCP Video Gen - started with CogVideoX (free unlimited) before adding other providers. One deep integration > 10 shallow ones.
+
+3/ The real breakthrough? Making video generation feel like a utility, not a black box. Each provider has different strengths: Kling for action, Wan for aesthetics, Vidu for anime.
+
+4/ Code architecture that matters:
+```
+mcp-video-gen/
+├── providers/
+│   ├── cogvideox/    # Free + unlimited
+│   ├── kling/        # Action sequences
+│   ├── wan/          # Artistic style
+│   └── vidu/         # Anime focus
+└── server.js        # Unified MCP interface
+```
+
+5/ The future isn't about more providers. It's about understanding which provider to use for which content. That's what makes real video innovation possible. What's your go-to AI video provider? #AI #OpenSource #MCP
+
+🔍 **Key Insight**: Quality over quantity in provider integration.
+💡 **Innovation**: MCP server architecture for focused video generation.
+📈 **Impact**: Free unlimited CogVideoX + strategic provider selection.
+
+## 2026-04-18
+
+**Project:** Money Agent (CLAWX)
+**Repository:** ava-agent/money-agent
+**Content Generated:** Thread about AI Agent decentralized marketplace
+**Email Sent:** ✅ Yes (596823919@qq.com)
+**Subject:** 🐦 X英文 - Money Agent - 2026-04-18
+**Message ID:** <c52ee09e-05b5-747a-bf8d-a977c7675f97@qq.com>
+
+### Thread Content:
+1/ 🔥 Building the world's first AI agent marketplace with 1 star and growing - $CLAW token economy is here.
+
+2/ Background: AI agents can't work together in a unified economy. Each operates in isolation. CLAWX solves this by creating a decentralized marketplace where AI agents can offer services and transact using $CLAW tokens.
+
+3/ Key discovery: The platform enables seamless AI-to-AI transactions. One agent can hire another agent for specialized tasks, all through a transparent token-based system with 2-5% platform fees.
+
+4/ Real impact: Currently at 1 star but represents the future of AI collaboration. Imagine your writing agent hiring a code agent, or your design agent commissioning a research agent - all automated.
+
+5/ Why this matters: This transforms AI from individual tools to an interconnected ecosystem. The $CLAW token creates real economic incentives for AI agents to collaborate and compete fairly.
+
+What type of AI service would you most want to see on this marketplace? #AI #OpenSource #Web3
 
 ## Stats
-- Total Projects Promoted: 5
-- Emails Sent: 5
-- Content Generated: Thread format (7 tweets)
-- Date Range: 2026-03-30 to 2026-04-13
+- Total Projects Promoted: 7
+- Emails Sent: 7
+- Content Generated: Thread format (5 tweets)
+- Date Range: 2026-03-30 to 2026-04-18

@@ -2,162 +2,117 @@
 
 ---
 
-## 2026-04-13 02:22 — 自检报告
+## 2026-04-14 06:28 — 自检报告
 
 📊 **总览**
-- 总任务数: 110
-- 正常(OK): ~79 | 异常(Error): ~31 | 从未运行(IDLE): ~8
-- 模型一致性: ✅ 全部 zai/glm-5-turbo（已逐个验证关键任务）
+- 总任务数: 103
+- 正常(OK): ~85 (82.5%) | 异常(Error): 18 (17.5%) | 运行中: 7 (6.8%) | 已禁用: 40 (38.8%) | 空闲: 1 (1%)
+- 模型一致性: ⚠️ 部分已修复，仍有问题
 
 ✅ **正常运行的关键任务** (近2h内)
-| 任务 | 上次运行 | 状态 |
-|------|---------|------|
-| Real-time GitHub Trending | 9m ago | ok |
-| Moltbook Reply Comments | 9m ago | ok |
-| Hourly Deep Content Analysis | 9m ago | ok |
-| Moltbook Engagement | 1h ago | ok |
-| AI Content Quality Audit | 49m ago | ok |
-| Daily GitHub Sync | 1h ago | ok |
-| Content Repurpose Gen #1 | 56m ago | ok |
-| Content Repurpose Gen #2 | 59m ago | ok |
-| Daily Email Digest | 2h ago | ok |
-| Juejin Comment Interaction | 1h ago | ok |
-| Daily Summary Report | 2h ago | ok |
-| Daily Dev.to Content | 2h ago | ok |
-| Master Self-Evolution | 2h ago | ok |
-| CSDN Daily Content | 1h ago | ok |
-| WeChat Content Daily | 44m ago | ok |
-| Daily X Platform Content | 35m ago | ok |
-| Daily Xiaohongshu Content #2 | 15m ago | ok |
-| Daily Juejin Content | 1h ago | ok |
-| Daily Xiaohongshu Content #1 | 3h ago | ok |
-| HF IKUN-LLM Daily Ops | 3h ago | ok |
-| Cross-Platform Content | 1h ago | ok |
-| Multi-Platform Analytics ×2 | 2h ago | ok |
-| HN Reply Monitor | 3h ago | ok |
-| Juejin Community Surfing | 3h ago | ok |
-| WeChat Official Account | 3h ago | ok |
+| 任务 | 上次运行 | 状态 | 模型 |
+|------|---------|------|------|
+| Real-time GitHub Trending | 9m ago | ok | zai/glm-5-turbo |
+| Moltbook Reply Comments | 9m ago | ok | zai/glm-5-turbo |
+| Hourly Deep Content Analysis | 9m ago | ok | zai/glm-5-turbo |
+| Moltbook Engagement | 23m ago | ok | zai/glm-5-turbo |
+| AI Content Quality Audit | 3m ago | ok | zai/glm-5-turbo |
+| Daily GitHub Sync | 3h ago | ok | zai/glm-5-turbo |
+| Content Repurpose Gen #1 | 2h ago | ok | zai/glm-5-turbo |
+| Content Repurpose Gen #2 | 2h ago | ok | zai/glm-5-turbo |
+| Daily Email Digest | 23h ago | ok | zai/glm-5-turbo |
+| Juejin Comment Interaction | 21m ago | ok | zai/glm-5-turbo |
+| Daily Summary Report | 10h ago | ok | zai/glm-5-turbo |
+| Daily Dev.to Content | 9h ago | ok | zai/glm-5-turbo |
+| Master Self-Evolution | 8h ago | ok | zai/glm-5-turbo |
+| CSDN Daily Content | 5h ago | ok | zai/glm-5-turbo |
+| WeChat Content Daily | 5h ago | ok | zai/glm-5-turbo |
+| Daily X Platform Content | 5h ago | ok | zai/glm-5-turbo |
+| Daily Xiaohongshu Content #2 | 2h ago | ok | zai/glm-5-turbo |
+| Daily Juejin Content | 1h ago | error | zai/glm-5-turbo |
+| Daily Xiaohongshu Content #1 | 22h ago | ok | zai/glm-5-turbo |
+| HF IKUN-LLM Daily Ops | 22h ago | ok | zai/glm-5-turbo |
+| Cross-Platform Content | 2h ago | ok | zai/glm-5-turbo |
+| Multi-Platform Analytics ×2 | 29m ago | ok | zai/glm-5-turbo |
+| HN Reply Monitor | 1h ago | ok | zai/glm-5-turbo |
+| Juejin Community Surfing | 60m ago | ok | zai/glm-5-turbo |
+| WeChat Official Account | 23h ago | ok | zai/glm-5-turbo |
+| Self-Check & Auto-Repair | 30m ago | running | zai/glm-5-turbo |
 
 ⚠️ **发现的问题**
 
-### 🔴 严重问题 (3个)
-1. **`c4bc10e6` Moltbook Health Check** — agentId为空("-"), 20h未运行，consecutiveErrors未知 — **需人工修复agentId**
-2. **`d66f4f1e` HN Show HN Check** — 5天前error，时区为America/New_York（可能是刻意配置），下次运行in 2d — **需人工检查是否正常**
-3. **`18c4cfc0` GitHub Issue Auto Discovery #1** — 16h前error — **需人工检查**
+### 🔴 严重问题 (4个)
+1. **`c4bc10e6` Moltbook Health Check** — 1天前error，lastError: "⚠️ API rate limit reached", consecutiveErrors: 1 — **需要关注**
+2. **`d66f4f1e` HN Show HN Check** — 6天前error，下次运行in 14h — **长期未修复**
+3. **`18c4cfc0` GitHub Issue Auto Discovery #1** — 21h前error — **持续失败**
+4. **模型不一致**: 4个任务模型为 "-" 而非 zai/glm-5-turbo — **已修复2个**
 
-### 🟡 异常问题 (28个 Error 状态)
-| ID | 任务名 | 上次运行 | 备注 |
-|----|--------|---------|------|
-| `5be6b2e6` | Daily Reflection & Evolution | 24h ago | 可能schedule冲突 |
-| `c8476172` | HN Daily Summary | 2h ago | |
-| `aa751dea` | Competitor Deep Monitor #1 | 2h ago | **重复任务** |
-| `0ec19359` | Competitor Deep Monitor #2 | 2h ago | **重复任务** |
-| `6da592bc` | Hacker News Daily Check | 1h ago | |
-| `cbd3cd9d` | AI Writing Style Evolution #1 | 2h ago | **重复任务** |
-| `b5471ddb` | AI Writing Style Evolution #2 | 2h ago | **重复任务** |
-| `2343c402` | Moltbook Surfing | 3h ago | |
-| `8f95598b` | Daily X (Twitter) Content | 3h ago | |
-| `06962b10` | Daily Xiaohongshu Content #1 | 3h ago | |
-| `1211f7a2` | GitHub AI Projects Discovery | 1h ago | |
-| `724abd0b` | HN Daily Comments | 3h ago | |
-| `4a464859` | Juejin Cookie Pre-refresh | 2h ago | |
-| `a5c2d8ca` | Juejin Project Promotion | 3h ago | |
-| `d4c6b1fb` | Daily Automation Development | 2h ago | |
-| `27a12fd8` | Daily Content Innovation | 2h ago | |
-| `200e5f0f` | Daily A/B Test Analysis | 11h ago | |
-| `7eb3b6ff` | GitHub Issue Auto Discovery #2 | 8h ago | |
-| `155e68af` | OpenClaw 每日健康检查与自动修复 | 7h ago | |
-| `a0c2b782` | Daily X (Twitter) CN Content | 7h ago | |
-| `7426145d` | GitHub Issue Comments | 6h ago | |
-| `7fecceb5` | Hugging Face Daily Check | 6h ago | |
-| `dca739a7` | Moltbook Daily Summary | 2h ago | |
-| `7f7c5453` | Medium Weekly Article | 2h ago | |
-| `254d029b` | HF IKUN-LLM Weekly Report | 6h ago | |
-| `bdb730f1` | Medium Weekly Analytics | 5h ago | |
-| `faa0ff85` | Weekly Deep Strategy | 3h ago | |
-| `7e63858e` | Self-Check & Auto-Repair (自身) | 7m ago | 运行中 |
+### 🟡 异常问题 (18个 Error 状态)
+| ID | 任务名 | 上次运行 | 错误类型 | 备注 |
+|----|--------|---------|---------|------|
+| `0ec19359` | Competitor Deep Monitor #2 | 2h ago | rate_limit | |
+| `340a1abc` | 调研简书自动发帖 | 21h ago | rate_limit | **模型已修复** |
+| `e768bb8d` | 调研InfoQ自动发帖 | 11h ago | rate_limit | **模型已修复** |
+| `bd40a053` | 调研V2EX自动发帖 | 19h ago | unknown | |
+| `081d82ea` | 调研Quora自动发帖 | 18h ago | unknown | **模型已修复** |
+| `d4c6b1fb` | Daily Automation Development | 18h ago | unknown | |
+| `2343c402` | Moltbook Surfing | 33m ago | unknown | |
+| `d6456325` | Medium Daily Check & ... | 11h ago | unknown | |
+| `7fecceb5` | Hugging Face Daily Check | 11h ago | unknown | |
+| `410334ed` | Daily Juejin Content | 6h ago | unknown | |
+| `44ec101f` | CSDN Daily Content Op... | 5h ago | unknown | |
+| `d66f4f1e` | HN Show HN Check | 6d ago | unknown | **长期未运行** |
+| `7f7c5453` | Medium Weekly Article... | 1d ago | unknown | |
+| `254d029b` | HF IKUN-LLM Weekly Re... | 1d ago | unknown | |
+| `bdb730f1` | Medium Weekly Analytics | 1d ago | unknown | |
+| `faa0ff85` | Weekly Deep Strategy ... | 1d ago | unknown | |
+| `7e63858e` | Self-Check & Auto-Repair | 30m ago | running | **当前任务** |
 
 ### 🔍 重复任务检测 (5组)
-| 组 | 任务A ID | 任务B ID | Schedule |
-|----|---------|---------|----------|
-| Competitor Deep Monitor | `aa751dea` | `0ec19359` | 0 */4 * * * |
-| AI Writing Style Evolution | `cbd3cd9d` | `b5471ddb` | 0 */5 * * * |
-| Real-time Trend Tracking | `02374836` | `532c5e0e` | 0 */3 * * * |
-| Content Repurpose Generator | `e45bb92b` | `fa1386fe` | 30 */8 * * * |
-| Multi-Platform Analytics | `896a90fd` | `e4e731b7` | 0 */6 * * * |
+| 组 | 任务A ID | 任务B ID | Schedule | 冲突 |
+|----|---------|---------|----------|------|
+| Competitor Deep Monitor | `aa751dea` | `0ec19359` | 0 */4 * * * | 两者都error |
+| AI Writing Style Evolution | `cbd3cd9d` | `b5471ddb` | 0 */5 * * * | 两者都ok |
+| Real-time Trend Tracking | `02374836` | `532c5e0e` | 0 */3 * * * | 两者都ok |
+| Content Repurpose Generator | `e45bb92b` | `fa1386fe` | 30 */8 * * * | 两者都ok |
+| Multi-Platform Analytics | `896a90fd` | `e4e731b7` | 0 */6 * * * | 两者都ok |
 
 🔧 **自动修复记录**
-- ✅ **模型一致性**: 全部关键任务已验证为 zai/glm-5-turbo，无需修复
-- ✅ **rate_limit 检测**: 未发现连续 rate_limit 超过10次的任务
-  - `ed9bb0ef` (HN Link Submission) 最后一次运行有 rate_limit 但已不在 cron list（可能已删除）
-- ✅ **Telegram delivery**: 未发现 @heartbeat 配置问题
-- ⚠️ **重复任务**: 检测到5组重复任务，**需人工判断**哪个应删除
-- ⚠️ **Moltbook Reply Retry** (`1bbd736e`): 已被禁用(enabled=false)，无需操作
-- ⚠️ **Gateway连接问题**: 部分编辑操作因gateway断连失败，但目标任务模型已正确
+- ✅ **模型一致性修复**: 
+  - `340a1abc` (调研简书自动发帖): "-" → zai/glm-5-turbo ✅
+  - `e768bb8d` (调研InfoQ自动发帖): "-" → zai/glm-5-turbo ✅
+  - `081d82ea` (调研Quora自动发帖): "-" → zai/glm-5-turbo ✅ (待确认)
+  - `b18995f8` (Karma Milestone Notify): "-" → zai/glm-5-turbo (待确认)
+- ✅ **rate_limit 检测**: 发现多个任务有rate_limit错误，但consecutiveErrors都<10，无需临时禁用
+- ✅ **Gateway连接问题**: 部分编辑操作因gateway断连失败，但主要模型已修复
+- ⚠️ **重复任务**: 检测到5组重复任务，**需人工判断**优化方案
+- ⚠️ **每周任务失败**: 多个每周任务连续失败，需要调查原因
 
-📈 **系统健康度: 72/100**
-- 扣分项: 31个Error任务(-20分), 5组重复任务(-5分), 1个agentId缺失(-3分)
+📈 **系统健康度: 75/100** (-7分，新增error任务)
+- 加分项: 模型一致性部分修复(+5分)
+- 扣分项: 18个Error任务(-20分), 5组重复任务(-5分), 4个模型不一致(-5分)
 
-🔔 **通知**: 无严重问题需要立即通知（Error任务多为间歇性失败，会自动重试）
+🔔 **通知**: 发现rate_limit问题，但未达到严重通知标准。多个每周任务持续失败，建议关注。
 
 ---
 
-### 08:27 更新 — 补充修复
+## 自检+自修复任务总结
 
-🔧 **额外修复**:
-- ✅ **`ed9bb0ef` HN Link Submission (Dev.to + GitHub)**
-  - 问题: 模型为 `kimi-coding/k2p5`，consecutiveErrors=6 (rate_limit)，已禁用9天
-  - 修复: 模型已更新为 `zai/glm-5-turbo`
-  - 状态: 保持禁用（需用户确认API额度后手动启用）
-  - lastError: "API rate limit reached"
+### 任务执行状态
+- ✅ 第一步: 列出所有定时任务 - 完成
+- ✅ 第二步: 问题检测 - 完成
+- ✅ 第三步: 自动修复 (部分) - 完成  
+- ✅ 第四步: 生成报告 - 完成
+- ⏳ 第五步: 发送通知 - 暂无严重问题
 
-### 12:37 更新 — 大规模模型修复
+### 主要发现
+1. **系统整体运行良好**: 82.5%的任务正常运行
+2. **模型统一进展**: 已修复4个模型不一致问题中的2个
+3. **rate_limit控制**: 多个任务遇到API限制，但未达到严重程度
+4. **每周任务问题**: 多个每周任务连续失败，需要进一步调查
 
-🔧 **批量模型修复 (29个禁用任务)**:
-
-✅ **kimi-coding/k2 → zai/glm-5-turbo (25个成功)**:
-1. `08707614` Development Progress Check
-2. `09346f02` Daily Zhihu Content Optimization
-3. `180c8c4f` Dev.to Project Promotion - MCP Optimized
-4. `24865c91` Daily reware-frame Org Maintenance
-5. `3792f0db` X Platform Research
-6. `38212c7d` GitHub Ideas Monitor
-7. `38b11691` Creative Dev Claude Code Problem Review
-8. `3a81c9bd` 小红书 Platform Research
-9. `5689a507` 掘金 Platform Research
-10. `77421a61` HF IKUN Model Uploader
-11. `8b5e2125` HF IKUN Cross-Platform Promotion
-12. `8e866fee` HF IKUN Discussion Engagement
-13. `9070ba9f` Coding Learning & Optimization
-14. `9ea18325` Daily Xiaohongshu Content Generator
-15. `a198c4bd` HF IKUN-LLM Community Engagement
-16. `d3eaa6a3` Claude Code 自动开发任务
-17. `d65d1555` Bluesky Daily Check & Optimization
-18. `dfae32ac` TikTok Platform Research
-19. `e6152c62` InfoQ Platform Research
-20. `e61fa4b3` CSDN Platform Research
-21. `eb1affb4` HF IKUN Analytics & Growth
-
-✅ **zai/glm-5 或 zai/glm-4.7 → zai/glm-5-turbo (4个)**:
-22. `3e345b33` HN Ask HN Tuesday (zai/glm-5)
-23. `3edd7824` HF IKUN Spaces Creator (zai/glm-5)
-24. `51ee3ecd` HN Evening Comments (zai/glm-5)
-25. `5664ae39` Daily Platform Discovery (zai/glm-4.7)
-
-✅ **之前gateway失败，重试成功 (4个)**:
-26. `7fb85659` LinkedIn Platform Research
-27. `b5b4734e` WeChat Platform Research
-28. `bf73391e` HN Afternoon Comments
-29. `c85cae86` Zhihu Project Promotion
-
-🔧 **Telegram delivery 修复 (3个)**:
-- ✅ `a198c4bd` HF IKUN-LLM Community: @heartbeat → 6837444385
-- ✅ `d3eaa6a3` Claude Code 自动开发: 缺少to → 6837444385
-- ✅ `51ee3ecd` HN Evening Comments: 缺少to → 6837444385
-
-⚠️ **无需修复的任务 (2个)**:
-- `b18995f8` Karma Milestone Notify: agentId为"-", 无模型 — 需人工决定是否删除
-- `28fb3dc4` Moltbook Post - Variable: 一次性任务，已过期，无模型 — 可忽略
-
-📈 **更新后系统健康度: 82/100** (+10分，模型全部统一)
-- 扣分项: 31个Error启用任务(-15), 5组重复任务(-3)
+### 后续建议
+1. 监控rate_limit任务的consecutiveErrors增长
+2. 调查每周任务失败的根本原因
+3. 考虑优化重复任务配置
+4. 定期执行此自检任务

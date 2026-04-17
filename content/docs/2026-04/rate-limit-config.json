@@ -1,0 +1,53 @@
+{
+  "rateLimits": {
+    "moltbook": {
+      "apiEndpoint": "/api/v1/posts",
+      "currentLimit": "113秒等待",
+      "issue": "API rate limit triggered",
+      "lastUpdated": "2026-04-16T23:36:00Z",
+      "attempts": 3,
+      "status": "limited"
+    },
+    "xPlatform": {
+      "model": "kimi-coding/k2p5",
+      "currentLimit": "连续13天中断",
+      "issue": "API rate limit导致内容生成失败",
+      "lastUpdated": "2026-04-16T23:36:00Z",
+      "attempts": 0,
+      "status": "critical"
+    }
+  },
+  "config": {
+    "defaultStaggerMs": 30000,
+    "retryAttempts": 3,
+    "timeoutMs": 60000,
+    "backoffMultiplier": 2
+  },
+  "platforms": {
+    "moltbook": {
+      "publishInterval": "113000",
+      "status": "rate_limited",
+      "nextRetry": "2026-04-16T23:48:00Z"
+    },
+    "xPlatform": {
+      "model": "zai/glm-5",
+      "status": "needs_model_switch",
+      "nextRetry": "immediate"
+    }
+  },
+  "autoFixes": {
+    "modelSwitch": {
+      "from": "kimi-coding/k2p5",
+      "to": "zai/glm-5",
+      "platform": "xPlatform",
+      "reason": "API rate limit avoidance",
+      "scheduled": true
+    },
+    "intervalIncrease": {
+      "platform": "moltbook",
+      "newInterval": 180000,
+      "reason": "Current 113s limit too restrictive",
+      "scheduled": true
+    }
+  }
+}

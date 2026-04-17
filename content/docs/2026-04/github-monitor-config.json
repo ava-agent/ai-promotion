@@ -1,0 +1,15 @@
+{
+  "monitor_interval_minutes": 30,
+  "alert_threshold_stars": 1000,
+  "trend_analysis_enabled": true,
+  "daily_summary_enabled": true,
+  "data_retention_days": 30,
+  "notification_channels": ["memory/github-trending-alerts.json"],
+  "priority_projects": [
+    "theDotMack/claude-mem",
+    "lsdefine/GenericAgent",
+    "jamiepine/voicebox",
+    "vercel-labs/open-agents",
+    "google/magika"
+  ]
+}

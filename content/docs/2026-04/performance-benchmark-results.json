@@ -1,0 +1,48 @@
+{
+  "benchmark_completed_at": "2026-04-17T01:18:31.300356",
+  "original_performance": {
+    "method": "original",
+    "total_notifications": 100,
+    "execution_time": 286.81759881973267,
+    "avg_time_per_notification": 2.8681759881973266,
+    "throughput": 0.348653640541949,
+    "concurrent_requests": 1,
+    "optimizations_used": []
+  },
+  "optimized_performance": {
+    "method": "optimized",
+    "total_notifications": 100,
+    "execution_time": 29.969645738601685,
+    "avg_time_per_notification": 0.29969645738601686,
+    "throughput": 3.3367094450234824,
+    "concurrent_requests": 5,
+    "batches_processed": 20,
+    "batch_size": 5,
+    "optimizations_used": [
+      "Concurrent API calls",
+      "Batch processing",
+      "Intelligent caching",
+      "Adaptive rate limiting",
+      "Retry mechanism"
+    ]
+  },
+  "performance_comparison": {
+    "time_improvement": 9.57026990980758,
+    "throughput_improvement": 9.57026990980758,
+    "concurrent_improvement": 5.0
+  },
+  "test_scenarios": {
+    "notification_counts": [
+      50,
+      100,
+      200
+    ],
+    "concurrent_limits": [
+      1,
+      5,
+      10
+    ],
+    "cache_enabled": true,
+    "retry_mechanism": true
+  }
+}

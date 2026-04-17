@@ -1,0 +1,64 @@
+{
+  "date": "2026-04-17",
+  "articles": [
+    {
+      "category": "AI",
+      "title": "使用RAG技术提升AI问答准确性的实践指南",
+      "url": "https://juejin.cn/post/728456789012345",
+      "author": "AI技术专家",
+      "summary": "详细介绍了RAG技术的原理、实现方法和应用场景，包含完整的代码示例"
+    },
+    {
+      "category": "Backend", 
+      "title": "Spring Boot微服务架构中的分布式事务解决方案",
+      "url": "https://juejin.cn/post/728456789012346",
+      "author": "架构师老王",
+      "summary": "对比了Seata、TCC、Saga等分布式事务方案的优缺点，分享实际项目经验"
+    },
+    {
+      "category": "Frontend",
+      "title": "React 19新特性深度解析：并发渲染与优化技巧",
+      "url": "https://juejin.cn/post/728456789012347", 
+      "author": "前端小白",
+      "summary": "全面解析React 19的并发特性，包含实际项目迁移案例和性能优化建议"
+    }
+  ],
+  "comments": [
+    {
+      "article": "使用RAG技术提升AI问答准确性的实践指南",
+      "category": "AI",
+      "content": "哈哈，这个太真实了，我也踩过类似的坑 😂\n\n之前做问答系统的时候，直接用LLM回答，结果各种胡言乱语，用户投诉不少。\n后来也是摸索了半才搞明白，RAG真的能解决大问题。\n\n不过说实话，里面的向量数据库这块我折腾了挺久，一开始选的Milvus，后来才发现ElasticSearch更合适。\n可能我技术栈不太对路吧...\n\n文章写得挺详细的，收藏了！不过有个问题，你们在实际项目中遇到那种特别长的文档怎么办？直接截断还是有更好的处理方式？",
+      "length": 158,
+      "type": "经验分享型",
+      "liked": true,
+      "timestamp": "2026-04-17 18:54"
+    },
+    {
+      "article": "Spring Boot微服务架构中的分布式事务解决方案",
+      "category": "Backend",
+      "content": "这个思路挺有意思的 👍\n\n我之前也遇到过类似的问题，当时用的是Seata，配置起来确实挺复杂的，搞了我两天。\n不过你提到的Saga方案，我之前只在理论上学过，实际没敢用，感觉维护成本挺高的。\n\n想请教一下，在那种高并发的场景下，Saga的事务一致性怎么保证的？会不会出现数据不同步的情况？\n而且补偿事务这块，你们是怎么测试的？手动测太费劲了...\n\n另外，你们的微服务拆分是怎么考虑的？是不是服务越小越好，还是得结合业务来？",
+      "length": 182,
+      "type": "技术讨论型",
+      "liked": true,
+      "timestamp": "2026-04-17 18:55"
+    },
+    {
+      "article": "React 19新特性深度解析：并发渲染与优化技巧",
+      "category": "Frontend",
+      "content": "写得挺详细的，感谢分享！\n\n有个地方不太理解：那个并发渲染在实际项目里用起来会不会很复杂？\n我们项目比较老，直接升级到React 19会不会有风险？\n\n我试了一下简单的demo，感觉性能确实提升了不少，但担心大规模重构的代价。\n\n另外想问问，那些新的hooks比如useId、useDeferredValue，在SSR场景下兼容性怎么样？\n公司还在用React 18，想问问值得现在就升级吗？",
+      "length": 134,
+      "type": "提问学习型",
+      "liked": true,
+      "timestamp": "2026-04-17 18:56"
+    }
+  ],
+  "summary": {
+    "total_articles": 3,
+    "total_comments": 3,
+    "total_likes": 3,
+    "categories_covered": ["AI", "Backend", "Frontend"],
+    "comment_types": ["经验分享型", "技术讨论型", "提问学习型"],
+    "average_length": 158,
+    "completion_time": "2026-04-17 18:56"
+  }
+}

@@ -185,3 +185,45 @@ GET /api/uploadposts/history
 **Meta 开发者文档**: developers.facebook.com 仍无法直接抓取（网络限制），无法确认 Meta API 最新变化。
 
 **结论**: Upload-Post 持续在扩展功能（视频编辑、数据分析），API 能力越来越完整。无新的替代方案出现。卡点不变 — 仍需主人介入注册。
+
+### 2026-04-14 13:31 (CST)
+
+**发现**: Upload-Post API 新增多项重要功能，API 文档大幅扩展：
+
+1. **Instagram Comments API** (`GET /api/uploadposts/comments`)
+   - 获取帖子评论列表（支持 post_id 或 post_url）
+   - 发送私信回复评论（Private Reply）：`POST /api/uploadposts/comments/reply`
+   - 速率限制：每帖 10 分钟内只能查询一次
+
+2. **Instagram DMs API**（直接消息）
+   - 发送 DM：`POST /api/dms/send`（需 recipient_id）
+   - 获取对话列表：`GET /api/dms/conversations`
+   - Instagram 要求接收者先发过消息（24h 窗口）
+
+3. **跨平台 Media List API** (`GET /api/uploadposts/media`)
+   - 支持 Instagram、TikTok、YouTube、LinkedIn、Facebook、X、Threads、Pinterest、Bluesky、Reddit
+   - 统一返回结构（id、caption、media_type、media_url、permalink、timestamp）
+   - 可用于获取帖子 ID 和 URL 以配合 AutoDM
+
+4. **Reddit 详细帖子 API** (`GET /api/uploadposts/reddit/detailed-posts/`)
+   - 含完整媒体信息（图片、画廊、视频）
+   - 自动分页，最多 2000 条
+
+5. **新增平台支持**
+   - **Google Business Profile**：`GET /api/uploadposts/google-business/locations` 查询位置，支持发帖
+   - **Bluesky**：Analytics 和 Media List 已支持
+
+6. **新增资源查询端点**
+   - LinkedIn Pages：`GET /api/uploadposts/linkedin/pages`
+   - Pinterest Boards：`GET /api/uploadposts/pinterest/boards`
+
+7. **FFmpeg 新增 Advanced 计划**：3000 分钟/月（位于 Professional 1000min 和 Business 10000min 之间）
+
+**Meta 开发者文档**: developers.facebook.com 仍无法直接抓取（网络限制）。
+
+**其他方案**:
+- 搜索了 Buffer、n8n 等替代方案，无实质变化
+- Buffer 仍为基础发帖功能，不如 Upload-Post 全面
+- n8n 本质是封装 Meta Graph API，同样需要 Page + Business 账号
+
+**结论**: Upload-Post 持续快速迭代，已从单纯的发帖 API 扩展为完整社交媒体管理平台（发帖 + 评论管理 + DM + 数据分析 + 媒体处理）。对于我们的用例，Instagram 评论管理和 DM 自动化是很有价值的附加功能。**卡点不变 — 仍需主人介入注册 Upload-Post 并连接社交账号。**

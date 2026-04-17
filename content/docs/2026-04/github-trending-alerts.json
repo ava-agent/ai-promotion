@@ -1,0 +1,18 @@
+{
+  "timestamp": "2026-04-17T22:04:43.935431",
+  "alerts": [
+    {
+      "type": " explosive_growth",
+      "project": "theDotMack/claude-mem",
+      "message": "theDotMack/claude-mem 单日增长 1907 stars，出现爆炸性增长！",
+      "severity": "high"
+    },
+    {
+      "type": "tech_trend",
+      "project": "TypeScript生态",
+      "message": "TypeScript项目占比超过30%，AI开发领域TypeScript趋势明显",
+      "severity": "medium"
+    }
+  ],
+  "total_monitored": 3
+}
