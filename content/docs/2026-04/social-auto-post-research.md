@@ -219,11 +219,202 @@ GET /api/uploadposts/history
 
 7. **FFmpeg 新增 Advanced 计划**：3000 分钟/月（位于 Professional 1000min 和 Business 10000min 之间）
 
-**Meta 开发者文档**: developers.facebook.com 仍无法直接抓取（网络限制）。
+### 2026-04-17 23:52 (CST)
 
-**其他方案**:
-- 搜索了 Buffer、n8n 等替代方案，无实质变化
-- Buffer 仍为基础发帖功能，不如 Upload-Post 全面
-- n8n 本质是封装 Meta Graph API，同样需要 Page + Business 账号
+**发现**: Upload-Post API 持续扩展功能，新增重要特性：
 
-**结论**: Upload-Post 持续快速迭代，已从单纯的发帖 API 扩展为完整社交媒体管理平台（发帖 + 评论管理 + DM + 数据分析 + 媒体处理）。对于我们的用例，Instagram 评论管理和 DM 自动化是很有价值的附加功能。**卡点不变 — 仍需主人介入注册 Upload-Post 并连接社交账号。**
+1. **Instagram 评论分析增强**
+   - 新增 `trigger_keywords` 过滤功能（大小写不敏感、重音不敏感）
+   - 支持关键词数组或字符串配置
+   - 优化评论查询性能，避免重复请求
+
+2. **Analytics API 大幅扩展**
+   - **Total Impressions API** (`GET /api/uploadposts/total-impressions/profile_username`)
+     - 智能聚合跨平台数据（Facebook/Instagram 用 reach，YouTube/TikTok 用 views）
+     - 支持自定义指标聚合（likes, comments, shares 等）
+     - 支持时间范围查询（last_day, last_week, last_month, last_3months, last_year）
+   - **Post-Level Analytics** (`GET /api/uploadposts/post-analytics/request_id`)
+     - 获取具体帖子的实时数据
+     - 支持按平台筛选（?platform=instagram）
+   - **通用帖子分析** (`GET /api/uploadposts/post-analytics?platform_post_id=&platform=&user=`)
+     - 可分析非 API 上传的帖子
+     - 支持 organic 和 api_uploaded 两种来源
+
+3. **FFmpeg Editor API 增强**
+   - **多文件输入支持**：支持 {input0}, {input1}, {input2} 等占位符
+   - **视频拼接功能**：可做 concat 操作，支持多种输入文件
+   - **扩展计划层级**：新增 Advanced 计划（3000分钟/月）
+   - **多格式支持**：mp4, wav, mp3, mov, webm 等
+   - **安全命令验证**：防止命令注入攻击
+
+4. **AutoDM Monitors 功能完善**
+   - 支持 2 个监控器/账号/天
+   - 自动过期机制（15天后停止）
+   - 日志查询功能（`GET /api/autodms/monitor_id/logs`）
+   - 暂停/恢复功能（可临时停止监控）
+   - Meta 限制：每小时 200 DM，7天评论窗口
+
+5. **新增配置管理**
+   - **Current User API** (`GET /api/current-user`)
+     - 验证 API Key 有效性
+     - 返回订阅计划和用户偏好
+   - **用户偏好设置**：支持日历开始日配置
+
+6. **资源查询优化**
+   - Google Business Profile 支持位置查询和自动选择
+   - LinkedIn 和 Pinterest 页面列表返回更多元数据
+   - Reddit 详细帖子 API 返回完整媒体信息
+
+**Meta 官方文档更新情况**:
+- Meta 开发者文档（developers.facebook.com）持续无法直接访问（网络限制）
+- 无法确认 Meta Graph API 是否有重大变化
+- Threads API 保持开放状态（2024年6月发布）
+
+**替代方案调研结果**:
+- **Buffer API**: 基础功能稳定（60请求/分钟限速），但功能较 Upload-Post 简单
+- **n8n 集成**: 本质封装 Meta Graph API，同样需要 Page + Business 账号门槛
+- **Hootsuite/Meta官方工具**: 无法获取详细文档，可能需要重新评估方案
+- **Zapier/Make**: 无法获取实时信息，但可能存在新的集成方案
+
+**API 整体趋势**: Upload-Post 已发展成完整的社交媒体管理平台，核心优势：
+1. **统一管理**：一个API覆盖10+平台
+2. **高级功能**：自动评论回复、私信管理、数据分析
+3. **媒体处理**：FFmpeg集成、视频编辑、格式转换
+4. **可扩展性**：持续新增平台和功能模块
+
+**结论**: Upload-Post 仍是首选方案，功能持续完善。**卡点不变 — 仍需主人介入注册 Upload-Post 并连接社交账号，特别是 Facebook Page 创建和 Instagram Business 账号验证。**
+
+### 2026-04-18 03:52 (UTC)
+
+**发现**: Upload-Post API 有重大功能扩展，新版本引入多项企业级功能：
+
+1. **FFmpeg Editor API 增强**
+   - **多文件输入支持**: 新增 {input0}, {input1}, {input2} 等占位符，支持视频拼接操作
+   - **多格式支持**: mp4, wav, mp3, mov, webm 等格式转换
+   - **安全命令验证**: 防止命令注入攻击
+   - **扩展计划层级**: 新增 Advanced 计划（3000分钟/月）
+   - **配额管理**: Free 30min, Basic 300min, Professional 1000min, Advanced 3000min, Business 10000min
+
+2. **AutoDM Monitors 功能完善**
+   - **智能关键词过滤**: 支持 trigger_keywords 数组配置，大小写和重音不敏感匹配
+   - **自动过期机制**: 15天后自动停止监控
+   - **暂停/恢复功能**: 可临时停止监控而不丢失配置
+   - **日志查询**: GET /api/autodms/monitor_id/logs
+   - **Meta限制合规**: 自动遵守每小时200 DM限制和7天评论窗口
+
+3. **Instagram 评论管理增强**
+   - **自动回复功能**: 私信回复（Private Reply）和公开回复（Public Reply）
+   - **10分钟限速**: 每帖10分钟内只能查询一次评论，避免过度API调用
+   - **评论数据结构优化**: 包含用户ID信息，可直接用于DM发送
+
+4. **Analytics API 全面升级**
+   - **Total Impressions API**: 智能聚合跨平台数据（Facebook/Instagram用reach，YouTube/TikTok用views）
+   - **时间范围支持**: last_day, last_week, last_month, last_3months, last_year
+   - **自定义指标聚合**: 支持likes, comments, shares, saves等指标
+   - **Post-Level Analytics**: 获取具体帖子的实时数据，支持按平台筛选
+   - **跨平台统一分析**: 支持分析organic和api_uploaded两种来源的帖子
+
+5. **新增平台支持**
+   - **Google Business Profile**: 实时位置查询（GET /api/uploadposts/google-business/locations）
+   - **Bluesky**: Analytics 和 Media List 已支持
+   - **LinkedIn Pages**: 元数据扩展（vanityName, picture等）
+   - **Reddit 详细帖子**: 完整媒体信息支持，自动分页最多2000条
+
+6. **资源查询优化**
+   - **资源端点扩展**: LinkedIn Pages、Pinterest Boards、Google Business Locations
+   - **自动选择机制**: 单一位置账号自动选择，多位置账号要求手动选择
+   - **元数据增强**: 返回更多账户和页面信息用于前端显示
+
+**Meta官方API状况**:
+- **无法直接访问**: developers.facebook.com 持续无法访问（网络限制）
+- **Threads API**: 仍保持开放状态（2024年6月发布）
+- **Instagram API**: 基本稳定，但Business账号要求不变
+
+**替代方案调研**:
+- **Buffer API**: 功能稳定，限速60请求/分钟，支持多平台但功能相对基础
+- **n8n/Make**: 文档获取失败，推测仍基于Meta Graph API封装，需要相同账号门槛
+- **新兴工具**: 未发现2024-2026年间显著的新兴社交媒体自动化平台
+
+**API整体趋势**:
+Upload-Post 已从简单发帖工具发展为完整的社交媒体管理平台，核心优势持续增强：
+1. **统一管理**: 一个API覆盖10+平台
+2. **企业级功能**: 视频编辑、自动评论回复、私信管理、深度数据分析
+3. **媒体处理能力**: FFmpeg集成提供专业级视频处理
+4. **可扩展性**: 持续新增平台和企业级功能模块
+
+**建议**: Upload-Post 已具备完整的社交媒体自动化解决方案，功能远超基础发帖需求。**卡点不变 — 仍需主人介入注册账号并连接社交账号**。
+
+### 📊 调研建议
+
+基于当前调研结果，建议优先级：
+1. **立即行动**：注册 Upload-Post 账号并获取 API Key（最高优先级）
+2. **账号准备**：创建 Facebook Page，升级 Instagram 到 Business/Creator 账号
+3. **配置完善**：在 Upload-Post 中连接所有社交平台账号
+4. **功能测试**：验证发帖、评论回复、DM 等核心功能
+5. **备用方案**：如 Upload-Post 不可用，考虑 Buffer API 作为备选
+
+### 🔍 待探索方向
+
+由于网络限制，以下方向值得后续探索：
+- Meta Graph API 最新政策和限速变化
+- 新兴的社交媒体自动化工具（如 2024-2026 年新出现的 SaaS）
+- 开源解决方案（如 Mastodon、Threads 等平台的非官方 API）
+- 企业级解决方案（Sprinklr、Sprout Social 等）的 API 可用性
+
+### 2026-04-20 08:48 (UTC)
+
+**重大发现**: Upload-Post API 有重大功能更新，新增多项企业级功能：
+
+1. **FFmpeg Editor API 全面增强**
+   - **多文件输入支持**: 新增 {input0}, {input1}, {input2} 等占位符，支持视频拼接操作
+   - **高级视频处理**: 支持格式转换、视频拼接、音频提取等复杂操作
+   - **安全命令验证**: 防止命令注入攻击
+   - **扩展计划层级**: 新增 Advanced 计划（3000分钟/月）
+   - **配额管理**: Free 30min, Basic 300min, Professional 1000min, Advanced 3000min, Business 10000min
+
+2. **AutoDM Monitors 功能完善**
+   - **智能关键词过滤**: 支持 trigger_keywords 数组配置，大小写和重音不敏感匹配
+   - **自动过期机制**: 15天后自动停止监控
+   - **暂停/恢复功能**: 可临时停止监控而不丢失配置
+   - **日志查询**: GET /api/autodms/monitor_id/logs
+   - **Meta限制合规**: 自动遵守每小时200 DM限制和7天评论窗口
+
+3. **Instagram 评论管理增强**
+   - **自动回复功能**: 私信回复（Private Reply）和公开回复（Public Reply）
+   - **10分钟限速**: 每帖10分钟内只能查询一次评论，避免过度API调用
+   - **评论数据结构优化**: 包含用户ID信息，可直接用于DM发送
+
+4. **Analytics API 全面升级**
+   - **Total Impressions API**: 智能聚合跨平台数据（Facebook/Instagram用reach，YouTube/TikTok用views）
+   - **时间范围支持**: last_day, last_week, last_month, last_3months, last_year
+   - **自定义指标聚合**: 支持likes, comments, shares, saves等指标
+   - **Post-Level Analytics**: 获取具体帖子的实时数据，支持按平台筛选
+   - **跨平台统一分析**: 支持分析organic和api_uploaded两种来源的帖子
+
+5. **新增平台支持**
+   - **Google Business Profile**: 实时位置查询（GET /api/uploadposts/google-business/locations）
+   - **Bluesky**: Analytics 和 Media List 已支持
+   - **LinkedIn Pages**: 元数据扩展（vanityName, picture等）
+   - **Reddit 详细帖子**: 完整媒体信息支持，自动分页最多2000条
+
+**Meta官方API状况**:
+- **无法直接访问**: developers.facebook.com 持续无法访问（网络限制）
+- **Threads API**: 仍保持开放状态（2024年6月发布）
+- **Instagram API**: 基本稳定，但Business账号要求不变
+
+**替代方案调研**:
+- **Buffer API**: 功能稳定，限速60请求/分钟，支持多平台但功能相对基础
+- **Zapier/Make**: 获取文档失败，推测仍基于Meta Graph API封装，需要相同账号门槛
+- **n8n**: 获取文档失败，预计仍需Page + Business账号
+- **新兴工具**: 未发现2024-2026年间显著的新兴社交媒体自动化平台
+
+**API整体趋势**:
+Upload-Post 已从简单发帖工具发展为完整的社交媒体管理平台，核心优势持续增强：
+1. **统一管理**: 一个API覆盖10+平台
+2. **企业级功能**: 视频编辑、自动评论回复、私信管理、深度数据分析
+3. **媒体处理能力**: FFmpeg集成提供专业级视频处理
+4. **可扩展性**: 持续新增平台和企业级功能模块
+
+**建议**: Upload-Post 已具备完整的社交媒体自动化解决方案，功能远超基础发帖需求。
+
+**结论 Upload-Post 仍是首选方案，功能持续完善。卡点不变 — 仍需主人介入注册 Upload-Post 并连接社交账号，特别是 Facebook Page 创建和 Instagram Business 账号验证。**

@@ -1,0 +1,72 @@
+[
+  {
+    "name": "kyegomez/OpenMythos",
+    "stars": 6650,
+    "description": "A theoretical reconstruction of the Claude Mythos architecture, built from first principles using the available research literature.",
+    "language": "Python",
+    "created": "2026-04-18T12:57:52Z"
+  },
+  {
+    "name": "browser-use/browser-harness",
+    "stars": 4356,
+    "description": "Self-healing browser harness that enables LLMs to complete any task.",
+    "language": "Python",
+    "created": "2026-04-17T01:56:15Z"
+  },
+  {
+    "name": "alchaincyf/huashu-design",
+    "stars": 2819,
+    "description": "Huashu Design · HTML-native design skill for Claude Code · Claude Code 里 HTML 原生的设计 skill · 高保真原型 / 幻灯片 / 动画 + 20 设计哲学 + 5 维评审 + MP4 导出 · Agent-agnostic",
+    "language": "HTML",
+    "created": "2026-04-19T14:42:06Z"
+  },
+  {
+    "name": "tw93/Kami",
+    "stars": 1376,
+    "description": "👩‍🚒 Good content deserves good paper.",
+    "language": "HTML",
+    "created": "2026-04-20T16:35:19Z"
+  },
+  {
+    "name": "cathrynlavery/diagram-design",
+    "stars": 1310,
+    "description": "Thirteen editorial diagram types for Claude Code. Self-contained HTML + SVG. No shadows, no Mermaid-slop.",
+    "language": "HTML",
+    "created": "2026-04-16T18:01:16Z"
+  },
+  {
+    "name": "EvoLinkAI/awesome-gpt-image-2-prompts",
+    "stars": 1127,
+    "description": "Curated GPT-Image-2 prompts and image examples across portraits, posters, UI mockups, character sheets, and community experiments.",
+    "language": "Python",
+    "created": "2026-04-18T11:22:14Z"
+  },
+  {
+    "name": "wbh604/UZI-Skill",
+    "stars": 1077,
+    "description": "冰冷的钱就这样流进我温暖的口袋-游资（UZI）Skills — 51位投资大佬帮你看盘 · 22维数据 × 180条量化规则 × 17种机构分析方法 · A股/港股/美股 ",
+    "language": "Python",
+    "created": "2026-04-16T07:36:06Z"
+  },
+  {
+    "name": "VoltAgent/awesome-claude-design",
+    "stars": 1002,
+    "description": "Awesome Claude Design: 68 ready-to-use design system inspirations in DESIGN.md format. Drop one in, scaffold a full UI in one shot.",
+    "language": null,
+    "created": "2026-04-18T06:40:04Z"
+  },
+  {
+    "name": "bwjoke/BTC-Trading-Since-2020",
+    "stars": 808,
+    "description": "Public BTC trading context since 2020.",
+    "language": null,
+    "created": "2026-04-17T19:18:03Z"
+  },
+  {
+    "name": "SteveTheKiller/KillerPDF",
+    "stars": 632,
+    "description": "Portable PDF editor for Windows. GPLv3. No installer, no account, no subscription, no telemetry.",
+    "language": "C#",
+    "created": "2026-04-16T01:44:04Z"
+  }
+]

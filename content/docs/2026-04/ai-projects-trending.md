@@ -1,7 +1,7 @@
 # AI 项目趋势列表
 
-**更新时间**: 2026-04-13 10:01
-**项目数量**: 58
+**更新时间**: 2026-04-20 10:01
+**项目数量**: 57
 
 ---
 
@@ -17,249 +17,249 @@
 
 ## 项目列表（按 Stars 排序）
 
-### 1. firecrawl/firecrawl
+### 1. Shubhamsaboo/awesome-llm-apps
 
-**Stars**: 108,176
-
-**来源**: AI Agent Trending
-
-**描述**: 🔥 The Web Data API for AI - Power AI agents with clean web data
-
-**更新**: 2026-04-13T02:00:03Z
-
----
-
-### 2. Shubhamsaboo/awesome-llm-apps
-
-**Stars**: 105,237
+**Stars**: 106,447
 
 **来源**: AI Agent Trending
 
-**描述**: Collection of awesome LLM apps with AI Agents and RAG using OpenAI, Anthropic, Gemini and opensource models.
+**描述**: 100+ AI Agent & RAG apps you can actually run — clone, customize, ship.
 
-**更新**: 2026-04-13T01:55:35Z
+**更新**: 2026-04-20T02:00:46Z
 
 ---
 
-### 3. google-gemini/gemini-cli
+### 2. google-gemini/gemini-cli
 
-**Stars**: 101,031
+**Stars**: 101,808
 
 **来源**: AI Agent Trending
 
 **描述**: An open-source AI agent that brings the power of Gemini directly into your terminal.
 
-**更新**: 2026-04-13T01:56:35Z
+**更新**: 2026-04-20T01:58:00Z
 
 ---
 
-### 4. browser-use/browser-use
+### 3. browser-use/browser-use
 
-**Stars**: 87,457
+**Stars**: 88,698
 
 **来源**: AI Agent Trending
 
 **描述**: 🌐 Make websites accessible for AI agents. Automate tasks online with ease.
 
-**更新**: 2026-04-13T01:51:58Z
+**更新**: 2026-04-20T01:55:06Z
 
 ---
 
-### 5. dair-ai/Prompt-Engineering-Guide
+### 4. karpathy/autoresearch
 
-**Stars**: 73,197
-
-**来源**: AI Agent Trending
-
-**描述**: 🐙 Guides, papers, lessons, notebooks and resources for prompt engineering, context engineering, RAG, and AI Agents.
-
-**更新**: 2026-04-13T01:55:05Z
-
----
-
-### 6. karpathy/autoresearch
-
-**Stars**: 71,034
+**Stars**: 74,561
 
 **来源**: AI Agent Trending
 
 **描述**: AI agents running research on single-GPU nanochat training automatically
 
-**更新**: 2026-04-13T02:00:02Z
+**更新**: 2026-04-20T01:58:26Z
 
 ---
 
-### 7. OpenBB-finance/OpenBB
+### 5. dair-ai/Prompt-Engineering-Guide
 
-**Stars**: 65,776
+**Stars**: 73,532
+
+**来源**: AI Agent Trending
+
+**描述**: 🐙 Guides, papers, lessons, notebooks and resources for prompt engineering, context engineering, RAG, and AI Agents.
+
+**更新**: 2026-04-20T01:59:59Z
+
+---
+
+### 6. OpenBB-finance/OpenBB
+
+**Stars**: 66,113
 
 **来源**: AI Agent Trending
 
 **描述**: Financial data platform for analysts, quants and AI agents.
 
-**更新**: 2026-04-13T00:33:51Z
+**更新**: 2026-04-20T01:56:03Z
 
 ---
 
-### 8. microsoft/ai-agents-for-beginners
+### 7. microsoft/ai-agents-for-beginners
 
-**Stars**: 56,527
+**Stars**: 56,984
 
 **来源**: AI Agent Trending
 
 **描述**: 12 Lessons to Get Started Building AI Agents
 
-**更新**: 2026-04-13T01:59:28Z
+**更新**: 2026-04-20T01:56:06Z
 
 ---
 
-### 9. mem0ai/mem0
+### 8. mem0ai/mem0
 
-**Stars**: 52,812
+**Stars**: 53,530
 
 **来源**: AI Agent Trending
 
 **描述**: Universal memory layer for AI Agents
 
-**更新**: 2026-04-13T02:00:10Z
+**更新**: 2026-04-20T01:56:47Z
 
 ---
 
-### 10. FlowiseAI/Flowise
+### 9. FlowiseAI/Flowise
 
-**Stars**: 51,836
+**Stars**: 52,065
 
 **来源**: AI Agent Trending
 
 **描述**: Build AI Agents, Visually
 
-**更新**: 2026-04-13T01:15:02Z
+**更新**: 2026-04-20T01:51:09Z
 
 ---
 
-### 11. crewAIInc/crewAI
+### 10. crewAIInc/crewAI
 
-**Stars**: 48,723
+**Stars**: 49,263
 
 **来源**: AI Agent Trending
 
 **描述**: Framework for orchestrating role-playing, autonomous AI agents. By fostering collaborative intelligence, CrewAI empowers agents to work together seamlessly, tackling complex tasks.
 
-**更新**: 2026-04-13T01:58:27Z
+**更新**: 2026-04-20T01:58:13Z
 
 ---
 
-### 12. aaif-goose/goose
+### 11. aaif-goose/goose
 
-**Stars**: 41,523
+**Stars**: 42,743
 
 **来源**: AI Agent Trending
 
 **描述**: an open source, extensible AI agent that goes beyond code suggestions - install, execute, edit, and test with any LLM
 
-**更新**: 2026-04-13T01:59:55Z
+**更新**: 2026-04-20T01:58:43Z
 
 ---
 
-### 13. HKUDS/nanobot
+### 12. HKUDS/nanobot
 
-**Stars**: 39,225
+**Stars**: 40,105
 
 **来源**: AI Agent Trending
 
 **描述**: "🐈 nanobot: The Ultra-Lightweight Personal AI Agent"
 
-**更新**: 2026-04-13T01:58:31Z
+**更新**: 2026-04-20T01:55:54Z
 
 ---
 
-### 14. ToolJet/ToolJet
+### 13. ToolJet/ToolJet
 
-**Stars**: 37,731
+**Stars**: 37,750
 
 **来源**: AI Agent Trending
 
 **描述**: ToolJet is the open-source foundation of ToolJet AI - the enterprise app generation platform for building internal tools, dashboard, business applications, workflows and AI agents 🚀
 
-**更新**: 2026-04-13T00:13:23Z
+**更新**: 2026-04-19T23:11:52Z
 
 ---
 
-### 15. reworkd/AgentGPT
+### 14. badlogic/pi-mono
 
-**Stars**: 35,970
-
-**来源**: AI Agent Trending
-
-**描述**: 🤖 Assemble, configure, and deploy autonomous AI Agents in your browser.
-
-**更新**: 2026-04-12T19:59:00Z
-
----
-
-### 16. 1Panel-dev/1Panel
-
-**Stars**: 34,938
-
-**来源**: AI Agent Trending
-
-**描述**: 🔥 1Panel is a modern, open-source VPS control panel — and the only one with native AI agent support. Run Ollama models, deploy OpenClaw agents, and manage your entire server stack from one clean web interface.
-
-**更新**: 2026-04-13T00:39:01Z
-
----
-
-### 17. badlogic/pi-mono
-
-**Stars**: 34,873
+**Stars**: 37,498
 
 **来源**: AI Agent Trending
 
 **描述**: AI agent toolkit: coding agent CLI, unified LLM API, TUI & web UI libraries, Slack bot, vLLM pods
 
-**更新**: 2026-04-13T02:01:08Z
+**更新**: 2026-04-20T02:01:00Z
 
 ---
 
-### 18. patchy631/ai-engineering-hub
+### 15. reworkd/AgentGPT
 
-**Stars**: 33,463
+**Stars**: 36,011
+
+**来源**: AI Agent Trending
+
+**描述**: 🤖 Assemble, configure, and deploy autonomous AI Agents in your browser.
+
+**更新**: 2026-04-19T22:23:40Z
+
+---
+
+### 16. 1Panel-dev/1Panel
+
+**Stars**: 35,042
+
+**来源**: AI Agent Trending
+
+**描述**: 🔥 1Panel is a modern, open-source VPS control panel — and the only one with native AI agent support. Run Ollama models, deploy OpenClaw agents, and manage your entire server stack from one clean web interface.
+
+**更新**: 2026-04-20T00:39:22Z
+
+---
+
+### 17. patchy631/ai-engineering-hub
+
+**Stars**: 33,785
 
 **来源**: AI Agent Trending
 
 **描述**: In-depth tutorials on LLMs, RAGs and real-world AI agent applications.
 
-**更新**: 2026-04-12T23:53:26Z
+**更新**: 2026-04-20T01:53:21Z
 
 ---
 
-### 19. conductor-oss/conductor
+### 18. conductor-oss/conductor
 
-**Stars**: 31,623
+**Stars**: 31,657
 
 **来源**: AI Agent Trending
 
 **描述**: Conductor is an event driven agentic orchestration platform providing durable and highly resilient execution engine for applications and AI Agents
 
-**更新**: 2026-04-12T20:39:21Z
+**更新**: 2026-04-20T00:02:06Z
 
 ---
 
-### 20. feder-cr/Jobs_Applier_AI_Agent_AIHawk
+### 19. AstrBotDevs/AstrBot
 
-**Stars**: 29,651
+**Stars**: 30,273
 
 **来源**: AI Agent Trending
 
-**描述**: AIHawk aims to easy job hunt process by automating the job application process. Utilizing artificial intelligence, it enables users to apply for multiple jobs in a tailored way.
+**描述**: AI Agent Assistant that integrates lots of IM platforms, LLMs, plugins and AI feature, and can be your openclaw alternative. ✨
 
-**更新**: 2026-04-12T21:08:37Z
+**更新**: 2026-04-20T01:48:30Z
+
+---
+
+### 20. vercel-labs/agent-browser
+
+**Stars**: 29,814
+
+**来源**: AI Agent Trending
+
+**描述**: Browser automation CLI for AI agents
+
+**更新**: 2026-04-20T01:35:25Z
 
 ---
 
 ### 21. u14app/deep-research
 
-**Stars**: 4,556
+**Stars**: 4,563
 
 **来源**: LLM Frameworks
 
@@ -269,7 +269,7 @@
 
 ### 22. truefoundry/cognita
 
-**Stars**: 4,419
+**Stars**: 4,418
 
 **来源**: RAG Frameworks
 
@@ -279,7 +279,7 @@
 
 ### 23. ModelTC/LightLLM
 
-**Stars**: 4,001
+**Stars**: 4,017
 
 **来源**: LLM Frameworks
 
@@ -289,7 +289,7 @@
 
 ### 24. HuaizhengZhang/AI-Infra-from-Zero-to-Hero
 
-**Stars**: 3,866
+**Stars**: 3,895
 
 **来源**: LLM Frameworks
 
@@ -299,7 +299,7 @@
 
 ### 25. rag-web-ui/rag-web-ui
 
-**Stars**: 2,957
+**Stars**: 2,965
 
 **来源**: RAG Frameworks
 
@@ -309,7 +309,7 @@
 
 ### 26. llmgenai/LLMInterviewQuestions
 
-**Stars**: 1,722
+**Stars**: 1,731
 
 **来源**: LLM Frameworks
 
@@ -319,7 +319,7 @@
 
 ### 27. Andrew-Jang/RAGHub
 
-**Stars**: 1,713
+**Stars**: 1,724
 
 **来源**: RAG Frameworks
 
@@ -329,7 +329,7 @@
 
 ### 28. mrdbourke/simple-local-rag
 
-**Stars**: 973
+**Stars**: 976
 
 **来源**: RAG Frameworks
 
@@ -339,7 +339,7 @@
 
 ### 29. jerry-ai-dev/MODULAR-RAG-MCP-SERVER
 
-**Stars**: 790
+**Stars**: 821
 
 **来源**: RAG Frameworks
 
@@ -349,7 +349,7 @@
 
 ### 30. apirrone/Memento
 
-**Stars**: 650
+**Stars**: 651
 
 **来源**: LLM Frameworks
 
@@ -359,7 +359,7 @@
 
 ### 31. RafalWilinski/cloudflare-rag
 
-**Stars**: 596
+**Stars**: 597
 
 **来源**: RAG Frameworks
 
@@ -369,7 +369,7 @@
 
 ### 32. rohan-paul/LLM-FineTuning-Large-Language-Models
 
-**Stars**: 568
+**Stars**: 571
 
 **来源**: LLM Frameworks
 
@@ -379,7 +379,7 @@
 
 ### 33. maquina-app/rails-mcp-server
 
-**Stars**: 534
+**Stars**: 538
 
 **来源**: LLM Frameworks
 
@@ -389,7 +389,7 @@
 
 ### 34. tonykipkemboi/ollama_pdf_rag
 
-**Stars**: 504
+**Stars**: 513
 
 **来源**: RAG Frameworks
 
@@ -399,7 +399,7 @@
 
 ### 35. umbertogriffo/rag-chatbot
 
-**Stars**: 403
+**Stars**: 407
 
 **来源**: RAG Frameworks
 
@@ -409,7 +409,7 @@
 
 ### 36. gergap/vim-ollama
 
-**Stars**: 326
+**Stars**: 327
 
 **来源**: LLM Frameworks
 
@@ -429,7 +429,7 @@
 
 ### 38. rimulu030/gamewiki
 
-**Stars**: 296
+**Stars**: 299
 
 **来源**: RAG Frameworks
 
@@ -439,7 +439,7 @@
 
 ### 39. lehoanglong95/rag-all-in-one
 
-**Stars**: 284
+**Stars**: 287
 
 **来源**: RAG Frameworks
 
@@ -457,31 +457,19 @@
 
 ---
 
-### 41. mmmeff/outline-mcp-server
+### 41. cipher-rc5/firecrawl-mcp-effect
 
-**Stars**: 120
-
-**来源**: MCP Server Latest
-
-**描述**: It's an MCP server... for Outline (the documentation platform!)
-
-**更新**: 2026-04-13T01:59:49Z
-
----
-
-### 42. linw1995/nvim-mcp
-
-**Stars**: 49
+**Stars**: 4
 
 **来源**: MCP Server Latest
 
-**描述**: A Model Context Protocol (MCP) server that provides seamless integration with Neovim instances, enabling AI assistants to interact with your editor through connections and access diagnostic information via structured resources.
+**描述**: Firecrawl MCP server — self-hostable, Vercel-compatible, Effect-TS
 
-**更新**: 2026-04-13T01:59:09Z
+**更新**: 2026-04-20T02:01:02Z
 
 ---
 
-### 43. redredchen01/session-wrap-skill
+### 42. redredchen01/session-wrap-skill
 
 **Stars**: 4
 
@@ -491,51 +479,63 @@
 
 ---
 
-### 44. Casys-AI/mcp-einvoice
+### 43. fentz26/EnvCP
 
 **Stars**: 2
 
 **来源**: MCP Server Latest
 
-**描述**: MCP server for French e-invoicing — PA-agnostic adapter pattern
+**描述**: Secure environment variable management for AI-assisted coding. MCP server that lets AI reference secrets without seeing.
 
-**更新**: 2026-04-13T02:00:57Z
-
----
-
-### 45. rrsaldanha/burp-mcp-agents
-
-**Stars**: 2
-
-**来源**: MCP Server Latest
-
-**描述**: 🚀 Connect Burp Suite MCP Server to multiple AI backends with practical guides and templates for safe, real traffic analysis.
-
-**更新**: 2026-04-13T01:58:34Z
+**更新**: 2026-04-20T01:59:17Z
 
 ---
 
-### 46. saifeddine099/github-to-mcp
+### 44. sbsdbs/simple_mcp_server
 
 **Stars**: 1
 
 **来源**: MCP Server Latest
 
-**描述**: 🚀 Convert any GitHub repository into an MCP server quickly, allowing AI assistants like ChatGPT instant access to your codebase.
+**描述**: 🌌 Create a simple MCP Server using the Star Wars API to access characters, planets, and films efficiently for testing and integration purposes.
 
-**更新**: 2026-04-13T02:00:42Z
+**更新**: 2026-04-20T02:00:58Z
 
 ---
 
-### 47. tikoci/rosetta
+### 45. mattaspira/google-docs-mcp-server
 
 **Stars**: 1
 
 **来源**: MCP Server Latest
 
-**描述**: MCP Server with RouterOS docs + commands + products + changelogs, using SQLite-as-RAG, sourced from MikroTik
+**描述**: 🔗 Connect LLMs to Google Docs with this unofficial MCP server for smarter workflows and enhanced document management.
 
-**更新**: 2026-04-13T01:58:55Z
+**更新**: 2026-04-20T02:00:53Z
+
+---
+
+### 46. Surendrakumawat992892/fake-claude-plugins
+
+**Stars**: 1
+
+**来源**: MCP Server Latest
+
+**描述**: 🛠️ Build robust HTTP MCP servers with the Claude Marketplace Plugin Collection and Golang SDK, featuring automation and best practices for efficient development.
+
+**更新**: 2026-04-20T02:00:48Z
+
+---
+
+### 47. ggmenu/document-reader-mcp
+
+**Stars**: 1
+
+**来源**: MCP Server Latest
+
+**描述**: 📄 Extract text from various document formats with this universal MCP server, featuring support for streaming and encoding detection across all major platforms.
+
+**更新**: 2026-04-20T01:59:32Z
 
 ---
 
@@ -549,115 +549,103 @@
 
 ---
 
-### 49. kyle122497/llamator-mcp-server
+### 49. manee1112/yachtsy-mcp-server
 
 **Stars**: 0
 
 **来源**: MCP Server Latest
 
-**描述**: 🚀 Automate LLM red teaming workflows with the MCP server for LLAMATOR, featuring asynchronous job handling and seamless integration.
+**描述**: 🚤 Access AI-driven yacht marketplace insights with Yachtsy MCP Server. Explore 25,000+ listings and get expert sailing advice effortlessly.
 
-**更新**: 2026-04-13T02:00:55Z
+**更新**: 2026-04-20T02:01:11Z
 
 ---
 
-### 50. MOHITGITAI/postgrest-mcp
+### 50. snowlxrd/mcp2py
 
 **Stars**: 0
 
 **来源**: MCP Server Latest
 
-**描述**: 🚀 Build a PostgREST MCP server with OAuth2 authentication, supporting NEON and Supabase, for seamless API integration and deployment.
+**描述**: 🔧 Convert any MCP server into a Python module with ease—no setup required. Just import, load, and call tools as Python methods.
 
-**更新**: 2026-04-13T02:00:50Z
+**更新**: 2026-04-20T02:01:02Z
 
 ---
 
-### 51. ZaikoXeas/mcpbr
+### 51. miller-joe/shopify-mcp
 
 **Stars**: 0
 
 **来源**: MCP Server Latest
 
-**描述**: 🚀 Benchmark your MCP server with real GitHub issues for accurate performance metrics using a simple command.
+**描述**: MCP server for Shopify — AI-driven product management with ComfyUI image generation. Part of the MCP Server Series.
 
-**更新**: 2026-04-13T02:00:25Z
+**更新**: 2026-04-20T02:00:59Z
 
 ---
 
-### 52. hegstadjosh/river
+### 52. powlite32/google-docs-mcp-server
 
 **Stars**: 0
 
 **来源**: MCP Server Latest
 
-**描述**: Physics-based spatial task scheduling — MCP server + web viewer
+**描述**: 📄 Connect LLMs with Google Docs through this unofficial MCP server for smarter workflows and efficient document management.
 
-**更新**: 2026-04-13T02:00:21Z
+**更新**: 2026-04-20T02:00:45Z
 
 ---
 
-### 53. LangSensei/swat-marketplace
+### 53. meridian-online/finetype
 
 **Stars**: 0
 
 **来源**: MCP Server Latest
 
-**描述**: The official marketplace for SWAT. Discover and install specialized AI squads, skills, and MCP server configurations.
+**描述**: Precision format detection for text data. Semantic type inference with transformation contracts, DuckDB extension, and MCP server. Pure Rust.
 
-**更新**: 2026-04-13T02:00:04Z
+**更新**: 2026-04-20T02:00:36Z
 
 ---
 
-### 54. tnielsen2/q-mcp
+### 54. tommy0200/code-screenshot-mcp
 
 **Stars**: 0
 
 **来源**: MCP Server Latest
 
-**描述**: MCP server with Terraform, GitHub CLI, AWS CLI, and filesystem tools
+**描述**: 🎨 Generate stunning syntax-highlighted code screenshots with this MCP server, designed for seamless integration with Claude and professional themes.
 
-**更新**: 2026-04-13T01:59:25Z
+**更新**: 2026-04-20T02:00:17Z
 
 ---
 
-### 55. israel7852/claude-code-mastery
+### 55. boboidvtw/hmc-memory
 
 **Stars**: 0
 
 **来源**: MCP Server Latest
 
-**描述**: 🌐 Master Claude Code with this comprehensive guide on enhancing projects with MCP servers, commands, and effective chat strategies.
+**描述**: Hierarchical Memory Compression for AI agents — cross-platform MCP server, daily/chunk/monthly/yearly auto-compression
 
-**更新**: 2026-04-13T01:59:22Z
+**更新**: 2026-04-20T02:00:17Z
 
 ---
 
-### 56. Wolskr/speak_when_done
+### 56. huseyingayiran/design-taste-web
 
 **Stars**: 0
 
 **来源**: MCP Server Latest
 
-**描述**: 🔊 Speak text aloud with ease. This tool handles temporary files and integrates as a CLI, Python library, or MCP server for AI assistants.
+**描述**: Public design-reference browser + MCP server
 
-**更新**: 2026-04-13T01:58:53Z
-
----
-
-### 57. demianguzman/saas-tf-mcp-server
-
-**Stars**: 0
-
-**来源**: MCP Server Latest
-
-**描述**: 🌐 Get free subdomains with automatic DNS provisioning for your projects using the MCP server for saas.tf, designed for demos and development.
-
-**更新**: 2026-04-13T01:58:45Z
+**更新**: 2026-04-20T02:00:02Z
 
 ---
 
-### 58. sebastianstupak/n8n-nodes-retainr
+### 57. sebastianstupak/n8n-nodes-retainr
 
 **Stars**: 0
 

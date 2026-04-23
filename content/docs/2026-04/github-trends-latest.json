@@ -1,0 +1,54 @@
+{
+  "timestamp": "2026-04-21T21:24:00+08:00",
+  "generated_by": "旺财 GitHub趋势监控",
+  "top_repos_by_recent_push": [
+    {"name": "freeCodeCamp/freeCodeCamp", "stars": 443300, "lang": "TypeScript", "forks": 44354, "open_issues": 196, "desc": "freeCodeCamp.org's open-source codebase and curriculum"},
+    {"name": "openclaw/openclaw", "stars": 361643, "lang": "TypeScript", "forks": 73805, "open_issues": 19210, "desc": "AI assistant platform"},
+    {"name": "kamranahmedse/developer-roadmap", "stars": 353319, "lang": "TypeScript", "forks": 43952, "open_issues": 6, "desc": "Interactive roadmaps for developers"},
+    {"name": "facebook/react", "stars": 244626, "lang": "JavaScript", "forks": 50964, "open_issues": 1235, "desc": "Web and native UI library"},
+    {"name": "torvalds/linux", "stars": 230186, "lang": "C", "forks": 61780, "open_issues": 3, "desc": "Linux kernel source tree"},
+    {"name": "ultraworkers/claw-code", "stars": 187004, "lang": "Rust", "forks": 108991, "open_issues": 1426, "desc": "Fastest repo to 100K stars, built in Rust"},
+    {"name": "n8n-io/n8n", "stars": 184966, "lang": "TypeScript", "forks": 57003, "open_issues": 1537, "desc": "Workflow automation with AI"},
+    {"name": "microsoft/vscode", "stars": 184086, "lang": "TypeScript", "forks": 39305, "open_issues": 16505, "desc": "Visual Studio Code"},
+    {"name": "ollama/ollama", "stars": 169598, "lang": "Go", "forks": 15717, "open_issues": 3019, "desc": "Run Kimi-K2.5, GLM-5, DeepSeek, gpt-oss models"},
+    {"name": "anomalyco/opencode", "stars": 146921, "lang": "TypeScript", "forks": 16736, "open_issues": 6112, "desc": "Open source coding agent"}
+  ],
+  "hot_new_repos_last_7days": [
+    {"name": "kyegomez/OpenMythos", "stars": 5495, "lang": "Python", "forks": 1259, "created": "2026-04-18", "desc": "Reconstruction of Claude Mythos architecture", "alert": "⚠️ 3天5500星，爆炸增长"},
+    {"name": "browser-use/browser-harness", "stars": 4075, "lang": "Python", "forks": 340, "created": "2026-04-17", "desc": "Self-healing browser harness for LLMs", "alert": "⚠️ 4天4000星"},
+    {"name": "Robbyant/lingbot-map", "stars": 3730, "lang": "Python", "forks": 328, "created": "2026-04-15", "desc": "Feed-forward 3D foundation model for streaming reconstruction"},
+    {"name": "alchaincyf/huashu-design", "stars": 1854, "lang": "HTML", "forks": 295, "created": "2026-04-19", "desc": "HTML-native design skill for Claude Code"},
+    {"name": "lewislulu/html-ppt-skill", "stars": 1728, "lang": "HTML", "forks": 192, "created": "2026-04-15", "desc": "HTML PPT Studio - 24 themes, 31 layouts AgentSkill"},
+    {"name": "Nightmare-Eclipse/RedSun", "stars": 1665, "lang": "C++", "forks": 361, "created": "2026-04-15", "desc": "Red Sun vulnerability repository"},
+    {"name": "Manavarya09/design-extract", "stars": 1212, "lang": "JavaScript", "forks": 95, "created": "2026-04-15", "desc": "Extract website design system, DTCG tokens, MCP server"},
+    {"name": "cathrynlavery/diagram-design", "stars": 1079, "lang": "HTML", "forks": 71, "created": "2026-04-16", "desc": "Editorial diagram types for Claude Code"},
+    {"name": "wbh604/UZI-Skill", "stars": 1058, "lang": "Python", "forks": 176, "created": "2026-04-16", "desc": "51位投资大佬量化分析Skills"},
+    {"name": "EvoLinkAI/awesome-gpt-image-2-prompts", "stars": 1049, "lang": "Python", "forks": 97, "created": "2026-04-18", "desc": "Curated GPT-Image-2 prompts and examples"},
+    {"name": "codejunkie99/agentic-stack", "stars": 1025, "lang": "Python", "forks": 122, "created": "2026-04-15", "desc": "Portable .agent/ folder for multi-agent portability"},
+    {"name": "WeaveMindAI/weft", "stars": 926, "lang": "Rust", "forks": 123, "created": "2026-04-15", "desc": "A programming language for AI systems"},
+    {"name": "VoltAgent/awesome-claude-design", "stars": 861, "lang": null, "forks": 85, "created": "2026-04-18", "desc": "68 design system inspirations in DESIGN.md format"},
+    {"name": "bwjoke/BTC-Trading-Since-2020", "stars": 802, "lang": null, "forks": 278, "created": "2026-04-17", "desc": "Public BTC trading context since 2020"},
+    {"name": "xataio/xata", "stars": 698, "lang": "Go", "forks": 32, "created": "2026-04-15", "desc": "Open source Postgres platform with branching"},
+    {"name": "stanford-iris-lab/meta-harness", "stars": 547, "lang": "Python", "forks": 42, "created": "2026-04-15", "desc": "Reference code for Meta-Harness paper"},
+    {"name": "assai-id/nemesis", "stars": 542, "lang": "JavaScript", "forks": 253, "created": "2026-04-16", "desc": null}
+  ],
+  "emerging_patterns": {
+    "trend_1": "🔥 AI Agent Skills 生态爆发 - 大量 AgentSkill 类项目（设计、PPT、图表、Logo生成）涌现，Claude Code/OpenCode 的 skill 市场正在形成",
+    "trend_2": "🔥 Agent 可移植性 - agentic-stack 提出的 .agent/ 便携文件夹概念，跨 Claude Code/Cursor/Windsurf/OpenCode/OpenClaw 通用",
+    "trend_3": "🔥 Browser Automation for AI - browser-harness 等项目推动 LLM 驱动的浏览器自动化",
+    "trend_4": "📊 AI 架构逆向工程 - OpenMythos 逆向重建 Claude Mythos 架构，3天5.5K星",
+    "trend_5": "🎨 HTML原生设计工具链 - huashu-design、html-ppt-skill、diagram-design 等用 HTML 替代传统设计工具",
+    "trend_6": "💰 量化交易Skills化 - UZI-Skill 将投资分析打包为 AgentSkill",
+    "trend_7": "🖼️ GPT-Image-2 提示词工程 - awesome-gpt-image-2-prompts 显示图像生成提示词仍是热点"
+  },
+  "language_distribution_recent": {
+    "Python": 8,
+    "HTML": 4,
+    "JavaScript": 2,
+    "Rust": 1,
+    "Go": 1,
+    "C++": 1,
+    "null": 2
+  },
+  "summary": "本周 GitHub 趋势核心主题：AI Agent 技能生态全面爆发，Claude Code/OpenCode 的 AgentSkill 格式正成为新标准。HTML 原生设计工具链异军突起，browser automation for LLMs 持续升温。Python 仍是最热门语言，Rust 在基础设施层（weft、claw-code）稳步增长。"
+}

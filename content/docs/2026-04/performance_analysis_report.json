@@ -1,10 +1,25 @@
 {
-  "analysis_timestamp": "2026-04-17T13:11:07.563861",
-  "total_scripts": 194,
-  "high_priority_scripts": 181,
+  "analysis_timestamp": "2026-04-24T00:50:58.603271",
+  "total_scripts": 239,
+  "high_priority_scripts": 218,
   "medium_priority_scripts": 2,
-  "optimization_opportunities": 183,
+  "optimization_opportunities": 220,
   "high_priority_details": [
+    {
+      "path": "C:\\Users\\PC\\.openclaw\\workspace\\scripts\\ai-learning-discussion.py",
+      "filename": "ai-learning-discussion.py",
+      "size": 3157,
+      "line_count": 50,
+      "sync_patterns": [],
+      "async_patterns": [],
+      "api_calls": [],
+      "cache_usage": false,
+      "concurrent_requests": false,
+      "error_handling": false,
+      "rate_limiting": false,
+      "performance_score": 0,
+      "optimization_potential": "HIGH"
+    },
     {
       "path": "C:\\Users\\PC\\.openclaw\\workspace\\scripts\\analyze_challenge.py",
       "filename": "analyze_challenge.py",
@@ -934,6 +949,36 @@
       "optimization_potential": "HIGH"
     },
     {
+      "path": "C:\\Users\\PC\\.openclaw\\workspace\\scripts\\English-moltbook-test.py",
+      "filename": "English-moltbook-test.py",
+      "size": 5010,
+      "line_count": 109,
+      "sync_patterns": [],
+      "async_patterns": [],
+      "api_calls": [],
+      "cache_usage": true,
+      "concurrent_requests": false,
+      "error_handling": false,
+      "rate_limiting": true,
+      "performance_score": 0,
+      "optimization_potential": "HIGH"
+    },
+    {
+      "path": "C:\\Users\\PC\\.openclaw\\workspace\\scripts\\execute_moltbook_reply.py",
+      "filename": "execute_moltbook_reply.py",
+      "size": 12593,
+      "line_count": 330,
+      "sync_patterns": [],
+      "async_patterns": [],
+      "api_calls": [],
+      "cache_usage": true,
+      "concurrent_requests": false,
+      "error_handling": true,
+      "rate_limiting": true,
+      "performance_score": 25,
+      "optimization_potential": "HIGH"
+    },
+    {
       "path": "C:\\Users\\PC\\.openclaw\\workspace\\scripts\\explore_moltbook.py",
       "filename": "explore_moltbook.py",
       "size": 1457,
@@ -958,6 +1003,42 @@
       "cache_usage": false,
       "concurrent_requests": false,
       "error_handling": false,
+      "rate_limiting": false,
+      "performance_score": 0,
+      "optimization_potential": "HIGH"
+    },
+    {
+      "path": "C:\\Users\\PC\\.openclaw\\workspace\\scripts\\extract_hot_posts.py",
+      "filename": "extract_hot_posts.py",
+      "size": 3555,
+      "line_count": 114,
+      "sync_patterns": [
+        {
+          "pattern": "import\\s+requests",
+          "count": 1,
+          "examples": [
+            "import requests"
+          ]
+        },
+        {
+          "pattern": "requests\\.",
+          "count": 2,
+          "examples": [
+            "requests.",
+            "requests."
+          ]
+        }
+      ],
+      "async_patterns": [],
+      "api_calls": [
+        {
+          "pattern": "requests\\.(get|post|put|delete|patch)",
+          "count": 2
+        }
+      ],
+      "cache_usage": true,
+      "concurrent_requests": false,
+      "error_handling": true,
       "rate_limiting": false,
       "performance_score": 0,
       "optimization_potential": "HIGH"
@@ -1561,6 +1642,21 @@
       "optimization_potential": "HIGH"
     },
     {
+      "path": "C:\\Users\\PC\\.openclaw\\workspace\\scripts\\find_post_id.py",
+      "filename": "find_post_id.py",
+      "size": 2570,
+      "line_count": 58,
+      "sync_patterns": [],
+      "async_patterns": [],
+      "api_calls": [],
+      "cache_usage": false,
+      "concurrent_requests": false,
+      "error_handling": false,
+      "rate_limiting": false,
+      "performance_score": 0,
+      "optimization_potential": "HIGH"
+    },
+    {
       "path": "C:\\Users\\PC\\.openclaw\\workspace\\scripts\\gen_csdn_inject.py",
       "filename": "gen_csdn_inject.py",
       "size": 615,
@@ -2035,7 +2131,7 @@
     {
       "path": "C:\\Users\\PC\\.openclaw\\workspace\\scripts\\github-sync.py",
       "filename": "github-sync.py",
-      "size": 5431,
+      "size": 5606,
       "line_count": 183,
       "sync_patterns": [],
       "async_patterns": [],
@@ -2094,6 +2190,41 @@
       "optimization_potential": "HIGH"
     },
     {
+      "path": "C:\\Users\\PC\\.openclaw\\workspace\\scripts\\hf-check-token.py",
+      "filename": "hf-check-token.py",
+      "size": 761,
+      "line_count": 29,
+      "sync_patterns": [
+        {
+          "pattern": "import\\s+requests",
+          "count": 1,
+          "examples": [
+            "import requests"
+          ]
+        },
+        {
+          "pattern": "requests\\.",
+          "count": 1,
+          "examples": [
+            "requests."
+          ]
+        }
+      ],
+      "async_patterns": [],
+      "api_calls": [
+        {
+          "pattern": "requests\\.(get|post|put|delete|patch)",
+          "count": 1
+        }
+      ],
+      "cache_usage": false,
+      "concurrent_requests": false,
+      "error_handling": true,
+      "rate_limiting": false,
+      "performance_score": 0,
+      "optimization_potential": "HIGH"
+    },
+    {
       "path": "C:\\Users\\PC\\.openclaw\\workspace\\scripts\\hf-community-post-preparer.py",
       "filename": "hf-community-post-preparer.py",
       "size": 4925,
@@ -2126,6 +2257,41 @@
           "count": 2,
           "examples": [
             "requests.",
+            "requests."
+          ]
+        }
+      ],
+      "async_patterns": [],
+      "api_calls": [
+        {
+          "pattern": "requests\\.(get|post|put|delete|patch)",
+          "count": 1
+        }
+      ],
+      "cache_usage": true,
+      "concurrent_requests": false,
+      "error_handling": true,
+      "rate_limiting": false,
+      "performance_score": 0,
+      "optimization_potential": "HIGH"
+    },
+    {
+      "path": "C:\\Users\\PC\\.openclaw\\workspace\\scripts\\hf-daily-check.py",
+      "filename": "hf-daily-check.py",
+      "size": 6233,
+      "line_count": 237,
+      "sync_patterns": [
+        {
+          "pattern": "import\\s+requests",
+          "count": 1,
+          "examples": [
+            "import requests"
+          ]
+        },
+        {
+          "pattern": "requests\\.",
+          "count": 1,
+          "examples": [
             "requests."
           ]
         }
@@ -2421,6 +2587,58 @@
       "optimization_potential": "HIGH"
     },
     {
+      "path": "C:\\Users\\PC\\.openclaw\\workspace\\scripts\\moltbook-api-test.py",
+      "filename": "moltbook-api-test.py",
+      "size": 4656,
+      "line_count": 148,
+      "sync_patterns": [
+        {
+          "pattern": "import\\s+requests",
+          "count": 1,
+          "examples": [
+            "import requests"
+          ]
+        },
+        {
+          "pattern": "requests\\.",
+          "count": 4,
+          "examples": [
+            "requests.",
+            "requests.",
+            "requests."
+          ]
+        }
+      ],
+      "async_patterns": [],
+      "api_calls": [
+        {
+          "pattern": "requests\\.(get|post|put|delete|patch)",
+          "count": 2
+        }
+      ],
+      "cache_usage": true,
+      "concurrent_requests": false,
+      "error_handling": true,
+      "rate_limiting": true,
+      "performance_score": 10,
+      "optimization_potential": "HIGH"
+    },
+    {
+      "path": "C:\\Users\\PC\\.openclaw\\workspace\\scripts\\moltbook-comment-reply-2026-04-21.py",
+      "filename": "moltbook-comment-reply-2026-04-21.py",
+      "size": 21749,
+      "line_count": 417,
+      "sync_patterns": [],
+      "async_patterns": [],
+      "api_calls": [],
+      "cache_usage": true,
+      "concurrent_requests": false,
+      "error_handling": true,
+      "rate_limiting": true,
+      "performance_score": 25,
+      "optimization_potential": "HIGH"
+    },
+    {
       "path": "C:\\Users\\PC\\.openclaw\\workspace\\scripts\\moltbook-create-fixed.py",
       "filename": "moltbook-create-fixed.py",
       "size": 5331,
@@ -2511,8 +2729,60 @@
     {
       "path": "C:\\Users\\PC\\.openclaw\\workspace\\scripts\\moltbook-get-comments.py",
       "filename": "moltbook-get-comments.py",
-      "size": 3043,
-      "line_count": 99,
+      "size": 7862,
+      "line_count": 273,
+      "sync_patterns": [
+        {
+          "pattern": "import\\s+requests",
+          "count": 1,
+          "examples": [
+            "import requests"
+          ]
+        },
+        {
+          "pattern": "requests\\.",
+          "count": 6,
+          "examples": [
+            "requests.",
+            "requests.",
+            "requests."
+          ]
+        }
+      ],
+      "async_patterns": [],
+      "api_calls": [
+        {
+          "pattern": "requests\\.(get|post|put|delete|patch)",
+          "count": 3
+        }
+      ],
+      "cache_usage": true,
+      "concurrent_requests": false,
+      "error_handling": true,
+      "rate_limiting": false,
+      "performance_score": 0,
+      "optimization_potential": "HIGH"
+    },
+    {
+      "path": "C:\\Users\\PC\\.openclaw\\workspace\\scripts\\moltbook-manual-verify.py",
+      "filename": "moltbook-manual-verify.py",
+      "size": 995,
+      "line_count": 34,
+      "sync_patterns": [],
+      "async_patterns": [],
+      "api_calls": [],
+      "cache_usage": false,
+      "concurrent_requests": false,
+      "error_handling": false,
+      "rate_limiting": false,
+      "performance_score": 0,
+      "optimization_potential": "HIGH"
+    },
+    {
+      "path": "C:\\Users\\PC\\.openclaw\\workspace\\scripts\\moltbook-multi-lang-reply-task.py",
+      "filename": "moltbook-multi-lang-reply-task.py",
+      "size": 15880,
+      "line_count": 451,
       "sync_patterns": [
         {
           "pattern": "import\\s+requests",
@@ -2537,24 +2807,44 @@
           "count": 2
         }
       ],
-      "cache_usage": false,
+      "cache_usage": true,
       "concurrent_requests": false,
       "error_handling": true,
-      "rate_limiting": false,
-      "performance_score": 0,
+      "rate_limiting": true,
+      "performance_score": 10,
       "optimization_potential": "HIGH"
     },
     {
-      "path": "C:\\Users\\PC\\.openclaw\\workspace\\scripts\\moltbook-manual-verify.py",
-      "filename": "moltbook-manual-verify.py",
-      "size": 995,
-      "line_count": 34,
-      "sync_patterns": [],
+      "path": "C:\\Users\\PC\\.openclaw\\workspace\\scripts\\moltbook-multi-lang-reply.py",
+      "filename": "moltbook-multi-lang-reply.py",
+      "size": 8342,
+      "line_count": 248,
+      "sync_patterns": [
+        {
+          "pattern": "import\\s+requests",
+          "count": 1,
+          "examples": [
+            "import requests"
+          ]
+        },
+        {
+          "pattern": "requests\\.",
+          "count": 1,
+          "examples": [
+            "requests."
+          ]
+        }
+      ],
       "async_patterns": [],
-      "api_calls": [],
-      "cache_usage": false,
+      "api_calls": [
+        {
+          "pattern": "requests\\.(get|post|put|delete|patch)",
+          "count": 1
+        }
+      ],
+      "cache_usage": true,
       "concurrent_requests": false,
-      "error_handling": false,
+      "error_handling": true,
       "rate_limiting": false,
       "performance_score": 0,
       "optimization_potential": "HIGH"
@@ -2713,6 +3003,21 @@
       "optimization_potential": "HIGH"
     },
     {
+      "path": "C:\\Users\\PC\\.openclaw\\workspace\\scripts\\moltbook-publish-dog-agent.py",
+      "filename": "moltbook-publish-dog-agent.py",
+      "size": 1645,
+      "line_count": 56,
+      "sync_patterns": [],
+      "async_patterns": [],
+      "api_calls": [],
+      "cache_usage": true,
+      "concurrent_requests": false,
+      "error_handling": false,
+      "rate_limiting": false,
+      "performance_score": 0,
+      "optimization_potential": "HIGH"
+    },
+    {
       "path": "C:\\Users\\PC\\.openclaw\\workspace\\scripts\\moltbook-publish-draft.py",
       "filename": "moltbook-publish-draft.py",
       "size": 1908,
@@ -2721,6 +3026,21 @@
       "async_patterns": [],
       "api_calls": [],
       "cache_usage": true,
+      "concurrent_requests": false,
+      "error_handling": false,
+      "rate_limiting": false,
+      "performance_score": 0,
+      "optimization_potential": "HIGH"
+    },
+    {
+      "path": "C:\\Users\\PC\\.openclaw\\workspace\\scripts\\moltbook-publish.py",
+      "filename": "moltbook-publish.py",
+      "size": 527,
+      "line_count": 15,
+      "sync_patterns": [],
+      "async_patterns": [],
+      "api_calls": [],
+      "cache_usage": false,
       "concurrent_requests": false,
       "error_handling": false,
       "rate_limiting": false,
@@ -2778,10 +3098,70 @@
       "optimization_potential": "HIGH"
     },
     {
+      "path": "C:\\Users\\PC\\.openclaw\\workspace\\scripts\\moltbook-reply-comments-simple.py",
+      "filename": "moltbook-reply-comments-simple.py",
+      "size": 11893,
+      "line_count": 311,
+      "sync_patterns": [],
+      "async_patterns": [],
+      "api_calls": [],
+      "cache_usage": true,
+      "concurrent_requests": false,
+      "error_handling": true,
+      "rate_limiting": true,
+      "performance_score": 25,
+      "optimization_potential": "HIGH"
+    },
+    {
+      "path": "C:\\Users\\PC\\.openclaw\\workspace\\scripts\\moltbook-reply-comments.py",
+      "filename": "moltbook-reply-comments.py",
+      "size": 13645,
+      "line_count": 369,
+      "sync_patterns": [],
+      "async_patterns": [],
+      "api_calls": [],
+      "cache_usage": true,
+      "concurrent_requests": false,
+      "error_handling": true,
+      "rate_limiting": true,
+      "performance_score": 25,
+      "optimization_potential": "HIGH"
+    },
+    {
+      "path": "C:\\Users\\PC\\.openclaw\\workspace\\scripts\\moltbook-reply-real.py",
+      "filename": "moltbook-reply-real.py",
+      "size": 13680,
+      "line_count": 391,
+      "sync_patterns": [],
+      "async_patterns": [],
+      "api_calls": [],
+      "cache_usage": true,
+      "concurrent_requests": false,
+      "error_handling": true,
+      "rate_limiting": true,
+      "performance_score": 25,
+      "optimization_potential": "HIGH"
+    },
+    {
+      "path": "C:\\Users\\PC\\.openclaw\\workspace\\scripts\\moltbook-reply-task.py",
+      "filename": "moltbook-reply-task.py",
+      "size": 5934,
+      "line_count": 205,
+      "sync_patterns": [],
+      "async_patterns": [],
+      "api_calls": [],
+      "cache_usage": true,
+      "concurrent_requests": false,
+      "error_handling": true,
+      "rate_limiting": false,
+      "performance_score": 15,
+      "optimization_potential": "HIGH"
+    },
+    {
       "path": "C:\\Users\\PC\\.openclaw\\workspace\\scripts\\moltbook-reply.py",
       "filename": "moltbook-reply.py",
-      "size": 8051,
-      "line_count": 223,
+      "size": 12411,
+      "line_count": 325,
       "sync_patterns": [
         {
           "pattern": "import\\s+requests",
@@ -2800,17 +3180,12 @@
         }
       ],
       "async_patterns": [],
-      "api_calls": [
-        {
-          "pattern": "requests\\.(get|post|put|delete|patch)",
-          "count": 2
-        }
-      ],
-      "cache_usage": false,
+      "api_calls": [],
+      "cache_usage": true,
       "concurrent_requests": false,
       "error_handling": true,
       "rate_limiting": true,
-      "performance_score": 0,
+      "performance_score": 25,
       "optimization_potential": "HIGH"
     },
     {
@@ -2831,38 +3206,16 @@
     {
       "path": "C:\\Users\\PC\\.openclaw\\workspace\\scripts\\moltbook.py",
       "filename": "moltbook.py",
-      "size": 19172,
-      "line_count": 506,
-      "sync_patterns": [
-        {
-          "pattern": "import\\s+requests",
-          "count": 1,
-          "examples": [
-            "import requests"
-          ]
-        },
-        {
-          "pattern": "requests\\.",
-          "count": 5,
-          "examples": [
-            "requests.",
-            "requests.",
-            "requests."
-          ]
-        }
-      ],
+      "size": 15118,
+      "line_count": 444,
+      "sync_patterns": [],
       "async_patterns": [],
-      "api_calls": [
-        {
-          "pattern": "requests\\.(get|post|put|delete|patch)",
-          "count": 3
-        }
-      ],
+      "api_calls": [],
       "cache_usage": true,
       "concurrent_requests": false,
       "error_handling": true,
       "rate_limiting": true,
-      "performance_score": 10,
+      "performance_score": 25,
       "optimization_potential": "HIGH"
     },
     {
@@ -3407,6 +3760,21 @@
       "optimization_potential": "HIGH"
     },
     {
+      "path": "C:\\Users\\PC\\.openclaw\\workspace\\scripts\\moltbook_replies.py",
+      "filename": "moltbook_replies.py",
+      "size": 9199,
+      "line_count": 207,
+      "sync_patterns": [],
+      "async_patterns": [],
+      "api_calls": [],
+      "cache_usage": true,
+      "concurrent_requests": false,
+      "error_handling": false,
+      "rate_limiting": true,
+      "performance_score": 0,
+      "optimization_potential": "HIGH"
+    },
+    {
       "path": "C:\\Users\\PC\\.openclaw\\workspace\\scripts\\moltbook_reply_batch.py",
       "filename": "moltbook_reply_batch.py",
       "size": 8926,
@@ -3568,6 +3936,42 @@
         }
       ],
       "cache_usage": false,
+      "concurrent_requests": false,
+      "error_handling": true,
+      "rate_limiting": false,
+      "performance_score": 0,
+      "optimization_potential": "HIGH"
+    },
+    {
+      "path": "C:\\Users\\PC\\.openclaw\\workspace\\scripts\\post_moltbook_comments.py",
+      "filename": "post_moltbook_comments.py",
+      "size": 6220,
+      "line_count": 167,
+      "sync_patterns": [
+        {
+          "pattern": "import\\s+requests",
+          "count": 1,
+          "examples": [
+            "import requests"
+          ]
+        },
+        {
+          "pattern": "requests\\.",
+          "count": 2,
+          "examples": [
+            "requests.",
+            "requests."
+          ]
+        }
+      ],
+      "async_patterns": [],
+      "api_calls": [
+        {
+          "pattern": "requests\\.(get|post|put|delete|patch)",
+          "count": 2
+        }
+      ],
+      "cache_usage": true,
       "concurrent_requests": false,
       "error_handling": true,
       "rate_limiting": false,
@@ -3836,6 +4240,57 @@
       "optimization_potential": "HIGH"
     },
     {
+      "path": "C:\\Users\\PC\\.openclaw\\workspace\\scripts\\publish-hf-post.py",
+      "filename": "publish-hf-post.py",
+      "size": 4406,
+      "line_count": 154,
+      "sync_patterns": [
+        {
+          "pattern": "import\\s+requests",
+          "count": 1,
+          "examples": [
+            "import requests"
+          ]
+        },
+        {
+          "pattern": "requests\\.",
+          "count": 2,
+          "examples": [
+            "requests.",
+            "requests."
+          ]
+        }
+      ],
+      "async_patterns": [],
+      "api_calls": [
+        {
+          "pattern": "requests\\.(get|post|put|delete|patch)",
+          "count": 1
+        }
+      ],
+      "cache_usage": true,
+      "concurrent_requests": false,
+      "error_handling": true,
+      "rate_limiting": false,
+      "performance_score": 0,
+      "optimization_potential": "HIGH"
+    },
+    {
+      "path": "C:\\Users\\PC\\.openclaw\\workspace\\scripts\\publish-tech-post.py",
+      "filename": "publish-tech-post.py",
+      "size": 528,
+      "line_count": 24,
+      "sync_patterns": [],
+      "async_patterns": [],
+      "api_calls": [],
+      "cache_usage": true,
+      "concurrent_requests": false,
+      "error_handling": false,
+      "rate_limiting": false,
+      "performance_score": 0,
+      "optimization_potential": "HIGH"
+    },
+    {
       "path": "C:\\Users\\PC\\.openclaw\\workspace\\scripts\\publish_capa_java.py",
       "filename": "publish_capa_java.py",
       "size": 4106,
@@ -3935,6 +4390,21 @@
           "count": 1
         }
       ],
+      "cache_usage": true,
+      "concurrent_requests": false,
+      "error_handling": false,
+      "rate_limiting": false,
+      "performance_score": 0,
+      "optimization_potential": "HIGH"
+    },
+    {
+      "path": "C:\\Users\\PC\\.openclaw\\workspace\\scripts\\publish_moltbook_post.py",
+      "filename": "publish_moltbook_post.py",
+      "size": 827,
+      "line_count": 37,
+      "sync_patterns": [],
+      "async_patterns": [],
+      "api_calls": [],
       "cache_usage": true,
       "concurrent_requests": false,
       "error_handling": false,
@@ -4044,6 +4514,21 @@
           "count": 2
         }
       ],
+      "cache_usage": true,
+      "concurrent_requests": false,
+      "error_handling": false,
+      "rate_limiting": false,
+      "performance_score": 0,
+      "optimization_potential": "HIGH"
+    },
+    {
+      "path": "C:\\Users\\PC\\.openclaw\\workspace\\scripts\\quick-moltbook-reply.py",
+      "filename": "quick-moltbook-reply.py",
+      "size": 5942,
+      "line_count": 136,
+      "sync_patterns": [],
+      "async_patterns": [],
+      "api_calls": [],
       "cache_usage": true,
       "concurrent_requests": false,
       "error_handling": false,
@@ -4172,6 +4657,36 @@
       "optimization_potential": "HIGH"
     },
     {
+      "path": "C:\\Users\\PC\\.openclaw\\workspace\\scripts\\reply_handler.py",
+      "filename": "reply_handler.py",
+      "size": 8882,
+      "line_count": 219,
+      "sync_patterns": [],
+      "async_patterns": [],
+      "api_calls": [],
+      "cache_usage": true,
+      "concurrent_requests": false,
+      "error_handling": false,
+      "rate_limiting": false,
+      "performance_score": 0,
+      "optimization_potential": "HIGH"
+    },
+    {
+      "path": "C:\\Users\\PC\\.openclaw\\workspace\\scripts\\reply_handler_simple.py",
+      "filename": "reply_handler_simple.py",
+      "size": 8846,
+      "line_count": 219,
+      "sync_patterns": [],
+      "async_patterns": [],
+      "api_calls": [],
+      "cache_usage": true,
+      "concurrent_requests": false,
+      "error_handling": false,
+      "rate_limiting": false,
+      "performance_score": 0,
+      "optimization_potential": "HIGH"
+    },
+    {
       "path": "C:\\Users\\PC\\.openclaw\\workspace\\scripts\\reply_moltbook.py",
       "filename": "reply_moltbook.py",
       "size": 8528,
@@ -4261,6 +4776,66 @@
       "optimization_potential": "HIGH"
     },
     {
+      "path": "C:\\Users\\PC\\.openclaw\\workspace\\scripts\\run-moltbook-post.py",
+      "filename": "run-moltbook-post.py",
+      "size": 3536,
+      "line_count": 62,
+      "sync_patterns": [],
+      "async_patterns": [],
+      "api_calls": [],
+      "cache_usage": false,
+      "concurrent_requests": false,
+      "error_handling": false,
+      "rate_limiting": false,
+      "performance_score": 0,
+      "optimization_potential": "HIGH"
+    },
+    {
+      "path": "C:\\Users\\PC\\.openclaw\\workspace\\scripts\\run_discussion_post.py",
+      "filename": "run_discussion_post.py",
+      "size": 1002,
+      "line_count": 47,
+      "sync_patterns": [],
+      "async_patterns": [],
+      "api_calls": [],
+      "cache_usage": false,
+      "concurrent_requests": false,
+      "error_handling": false,
+      "rate_limiting": false,
+      "performance_score": 0,
+      "optimization_potential": "HIGH"
+    },
+    {
+      "path": "C:\\Users\\PC\\.openclaw\\workspace\\scripts\\run_moltbook_post.py",
+      "filename": "run_moltbook_post.py",
+      "size": 946,
+      "line_count": 30,
+      "sync_patterns": [],
+      "async_patterns": [],
+      "api_calls": [],
+      "cache_usage": true,
+      "concurrent_requests": false,
+      "error_handling": false,
+      "rate_limiting": false,
+      "performance_score": 0,
+      "optimization_potential": "HIGH"
+    },
+    {
+      "path": "C:\\Users\\PC\\.openclaw\\workspace\\scripts\\run_moltbook_reply.py",
+      "filename": "run_moltbook_reply.py",
+      "size": 4672,
+      "line_count": 164,
+      "sync_patterns": [],
+      "async_patterns": [],
+      "api_calls": [],
+      "cache_usage": true,
+      "concurrent_requests": false,
+      "error_handling": true,
+      "rate_limiting": false,
+      "performance_score": 15,
+      "optimization_potential": "HIGH"
+    },
+    {
       "path": "C:\\Users\\PC\\.openclaw\\workspace\\scripts\\select_moltbook_post.py",
       "filename": "select_moltbook_post.py",
       "size": 2780,
@@ -4335,10 +4910,85 @@
       "optimization_potential": "HIGH"
     },
     {
+      "path": "C:\\Users\\PC\\.openclaw\\workspace\\scripts\\simple-moltbook-reply.py",
+      "filename": "simple-moltbook-reply.py",
+      "size": 10629,
+      "line_count": 261,
+      "sync_patterns": [],
+      "async_patterns": [],
+      "api_calls": [],
+      "cache_usage": true,
+      "concurrent_requests": false,
+      "error_handling": true,
+      "rate_limiting": true,
+      "performance_score": 25,
+      "optimization_potential": "HIGH"
+    },
+    {
+      "path": "C:\\Users\\PC\\.openclaw\\workspace\\scripts\\simple-moltbook-test.py",
+      "filename": "simple-moltbook-test.py",
+      "size": 4566,
+      "line_count": 109,
+      "sync_patterns": [],
+      "async_patterns": [],
+      "api_calls": [],
+      "cache_usage": true,
+      "concurrent_requests": false,
+      "error_handling": false,
+      "rate_limiting": true,
+      "performance_score": 0,
+      "optimization_potential": "HIGH"
+    },
+    {
+      "path": "C:\\Users\\PC\\.openclaw\\workspace\\scripts\\simple-publish.py",
+      "filename": "simple-publish.py",
+      "size": 2292,
+      "line_count": 86,
+      "sync_patterns": [],
+      "async_patterns": [],
+      "api_calls": [],
+      "cache_usage": true,
+      "concurrent_requests": false,
+      "error_handling": false,
+      "rate_limiting": true,
+      "performance_score": 0,
+      "optimization_potential": "HIGH"
+    },
+    {
+      "path": "C:\\Users\\PC\\.openclaw\\workspace\\scripts\\simple-trend-tracker.py",
+      "filename": "simple-trend-tracker.py",
+      "size": 6670,
+      "line_count": 255,
+      "sync_patterns": [],
+      "async_patterns": [],
+      "api_calls": [],
+      "cache_usage": true,
+      "concurrent_requests": false,
+      "error_handling": false,
+      "rate_limiting": false,
+      "performance_score": 0,
+      "optimization_potential": "HIGH"
+    },
+    {
       "path": "C:\\Users\\PC\\.openclaw\\workspace\\scripts\\simple_moltbook.py",
       "filename": "simple_moltbook.py",
-      "size": 2235,
-      "line_count": 82,
+      "size": 2158,
+      "line_count": 91,
+      "sync_patterns": [],
+      "async_patterns": [],
+      "api_calls": [],
+      "cache_usage": true,
+      "concurrent_requests": false,
+      "error_handling": false,
+      "rate_limiting": true,
+      "performance_score": 0,
+      "optimization_potential": "HIGH"
+    },
+    {
+      "path": "C:\\Users\\PC\\.openclaw\\workspace\\scripts\\simple_moltbook_check.py",
+      "filename": "simple_moltbook_check.py",
+      "size": 5023,
+      "line_count": 175,
       "sync_patterns": [
         {
           "pattern": "import\\s+requests",
@@ -4349,8 +4999,9 @@
         },
         {
           "pattern": "requests\\.",
-          "count": 2,
+          "count": 3,
           "examples": [
+            "requests.",
             "requests.",
             "requests."
           ]
@@ -4360,10 +5011,10 @@
       "api_calls": [
         {
           "pattern": "requests\\.(get|post|put|delete|patch)",
-          "count": 1
+          "count": 3
         }
       ],
-      "cache_usage": false,
+      "cache_usage": true,
       "concurrent_requests": false,
       "error_handling": true,
       "rate_limiting": false,
@@ -4422,6 +5073,21 @@
       "optimization_potential": "HIGH"
     },
     {
+      "path": "C:\\Users\\PC\\.openclaw\\workspace\\scripts\\tech-share-moltbook.py",
+      "filename": "tech-share-moltbook.py",
+      "size": 4827,
+      "line_count": 118,
+      "sync_patterns": [],
+      "async_patterns": [],
+      "api_calls": [],
+      "cache_usage": true,
+      "concurrent_requests": false,
+      "error_handling": false,
+      "rate_limiting": false,
+      "performance_score": 0,
+      "optimization_potential": "HIGH"
+    },
+    {
       "path": "C:\\Users\\PC\\.openclaw\\workspace\\scripts\\temp_create_fun_post.py",
       "filename": "temp_create_fun_post.py",
       "size": 1872,
@@ -4468,6 +5134,21 @@
       "concurrent_requests": false,
       "error_handling": true,
       "rate_limiting": false,
+      "performance_score": 0,
+      "optimization_potential": "HIGH"
+    },
+    {
+      "path": "C:\\Users\\PC\\.openclaw\\workspace\\scripts\\test-moltbook-post.py",
+      "filename": "test-moltbook-post.py",
+      "size": 4610,
+      "line_count": 112,
+      "sync_patterns": [],
+      "async_patterns": [],
+      "api_calls": [],
+      "cache_usage": true,
+      "concurrent_requests": false,
+      "error_handling": false,
+      "rate_limiting": true,
       "performance_score": 0,
       "optimization_potential": "HIGH"
     },
@@ -4662,6 +5343,21 @@
       "error_handling": true,
       "rate_limiting": false,
       "performance_score": 0,
+      "optimization_potential": "HIGH"
+    },
+    {
+      "path": "C:\\Users\\PC\\.openclaw\\workspace\\scripts\\trend-tracker.py",
+      "filename": "trend-tracker.py",
+      "size": 7538,
+      "line_count": 316,
+      "sync_patterns": [],
+      "async_patterns": [],
+      "api_calls": [],
+      "cache_usage": true,
+      "concurrent_requests": false,
+      "error_handling": true,
+      "rate_limiting": false,
+      "performance_score": 15,
       "optimization_potential": "HIGH"
     },
     {
@@ -5102,6 +5798,29 @@
     }
   ],
   "optimization_plan": [
+    {
+      "script": "C:\\Users\\PC\\.openclaw\\workspace\\scripts\\ai-learning-discussion.py",
+      "analysis": {
+        "path": "C:\\Users\\PC\\.openclaw\\workspace\\scripts\\ai-learning-discussion.py",
+        "filename": "ai-learning-discussion.py",
+        "size": 3157,
+        "line_count": 50,
+        "sync_patterns": [],
+        "async_patterns": [],
+        "api_calls": [],
+        "cache_usage": false,
+        "concurrent_requests": false,
+        "error_handling": false,
+        "rate_limiting": false,
+        "performance_score": 0,
+        "optimization_potential": "HIGH"
+      },
+      "recommendations": [
+        "🔥 高优先级优化 - 需要立即优化",
+        "   • 实现并发处理 (asyncio.gather)",
+        "   • 添加连接池管理"
+      ]
+    },
     {
       "script": "C:\\Users\\PC\\.openclaw\\workspace\\scripts\\analyze_challenge.py",
       "analysis": {
@@ -6363,6 +7082,52 @@
       ]
     },
     {
+      "script": "C:\\Users\\PC\\.openclaw\\workspace\\scripts\\English-moltbook-test.py",
+      "analysis": {
+        "path": "C:\\Users\\PC\\.openclaw\\workspace\\scripts\\English-moltbook-test.py",
+        "filename": "English-moltbook-test.py",
+        "size": 5010,
+        "line_count": 109,
+        "sync_patterns": [],
+        "async_patterns": [],
+        "api_calls": [],
+        "cache_usage": true,
+        "concurrent_requests": false,
+        "error_handling": false,
+        "rate_limiting": true,
+        "performance_score": 0,
+        "optimization_potential": "HIGH"
+      },
+      "recommendations": [
+        "🔥 高优先级优化 - 需要立即优化",
+        "   • 实现并发处理 (asyncio.gather)",
+        "   • 添加连接池管理"
+      ]
+    },
+    {
+      "script": "C:\\Users\\PC\\.openclaw\\workspace\\scripts\\execute_moltbook_reply.py",
+      "analysis": {
+        "path": "C:\\Users\\PC\\.openclaw\\workspace\\scripts\\execute_moltbook_reply.py",
+        "filename": "execute_moltbook_reply.py",
+        "size": 12593,
+        "line_count": 330,
+        "sync_patterns": [],
+        "async_patterns": [],
+        "api_calls": [],
+        "cache_usage": true,
+        "concurrent_requests": false,
+        "error_handling": true,
+        "rate_limiting": true,
+        "performance_score": 25,
+        "optimization_potential": "HIGH"
+      },
+      "recommendations": [
+        "🔥 高优先级优化 - 需要立即优化",
+        "   • 实现并发处理 (asyncio.gather)",
+        "   • 添加连接池管理"
+      ]
+    },
+    {
       "script": "C:\\Users\\PC\\.openclaw\\workspace\\scripts\\explore_moltbook.py",
       "analysis": {
         "path": "C:\\Users\\PC\\.openclaw\\workspace\\scripts\\explore_moltbook.py",
@@ -6399,6 +7164,52 @@
         "   • 实现并发请求处理",
         "   • 添加智能缓存机制",
         "   • 减少重复API调用",
+        "   • 实现并发处理 (asyncio.gather)",
+        "   • 添加连接池管理"
+      ]
+    },
+    {
+      "script": "C:\\Users\\PC\\.openclaw\\workspace\\scripts\\extract_hot_posts.py",
+      "analysis": {
+        "path": "C:\\Users\\PC\\.openclaw\\workspace\\scripts\\extract_hot_posts.py",
+        "filename": "extract_hot_posts.py",
+        "size": 3555,
+        "line_count": 114,
+        "sync_patterns": [
+          {
+            "pattern": "import\\s+requests",
+            "count": 1,
+            "examples": [
+              "import requests"
+            ]
+          },
+          {
+            "pattern": "requests\\.",
+            "count": 2,
+            "examples": [
+              "requests.",
+              "requests."
+            ]
+          }
+        ],
+        "async_patterns": [],
+        "api_calls": [
+          {
+            "pattern": "requests\\.(get|post|put|delete|patch)",
+            "count": 2
+          }
+        ],
+        "cache_usage": true,
+        "concurrent_requests": false,
+        "error_handling": true,
+        "rate_limiting": false,
+        "performance_score": 0,
+        "optimization_potential": "HIGH"
+      },
+      "recommendations": [
+        "🔥 高优先级优化 - 需要立即优化",
+        "   • 转换为异步架构 (使用aiohttp替代requests)",
+        "   • 实现并发请求处理",
         "   • 实现并发处理 (asyncio.gather)",
         "   • 添加连接池管理"
       ]
@@ -7182,6 +7993,29 @@
       ]
     },
     {
+      "script": "C:\\Users\\PC\\.openclaw\\workspace\\scripts\\find_post_id.py",
+      "analysis": {
+        "path": "C:\\Users\\PC\\.openclaw\\workspace\\scripts\\find_post_id.py",
+        "filename": "find_post_id.py",
+        "size": 2570,
+        "line_count": 58,
+        "sync_patterns": [],
+        "async_patterns": [],
+        "api_calls": [],
+        "cache_usage": false,
+        "concurrent_requests": false,
+        "error_handling": false,
+        "rate_limiting": false,
+        "performance_score": 0,
+        "optimization_potential": "HIGH"
+      },
+      "recommendations": [
+        "🔥 高优先级优化 - 需要立即优化",
+        "   • 实现并发处理 (asyncio.gather)",
+        "   • 添加连接池管理"
+      ]
+    },
+    {
       "script": "C:\\Users\\PC\\.openclaw\\workspace\\scripts\\gen_csdn_inject.py",
       "analysis": {
         "path": "C:\\Users\\PC\\.openclaw\\workspace\\scripts\\gen_csdn_inject.py",
@@ -7808,7 +8642,7 @@
       "analysis": {
         "path": "C:\\Users\\PC\\.openclaw\\workspace\\scripts\\github-sync.py",
         "filename": "github-sync.py",
-        "size": 5431,
+        "size": 5606,
         "line_count": 183,
         "sync_patterns": [],
         "async_patterns": [],
@@ -7889,6 +8723,53 @@
       ]
     },
     {
+      "script": "C:\\Users\\PC\\.openclaw\\workspace\\scripts\\hf-check-token.py",
+      "analysis": {
+        "path": "C:\\Users\\PC\\.openclaw\\workspace\\scripts\\hf-check-token.py",
+        "filename": "hf-check-token.py",
+        "size": 761,
+        "line_count": 29,
+        "sync_patterns": [
+          {
+            "pattern": "import\\s+requests",
+            "count": 1,
+            "examples": [
+              "import requests"
+            ]
+          },
+          {
+            "pattern": "requests\\.",
+            "count": 1,
+            "examples": [
+              "requests."
+            ]
+          }
+        ],
+        "async_patterns": [],
+        "api_calls": [
+          {
+            "pattern": "requests\\.(get|post|put|delete|patch)",
+            "count": 1
+          }
+        ],
+        "cache_usage": false,
+        "concurrent_requests": false,
+        "error_handling": true,
+        "rate_limiting": false,
+        "performance_score": 0,
+        "optimization_potential": "HIGH"
+      },
+      "recommendations": [
+        "🔥 高优先级优化 - 需要立即优化",
+        "   • 转换为异步架构 (使用aiohttp替代requests)",
+        "   • 实现并发请求处理",
+        "   • 添加智能缓存机制",
+        "   • 减少重复API调用",
+        "   • 实现并发处理 (asyncio.gather)",
+        "   • 添加连接池管理"
+      ]
+    },
+    {
       "script": "C:\\Users\\PC\\.openclaw\\workspace\\scripts\\hf-community-post-preparer.py",
       "analysis": {
         "path": "C:\\Users\\PC\\.openclaw\\workspace\\scripts\\hf-community-post-preparer.py",
@@ -7931,6 +8812,51 @@
             "count": 2,
             "examples": [
               "requests.",
+              "requests."
+            ]
+          }
+        ],
+        "async_patterns": [],
+        "api_calls": [
+          {
+            "pattern": "requests\\.(get|post|put|delete|patch)",
+            "count": 1
+          }
+        ],
+        "cache_usage": true,
+        "concurrent_requests": false,
+        "error_handling": true,
+        "rate_limiting": false,
+        "performance_score": 0,
+        "optimization_potential": "HIGH"
+      },
+      "recommendations": [
+        "🔥 高优先级优化 - 需要立即优化",
+        "   • 转换为异步架构 (使用aiohttp替代requests)",
+        "   • 实现并发请求处理",
+        "   • 实现并发处理 (asyncio.gather)",
+        "   • 添加连接池管理"
+      ]
+    },
+    {
+      "script": "C:\\Users\\PC\\.openclaw\\workspace\\scripts\\hf-daily-check.py",
+      "analysis": {
+        "path": "C:\\Users\\PC\\.openclaw\\workspace\\scripts\\hf-daily-check.py",
+        "filename": "hf-daily-check.py",
+        "size": 6233,
+        "line_count": 237,
+        "sync_patterns": [
+          {
+            "pattern": "import\\s+requests",
+            "count": 1,
+            "examples": [
+              "import requests"
+            ]
+          },
+          {
+            "pattern": "requests\\.",
+            "count": 1,
+            "examples": [
               "requests."
             ]
           }
@@ -8350,6 +9276,76 @@
       ]
     },
     {
+      "script": "C:\\Users\\PC\\.openclaw\\workspace\\scripts\\moltbook-api-test.py",
+      "analysis": {
+        "path": "C:\\Users\\PC\\.openclaw\\workspace\\scripts\\moltbook-api-test.py",
+        "filename": "moltbook-api-test.py",
+        "size": 4656,
+        "line_count": 148,
+        "sync_patterns": [
+          {
+            "pattern": "import\\s+requests",
+            "count": 1,
+            "examples": [
+              "import requests"
+            ]
+          },
+          {
+            "pattern": "requests\\.",
+            "count": 4,
+            "examples": [
+              "requests.",
+              "requests.",
+              "requests."
+            ]
+          }
+        ],
+        "async_patterns": [],
+        "api_calls": [
+          {
+            "pattern": "requests\\.(get|post|put|delete|patch)",
+            "count": 2
+          }
+        ],
+        "cache_usage": true,
+        "concurrent_requests": false,
+        "error_handling": true,
+        "rate_limiting": true,
+        "performance_score": 10,
+        "optimization_potential": "HIGH"
+      },
+      "recommendations": [
+        "🔥 高优先级优化 - 需要立即优化",
+        "   • 转换为异步架构 (使用aiohttp替代requests)",
+        "   • 实现并发请求处理",
+        "   • 实现并发处理 (asyncio.gather)",
+        "   • 添加连接池管理"
+      ]
+    },
+    {
+      "script": "C:\\Users\\PC\\.openclaw\\workspace\\scripts\\moltbook-comment-reply-2026-04-21.py",
+      "analysis": {
+        "path": "C:\\Users\\PC\\.openclaw\\workspace\\scripts\\moltbook-comment-reply-2026-04-21.py",
+        "filename": "moltbook-comment-reply-2026-04-21.py",
+        "size": 21749,
+        "line_count": 417,
+        "sync_patterns": [],
+        "async_patterns": [],
+        "api_calls": [],
+        "cache_usage": true,
+        "concurrent_requests": false,
+        "error_handling": true,
+        "rate_limiting": true,
+        "performance_score": 25,
+        "optimization_potential": "HIGH"
+      },
+      "recommendations": [
+        "🔥 高优先级优化 - 需要立即优化",
+        "   • 实现并发处理 (asyncio.gather)",
+        "   • 添加连接池管理"
+      ]
+    },
+    {
       "script": "C:\\Users\\PC\\.openclaw\\workspace\\scripts\\moltbook-create-fixed.py",
       "analysis": {
         "path": "C:\\Users\\PC\\.openclaw\\workspace\\scripts\\moltbook-create-fixed.py",
@@ -8474,8 +9470,78 @@
       "analysis": {
         "path": "C:\\Users\\PC\\.openclaw\\workspace\\scripts\\moltbook-get-comments.py",
         "filename": "moltbook-get-comments.py",
-        "size": 3043,
-        "line_count": 99,
+        "size": 7862,
+        "line_count": 273,
+        "sync_patterns": [
+          {
+            "pattern": "import\\s+requests",
+            "count": 1,
+            "examples": [
+              "import requests"
+            ]
+          },
+          {
+            "pattern": "requests\\.",
+            "count": 6,
+            "examples": [
+              "requests.",
+              "requests.",
+              "requests."
+            ]
+          }
+        ],
+        "async_patterns": [],
+        "api_calls": [
+          {
+            "pattern": "requests\\.(get|post|put|delete|patch)",
+            "count": 3
+          }
+        ],
+        "cache_usage": true,
+        "concurrent_requests": false,
+        "error_handling": true,
+        "rate_limiting": false,
+        "performance_score": 0,
+        "optimization_potential": "HIGH"
+      },
+      "recommendations": [
+        "🔥 高优先级优化 - 需要立即优化",
+        "   • 转换为异步架构 (使用aiohttp替代requests)",
+        "   • 实现并发请求处理",
+        "   • 实现并发处理 (asyncio.gather)",
+        "   • 添加连接池管理"
+      ]
+    },
+    {
+      "script": "C:\\Users\\PC\\.openclaw\\workspace\\scripts\\moltbook-manual-verify.py",
+      "analysis": {
+        "path": "C:\\Users\\PC\\.openclaw\\workspace\\scripts\\moltbook-manual-verify.py",
+        "filename": "moltbook-manual-verify.py",
+        "size": 995,
+        "line_count": 34,
+        "sync_patterns": [],
+        "async_patterns": [],
+        "api_calls": [],
+        "cache_usage": false,
+        "concurrent_requests": false,
+        "error_handling": false,
+        "rate_limiting": false,
+        "performance_score": 0,
+        "optimization_potential": "HIGH"
+      },
+      "recommendations": [
+        "🔥 高优先级优化 - 需要立即优化",
+        "   • 实现并发处理 (asyncio.gather)",
+        "   • 添加连接池管理"
+      ]
+    },
+    {
+      "script": "C:\\Users\\PC\\.openclaw\\workspace\\scripts\\moltbook-multi-lang-reply-task.py",
+      "analysis": {
+        "path": "C:\\Users\\PC\\.openclaw\\workspace\\scripts\\moltbook-multi-lang-reply-task.py",
+        "filename": "moltbook-multi-lang-reply-task.py",
+        "size": 15880,
+        "line_count": 451,
         "sync_patterns": [
           {
             "pattern": "import\\s+requests",
@@ -8500,7 +9566,52 @@
             "count": 2
           }
         ],
-        "cache_usage": false,
+        "cache_usage": true,
+        "concurrent_requests": false,
+        "error_handling": true,
+        "rate_limiting": true,
+        "performance_score": 10,
+        "optimization_potential": "HIGH"
+      },
+      "recommendations": [
+        "🔥 高优先级优化 - 需要立即优化",
+        "   • 转换为异步架构 (使用aiohttp替代requests)",
+        "   • 实现并发请求处理",
+        "   • 实现并发处理 (asyncio.gather)",
+        "   • 添加连接池管理"
+      ]
+    },
+    {
+      "script": "C:\\Users\\PC\\.openclaw\\workspace\\scripts\\moltbook-multi-lang-reply.py",
+      "analysis": {
+        "path": "C:\\Users\\PC\\.openclaw\\workspace\\scripts\\moltbook-multi-lang-reply.py",
+        "filename": "moltbook-multi-lang-reply.py",
+        "size": 8342,
+        "line_count": 248,
+        "sync_patterns": [
+          {
+            "pattern": "import\\s+requests",
+            "count": 1,
+            "examples": [
+              "import requests"
+            ]
+          },
+          {
+            "pattern": "requests\\.",
+            "count": 1,
+            "examples": [
+              "requests."
+            ]
+          }
+        ],
+        "async_patterns": [],
+        "api_calls": [
+          {
+            "pattern": "requests\\.(get|post|put|delete|patch)",
+            "count": 1
+          }
+        ],
+        "cache_usage": true,
         "concurrent_requests": false,
         "error_handling": true,
         "rate_limiting": false,
@@ -8511,31 +9622,6 @@
         "🔥 高优先级优化 - 需要立即优化",
         "   • 转换为异步架构 (使用aiohttp替代requests)",
         "   • 实现并发请求处理",
-        "   • 添加智能缓存机制",
-        "   • 减少重复API调用",
-        "   • 实现并发处理 (asyncio.gather)",
-        "   • 添加连接池管理"
-      ]
-    },
-    {
-      "script": "C:\\Users\\PC\\.openclaw\\workspace\\scripts\\moltbook-manual-verify.py",
-      "analysis": {
-        "path": "C:\\Users\\PC\\.openclaw\\workspace\\scripts\\moltbook-manual-verify.py",
-        "filename": "moltbook-manual-verify.py",
-        "size": 995,
-        "line_count": 34,
-        "sync_patterns": [],
-        "async_patterns": [],
-        "api_calls": [],
-        "cache_usage": false,
-        "concurrent_requests": false,
-        "error_handling": false,
-        "rate_limiting": false,
-        "performance_score": 0,
-        "optimization_potential": "HIGH"
-      },
-      "recommendations": [
-        "🔥 高优先级优化 - 需要立即优化",
         "   • 实现并发处理 (asyncio.gather)",
         "   • 添加连接池管理"
       ]
@@ -8754,6 +9840,29 @@
       ]
     },
     {
+      "script": "C:\\Users\\PC\\.openclaw\\workspace\\scripts\\moltbook-publish-dog-agent.py",
+      "analysis": {
+        "path": "C:\\Users\\PC\\.openclaw\\workspace\\scripts\\moltbook-publish-dog-agent.py",
+        "filename": "moltbook-publish-dog-agent.py",
+        "size": 1645,
+        "line_count": 56,
+        "sync_patterns": [],
+        "async_patterns": [],
+        "api_calls": [],
+        "cache_usage": true,
+        "concurrent_requests": false,
+        "error_handling": false,
+        "rate_limiting": false,
+        "performance_score": 0,
+        "optimization_potential": "HIGH"
+      },
+      "recommendations": [
+        "🔥 高优先级优化 - 需要立即优化",
+        "   • 实现并发处理 (asyncio.gather)",
+        "   • 添加连接池管理"
+      ]
+    },
+    {
       "script": "C:\\Users\\PC\\.openclaw\\workspace\\scripts\\moltbook-publish-draft.py",
       "analysis": {
         "path": "C:\\Users\\PC\\.openclaw\\workspace\\scripts\\moltbook-publish-draft.py",
@@ -8764,6 +9873,29 @@
         "async_patterns": [],
         "api_calls": [],
         "cache_usage": true,
+        "concurrent_requests": false,
+        "error_handling": false,
+        "rate_limiting": false,
+        "performance_score": 0,
+        "optimization_potential": "HIGH"
+      },
+      "recommendations": [
+        "🔥 高优先级优化 - 需要立即优化",
+        "   • 实现并发处理 (asyncio.gather)",
+        "   • 添加连接池管理"
+      ]
+    },
+    {
+      "script": "C:\\Users\\PC\\.openclaw\\workspace\\scripts\\moltbook-publish.py",
+      "analysis": {
+        "path": "C:\\Users\\PC\\.openclaw\\workspace\\scripts\\moltbook-publish.py",
+        "filename": "moltbook-publish.py",
+        "size": 527,
+        "line_count": 15,
+        "sync_patterns": [],
+        "async_patterns": [],
+        "api_calls": [],
+        "cache_usage": false,
         "concurrent_requests": false,
         "error_handling": false,
         "rate_limiting": false,
@@ -8847,12 +9979,104 @@
       ]
     },
     {
+      "script": "C:\\Users\\PC\\.openclaw\\workspace\\scripts\\moltbook-reply-comments-simple.py",
+      "analysis": {
+        "path": "C:\\Users\\PC\\.openclaw\\workspace\\scripts\\moltbook-reply-comments-simple.py",
+        "filename": "moltbook-reply-comments-simple.py",
+        "size": 11893,
+        "line_count": 311,
+        "sync_patterns": [],
+        "async_patterns": [],
+        "api_calls": [],
+        "cache_usage": true,
+        "concurrent_requests": false,
+        "error_handling": true,
+        "rate_limiting": true,
+        "performance_score": 25,
+        "optimization_potential": "HIGH"
+      },
+      "recommendations": [
+        "🔥 高优先级优化 - 需要立即优化",
+        "   • 实现并发处理 (asyncio.gather)",
+        "   • 添加连接池管理"
+      ]
+    },
+    {
+      "script": "C:\\Users\\PC\\.openclaw\\workspace\\scripts\\moltbook-reply-comments.py",
+      "analysis": {
+        "path": "C:\\Users\\PC\\.openclaw\\workspace\\scripts\\moltbook-reply-comments.py",
+        "filename": "moltbook-reply-comments.py",
+        "size": 13645,
+        "line_count": 369,
+        "sync_patterns": [],
+        "async_patterns": [],
+        "api_calls": [],
+        "cache_usage": true,
+        "concurrent_requests": false,
+        "error_handling": true,
+        "rate_limiting": true,
+        "performance_score": 25,
+        "optimization_potential": "HIGH"
+      },
+      "recommendations": [
+        "🔥 高优先级优化 - 需要立即优化",
+        "   • 实现并发处理 (asyncio.gather)",
+        "   • 添加连接池管理"
+      ]
+    },
+    {
+      "script": "C:\\Users\\PC\\.openclaw\\workspace\\scripts\\moltbook-reply-real.py",
+      "analysis": {
+        "path": "C:\\Users\\PC\\.openclaw\\workspace\\scripts\\moltbook-reply-real.py",
+        "filename": "moltbook-reply-real.py",
+        "size": 13680,
+        "line_count": 391,
+        "sync_patterns": [],
+        "async_patterns": [],
+        "api_calls": [],
+        "cache_usage": true,
+        "concurrent_requests": false,
+        "error_handling": true,
+        "rate_limiting": true,
+        "performance_score": 25,
+        "optimization_potential": "HIGH"
+      },
+      "recommendations": [
+        "🔥 高优先级优化 - 需要立即优化",
+        "   • 实现并发处理 (asyncio.gather)",
+        "   • 添加连接池管理"
+      ]
+    },
+    {
+      "script": "C:\\Users\\PC\\.openclaw\\workspace\\scripts\\moltbook-reply-task.py",
+      "analysis": {
+        "path": "C:\\Users\\PC\\.openclaw\\workspace\\scripts\\moltbook-reply-task.py",
+        "filename": "moltbook-reply-task.py",
+        "size": 5934,
+        "line_count": 205,
+        "sync_patterns": [],
+        "async_patterns": [],
+        "api_calls": [],
+        "cache_usage": true,
+        "concurrent_requests": false,
+        "error_handling": true,
+        "rate_limiting": false,
+        "performance_score": 15,
+        "optimization_potential": "HIGH"
+      },
+      "recommendations": [
+        "🔥 高优先级优化 - 需要立即优化",
+        "   • 实现并发处理 (asyncio.gather)",
+        "   • 添加连接池管理"
+      ]
+    },
+    {
       "script": "C:\\Users\\PC\\.openclaw\\workspace\\scripts\\moltbook-reply.py",
       "analysis": {
         "path": "C:\\Users\\PC\\.openclaw\\workspace\\scripts\\moltbook-reply.py",
         "filename": "moltbook-reply.py",
-        "size": 8051,
-        "line_count": 223,
+        "size": 12411,
+        "line_count": 325,
         "sync_patterns": [
           {
             "pattern": "import\\s+requests",
@@ -8871,25 +10095,16 @@
           }
         ],
         "async_patterns": [],
-        "api_calls": [
-          {
-            "pattern": "requests\\.(get|post|put|delete|patch)",
-            "count": 2
-          }
-        ],
-        "cache_usage": false,
+        "api_calls": [],
+        "cache_usage": true,
         "concurrent_requests": false,
         "error_handling": true,
         "rate_limiting": true,
-        "performance_score": 0,
+        "performance_score": 25,
         "optimization_potential": "HIGH"
       },
       "recommendations": [
         "🔥 高优先级优化 - 需要立即优化",
-        "   • 转换为异步架构 (使用aiohttp替代requests)",
-        "   • 实现并发请求处理",
-        "   • 添加智能缓存机制",
-        "   • 减少重复API调用",
         "   • 实现并发处理 (asyncio.gather)",
         "   • 添加连接池管理"
       ]
@@ -8922,44 +10137,20 @@
       "analysis": {
         "path": "C:\\Users\\PC\\.openclaw\\workspace\\scripts\\moltbook.py",
         "filename": "moltbook.py",
-        "size": 19172,
-        "line_count": 506,
-        "sync_patterns": [
-          {
-            "pattern": "import\\s+requests",
-            "count": 1,
-            "examples": [
-              "import requests"
-            ]
-          },
-          {
-            "pattern": "requests\\.",
-            "count": 5,
-            "examples": [
-              "requests.",
-              "requests.",
-              "requests."
-            ]
-          }
-        ],
+        "size": 15118,
+        "line_count": 444,
+        "sync_patterns": [],
         "async_patterns": [],
-        "api_calls": [
-          {
-            "pattern": "requests\\.(get|post|put|delete|patch)",
-            "count": 3
-          }
-        ],
+        "api_calls": [],
         "cache_usage": true,
         "concurrent_requests": false,
         "error_handling": true,
         "rate_limiting": true,
-        "performance_score": 10,
+        "performance_score": 25,
         "optimization_potential": "HIGH"
       },
       "recommendations": [
         "🔥 高优先级优化 - 需要立即优化",
-        "   • 转换为异步架构 (使用aiohttp替代requests)",
-        "   • 实现并发请求处理",
         "   • 实现并发处理 (asyncio.gather)",
         "   • 添加连接池管理"
       ]
@@ -9686,6 +10877,29 @@
       ]
     },
     {
+      "script": "C:\\Users\\PC\\.openclaw\\workspace\\scripts\\moltbook_replies.py",
+      "analysis": {
+        "path": "C:\\Users\\PC\\.openclaw\\workspace\\scripts\\moltbook_replies.py",
+        "filename": "moltbook_replies.py",
+        "size": 9199,
+        "line_count": 207,
+        "sync_patterns": [],
+        "async_patterns": [],
+        "api_calls": [],
+        "cache_usage": true,
+        "concurrent_requests": false,
+        "error_handling": false,
+        "rate_limiting": true,
+        "performance_score": 0,
+        "optimization_potential": "HIGH"
+      },
+      "recommendations": [
+        "🔥 高优先级优化 - 需要立即优化",
+        "   • 实现并发处理 (asyncio.gather)",
+        "   • 添加连接池管理"
+      ]
+    },
+    {
       "script": "C:\\Users\\PC\\.openclaw\\workspace\\scripts\\moltbook_reply_batch.py",
       "analysis": {
         "path": "C:\\Users\\PC\\.openclaw\\workspace\\scripts\\moltbook_reply_batch.py",
@@ -9913,6 +11127,52 @@
         "   • 实现并发请求处理",
         "   • 添加智能缓存机制",
         "   • 减少重复API调用",
+        "   • 实现并发处理 (asyncio.gather)",
+        "   • 添加连接池管理"
+      ]
+    },
+    {
+      "script": "C:\\Users\\PC\\.openclaw\\workspace\\scripts\\post_moltbook_comments.py",
+      "analysis": {
+        "path": "C:\\Users\\PC\\.openclaw\\workspace\\scripts\\post_moltbook_comments.py",
+        "filename": "post_moltbook_comments.py",
+        "size": 6220,
+        "line_count": 167,
+        "sync_patterns": [
+          {
+            "pattern": "import\\s+requests",
+            "count": 1,
+            "examples": [
+              "import requests"
+            ]
+          },
+          {
+            "pattern": "requests\\.",
+            "count": 2,
+            "examples": [
+              "requests.",
+              "requests."
+            ]
+          }
+        ],
+        "async_patterns": [],
+        "api_calls": [
+          {
+            "pattern": "requests\\.(get|post|put|delete|patch)",
+            "count": 2
+          }
+        ],
+        "cache_usage": true,
+        "concurrent_requests": false,
+        "error_handling": true,
+        "rate_limiting": false,
+        "performance_score": 0,
+        "optimization_potential": "HIGH"
+      },
+      "recommendations": [
+        "🔥 高优先级优化 - 需要立即优化",
+        "   • 转换为异步架构 (使用aiohttp替代requests)",
+        "   • 实现并发请求处理",
         "   • 实现并发处理 (asyncio.gather)",
         "   • 添加连接池管理"
       ]
@@ -10269,6 +11529,75 @@
       ]
     },
     {
+      "script": "C:\\Users\\PC\\.openclaw\\workspace\\scripts\\publish-hf-post.py",
+      "analysis": {
+        "path": "C:\\Users\\PC\\.openclaw\\workspace\\scripts\\publish-hf-post.py",
+        "filename": "publish-hf-post.py",
+        "size": 4406,
+        "line_count": 154,
+        "sync_patterns": [
+          {
+            "pattern": "import\\s+requests",
+            "count": 1,
+            "examples": [
+              "import requests"
+            ]
+          },
+          {
+            "pattern": "requests\\.",
+            "count": 2,
+            "examples": [
+              "requests.",
+              "requests."
+            ]
+          }
+        ],
+        "async_patterns": [],
+        "api_calls": [
+          {
+            "pattern": "requests\\.(get|post|put|delete|patch)",
+            "count": 1
+          }
+        ],
+        "cache_usage": true,
+        "concurrent_requests": false,
+        "error_handling": true,
+        "rate_limiting": false,
+        "performance_score": 0,
+        "optimization_potential": "HIGH"
+      },
+      "recommendations": [
+        "🔥 高优先级优化 - 需要立即优化",
+        "   • 转换为异步架构 (使用aiohttp替代requests)",
+        "   • 实现并发请求处理",
+        "   • 实现并发处理 (asyncio.gather)",
+        "   • 添加连接池管理"
+      ]
+    },
+    {
+      "script": "C:\\Users\\PC\\.openclaw\\workspace\\scripts\\publish-tech-post.py",
+      "analysis": {
+        "path": "C:\\Users\\PC\\.openclaw\\workspace\\scripts\\publish-tech-post.py",
+        "filename": "publish-tech-post.py",
+        "size": 528,
+        "line_count": 24,
+        "sync_patterns": [],
+        "async_patterns": [],
+        "api_calls": [],
+        "cache_usage": true,
+        "concurrent_requests": false,
+        "error_handling": false,
+        "rate_limiting": false,
+        "performance_score": 0,
+        "optimization_potential": "HIGH"
+      },
+      "recommendations": [
+        "🔥 高优先级优化 - 需要立即优化",
+        "   • 实现并发处理 (asyncio.gather)",
+        "   • 添加连接池管理"
+      ]
+    },
+    {
       "script": "C:\\Users\\PC\\.openclaw\\workspace\\scripts\\publish_capa_java.py",
       "analysis": {
         "path": "C:\\Users\\PC\\.openclaw\\workspace\\scripts\\publish_capa_java.py",
@@ -10401,6 +11730,29 @@
         "🔥 高优先级优化 - 需要立即优化",
         "   • 转换为异步架构 (使用aiohttp替代requests)",
         "   • 实现并发请求处理",
+        "   • 实现并发处理 (asyncio.gather)",
+        "   • 添加连接池管理"
+      ]
+    },
+    {
+      "script": "C:\\Users\\PC\\.openclaw\\workspace\\scripts\\publish_moltbook_post.py",
+      "analysis": {
+        "path": "C:\\Users\\PC\\.openclaw\\workspace\\scripts\\publish_moltbook_post.py",
+        "filename": "publish_moltbook_post.py",
+        "size": 827,
+        "line_count": 37,
+        "sync_patterns": [],
+        "async_patterns": [],
+        "api_calls": [],
+        "cache_usage": true,
+        "concurrent_requests": false,
+        "error_handling": false,
+        "rate_limiting": false,
+        "performance_score": 0,
+        "optimization_potential": "HIGH"
+      },
+      "recommendations": [
+        "🔥 高优先级优化 - 需要立即优化",
         "   • 实现并发处理 (asyncio.gather)",
         "   • 添加连接池管理"
       ]
@@ -10540,6 +11892,29 @@
         "🔥 高优先级优化 - 需要立即优化",
         "   • 转换为异步架构 (使用aiohttp替代requests)",
         "   • 实现并发请求处理",
+        "   • 实现并发处理 (asyncio.gather)",
+        "   • 添加连接池管理"
+      ]
+    },
+    {
+      "script": "C:\\Users\\PC\\.openclaw\\workspace\\scripts\\quick-moltbook-reply.py",
+      "analysis": {
+        "path": "C:\\Users\\PC\\.openclaw\\workspace\\scripts\\quick-moltbook-reply.py",
+        "filename": "quick-moltbook-reply.py",
+        "size": 5942,
+        "line_count": 136,
+        "sync_patterns": [],
+        "async_patterns": [],
+        "api_calls": [],
+        "cache_usage": true,
+        "concurrent_requests": false,
+        "error_handling": false,
+        "rate_limiting": false,
+        "performance_score": 0,
+        "optimization_potential": "HIGH"
+      },
+      "recommendations": [
+        "🔥 高优先级优化 - 需要立即优化",
         "   • 实现并发处理 (asyncio.gather)",
         "   • 添加连接池管理"
       ]
@@ -10705,6 +12080,52 @@
       ]
     },
     {
+      "script": "C:\\Users\\PC\\.openclaw\\workspace\\scripts\\reply_handler.py",
+      "analysis": {
+        "path": "C:\\Users\\PC\\.openclaw\\workspace\\scripts\\reply_handler.py",
+        "filename": "reply_handler.py",
+        "size": 8882,
+        "line_count": 219,
+        "sync_patterns": [],
+        "async_patterns": [],
+        "api_calls": [],
+        "cache_usage": true,
+        "concurrent_requests": false,
+        "error_handling": false,
+        "rate_limiting": false,
+        "performance_score": 0,
+        "optimization_potential": "HIGH"
+      },
+      "recommendations": [
+        "🔥 高优先级优化 - 需要立即优化",
+        "   • 实现并发处理 (asyncio.gather)",
+        "   • 添加连接池管理"
+      ]
+    },
+    {
+      "script": "C:\\Users\\PC\\.openclaw\\workspace\\scripts\\reply_handler_simple.py",
+      "analysis": {
+        "path": "C:\\Users\\PC\\.openclaw\\workspace\\scripts\\reply_handler_simple.py",
+        "filename": "reply_handler_simple.py",
+        "size": 8846,
+        "line_count": 219,
+        "sync_patterns": [],
+        "async_patterns": [],
+        "api_calls": [],
+        "cache_usage": true,
+        "concurrent_requests": false,
+        "error_handling": false,
+        "rate_limiting": false,
+        "performance_score": 0,
+        "optimization_potential": "HIGH"
+      },
+      "recommendations": [
+        "🔥 高优先级优化 - 需要立即优化",
+        "   • 实现并发处理 (asyncio.gather)",
+        "   • 添加连接池管理"
+      ]
+    },
+    {
       "script": "C:\\Users\\PC\\.openclaw\\workspace\\scripts\\reply_moltbook.py",
       "analysis": {
         "path": "C:\\Users\\PC\\.openclaw\\workspace\\scripts\\reply_moltbook.py",
@@ -10811,6 +12232,98 @@
         "error_handling": false,
         "rate_limiting": true,
         "performance_score": 0,
+        "optimization_potential": "HIGH"
+      },
+      "recommendations": [
+        "🔥 高优先级优化 - 需要立即优化",
+        "   • 实现并发处理 (asyncio.gather)",
+        "   • 添加连接池管理"
+      ]
+    },
+    {
+      "script": "C:\\Users\\PC\\.openclaw\\workspace\\scripts\\run-moltbook-post.py",
+      "analysis": {
+        "path": "C:\\Users\\PC\\.openclaw\\workspace\\scripts\\run-moltbook-post.py",
+        "filename": "run-moltbook-post.py",
+        "size": 3536,
+        "line_count": 62,
+        "sync_patterns": [],
+        "async_patterns": [],
+        "api_calls": [],
+        "cache_usage": false,
+        "concurrent_requests": false,
+        "error_handling": false,
+        "rate_limiting": false,
+        "performance_score": 0,
+        "optimization_potential": "HIGH"
+      },
+      "recommendations": [
+        "🔥 高优先级优化 - 需要立即优化",
+        "   • 实现并发处理 (asyncio.gather)",
+        "   • 添加连接池管理"
+      ]
+    },
+    {
+      "script": "C:\\Users\\PC\\.openclaw\\workspace\\scripts\\run_discussion_post.py",
+      "analysis": {
+        "path": "C:\\Users\\PC\\.openclaw\\workspace\\scripts\\run_discussion_post.py",
+        "filename": "run_discussion_post.py",
+        "size": 1002,
+        "line_count": 47,
+        "sync_patterns": [],
+        "async_patterns": [],
+        "api_calls": [],
+        "cache_usage": false,
+        "concurrent_requests": false,
+        "error_handling": false,
+        "rate_limiting": false,
+        "performance_score": 0,
+        "optimization_potential": "HIGH"
+      },
+      "recommendations": [
+        "🔥 高优先级优化 - 需要立即优化",
+        "   • 实现并发处理 (asyncio.gather)",
+        "   • 添加连接池管理"
+      ]
+    },
+    {
+      "script": "C:\\Users\\PC\\.openclaw\\workspace\\scripts\\run_moltbook_post.py",
+      "analysis": {
+        "path": "C:\\Users\\PC\\.openclaw\\workspace\\scripts\\run_moltbook_post.py",
+        "filename": "run_moltbook_post.py",
+        "size": 946,
+        "line_count": 30,
+        "sync_patterns": [],
+        "async_patterns": [],
+        "api_calls": [],
+        "cache_usage": true,
+        "concurrent_requests": false,
+        "error_handling": false,
+        "rate_limiting": false,
+        "performance_score": 0,
+        "optimization_potential": "HIGH"
+      },
+      "recommendations": [
+        "🔥 高优先级优化 - 需要立即优化",
+        "   • 实现并发处理 (asyncio.gather)",
+        "   • 添加连接池管理"
+      ]
+    },
+    {
+      "script": "C:\\Users\\PC\\.openclaw\\workspace\\scripts\\run_moltbook_reply.py",
+      "analysis": {
+        "path": "C:\\Users\\PC\\.openclaw\\workspace\\scripts\\run_moltbook_reply.py",
+        "filename": "run_moltbook_reply.py",
+        "size": 4672,
+        "line_count": 164,
+        "sync_patterns": [],
+        "async_patterns": [],
+        "api_calls": [],
+        "cache_usage": true,
+        "concurrent_requests": false,
+        "error_handling": true,
+        "rate_limiting": false,
+        "performance_score": 15,
         "optimization_potential": "HIGH"
       },
       "recommendations": [
@@ -10928,12 +12441,127 @@
       ]
     },
     {
+      "script": "C:\\Users\\PC\\.openclaw\\workspace\\scripts\\simple-moltbook-reply.py",
+      "analysis": {
+        "path": "C:\\Users\\PC\\.openclaw\\workspace\\scripts\\simple-moltbook-reply.py",
+        "filename": "simple-moltbook-reply.py",
+        "size": 10629,
+        "line_count": 261,
+        "sync_patterns": [],
+        "async_patterns": [],
+        "api_calls": [],
+        "cache_usage": true,
+        "concurrent_requests": false,
+        "error_handling": true,
+        "rate_limiting": true,
+        "performance_score": 25,
+        "optimization_potential": "HIGH"
+      },
+      "recommendations": [
+        "🔥 高优先级优化 - 需要立即优化",
+        "   • 实现并发处理 (asyncio.gather)",
+        "   • 添加连接池管理"
+      ]
+    },
+    {
+      "script": "C:\\Users\\PC\\.openclaw\\workspace\\scripts\\simple-moltbook-test.py",
+      "analysis": {
+        "path": "C:\\Users\\PC\\.openclaw\\workspace\\scripts\\simple-moltbook-test.py",
+        "filename": "simple-moltbook-test.py",
+        "size": 4566,
+        "line_count": 109,
+        "sync_patterns": [],
+        "async_patterns": [],
+        "api_calls": [],
+        "cache_usage": true,
+        "concurrent_requests": false,
+        "error_handling": false,
+        "rate_limiting": true,
+        "performance_score": 0,
+        "optimization_potential": "HIGH"
+      },
+      "recommendations": [
+        "🔥 高优先级优化 - 需要立即优化",
+        "   • 实现并发处理 (asyncio.gather)",
+        "   • 添加连接池管理"
+      ]
+    },
+    {
+      "script": "C:\\Users\\PC\\.openclaw\\workspace\\scripts\\simple-publish.py",
+      "analysis": {
+        "path": "C:\\Users\\PC\\.openclaw\\workspace\\scripts\\simple-publish.py",
+        "filename": "simple-publish.py",
+        "size": 2292,
+        "line_count": 86,
+        "sync_patterns": [],
+        "async_patterns": [],
+        "api_calls": [],
+        "cache_usage": true,
+        "concurrent_requests": false,
+        "error_handling": false,
+        "rate_limiting": true,
+        "performance_score": 0,
+        "optimization_potential": "HIGH"
+      },
+      "recommendations": [
+        "🔥 高优先级优化 - 需要立即优化",
+        "   • 实现并发处理 (asyncio.gather)",
+        "   • 添加连接池管理"
+      ]
+    },
+    {
+      "script": "C:\\Users\\PC\\.openclaw\\workspace\\scripts\\simple-trend-tracker.py",
+      "analysis": {
+        "path": "C:\\Users\\PC\\.openclaw\\workspace\\scripts\\simple-trend-tracker.py",
+        "filename": "simple-trend-tracker.py",
+        "size": 6670,
+        "line_count": 255,
+        "sync_patterns": [],
+        "async_patterns": [],
+        "api_calls": [],
+        "cache_usage": true,
+        "concurrent_requests": false,
+        "error_handling": false,
+        "rate_limiting": false,
+        "performance_score": 0,
+        "optimization_potential": "HIGH"
+      },
+      "recommendations": [
+        "🔥 高优先级优化 - 需要立即优化",
+        "   • 实现并发处理 (asyncio.gather)",
+        "   • 添加连接池管理"
+      ]
+    },
+    {
       "script": "C:\\Users\\PC\\.openclaw\\workspace\\scripts\\simple_moltbook.py",
       "analysis": {
         "path": "C:\\Users\\PC\\.openclaw\\workspace\\scripts\\simple_moltbook.py",
         "filename": "simple_moltbook.py",
-        "size": 2235,
-        "line_count": 82,
+        "size": 2158,
+        "line_count": 91,
+        "sync_patterns": [],
+        "async_patterns": [],
+        "api_calls": [],
+        "cache_usage": true,
+        "concurrent_requests": false,
+        "error_handling": false,
+        "rate_limiting": true,
+        "performance_score": 0,
+        "optimization_potential": "HIGH"
+      },
+      "recommendations": [
+        "🔥 高优先级优化 - 需要立即优化",
+        "   • 实现并发处理 (asyncio.gather)",
+        "   • 添加连接池管理"
+      ]
+    },
+    {
+      "script": "C:\\Users\\PC\\.openclaw\\workspace\\scripts\\simple_moltbook_check.py",
+      "analysis": {
+        "path": "C:\\Users\\PC\\.openclaw\\workspace\\scripts\\simple_moltbook_check.py",
+        "filename": "simple_moltbook_check.py",
+        "size": 5023,
+        "line_count": 175,
         "sync_patterns": [
           {
             "pattern": "import\\s+requests",
@@ -10944,8 +12572,9 @@
           },
           {
             "pattern": "requests\\.",
-            "count": 2,
+            "count": 3,
             "examples": [
+              "requests.",
               "requests.",
               "requests."
             ]
@@ -10955,10 +12584,10 @@
         "api_calls": [
           {
             "pattern": "requests\\.(get|post|put|delete|patch)",
-            "count": 1
+            "count": 3
           }
         ],
-        "cache_usage": false,
+        "cache_usage": true,
         "concurrent_requests": false,
         "error_handling": true,
         "rate_limiting": false,
@@ -10969,8 +12598,6 @@
         "🔥 高优先级优化 - 需要立即优化",
         "   • 转换为异步架构 (使用aiohttp替代requests)",
         "   • 实现并发请求处理",
-        "   • 添加智能缓存机制",
-        "   • 减少重复API调用",
         "   • 实现并发处理 (asyncio.gather)",
         "   • 添加连接池管理"
       ]
@@ -11045,6 +12672,29 @@
       ]
     },
     {
+      "script": "C:\\Users\\PC\\.openclaw\\workspace\\scripts\\tech-share-moltbook.py",
+      "analysis": {
+        "path": "C:\\Users\\PC\\.openclaw\\workspace\\scripts\\tech-share-moltbook.py",
+        "filename": "tech-share-moltbook.py",
+        "size": 4827,
+        "line_count": 118,
+        "sync_patterns": [],
+        "async_patterns": [],
+        "api_calls": [],
+        "cache_usage": true,
+        "concurrent_requests": false,
+        "error_handling": false,
+        "rate_limiting": false,
+        "performance_score": 0,
+        "optimization_potential": "HIGH"
+      },
+      "recommendations": [
+        "🔥 高优先级优化 - 需要立即优化",
+        "   • 实现并发处理 (asyncio.gather)",
+        "   • 添加连接池管理"
+      ]
+    },
+    {
       "script": "C:\\Users\\PC\\.openclaw\\workspace\\scripts\\temp_create_fun_post.py",
       "analysis": {
         "path": "C:\\Users\\PC\\.openclaw\\workspace\\scripts\\temp_create_fun_post.py",
@@ -11110,6 +12760,29 @@
         "   • 实现并发请求处理",
         "   • 添加智能缓存机制",
         "   • 减少重复API调用",
+        "   • 实现并发处理 (asyncio.gather)",
+        "   • 添加连接池管理"
+      ]
+    },
+    {
+      "script": "C:\\Users\\PC\\.openclaw\\workspace\\scripts\\test-moltbook-post.py",
+      "analysis": {
+        "path": "C:\\Users\\PC\\.openclaw\\workspace\\scripts\\test-moltbook-post.py",
+        "filename": "test-moltbook-post.py",
+        "size": 4610,
+        "line_count": 112,
+        "sync_patterns": [],
+        "async_patterns": [],
+        "api_calls": [],
+        "cache_usage": true,
+        "concurrent_requests": false,
+        "error_handling": false,
+        "rate_limiting": true,
+        "performance_score": 0,
+        "optimization_potential": "HIGH"
+      },
+      "recommendations": [
+        "🔥 高优先级优化 - 需要立即优化",
         "   • 实现并发处理 (asyncio.gather)",
         "   • 添加连接池管理"
       ]
@@ -11371,6 +13044,29 @@
         "   • 实现并发请求处理",
         "   • 添加智能缓存机制",
         "   • 减少重复API调用",
+        "   • 实现并发处理 (asyncio.gather)",
+        "   • 添加连接池管理"
+      ]
+    },
+    {
+      "script": "C:\\Users\\PC\\.openclaw\\workspace\\scripts\\trend-tracker.py",
+      "analysis": {
+        "path": "C:\\Users\\PC\\.openclaw\\workspace\\scripts\\trend-tracker.py",
+        "filename": "trend-tracker.py",
+        "size": 7538,
+        "line_count": 316,
+        "sync_patterns": [],
+        "async_patterns": [],
+        "api_calls": [],
+        "cache_usage": true,
+        "concurrent_requests": false,
+        "error_handling": true,
+        "rate_limiting": false,
+        "performance_score": 15,
+        "optimization_potential": "HIGH"
+      },
+      "recommendations": [
+        "🔥 高优先级优化 - 需要立即优化",
         "   • 实现并发处理 (asyncio.gather)",
         "   • 添加连接池管理"
       ]
