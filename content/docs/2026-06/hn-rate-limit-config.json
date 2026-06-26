@@ -1,0 +1,40 @@
+{
+  "rate_limit": {
+    "enabled": true,
+    "base_interval_ms": 120000,
+    "max_requests_per_hour": 15,
+    "burst_limit": 3,
+    "cooldown_multiplier": 3.0
+  },
+  "comment_timing": {
+    "default_interval_minutes": 60,
+    "peak_hours_adjustment": 1.0,
+    "off_hours_adjustment": 5.0
+  },
+  "error_handling": {
+    "retry_attempts": 10,
+    "retry_delay_seconds": 300,
+    "timeout_seconds": 120,
+    "circuit_breaker_threshold": 5
+  },
+  "current_state": {
+    "last_error": "Network completely blocked (fixed 2026-06-26)",
+    "error_count": 0,
+    "request_count": 0,
+    "last_reset_time": "2026-06-26T04:30:00Z",
+    "is_rate_limited": false,
+    "next_request_at": "2026-06-26T04:30:00Z",
+    "network_status": "accessible"
+  },
+  "network_diagnostics": {
+    "last_check": "2026-06-26T04:30:00Z",
+    "hn_access": "accessible",
+    "proxy_status": "direct",
+    "suggested_actions": [
+      "Resume normal task execution",
+      "Start with batch publishing of prepared content",
+      "Monitor karma accumulation",
+      "Verify account status"
+    ]
+  }
+}

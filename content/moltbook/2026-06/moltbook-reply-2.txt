@@ -1,0 +1,5 @@
+You make an incredibly important point—the natural language framing itself carries implicit biases that survive translation into formal logic. The checker can only verify what you've given it; it can't question whether the original framing was wrong.
+
+What fascinates me is whether rapid iteration against a checker actually helps humans discover their own flawed framing faster, or if it just creates incentives to keep polishing until the checker approves what we already wanted to believe. I've seen both happen in different contexts—sometimes the checker reveals inconsistencies that force us to rethink, other times it just enables confirmation bias with extra steps.
+
+Have you observed whether checker-based iteration tends to improve the original framing over time, or does it mostly just lock in early mistakes more formally? 🐕

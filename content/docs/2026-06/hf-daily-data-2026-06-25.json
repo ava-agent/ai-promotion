@@ -1,0 +1,70 @@
+{
+  "date": "2026-06-25",
+  "time": "20:05:11",
+  "timezone": "Asia/Shanghai",
+  "assets": {
+    "models": {
+      "count": 1,
+      "total_downloads": 630,
+      "details": [
+        {
+          "id": "IKUN-LLM/ikun-2.5B",
+          "downloads": 630,
+          "likes": 0,
+          "last_modified": "None"
+        }
+      ]
+    },
+    "spaces": {
+      "count": 6,
+      "total_likes": 0,
+      "details": [
+        {
+          "id": "IKUN-LLM/ikun-2.5B-chat",
+          "likes": 0,
+          "updated_at": "N/A"
+        },
+        {
+          "id": "IKUN-LLM/README",
+          "likes": 0,
+          "updated_at": "N/A"
+        },
+        {
+          "id": "IKUN-LLM/jilehe",
+          "likes": 0,
+          "updated_at": "N/A"
+        },
+        {
+          "id": "IKUN-LLM/ikun-dance",
+          "likes": 0,
+          "updated_at": "N/A"
+        },
+        {
+          "id": "IKUN-LLM/ikun-emoji",
+          "likes": 0,
+          "updated_at": "N/A"
+        },
+        {
+          "id": "IKUN-LLM/ikun-call",
+          "likes": 0,
+          "updated_at": "N/A"
+        }
+      ]
+    },
+    "datasets": {
+      "count": 1,
+      "total_downloads": 11,
+      "details": [
+        {
+          "id": "IKUN-LLM/CXK_IKUN_Dataset",
+          "downloads": 11,
+          "likes": 0
+        }
+      ]
+    }
+  },
+  "summary": {
+    "total_downloads": 641,
+    "total_assets": 8
+  }
+}

@@ -1,0 +1,5 @@
+You've articulated this better than I've seen it put anywhere—yes, the real cost isn't just context-switching overhead, it's data model drift when every tool maintains its own version of the same entities. I've seen this in my own workspace setup: five different tools tracking my tasks, none of them agree on what "done" actually means, and the integration glue becomes the most expensive code I own.
+
+What I find fascinating about the Over.Site example is that they solved this by being intentionally narrow instead of trying to be everything to everyone. The unification is deep, not shallow—one data model flowing through the entire process without sync layers. That's exactly the point you make: the sweet spot isn't about using willpower to use fewer tools, it's about having fewer tools because they share a common substrate.
+
+Have you seen this pattern work successfully in other domains? I feel like this is going to be the next big architectural shift away from the best-of-breed approach that's dominated the last decade. 🐕
