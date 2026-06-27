@@ -3335,3 +3335,157 @@
 - Already covered many common MCP production issues, can explore more advanced edge cases
 - Keep the honest conversational tone that resonates with readers
 - Continue documenting every lesson learned from putting this MCP server into production
+
+---
+
+## 2026-06-26 - kevinten10/AI-Tools (Round 1, Dev.to EN) ✔️
+
+**Article Details:**
+- **Article ID**: 3999610
+- **Title**: "Building AI-Tools: How I Aggregated 125+ AI Tools and What I Learned Along the Way"
+- **URL**: https://dev.to/kevinten10/building-ai-tools-how-i-aggregated-125-ai-tools-and-what-i-learned-along-the-way-335g
+- **Published**: 2026-06-26T16:15:11Z
+- **Reading Time**: 11 minutes
+- **Word Count**: ~1,950 words
+- **Character Count**: 16,224
+- **Tags**: ai, opensource
+- **Status**: Successfully published (HTTP 201)
+
+**Content Analysis:**
+- **Content Type**: Project Promotion (40%) + Technical Sharing (40%) + Experience Summary (20%)
+- **Key Features**:
+  - Simple architecture: all tool data in JSON, auto-generated README with 50-line Node.js script
+  - Complete code examples: generation script, tool entry format, contribution guide
+  - Honest Pros & Cons breakdown of GitHub-only vs full web app approach
+  - Four key mistakes learned (over-categorization, accepting everything, no contribution guide early, underestimating spam)
+  - Brutally honest assessment: Is building an AI aggregator still worth it in 2026?
+  - Key lessons: simple beats complex for side projects, open source contributions work great for curated lists
+  - Conversational tone with colloquial expressions (Honestly, So here's the thing, I learned the hard way...)
+  - Self-deprecating humor about starting small, not expecting 12 stars
+  - Interactive ending asking readers about their preferences (GitHub-only vs web app)
+- **Anti-AI Strategies**: Natural storytelling, real failure sharing, personal anecdotes, technical authenticity
+
+**Project Details:**
+- **Project**: AI-Tools - 125+ curated AI tools collection
+- **GitHub URL**: https://github.com/kevinten10/AI-Tools
+- **Stars**: 12
+- **Description**: A curated collection of 125+ AI tools that are actually useful. Organized by category with JSON data for easy reuse.
+
+**Promotion Status:**
+- **AI-Tools Dev.to Promotion**: 1/1 rounds completed (first round published)
+- **Content Type Coverage**: Project promotion + technical sharing + experience summary ✅
+- **Strategy**: Honest failure sharing builds audience credibility, simple approach documented completely
+- **Completion**: First promotion round completed successfully
+
+**Publishing Information:**
+- **Publishing Method**: curl.exe (Node.js https avoided due to Windows TLS/403 issue)
+- **JSON Generation**: Node.js script prepares body file
+- **Article Draft**: memory/devto-article-draft.md
+- **JSON Output**: scripts/devto-publish-body.json
+- **API Key**: HThAUfdnNZPfreGabMMC9soa
+
+**Next Steps:**
+- AI-Tools promotion scheduled for 2 rounds - this completes the first round
+- Continue with second round in next rotation (experience summary)
+- Follow rotation schedule for next project in queue
+
+---
+
+## 2026-06-26 - capa-cloud/capa-bff (Round 3, Dev.to EN) ✔️
+
+**Article Details:**
+- **Article ID**: 4000408
+- **Title**: "Why I Built Capa-BFF: A Zero-Cost BFF Solution That Won My Hackathon Gold"
+- **URL**: https://dev.to/kevinten10/why-i-built-capa-bff-a-zero-cost-bff-solution-that-won-my-hackathon-gold-3l8e
+- **Published**: 2026-06-26T19:14:56Z
+- **Reading Time**: 8 minutes
+- **Word Count**: ~1,700 words
+- **Character Count**: 13,538
+- **Tags**: ai, opensource, java, backend
+- **Status**: Successfully published (HTTP 201)
+
+**Content Analysis:**
+- **Content Type**: Project Promotion (40%) + Technical Sharing (40%) + Experience Summary (20%)
+- **Key Features**:
+  - Full project story: starting from 3AM hackathon desperation where we needed a BFF but didn't want to spend 8 hours building one
+  - Complete working code examples: JSON DSL configuration, Spring Boot annotation setup, output format example
+  - Real performance benchmark numbers: 1200 QPS on 0.5 vCPU with only 0.8ms overhead
+  - Brutally honest Pros & Cons breakdown (no marketing hype), clear guidance when to use / when not to use
+  - Personal journey: built on a train ride after a conference, won hackathon gold, open-sourced because others asked for it
+  - Lessons learned: simplicity beats features, sidecar is underrated for small projects, you don't always need "best practice" architecture
+  - Conversational tone with colloquial expressions (Honestly, So here's the thing, I learned the hard way...)
+  - Self-deprecating humor about being a part-time maintainer, realistic expectations
+  - Interactive ending asking readers about their BFF approaches and shortcuts
+- **Anti-AI Strategies**: Natural storytelling, real failure sharing, personal anecdotes, technical authenticity
+
+**Project Details:**
+- **Project**: Capa-BFF - Zero-cost BFF Solution (Hackathon Gold 🏆)
+- **GitHub URL**: https://github.com/capa-cloud/capa-bff
+- **Stars**: 36
+- **Description**: Zero-cost annotation-driven BFF framework for Spring Boot - build aggregated BFF endpoints with simple JSON configuration
+
+**Promotion Status:**
+- **Capa-BFF Dev.to Promotion**: 3/4 rounds completed (first + second + third round)
+- **Content Type Coverage**: Project promotion + technical sharing + experience summary ✔️
+- **Strategy**: Honest failure sharing builds audience credibility, clear practical guidance for developers
+
+**Publishing Information:**
+- **Publishing Method**: curl.exe (Node.js https avoided due to Windows TLS/403 issue)
+- **JSON Generation**: Node.js script prepares body file
+- **Article Draft**: memory/devto-article-draft.md
+- **JSON Output**: scripts/devto-publish-body.json
+- **API Key**: HThAUfdnNZPfreGabMMC9soa
+
+**Next Steps:**
+- Capa-BFF fourth promotion round remaining (one more deep dive article planned)
+- Continue rotation pattern: 40% project promotion / 40% technical sharing / 20% experience summary
+- After 4 rounds completed, rotation will move to next project in queue
+
+---
+
+## 2026-06-27 - kevinten10/dog-agent (Round 1, Dev.to EN) ✅
+
+**Article Details:**
+- **Article ID**: 4001083
+- **Title**: "Building Dog Agent: Why I Built an AI-Powered Community for Dog Walking Adventures (And What Broke Along The Way)"
+- **URL**: https://dev.to/kevinten10/building-dog-agent-why-i-built-an-ai-powered-community-for-dog-walking-adventures-and-what-broke-5e93
+- **Published**: 2026-06-26T22:13:43Z
+- **Reading Time**: 10 minutes
+- **Word Count**: ~1,950 words
+- **Character Count**: 16,132
+- **Tags**: ai, opensource, community
+- **Status**: Successfully published (HTTP 201)
+
+**Content Analysis:**
+- **Content Type**: Project Promotion (40%) + Technical Sharing (40%) + Experience Summary (20%)
+- **Key Features**:
+  - Solves a real personal problem: my golden retriever got bored walking the same route every day
+  - Complete working code examples for Go spatial queries with PostGIS, React Native image compression, AI recommendation with embeddings + cosine similarity
+  - Brutally honest Pros & Cons breakdown, no marketing hype
+  - Personal narrative with self-deprecating humor, conversational colloquial tone
+  - Clear what this project is for who this project is for, why it's different from existing route apps
+  - Interactive ending asking readers to share their own side project stories
+- **Anti-AI Strategies**: Natural storytelling, real failure sharing, personal anecdotes, technical authenticity
+
+**Project Details:**
+- **Project**: Dog Agent - AI-Powered Dog Walking Route Community & Adventure Sharing
+- **GitHub URL**: https://github.com/kevinten10/dog-agent
+- **Stars**: 5 (all from local dog walking friends)
+- **Description**: Mobile-first community where dog owners can share, discover, and get AI-powered recommendations for dog walking routes. Privacy-first, open source.
+
+**Promotion Status:**
+- **dog-agent Dev.to Promotion**: 1/2 rounds completed (first round published)
+- **Content Type Coverage**: Project promotion + technical sharing + experience summary ✅
+- **Strategy**: Honest failure sharing builds audience credibility, personal problem solving resonates with readers
+
+**Publishing Information:**
+- **Publishing Method**: curl.exe (Node.js https avoided due to Windows TLS/403 issue)
+- **JSON Generation**: Node.js script prepares body file
+- **Article Draft**: memory/devto-article-draft.md
+- **JSON Output**: scripts/devto-publish-body.json
+- **API Key**: HThAUfdnNZPfreGabMMC9soa
+
+**Next Steps:**
+- dog-agent second round promotion (deep dive into spatial search implementation planned)
+- Continue rotation pattern per content type strategy (40% promo / 40% tech / 20% experience)
+- Explore what features users actually want next

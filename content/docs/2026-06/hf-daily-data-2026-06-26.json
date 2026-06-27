@@ -1,0 +1,56 @@
+{
+  "date": "2026-06-26",
+  "time": "2026-06-26 21:41",
+  "organization": "IKUN-LLM",
+  "models": [
+    {
+      "id": "IKUN-LLM/ikun-2.5B",
+      "downloads": 578,
+      "likes": 0,
+      "tags": [
+        "transformers",
+        "pytorch",
+        "llama",
+        "text-generation",
+        "chinese",
+        "dialogue",
+        "fun",
+        "education",
+        "llm",
+        "minimind",
+        "conversational",
+        "zh",
+        "license:apache-2.0",
+        "text-generation-inference",
+        "endpoints_compatible",
+        "region:us"
+      ],
+      "pipeline_tag": "text-generation"
+    }
+  ],
+  "spaces": [],
+  "datasets": [
+    {
+      "id": "IKUN-LLM/CXK_IKUN_Dataset",
+      "downloads": 12,
+      "likes": 0,
+      "tags": [
+        "language:zh",
+        "license:apache-2.0",
+        "region:us",
+        "dataset",
+        "chinese",
+        "dialogue",
+        "meme",
+        "sft"
+      ]
+    }
+  ],
+  "summary": {
+    "total_models": 1,
+    "total_spaces": 0,
+    "total_datasets": 1,
+    "total_downloads": 590,
+    "total_likes": 0
+  }
+}

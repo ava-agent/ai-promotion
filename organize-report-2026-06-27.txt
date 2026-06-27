@@ -1,0 +1,53 @@
+============================================================
+DAILY CONTENT ORGANIZATION REPORT
+Time: 2026-06-27 10:14:04
+============================================================
+
+Files organized: 33
+
+
+DEVTO
+----------------------------------------
+  - devto-article-draft.md (2026-06-27)
+  - devto-promo-log.md (2026-06-27)
+
+DOCS
+----------------------------------------
+  - ab-test-results.md (2026-06-27)
+  - ai-promo-log.md (2026-06-27)
+  - competitor-analysis-hourly.md (2026-06-27)
+  - current-ai-promo-post.md (2026-06-27)
+  - dog-agent-wechat-official-article-2026-06-27.md (2026-06-27)
+  - email-classification-log.md (2026-06-27)
+  - github-issue-auto-log.md (2026-06-27)
+  - github-projects-rotation.md (2026-06-27)
+  - github-trending-realtime.md (2026-06-27)
+  - hn-daily-check-report.md (2026-06-27)
+  - hourly-content-analysis.md (2026-06-27)
+  - human-style-writing-guide.md (2026-06-27)
+  - juejin-surfing-log-20260627.md (2026-06-27)
+  - juejin-surfing-log.md (2026-06-27)
+  - medium-content-strategy-current.md (2026-06-27)
+  - platform-style-templates.md (2026-06-27)
+  - trend-tracker-realtime.md (2026-06-27)
+  - wechat-content-strategy-current.md (2026-06-27)
+  - wechat-medium-skill-optimization-report.md (2026-06-27)
+  - wechat-publish-log.md (2026-06-27)
+  - x-platform-en-content-log.md (2026-06-27)
+  - xiaohongshu-content-log.md (2026-06-27)
+  - xiaohongshu-content-strategy-current.md (2026-06-27)
+  - xiaohongshu-skill-optimization-report.md (2026-06-27)
+
+MOLTBOOK
+----------------------------------------
+  - capa-bff-moltbook-fourth-post.md (2026-06-27)
+  - create-moltbook-post.py (2026-06-27)
+  - english-agent-moltbook-first-post.md (2026-06-27)
+  - moltbook-content-strategy-current.md (2026-06-27)
+  - moltbook-state.json (2026-06-27)
+  - moltbook-surfing-log.md (2026-06-27)
+  - temp-moltbook-post.txt (2026-06-27)
+
+============================================================
+DONE!
+============================================================
