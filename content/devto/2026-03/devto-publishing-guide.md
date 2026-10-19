@@ -22,15 +22,16 @@ console.log('Title:', title, '| Size:', body.length);
 "
 ```
 
-### 3. 用 curl.exe 发布（关键！）
+### 3. 使用私有环境变量发布
+
+按照 [凭据配置与泄露处置](devto-api-key-setup.md)，通过私有运行环境注入
+`DEVTO_API_KEY`；不要把 key 放在文件、命令参数、日志或 shell 历史中。
+
 ```powershell
-$apiKey = (Get-Content ~/.openclaw/workspace/memory/devto-api-key.txt).Trim()
-curl.exe -s -w "`nHTTP:%{http_code}" -X POST "https://dev.to/api/articles" `
-  -H "Content-Type: application/json" `
-  -H "api-key: $apiKey" `
-  -H "User-Agent: OpenClaw/1.0" `
-  -d "@C:\Users\PC\.openclaw\workspace\scripts\devto-publish-body.json"
+python devto_publish.py article.md
 ```
+
+该命令会实际发布文章，不是 dry-run。只输出 HTTP 状态，不输出响应正文。
 
 ### 4. 验证结果
 - HTTP 201 = 成功，提取返回的 `url` 和 `id`
@@ -38,6 +39,9 @@ curl.exe -s -w "`nHTTP:%{http_code}" -X POST "https://dev.to/api/articles" `
 - HTTP 422 = JSON 格式或内容问题
 
 ## ⚠️ 踩坑记录
+
+以下是历史环境记录，不是当前凭据配置规范。发布应使用上方的安全脚本；
+不要为了排查 403 改回命令参数传 key 或完整响应日志。
 
 ### 坑1: Node.js https 模块在 Windows 下调 Dev.to API 返回 403
 - **现象**: 用 Node.js `https.request()` POST 到 `dev.to/api/articles` 返回 403，响应体为空
@@ -67,10 +71,10 @@ curl.exe -s -w "`nHTTP:%{http_code}" -X POST "https://dev.to/api/articles" `
 - **缓解**: 通过错开时间避免同时触发，而不是依赖重试
 
 ## 📋 Dev.to API Key 信息
-- **文件位置**: `~/.openclaw/workspace/memory/devto-api-key.txt`
-- **权限**: 读写都有 ✅
+- **注入方式**: 私有环境变量 `DEVTO_API_KEY`，不提交凭据文件
+- **撤销状态**: 必须由账号持有人在平台确认，源码删除不能替代撤销
 - **账号**: kevinten10
-- **测试方法**: `curl.exe -s -H "api-key: $(Get-Content ~/.openclaw/workspace/memory/devto-api-key.txt)" "https://dev.to/api/articles/me?per_page=1"`
+- **测试方法**: 使用合成值和模拟网络做离线测试，不测试已泄露 key
 
 ## 📋 Cron 任务配置
 - **Job ID**: `180c8c4f-6bd5-48de-af58-244c1b3bac23`
@@ -81,13 +85,13 @@ curl.exe -s -w "`nHTTP:%{http_code}" -X POST "https://dev.to/api/articles" `
 - **Prompt 关键点**:
   - 开头强制直接执行
   - 步骤明确（7步）
-  - 发布必须用 curl.exe
+  - 发布使用从私有环境变量读取 key 的当前脚本
   - 禁止营销话术和 "847" 数字
 
 ## 📋 文件路径
 | 文件 | 用途 |
 |------|------|
-| `memory/devto-api-key.txt` | API Key |
+| `DEVTO_API_KEY` 环境变量 | 由私有环境注入，不在仓库保存 |
 | `memory/devto-article-draft.md` | 文章草稿（每次覆盖） |
 | `scripts/devto-publish-body.json` | curl 发布用的 JSON body |
 | `scripts/devto-publish-now.js` | 手动发布脚本（备用，但在 Windows 下可能 403） |

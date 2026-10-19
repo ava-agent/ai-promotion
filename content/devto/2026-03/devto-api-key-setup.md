@@ -1,34 +1,30 @@
-# Dev.to API Key 配置说明
+# Dev.to 凭据配置与泄露处置
 
-## 当前状态
-❌ API Key 未配置
+发布脚本仅从 `DEVTO_API_KEY` 环境变量读取凭据。不接受命令行 key，
+不读取仓库内的 key 文本文件，不打印认证异常详情或完整 API 响应。
 
-## 如何获取 API Key
+## 已公开凭据的处置
 
-1. 访问: https://dev.to/settings/extensions
-2. 登录 Dev.to 账号 (kevinten10)
-3. 点击 "Generate API Key"
-4. 复制生成的 Key
+删除源码不等于撤销凭据，也不会删除 Git 历史。账号持有人应在
+[Dev.to 扩展设置](https://dev.to/settings/extensions) 确认旧 key 已撤销；
+需要继续发布时再生成新 key，并通过私有凭据管理器注入环境变量。
+不要用旧 key 发请求验证其是否有效，不要把新 key 写进仓库、命令参数或 shell 历史。
 
-## 配置方法
+## 运行
 
-### 方法1: 直接创建文件
+先通过私有运行环境注入 `DEVTO_API_KEY`，再运行以下任一命令：
+
 ```bash
-echo "your-api-key-here" > ~/.openclaw/workspace/memory/devto-api-key.txt
+python devto_publish.py article.md
+node devto-publish.js article.md
 ```
 
-### 方法2: 手动创建
-在 `C:\Users\PC\.openclaw\workspace\memory\` 目录下创建 `devto-api-key.txt` 文件，内容为 API Key。
+这两个命令会实际发布文章，不是 dry-run；Python 版本需要 `requests`。
+未提供凭据时会在发送请求前退出。只输出 HTTP 状态，不输出完整响应。
 
-## 验证配置
+离线验证（只用合成值和模拟网络）：
+
 ```bash
-cd ~/.openclaw/workspace
-python scripts/devto-publish.py memory/devto-promo-content-2026-03-25-1100.md --dry-run
+python -m unittest discover -s tests -p 'test_devto_publish.py'
+node --test tests/devto-publish.test.cjs
 ```
-
-## 待发布文章
-- **文件**: `memory/devto-promo-content-2026-03-25-1100.md`
-- **标题**: Honestly, I wasted 2 years chasing AI side hustles. Here's what finally worked.
-- **项目**: ClawX
-- **生成时间**: 2026-03-25 11:00
-- **状态**: 等待 API Key 配置后发布

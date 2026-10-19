@@ -11,6 +11,9 @@ Thumbs.db
 # 敏感信息
 .env
 .env.local
+.env.*
+!.env.example
+devto-api-key.txt
 config.json
 
 # 日志

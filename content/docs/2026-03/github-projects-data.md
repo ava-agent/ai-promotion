@@ -185,7 +185,6 @@
 | **知乎** | KevinTen | https://www.zhihu.com/people/wang-shi-hao-93-9 |
 | **小红书** | KevinTen | https://www.xiaohongshu.com/user/profile/5beeb71fe4873800017463fa |
 | **CSDN** | KevinTen | https://blog.csdn.net/wsh596823919 |
-| **抖音** | KevinTen | https://www.douyin.com/user/MS4wLjABAAAAvJHfd8N6myG3RyTR480KNC3J0bqmXwd_263-MZksxzU |
 | **TikTok** | @kevinten1024 | https://www.tiktok.com/@kevinten1024 |
 
 ---
